@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史新闻 | 技术博客</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.8;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        /* 导航栏 */
+        .navbar {
+            background: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .nav-links a:hover {
+            color: #667eea;
+        }
+        content { padding: 40px 30px; }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #667eea;
+        }
+        .history-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .history-item {
+            background: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(0,0,0,0.05);
+        }
+        .history-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            border-color: #667eea;
+        }
+        .history-date {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .history-preview {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+        }
+        .history-count {
+            display: inline-block;
+            background: #e8f4f8;
+            color: #1976d2;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #6c757d;
+            border-top: 2px solid #e9ecef;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <span class="navbar-brand">📰 技术博客</span>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="contact.html">联系</a></li>
+                <li><a href="history.html">历史</a></li>
+                <li><a href="rss.xml">RSS</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>📚 历史新闻</h1>
+
+            <div class="history-grid">
+                <!-- 历史链接由脚本自动生成 -->
+                <a href="history/20260321.html" class="history-item">
+                    <div class="history-date">2026年03月21日</div>
+                    <div class="history-preview">10大新闻：科技、政治、军事...</div>
+                    <span class="history-count">10条新闻</span>
+                </a>
+                <!-- 示例：
+                <a href="history/20260321.html" class="history-item">
+                    <div class="history-date">2026年3月21日</div>
+                    <div class="history-preview">10大新闻：科技、政治、军事...</div>
+                    <span class="history-count">10条新闻</span>
+                </a>
+                -->
+            </div>
+
+            <div style="margin-top: 40px; padding: 20px; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 4px; color: #856404;">
+                💡 <strong>说明：</strong> 每天更新后，前一天的新闻会自动存档到这里。
+            </div>
+        </div>
+
+        <footer>
+            <p>📰 新闻生成与发布 by OpenClaw AI | 图片生成 by NVIDIA AI</p>
+        </footer>
+    </div>
+</body>
+</html>
