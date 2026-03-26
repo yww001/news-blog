@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>世界十大新闻 - 2026年03月26日 | 环球新闻</title>
+    <title>环球新闻 - 2026年03月26日 | 技术博客</title>
     <meta name="description" content="2026年03月26日全球10大热点新闻，涵盖科技、政治、军事、汽车等领域的最新动态">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -12,7 +13,6 @@
             box-sizing: border-box;
         }
 
-        /* 深色模式变量 */
         :root {
             --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --container-bg: white;
@@ -20,14 +20,10 @@
             --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
             --tag-bg: #e8f4f8;
             --tag-color: #1976d2;
-            --warning-bg: #fff3cd;
-            --warning-border: #ffc107;
-            --warning-color: #856404;
             --footer-bg: #f8f9fa;
             --footer-color: #6c757d;
             --nav-bg: white;
             --nav-text: #333;
-            --search-bg: #f8f9fa;
             --border-color: rgba(0,0,0,0.1);
         }
 
@@ -38,14 +34,10 @@
             --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
             --tag-bg: #1a3a5c;
             --tag-color: #64b5f6;
-            --warning-bg: #4a4732;
-            --warning-border: #7c6d00;
-            --warning-color: #d4c656;
             --footer-bg: #16213e;
             --footer-color: #a0a0a0;
             --nav-bg: #1f1f38;
             --nav-text: #e0e0e0;
-            --search-bg: #252540;
             --border-color: rgba(255,255,255,0.1);
         }
 
@@ -69,7 +61,6 @@
             transition: background 0.3s, color 0.3s;
         }
 
-        /* 导航栏 */
         .navbar {
             background: var(--nav-bg);
             padding: 20px 30px;
@@ -108,459 +99,179 @@
             color: #667eea;
         }
 
-        /* 深色模式切换按钮 */
-        .theme-toggle {
-            background: none;
-            border: 2px solid var(--border-color);
-            color: var(--nav-text);
-            padding: 8px 16px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 1em;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-
-        .theme-toggle:hover {
-            background: var(--tag-bg);
-            color: #667eea;
-        }
-
-        /* 搜索框 */
-        .search-container {
-            padding: 20px 30px;
-            background: var(--nav-bg);
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .search-box {
-            width: 100%;
-            padding: 12px 20px;
-            border: 2px solid var(--border-color);
-            border-radius: 25px;
-            font-size: 1em;
-            background: var(--search-bg);
-            color: var(--text-color);
-            transition: all 0.3s;
-        }
-
-        .search-box:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        }
-
-        header {
-            background: var(--bg-gradient);
-            color: white;
-            padding: 50px 30px;
+        .hero {
             text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: pulse 3s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: translate(-30%, -30%) scale(1); }
-            50% { transform: translate(-30%, -30%) scale(1.1); }
-        }
-
-        .content {
             padding: 40px 30px;
+            background: var(--nav-bg);
+            border-bottom: 2px solid var(--border-color);
         }
 
-        h1 {
+        .hero h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            position: relative;
-            z-index: 1;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            color: var(--nav-text);
+            transition: color 0.3s;
         }
 
-        .date {
+        .hero .date {
             font-size: 1.2em;
-            opacity: 0.95;
-            position: relative;
-            z-index: 1;
+            color: var(--nav-text);
+            opacity: 0.7;
+            transition: color 0.3s;
+        }
+
+        .hero .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
         }
 
         .news-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
             gap: 30px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .news-grid {
-                grid-template-columns: 1fr;
-            }
-            h1 {
-                font-size: 1.8em;
-            }
-            .nav-links {
-                display: none;
-            }
+            padding: 40px 30px;
+            background: var(--container-bg);
         }
 
         .news-card {
             background: var(--card-bg);
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s;
-            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .news-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
         }
 
-        .news-card.hidden {
-            display: none;
-        }
-
-        .news-image {
+        .news-image img {
             width: 100%;
-            height: 280px;
+            height: 250px;
             object-fit: cover;
             display: block;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .news-card:hover .news-image {
-            transform: scale(1.05);
         }
 
         .news-content {
             padding: 20px;
         }
 
-        .news-number {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: bold;
-            margin-bottom: 12px;
-        }
-
         .news-title {
-            font-size: 1.4em;
-            font-weight: bold;
-            margin-bottom: 12px;
+            font-size: 1.3em;
+            margin-bottom: 15px;
             color: var(--text-color);
-            line-height: 1.4;
+            transition: color 0.3s;
         }
 
         .news-summary {
             color: var(--text-color);
             opacity: 0.8;
             line-height: 1.7;
-            font-size: 1em;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .news-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
         }
 
         .tag {
             display: inline-block;
             padding: 5px 12px;
-            margin: 8px 4px 0 0;
             background: var(--tag-bg);
             color: var(--tag-color);
-            border-radius: 12px;
-            font-size: 0.85em;
-            font-weight: 500;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: background 0.3s, color 0.3s;
         }
 
-        .warning {
-            background: var(--warning-bg);
-            border-left: 4px solid var(--warning-border);
-            padding: 15px 20px;
-            margin: 30px 0;
-            border-radius: 4px;
-            color: var(--warning-color);
-            font-size: 0.95em;
-        }
-
-        footer {
+        .footer {
             background: var(--footer-bg);
-            padding: 30px;
+            color: var(--footer-color);
             text-align: center;
-            color: var(--footer-color);
-            font-size: 0.95em;
+            padding: 30px;
             border-top: 2px solid var(--border-color);
+            transition: background 0.3s, color 0.3s;
         }
 
-        footer a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
+        .dark-mode-toggle {
+            cursor: pointer;
+            padding: 10px 15px;
+            background: var(--tag-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--tag-color);
+            font-size: 1em;
+            transition: background 0.3s, color 0.3s;
         }
 
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-links {
-            margin-top: 15px;
-        }
-
-        .footer-links a {
-            margin: 0 10px;
-            color: var(--footer-color);
-        }
-
-        .footer-links a:hover {
-            color: #667eea;
-        }
-
-        /* 评论区 */
-        .comments-section {
-            padding: 40px 30px;
-            background: var(--container-bg);
-            border-top: 2px solid var(--border-color);
-        }
-
-        .comments-title {
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: var(--text-color);
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+                padding: 20px 15px;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 1.8em;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <a href="../index.html" class="navbar-brand">📰 环球新闻</a>
-        <ul class="nav-links">
-            <li><a href="../index.html">首页</a></li>
-            <li><a href="../about.html">关于</a></li>
-            <li><a href="../contact.html">联系</a></li>
-            <li><a href="history.html">历史</a></li>
-            <li><a href="../rss.xml">RSS</a></li>
-        </ul>
-        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
-    </nav>
-
-    <!-- 搜索框 -->
-    <div class="search-container">
-        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
-    </div>
-
     <div class="container">
-        <header>
-            <h1>🌍 2026年03月26日 - 历史存档</h1>
-            <div class="date">2026年03月26日 · 全球热点速递</div>
-        </header>
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">📰 环球新闻</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../about.html">关于</a></li>
+                <li><a href="../contact.html">联系</a></li>
+                <li><a href="../history.html">历史</a></li>
+                <li><a href="../rss.xml">RSS</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </nav>
 
-        <div class="content">
-            <div class="warning">
-                ⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。
-            </div>
+        <section class="hero">
+            <h1>🌍 世界十大新闻</h1>
+            <p class="date">2026年03月26日 · 全球热点速递</p>
+            <a href="../index.html" class="back-link">← 返回今日新闻</a>
+        </section>
 
-            <div class="news-grid" id="newsGrid">
-
-                <div class="news-card">
-                    <img src="../images/news_102.png" alt="#大热点新闻汇总# #全球十大新闻# #3热点新闻# 2026年3月 ..." class="news-image">
+        <section class="news-grid">
+<div class="news-card">
+                    <img src="images/news_102.png" alt="#大热点新闻汇总# #全球十大新闻# #3热点新闻# 2026年3月 ..." class="news-image">
                     <div class="news-content">
                         <span class="news-number">1</span>
                         <h3 class="news-title">#大热点新闻汇总# #全球十大新闻# #3热点新闻# 2026年3月 ...</h3>
                         <p class="news-summary"># 国内十大事件. 1. 最高法严打失信行为：最高人民法院保持高压态势，2025年追究“拒不执行判决、裁定罪”4461人。. 2. 节假日政策新建议：人大代表提议节假日高速“在途即免”，并推动将抗战胜利纪念日、元宵节纳入法定节假日。. 4. 住建部更名“物业服务”：正式采纳将“物业管理”改为“物业服务”的建议，并启动相关条例修订。. 5. 超算资源开放：国家超算互联网面向OpenClaw用户免费发</p>
                         <div>
                             <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
+        </section>
 
-                <div class="news-card">
-                    <img src="../images/news_103.png" alt="国际新闻" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">2</span>
-                        <h3 class="news-title">国际新闻</h3>
-                        <p class="news-summary">## 无障碍链接. 美国 中国 美中关系 社论 热点视频. 中国时间 21:42 2026年3月25日 星期三. # 国际新闻. * #### 特朗普总统称作为谈判姿态，伊朗“新领导层”向美方送出与油气相关“礼物”. 唐纳德·特朗普(Donald Trump)总统表示，在与美国高级官员就结束持续三个星期的美以联合打击伊朗“恐怖政权”残余力量展开谈判之际，伊朗显然的新领导人向美国送出了一份与石油和天</p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/news_104.png" alt="带您快速浏览各报头条【2026.03.03 八度空间早晨新闻】" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">3</span>
-                        <h3 class="news-title">带您快速浏览各报头条【2026.03.03 八度空间早晨新闻】</h3>
-                        <p class="news-summary">带您快速浏览各报头条【2026.03.03 八度空间早晨新闻】
-八度空间华语新闻
-554000 subscribers
-33 likes
-2683 views
-3 Mar 2026
-带您快速浏览各报头条：
-【早报焦点】
-▪ 限首相任期修宪案受阻 差2票未过三分二门槛
-▪ 美伊战事恐延烧一个月 特朗普称已灭48伊朗领袖
-▪ 中东战火搅动全球航运 国行料暂不调整利率
-▪ 战争持续避险情绪升温 金价每克</p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/news_105.png" alt="每日要闻，各位朋友早上好，2026-3-22一、国内新闻🔹 政治/经" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">4</span>
-                        <h3 class="news-title">每日要闻，各位朋友早上好，2026-3-22一、国内新闻🔹 政治/经</h3>
-                        <p class="news-summary"># 每日要闻，各位朋友早上好，2026. 每日要闻，各位朋友早上好，2026-3-22. 今日在北京启幕，主题为“十五五”的中国：高质量发展与共创新机遇，苹果CEO库克任外方主席。聚焦AI、绿色低碳、制造业数智化、大健康等议题，释放高水平开放信号。. 新设外商投资企业8631家，同比+14%；实际使用外资1614.5亿元，同比-5.7%。. 监管对多家券商及责任人开罚单，涉及尽调不足、督导不到位、</p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/news_106.png" alt="内塔尼亚胡称“继续全力”空袭伊朗丨2026年3月26日" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">5</span>
-                        <h3 class="news-title">内塔尼亚胡称“继续全力”空袭伊朗丨2026年3月26日</h3>
-                        <p class="news-summary"># 财经早报：伊朗提出结束战争5项条件，内塔尼亚胡称“继续全力”空袭伊朗丨2026年3月26日. 伊朗外长阿拉格齐当地时间3月25日在接受采访时表示，美方近期通过第三方频繁向伊朗传递信息，但这仅为“信息交换”，而非正式谈判。阿拉格齐指出，美方从要求伊朗“无条件投降”转为寻求对话，实质上是承认其对伊朗政策的失败。. 阿拉格齐强调，没有保障的停火只会导致战争循环。伊朗要求敌方按照伊朗提出的要求结束战争</p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/news_107.png" alt="Google 新聞" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">6</span>
-                        <h3 class="news-title">Google 新聞</h3>
-                        <p class="news-summary"># 焦點提要. ### 焦點新聞. 【柯案宣判】他嘆「害了柯文哲」！羈押被銬「不如動物」 沈慶京：判無罪也喚不回健康. 柯文哲宣判／遭求刑28年 阿北「若判這刑度」喪失2028總統參選資格. 特朗普宣稱伊朗送「大禮」！伊朗：你找誰談的？ - 國際 - 香港文匯網.</p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/news_108.png" alt="纽约时报中文网" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">7</span>
-                        <h3 class="news-title">纽约时报中文网</h3>
-                        <p class="news-summary"># [](https://m.cn.nytimes.com/). *   [国际](https://m.cn.nytimes.com/world "国际"). *   [中国](https://m.cn.nytimes.com/china "中国"). *   [商业与经济](https://m.cn.nytimes.com/business "商业与经济"). *   [镜头](https://</p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/news_109.png" alt="即時| 世界新聞網" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">8</span>
-                        <h3 class="news-title">即時| 世界新聞網</h3>
-                        <p class="news-summary">## [「我可幫忙處理蔡英文」 WSJ曝習近平當年被川普這話嚇到](https://www.worldjournal.com/wj/story/124277/9404434?from=wj_msg "「我可幫忙處理蔡英文」 WSJ曝習近平當年被川普這話嚇到"). [![平衡中歐貿易 中國東航158億美元買101架空巴飛機]()](https://www.worldjournal.com/wj/st</p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/news_110.png" alt="国际新闻| 大纪元" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">9</span>
-                        <h3 class="news-title">国际新闻| 大纪元</h3>
-                        <p class="news-summary">白宫：若伊朗再次误判 将遭更猛烈打击白宫：若伊朗再次误判 将遭更猛烈打击. 新西兰扩军备 深化与澳美合作 对抗中共威胁新西兰扩军备 深化与澳美合作 对抗中共威胁. 伊朗称击落F-18战机 遭美中央司令部驳斥伊朗称击落F-18战机 遭美中央司令部驳斥. USCC报告：源自中国的“杀洋盘”诈骗案激增USCC报告：源自中国的“杀洋盘”诈骗案激增. 伊朗称袭击林肯号 川普：百枚导弹全被击落伊朗称袭击林肯号</p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/news_111.png" alt="國際- BBC News 中文" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">10</span>
-                        <h3 class="news-title">國際- BBC News 中文</h3>
-                        <p class="news-summary"># 國際. * ## 視頻, 韓團BTS回歸：全球矚目背後有何文化與經濟意義？, 節目全長 5,08. * ## 「黑金組」分案調查，台灣閣揆卓榮泰「自費包機」爭議越演越烈.</p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    </div>
-                </div>
-
-                <!-- 新闻 #2 -->
-        <footer>
-            <p>
-                📰 新闻生成与发布 by <a href="https://github.com/openclaw/openclaw" target="_blank">OpenClaw AI</a> |
-                图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a>
-            </p>
-            <div class="footer-links">
-                <a href="../index.html">首页</a> |
-                <a href="../about.html">关于</a> |
-                <a href="../contact.html">联系</a> |
-                <a href="../rss.xml">RSS 订阅</a>
-            </div>
-            <p style="margin-top: 10px; font-size: 0.9em;">
-                所有新闻内容仅供参考，请以官方发布为准 · 2026年03月26日
-            </p>
+        <footer class="footer">
+            <p>&copy; 2026 环球新闻 | 技术博客 | GitHub Pages</p>
         </footer>
     </div>
 
     <script>
-        // 深色模式切换
-        function toggleTheme() {
+        function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
-            const isDarkMode = document.body.classList.contains('dark-mode');
-            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-        }
-
-        // 加载保存的主题
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-        }
-
-        // 搜索功能
-        function searchNews() {
-            const input = document.getElementById('searchInput').value.toLowerCase();
-            const cards = document.querySelectorAll('.news-card');
-
-            cards.forEach(card => {
-                const title = card.querySelector('.news-title').textContent.toLowerCase();
-                const summary = card.querySelector('.news-summary').textContent.toLowerCase();
-                const tags = Array.from(card.querySelectorAll('.tag')).map(tag => tag.textContent.toLowerCase()).join(' ');
-
-                if (title.includes(input) || summary.includes(input) || tags.includes(input)) {
-                    card.classList.remove('hidden');
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
-        }
-
-        // 深色模式自动检测
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !savedTheme) {
-            document.body.classList.add('dark-mode');
         }
     </script>
 </body>
