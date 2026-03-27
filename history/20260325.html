@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>世界十大新闻 - 2026年3月25日 | 环球新闻</title>
-    <meta name="description" content="2026年3月25日全球10大热点新闻，涵盖科技、政治、军事、汽车等领域的最新动态">
+    <title>环球新闻 - 2026年03月25日 | 技术博客</title>
+    <meta name="description" content="2026年03月25日全球10大热点新闻，涵盖科技、政治、军事、汽车等领域的最新动态">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -12,7 +13,6 @@
             box-sizing: border-box;
         }
 
-        /* 深色模式变量 */
         :root {
             --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --container-bg: white;
@@ -20,14 +20,10 @@
             --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
             --tag-bg: #e8f4f8;
             --tag-color: #1976d2;
-            --warning-bg: #fff3cd;
-            --warning-border: #ffc107;
-            --warning-color: #856404;
             --footer-bg: #f8f9fa;
             --footer-color: #6c757d;
             --nav-bg: white;
             --nav-text: #333;
-            --search-bg: #f8f9fa;
             --border-color: rgba(0,0,0,0.1);
         }
 
@@ -38,14 +34,10 @@
             --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
             --tag-bg: #1a3a5c;
             --tag-color: #64b5f6;
-            --warning-bg: #4a4732;
-            --warning-border: #7c6d00;
-            --warning-color: #d4c656;
             --footer-bg: #16213e;
             --footer-color: #a0a0a0;
             --nav-bg: #1f1f38;
             --nav-text: #e0e0e0;
-            --search-bg: #252540;
             --border-color: rgba(255,255,255,0.1);
         }
 
@@ -69,7 +61,6 @@
             transition: background 0.3s, color 0.3s;
         }
 
-        /* 导航栏 */
         .navbar {
             background: var(--nav-bg);
             padding: 20px 30px;
@@ -108,446 +99,302 @@
             color: #667eea;
         }
 
-        /* 深色模式切换按钮 */
-        .theme-toggle {
-            background: none;
-            border: 2px solid var(--border-color);
-            color: var(--nav-text);
-            padding: 8px 16px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 1em;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-
-        .theme-toggle:hover {
-            background: var(--tag-bg);
-            color: #667eea;
-        }
-
-        /* 搜索框 */
-        .search-container {
-            padding: 20px 30px;
-            background: var(--nav-bg);
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .search-box {
-            width: 100%;
-            padding: 12px 20px;
-            border: 2px solid var(--border-color);
-            border-radius: 25px;
-            font-size: 1em;
-            background: var(--search-bg);
-            color: var(--text-color);
-            transition: all 0.3s;
-        }
-
-        .search-box:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        }
-
-        header {
-            background: var(--bg-gradient);
-            color: white;
-            padding: 50px 30px;
+        .hero {
             text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: pulse 3s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: translate(-30%, -30%) scale(1); }
-            50% { transform: translate(-30%, -30%) scale(1.1); }
-        }
-
-        .content {
             padding: 40px 30px;
+            background: var(--nav-bg);
+            border-bottom: 2px solid var(--border-color);
         }
 
-        h1 {
+        .hero h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            position: relative;
-            z-index: 1;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            color: var(--nav-text);
+            transition: color 0.3s;
         }
 
-        .date {
+        .hero .date {
             font-size: 1.2em;
-            opacity: 0.95;
-            position: relative;
-            z-index: 1;
+            color: var(--nav-text);
+            opacity: 0.7;
+            transition: color 0.3s;
+        }
+
+        .hero .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
         }
 
         .news-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
             gap: 30px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .news-grid {
-                grid-template-columns: 1fr;
-            }
-            h1 {
-                font-size: 1.8em;
-            }
-            .nav-links {
-                display: none;
-            }
+            padding: 40px 30px;
+            background: var(--container-bg);
         }
 
         .news-card {
             background: var(--card-bg);
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s;
-            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .news-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
         }
 
-        .news-card.hidden {
-            display: none;
-        }
-
-        .news-image {
+        .news-image img {
             width: 100%;
-            height: 280px;
+            height: 250px;
             object-fit: cover;
             display: block;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .news-card:hover .news-image {
-            transform: scale(1.05);
         }
 
         .news-content {
             padding: 20px;
         }
 
-        .news-number {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: bold;
-            margin-bottom: 12px;
-        }
-
         .news-title {
-            font-size: 1.4em;
-            font-weight: bold;
-            margin-bottom: 12px;
+            font-size: 1.3em;
+            margin-bottom: 15px;
             color: var(--text-color);
-            line-height: 1.4;
+            transition: color 0.3s;
         }
 
         .news-summary {
             color: var(--text-color);
             opacity: 0.8;
             line-height: 1.7;
-            font-size: 1em;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .news-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
         }
 
         .tag {
             display: inline-block;
             padding: 5px 12px;
-            margin: 8px 4px 0 0;
             background: var(--tag-bg);
             color: var(--tag-color);
-            border-radius: 12px;
-            font-size: 0.85em;
-            font-weight: 500;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: background 0.3s, color 0.3s;
         }
 
-        .warning {
-            background: var(--warning-bg);
-            border-left: 4px solid var(--warning-border);
-            padding: 15px 20px;
-            margin: 30px 0;
-            border-radius: 4px;
-            color: var(--warning-color);
-            font-size: 0.95em;
-        }
-
-        footer {
+        .footer {
             background: var(--footer-bg);
-            padding: 20px 30px 30px 30px;
+            color: var(--footer-color);
             text-align: center;
-            color: var(--footer-color);
-            font-size: 0.95em;
+            padding: 30px;
             border-top: 2px solid var(--border-color);
+            transition: background 0.3s, color 0.3s;
         }
 
-        footer a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
+        .dark-mode-toggle {
+            cursor: pointer;
+            padding: 10px 15px;
+            background: var(--tag-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--tag-color);
+            font-size: 1em;
+            transition: background 0.3s, color 0.3s;
         }
 
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-links {
-            margin-top: 15px;
-        }
-
-        .footer-links a {
-            margin: 0 10px;
-            color: var(--footer-color);
-        }
-
-        .footer-links a:hover {
-            color: #667eea;
-        }
-
-        /* 评论区 */
-        .comments-section {
-            padding: 40px 30px 0 30px;
-            background: var(--container-bg);
-            border-top: 2px solid var(--border-color);
-        }
-
-        .comments-title {
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: var(--text-color);
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+                padding: 20px 15px;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 1.8em;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <a href="index.html" class="navbar-brand">📰 环球新闻</a>
-        <ul class="nav-links">
-            <li><a href="index.html">首页</a></li>
-            <li><a href="about.html">关于</a></li>
-            <li><a href="contact.html">联系</a></li>
-            <li><a href="history.html">历史</a></li>
-            <li><a href="rss.xml">RSS</a></li>
-        </ul>
-        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
-    </nav>
-
-    <!-- 搜索框 -->
-    <div class="search-container">
-        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
-    </div>
-
     <div class="container">
-        <header>
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">📰 环球新闻</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../about.html">关于</a></li>
+                <li><a href="../contact.html">联系</a></li>
+                <li><a href="../history.html">历史</a></li>
+                <li><a href="../rss.xml">RSS</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
             <h1>🌍 世界十大新闻</h1>
-            <div class="date">2026年3月25日 · 全球热点速递</div>
-        </header>
+            <p class="date">2026年03月25日 · 全球热点速递</p>
+            <a href="../index.html" class="back-link">← 返回今日新闻</a>
+        </section>
 
-        <div class="content">
-            <div class="warning">
-                ⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。
+        <section class="news-grid">
+            
+    <article class="news-card" data-news-id="1">
+        <div class="news-image">
+            <img src="../images/20260325/news_1_iran_war.png" alt="伊朗冲突升级引关注" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">伊朗冲突升级引关注</h3>
+            <p class="news-summary">中东局势紧张，国际社会呼吁和平解决。各方保持克制，外交努力持续推进，寻求和平解决方案。</p>
+            <div class="news-tags">
+                <span class="tag">国际</span><span class="tag">军事</span>
             </div>
-
-            <div class="news-grid">
-
-                <div class="news-card">
-                    <img src="../images/20260325/news_1_global_tech_summit.png" alt="全球科技峰会今日开幕" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">1</span>
-                        <h3 class="news-title">全球科技峰会今日开幕</h3>
-                        <p class="news-summary">多国科技领袖出席，聚焦AI与可持续发展议题。</p>
-                        <div>
-                            <span class="tag">科技</span>
-                            <span class="tag">国际</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/20260325/news_2_ev_cars.png" alt="新能源汽车销量创新高" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">2</span>
-                        <h3 class="news-title">新能源汽车销量创新高</h3>
-                        <p class="news-summary">本月新能源汽车销量同比增长30%。</p>
-                        <div>
-                            <span class="tag">汽车</span>
-                            <span class="tag">经济</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/20260325/news_3_quantum_computing.png" alt="量子计算取得新突破" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">3</span>
-                        <h3 class="news-title">量子计算取得新突破</h3>
-                        <p class="news-summary">量子计算机实现更高稳定性和运算速度。</p>
-                        <div>
-                            <span class="tag">科技</span>
-                            <span class="tag">量子计算</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/20260325/news_4_space_launch.png" alt="航天发射任务圆满成功" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">4</span>
-                        <h3 class="news-title">航天发射任务圆满成功</h3>
-                        <p class="news-summary">最新卫星成功入轨，为通信网络升级提供支持。</p>
-                        <div>
-                            <span class="tag">航天</span>
-                            <span class="tag">科技</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/20260325/news_5_ai_medical.png" alt="人工智能医疗应用加速" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">5</span>
-                        <h3 class="news-title">人工智能医疗应用加速</h3>
-                        <p class="news-summary">AI在疾病诊断和药物研发中的应用取得进展。</p>
-                        <div>
-                            <span class="tag">AI</span>
-                            <span class="tag">医疗</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/20260325/news_6_renewable_energy.png" alt="可再生能源投资创新高" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">6</span>
-                        <h3 class="news-title">可再生能源投资创新高</h3>
-                        <p class="news-summary">各国加大清洁能源投资，推动绿色转型。</p>
-                        <div>
-                            <span class="tag">能源</span>
-                            <span class="tag">环保</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/20260325/news_7_5g_network.png" alt="5G网络覆盖加速推进" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">7</span>
-                        <h3 class="news-title">5G网络覆盖加速推进</h3>
-                        <p class="news-summary">更多城市实现5G全覆盖，为数字经济提供支持。</p>
-                        <div>
-                            <span class="tag">科技</span>
-                            <span class="tag">通信</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/20260325/news_8_online_education.png" alt="在线教育平台用户激增" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">8</span>
-                        <h3 class="news-title">在线教育平台用户激增</h3>
-                        <p class="news-summary">学习数字化趋势明显，在线教育用户持续增长。</p>
-                        <div>
-                            <span class="tag">教育</span>
-                            <span class="tag">科技</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/20260325/news_9_smart_city.png" alt="智慧城市建设加速" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">9</span>
-                        <h3 class="news-title">智慧城市建设加速</h3>
-                        <p class="news-summary">多个城市启动智慧城市项目，提升城市管理水平。</p>
-                        <div>
-                            <span class="tag">科技</span>
-                            <span class="tag">城市</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="../images/20260325/news_10_biotech.png" alt="生物科技领域投资活跃" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">10</span>
-                        <h3 class="news-title">生物科技领域投资活跃</h3>
-                        <p class="news-summary">基因编辑、生物制药等领域投资显著增加。</p>
-                        <div>
-                            <span class="tag">科技</span>
-                            <span class="tag">生物</span>
-                        </div>
-                    </div>
-
-                </div>
-
-        <!-- 评论系统 - Giscus -->
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="2">
+        <div class="news-image">
+            <img src="../images/20260325/news_2_terafab.png" alt="Terafab获大额融资" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">Terafab获大额融资</h3>
+            <p class="news-summary">科技公司Terafab宣布完成新一轮融资，估值创新高。投资方看好其3D打印技术在工业领域的应用前景。</p>
+            <div class="news-tags">
+                <span class="tag">科技</span><span class="tag">融资</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="3">
+        <div class="news-image">
+            <img src="../images/20260325/news_3_trump_china.png" alt="特朗普对华政策调整" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">特朗普对华政策调整</h3>
+            <p class="news-summary">美国前总统就中美贸易关系发表新看法，引发市场关注。分析师预期双边经贸关系可能出现新变化。</p>
+            <div class="news-tags">
+                <span class="tag">国际</span><span class="tag">经济</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="4">
+        <div class="news-image">
+            <img src="../images/20260325/news_4_chinese_cars.png" alt="中国汽车出口创新高" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">中国汽车出口创新高</h3>
+            <p class="news-summary">汽车出口量持续增长，智能化车型受海外市场青睐。中国汽车制造业竞争力不断提升，全球化布局加速。</p>
+            <div class="news-tags">
+                <span class="tag">汽车</span><span class="tag">经济</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="5">
+        <div class="news-image">
+            <img src="../images/20260325/news_5_turing_award.png" alt="图灵奖公布新得主" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">图灵奖公布新得主</h3>
+            <p class="news-summary">2026年图灵奖授予深度学习领域杰出科学家，表彰其对AI技术的重大贡献。研究成果推动AI技术广泛落地应用。</p>
+            <div class="news-tags">
+                <span class="tag">科技</span><span class="tag">AI</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="6">
+        <div class="news-image">
+            <img src="../images/20260325/news_6_tech_conflict.png" alt="科技领域冲突加剧" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">科技领域冲突加剧</h3>
+            <p class="news-summary">全球科技竞争激烈，各国加强技术管制。半导体、人工智能等关键领域成为争夺焦点。</p>
+            <div class="news-tags">
+                <span class="tag">科技</span><span class="tag">国际</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="7">
+        <div class="news-image">
+            <img src="../images/20260325/news_7_xiaomi_robot.png" alt="小米机器人发布新品" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">小米机器人发布新品</h3>
+            <p class="news-summary">小米推出新一代家用机器人，功能更加强大。AI语音交互和自动化任务能力显著提升。</p>
+            <div class="news-tags">
+                <span class="tag">科技</span><span class="tag">消费电子</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="8">
+        <div class="news-image">
+            <img src="../images/20260325/news_8_tesla_robotaxi.png" alt="特斯拉Robotaxi测试加速" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">特斯拉Robotaxi测试加速</h3>
+            <p class="news-summary">自动驾驶出租车服务在多地展开测试。特斯拉FSD技术持续优化，商业化进程加速。</p>
+            <div class="news-tags">
+                <span class="tag">汽车</span><span class="tag">自动驾驶</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="9">
+        <div class="news-image">
+            <img src="../images/20260325/news_9_openai_ads.png" alt="OpenAI推出广告新规" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">OpenAI推出广告新规</h3>
+            <p class="news-summary">AI广告监管政策更新，行业面临新挑战。平台加强内容审核，保护用户隐私。</p>
+            <div class="news-tags">
+                <span class="tag">AI</span><span class="tag">监管</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="10">
+        <div class="news-image">
+            <img src="../images/20260325/news_10_pentagon_ai.png" alt="五角大楼AI项目扩张" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">五角大楼AI项目扩张</h3>
+            <p class="news-summary">美国国防部扩大AI在军事领域的应用范围。AI辅助决策系统在军事演习中表现出色。</p>
+            <div class="news-tags">
+                <span class="tag">军事</span><span class="tag">AI</span>
+            </div>
+        </div>
+    </article>
+    
         </section>
 
         <footer class="footer">
-                <p>&copy; 2026 环球新闻 | 技术博客 | GitHub Pages</p>
-            </footer>
+            <p>&copy; 2026 环球新闻 | 技术博客 | GitHub Pages</p>
+        </footer>
     </div>
 
     <script>
-        // 深色模式切换
-        function toggleTheme() {
+        function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
-            const isDarkMode = document.body.classList.contains('dark-mode');
-            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-        }
-
-        // 加载保存的主题
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-        }
-
-        // 搜索功能
-        function searchNews() {
-            const input = document.getElementById('searchInput').value.toLowerCase();
-            const cards = document.querySelectorAll('.news-card');
-
-            cards.forEach(card => {
-                const title = card.querySelector('.news-title').textContent.toLowerCase();
-                const summary = card.querySelector('.news-summary').textContent.toLowerCase();
-                const tags = Array.from(card.querySelectorAll('.tag')).map(tag => tag.textContent.toLowerCase()).join(' ');
-
-                if (title.includes(input) || summary.includes(input) || tags.includes(input)) {
-                    card.classList.remove('hidden');
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
-        }
-
-        // 深色模式自动检测
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !savedTheme) {
-            document.body.classList.add('dark-mode');
         }
     </script>
 </body>
