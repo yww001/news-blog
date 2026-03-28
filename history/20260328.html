@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环球新闻 - 2026年03月28日 | 技术博客</title>
+    <meta name="description" content="2026年03月28日全球10大热点新闻，涵盖科技、政治、军事、汽车等领域的最新动态">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white;
+            --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8;
+            --tag-color: #1976d2;
+            --footer-bg: #f8f9fa;
+            --footer-color: #6c757d;
+            --nav-bg: white;
+            --nav-text: #333;
+            --border-color: rgba(0,0,0,0.1);
+        }
+
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e;
+            --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c;
+            --tag-color: #64b5f6;
+            --footer-bg: #16213e;
+            --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38;
+            --nav-text: #e0e0e0;
+            --border-color: rgba(255,255,255,0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar {
+            background: var(--nav-bg);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--nav-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--nav-bg);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--nav-text);
+            transition: color 0.3s;
+        }
+
+        .hero .date {
+            font-size: 1.2em;
+            color: var(--nav-text);
+            opacity: 0.7;
+            transition: color 0.3s;
+        }
+
+        .hero .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+            padding: 40px 30px;
+            background: var(--container-bg);
+        }
+
+        .news-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-title {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+
+        .news-summary {
+            color: var(--text-color);
+            opacity: 0.8;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .news-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 12px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .footer {
+            background: var(--footer-bg);
+            color: var(--footer-color);
+            text-align: center;
+            padding: 30px;
+            border-top: 2px solid var(--border-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dark-mode-toggle {
+            cursor: pointer;
+            padding: 10px 15px;
+            background: var(--tag-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--tag-color);
+            font-size: 1em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+                padding: 20px 15px;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">📰 环球新闻</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../about.html">关于</a></li>
+                <li><a href="../contact.html">联系</a></li>
+                <li><a href="../history.html">历史</a></li>
+                <li><a href="../rss.xml">RSS</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>🌍 世界十大新闻</h1>
+            <p class="date">2026年03月28日 · 全球热点速递</p>
+            <a href="../index.html" class="back-link">← 返回今日新闻</a>
+        </section>
+
+        <section class="news-grid">
+<div class="news-card">
+                    <img src="images/news_102.png" alt="华尔街日报中文版2026年03月28日的文章列表" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">1</span>
+                        <h3 class="news-title">华尔街日报中文版2026年03月28日的文章列表</h3>
+                        <p class="news-summary">热门文章 · 为何美以猛攻一个月仍除不掉伊朗导弹威胁？ · 伊朗拒绝两艘中国船只通过霍尔木兹海峡 · 特朗普对台立场模糊，为中国带来历史性机遇 · 图解美国在伊朗战争中受损或损毁</p>
+                        <div>
+                            <span class="tag">新闻</span>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 环球新闻 | 技术博客 | GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
