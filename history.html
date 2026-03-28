@@ -50,15 +50,12 @@
         }
 
         .navbar {
-            background: var(--nav-bg);
-            padding: 20px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            padding: 20px 30px;
+            background: var(--nav-bg);
+            border-bottom: 1px solid var(--border-color);
             transition: background 0.3s, color 0.3s;
         }
 
@@ -67,6 +64,7 @@
             font-weight: bold;
             color: var(--nav-text);
             text-decoration: none;
+            transition: color 0.3s;
         }
 
         .nav-links {
@@ -78,6 +76,11 @@
         .nav-links a {
             color: var(--nav-text);
             text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
         }
 
         .content {
@@ -162,34 +165,10 @@
         <div class="content">
             <h1>📅 历史存档</h1>
             <div class="history-list">
-                <a href="history/20260322.html" class="history-item">
-            <h3>2026年03月22日</h3>
-            <p>伊朗冲突升级、Terafab获融资、特朗普政策调整等十大新闻</p>
-        </a>
-        <a href="history/20260323.html" class="history-item">
-            <h3>2026年03月23日</h3>
-            <p>全球科技峰会开幕、新能源汽车销量创新高、量子计算突破等十大新闻</p>
-        </a>
-        <a href="history/20260324.html" class="history-item">
-            <h3>2026年03月24日</h3>
-            <p>以军空袭德黑兰、黄金价格暴跌、雄安新区建设、霍尔木兹海峡运输等十大新闻</p>
-        </a>
-        <a href="history/20260325.html" class="history-item">
-            <h3>2026年03月25日</h3>
-            <p>全球科技峰会、新能源汽车销量创新高、量子计算取得新突破等十大新闻</p>
-        </a>
-        <a href="history/20260326.html" class="history-item">
-            <h3>2026年03月26日</h3>
-            <p>上头条聊热点#我们聊、华尔街日报中文版20、国际新闻- 美国...</p>
-        </a>
-        <a href="history/20260327.html" class="history-item">
-            <h3>2026年03月27日</h3>
-            <p>2026年3月23日、上头条聊热点#我们聊、Google 新...</p>
-        </a>
-        <a href="history/20260328.html" class="history-item">
-            <h3>2026年03月28日</h3>
-            <p>华尔街日报中文版20、Google 新聞、新浪国际热点小时报...</p>
-        </a>
+                <a href="history/2026/index.html" class="history-item">
+                    <h3>2026年</h3>
+                    <p>2026年历史新闻存档，包含3月等月份的新闻记录</p>
+                </a>
             </div>
         </div>
     </div>
@@ -197,6 +176,12 @@
     <script>
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        }
+
+        // 检查本地存储的暗黑模式设置
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
         }
     </script>
 </body>
