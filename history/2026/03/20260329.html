@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环球新闻 - 2026年03月29日 | 技术博客</title>
+    <meta name="description" content="2026年03月29日全球10大热点新闻，涵盖科技、政治、军事、汽车等领域的最新动态">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white;
+            --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8;
+            --tag-color: #1976d2;
+            --footer-bg: #f8f9fa;
+            --footer-color: #6c757d;
+            --nav-bg: white;
+            --nav-text: #333;
+            --border-color: rgba(0,0,0,0.1);
+        }
+
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e;
+            --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c;
+            --tag-color: #64b5f6;
+            --footer-bg: #16213e;
+            --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38;
+            --nav-text: #e0e0e0;
+            --border-color: rgba(255,255,255,0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar {
+            background: var(--nav-bg);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--nav-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--nav-bg);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--nav-text);
+            transition: color 0.3s;
+        }
+
+        .hero .date {
+            font-size: 1.2em;
+            color: var(--nav-text);
+            opacity: 0.7;
+            transition: color 0.3s;
+        }
+
+        .hero .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+            padding: 40px 30px;
+            background: var(--container-bg);
+        }
+
+        .news-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-title {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+
+        .news-summary {
+            color: var(--text-color);
+            opacity: 0.8;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .news-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 12px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .footer {
+            background: var(--footer-bg);
+            color: var(--footer-color);
+            text-align: center;
+            padding: 30px;
+            border-top: 2px solid var(--border-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dark-mode-toggle {
+            cursor: pointer;
+            padding: 10px 15px;
+            background: var(--tag-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--tag-color);
+            font-size: 1em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+                padding: 20px 15px;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">📰 环球新闻</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../about.html">关于</a></li>
+                <li><a href="../contact.html">联系</a></li>
+                <li><a href="../history.html">历史</a></li>
+                <li><a href="../rss.xml">RSS</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>🌍 世界十大新闻</h1>
+            <p class="date">2026年03月29日 · 全球热点速递</p>
+            <a href="../index.html" class="back-link">← 返回今日新闻</a>
+        </section>
+
+        <section class="news-grid">
+            
+    <article class="news-card" data-news-id="1">
+        <div class="news-image">
+            <img src="../../images/2026/03/20260329/news_-98.png" alt="根据2026年3月26日的最新资讯，今天的热点新闻素材主要 ... - 今日头条" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">根据2026年3月26日的最新资讯，今天的热点新闻素材主要 ... - 今日头条</h3>
+            <p class="news-summary"># 根据2026年3月26日的最新资讯，今天的热点新闻素材主要集中在. · COMEX黄金期货收报4552.30美元/盎司，涨幅3.41%. · 商业航天：SpaceX拟募资超750亿美元，估值1.25万亿美元，最快本周提交IPO申请. · 2025年度“中国科学十大进展”发布：月背演化历史、可控核聚变“亿度”运行等入选. · 幼儿园食品安全新规征求意见：园长负责制、“日管控、周排查、月调度”. </p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="2">
+        <div class="news-image">
+            <img src="../../images/2026/03/20260329/news_-97.png" alt="29日今日头条新闻最全新消息- 抖音 - Douyin" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">29日今日头条新闻最全新消息- 抖音 - Douyin</h3>
+            <p class="news-summary">29日今日头条新闻最全新消息 ; 横扫千军 · 1小时前 · #国际局势 #热点新闻 ; 闻听快讯 · 14小时前 · #每日新闻 #今日新闻 ; 每日热点汇 · 18小时前 · #国际形势分析#央视新闻</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="3">
+        <div class="news-image">
+            <img src="../../images/2026/03/20260329/news_-96.png" alt="国际新闻- 美国之音中文网" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">国际新闻- 美国之音中文网</h3>
+            <p class="news-summary">## 无障碍链接. 美国 中国 美中关系 社论 热点视频. 中国时间 21:55 2026年3月28日 星期六. # 国际新闻. * 美国国务卿马尔科·卢比奥在参加完七国集团(G7)外长会议后在法国巴黎郊外的勒布尔热机场启程前向媒体发表讲话。(2026年3月27日). * #### 卢比奥：美国预计将在“数周内”结束与以色列对伊朗政权的联合行动，且“无需地面部队”. 美国国务卿马尔科·卢比奥(Ma</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="4">
+        <div class="news-image">
+            <img src="../../images/2026/03/20260329/news_-95.png" alt="2#全球十大新闻# 026年3月重大事件综述：交通革新与科技突破彰显发" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">2#全球十大新闻# 026年3月重大事件综述：交通革新与科技突破彰显发</h3>
+            <p class="news-summary"># 全球十大新闻. 导语： 2026年3月，中国在交通航运、跨境往来及航天发射领域接连取得突破性进展，从绿色能源的创新应用到国际交流的便利化升级，再到航天技术的精准突破，全方位展现了中国高质量发展的强劲动能。. 本月，山东港口青岛港顺利完成两艘国际航行船舶的绿色甲醇“船对船”加注作业，成为北方首个实现该服务常态化的港口。作业采用“边作业、边加注”模式，在不影响码头正常生产的前提下，有效降低航运碳排</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="5">
+        <div class="news-image">
+            <img src="../../images/2026/03/20260329/news_-94.png" alt="即時| 世界新聞網" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">即時| 世界新聞網</h3>
+            <p class="news-summary">## [巴黎美國銀行驚傳恐襲 嫌試圖引爆土製炸彈被捕](https://www.worldjournal.com/wj/story/121480/9409129?from=wj_msg "巴黎美國銀行驚傳恐襲 嫌試圖引爆土製炸彈被捕"). ## [李昌鈺因腦瘤離世 去年確診](https://www.worldjournal.com/wj/story/121469/9409117?from=wj_</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="6">
+        <div class="news-image">
+            <img src="../../images/2026/03/20260329/news_-93.png" alt="以真实为核心，今日头条2025治理白皮书交出成绩单 - 中国新闻网" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">以真实为核心，今日头条2025治理白皮书交出成绩单 - 中国新闻网</h3>
+            <p class="news-summary">安徽|北京|重庆|福建|甘肃| 贵州|广东|广西|海南|河北| 河南| 湖北|湖南|黑龙江|江苏|江西| 吉林| 辽宁|内蒙古|宁夏|青海|山东| 山西| 陕西|上海|四川|天津|新疆| 兵团| 云南|浙江. 高层*|* 人事*|* 反腐*|* 深度*|* 两岸*|* 科教*|* 军事. 中外对话*|*世界观*|*广角镜*|*Z世代*|*洋腔队*|*舆论场*|*新漫评*|*思享家*|*. 宏观*|</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="7">
+        <div class="news-image">
+            <img src="../../images/2026/03/20260329/news_-92.png" alt="新年前夕普京官邸遭袭2026俄乌冲突会否迎来“终结”？20260101" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">新年前夕普京官邸遭袭2026俄乌冲突会否迎来“终结”？20260101</h3>
+            <p class="news-summary">无内容</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="8">
+        <div class="news-image">
+            <img src="../../images/2026/03/20260329/news_-91.png" alt="国际新闻| 大纪元" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">国际新闻| 大纪元</h3>
+            <p class="news-summary">【军事情报局】A10攻击机轰炸 地面目标无处逃【军事情报局】A10攻击机轰炸 地面目标无处逃. 密歇根大学频爆中国留学生案 议员：应加强审查密歇根大学频爆中国留学生案 议员：应加强审查. 老虎‧伍兹发生翻车事故 涉嫌DUI被捕老虎‧伍兹发生翻车事故 涉嫌DUI被捕. 分析：中共禁Manus两高管出境 会自砸脚分析：中共禁Manus两高管出境 会自砸脚. 中共指控墨西哥设壁垒 墨国：关税是必要防护中</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="9">
+        <div class="news-image">
+            <img src="../../images/2026/03/20260329/news_-90.png" alt="Google 新闻" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">Google 新闻</h3>
+            <p class="news-summary">[新闻](./?hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans). [首页](./home?hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans). [中国](./topics/CAAqJggKIiBDQkFTRWdvSkwyMHZNR1F3TlhjekVnVjZhQzFEVGlnQVAB?hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans). [全球]</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="10">
+        <div class="news-image">
+            <img src="../../images/2026/03/20260329/news_-89.png" alt="國際- BBC News 中文" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">國際- BBC News 中文</h3>
+            <p class="news-summary">*   ![Image 2: 在德黑蘭舉行的集會上，伊朗民眾揮舞著國旗，並舉著該國新任最高領袖穆傑塔巴·哈梅內伊的照片。](https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/d671/live/8438bc10-2888-11f1-934f-036468834728.jpg.webp)   ## [分析：伊朗拒絕與美國談判，反映不信任](https://w</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 环球新闻 | 技术博客 | GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
