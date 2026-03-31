@@ -14,6 +14,7 @@
 
         /* 深色模式变量 */
         :root {
+            --bg-image: url('images/website-background-8k.png');
             --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --container-bg: white;
             --text-color: #333;
@@ -33,7 +34,7 @@
 
         .dark-mode {
             --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            --container-bg: #1a1a2e;
+            --container-bg: rgba(26, 26, 46, 0.85);
             --text-color: #e0e0e0;
             --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
             --tag-bg: #1a3a5c;
@@ -52,7 +53,8 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.8;
-            background: var(--bg-gradient);
+            background: var(--bg-image) no-repeat center center fixed;
+            background-size: cover;
             min-height: 100vh;
             padding: 20px;
             color: var(--text-color);
@@ -62,7 +64,7 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background: var(--container-bg);
+            background: rgba(255, 255, 255, 0.85);
             border-radius: 16px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             overflow: hidden;
