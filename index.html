@@ -14,6 +14,7 @@
 
         /* 深色模式变量 */
         :root {
+            --bg-image: url('images/website-background-8k.png');
             --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --container-bg: white;
             --text-color: #333;
@@ -52,7 +53,8 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.8;
-            background: var(--bg-gradient);
+            background: var(--bg-image) no-repeat center center fixed;
+            background-size: cover;
             min-height: 100vh;
             padding: 20px;
             color: var(--text-color);
@@ -62,7 +64,7 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background: var(--container-bg);
+            background: rgba(255, 255, 255, 0.85);
             border-radius: 16px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             overflow: hidden;
@@ -175,23 +177,58 @@
             50% { transform: translate(-30%, -30%) scale(1.1); }
         }
 
+        .cover-section {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .cover-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cover-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            padding: 40px 30px;
+            color: white;
+        }
+
+        .cover-title {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .cover-subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .cover-section {
+                height: 300px;
+            }
+            .cover-title {
+                font-size: 2em;
+            }
+            .cover-subtitle {
+                font-size: 1em;
+            }
+        }
+
         .content {
             padding: 40px 30px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            position: relative;
-            z-index: 1;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-
-        .date {
-            font-size: 1.2em;
-            opacity: 0.95;
-            position: relative;
-            z-index: 1;
         }
 
         .news-grid {
@@ -362,12 +399,15 @@
     </div>
 
     <div class="container">
-        <header>
-            <h1>🌍 世界十大新闻</h1>
-            <div class="date">2026年04月01日 · 全球热点速递</div>
-        </header>
-
         <div class="content">
+            <div class="cover-section">
+                <img src="images/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">世界十大新闻 · 每日更新</p>
+                </div>
+            </div>
+
             <div class="warning">
                 ⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。
             </div>
@@ -375,11 +415,11 @@
             <div class="news-grid" id="newsGrid">
 
                 <div class="news-card">
-                    <img src="images/news_102.png" alt="即時| 世界新聞網" class="news-image">
+                    <img src="images/news_102.png" alt="全球 - 聯合新聞網" class="news-image">
                     <div class="news-content">
                         <span class="news-number">1</span>
-                        <h3 class="news-title">即時| 世界新聞網</h3>
-                        <p class="news-summary">## [不只軍工院士遭除名 余茂春：中頂尖科學家接連離奇死亡](https://www.worldjournal.com/wj/story/121474/9414869?from=wj_msg "不只軍工院士遭除名 余茂春：中頂尖科學家接連離奇死亡"). ## [密西根大學中國籍博士後 傳遭美方約談後跳樓自殺](https://www.worldjournal.com/wj/story/12146</p>
+                        <h3 class="news-title">全球 - 聯合新聞網</h3>
+                        <p class="news-summary">... 2026-04-01 11:32. More. 國際焦點. 降低對陸依賴！高市今與馬克宏會談日法將就稀土 ... 佛州機場改名「川普總統國際機場」 7月1日生效 · 美國總統川普二度上任後</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
@@ -387,11 +427,11 @@
                 </div>
 
                 <div class="news-card">
-                    <img src="images/news_103.png" alt="大头条集锦| 大纪元 - 大紀元" class="news-image">
+                    <img src="images/news_103.png" alt="华尔街日报中文版2026年04月01日的文章列表" class="news-image">
                     <div class="news-content">
                         <span class="news-number">2</span>
-                        <h3 class="news-title">大头条集锦| 大纪元 - 大紀元</h3>
-                        <p class="news-summary">大纪元新闻网大头条集锦集中了大纪元网上发表的全球政治、经济重大新闻及各地华人社区最关注新闻，以及生活消费、文学世界、娱乐体育等副刊类的精华文章。</p>
+                        <h3 class="news-title">华尔街日报中文版2026年04月01日的文章列表</h3>
+                        <p class="news-summary">热门文章 · 1.7万美军压境对伊朗战事意味着什么 · 日本本地人弃置的“空屋”正成为外国买家抢手货 · 特朗普告知助手：即使霍尔木兹海峡没重开也愿结束战事 · 想取悦特朗普又忌惮</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
@@ -399,10 +439,58 @@
                 </div>
 
                 <div class="news-card">
-                    <img src="images/news_104.png" alt="国际新闻 - 美国之音" class="news-image">
+                    <img src="images/news_104.png" alt="特朗普：想夺取伊朗石油伊朗：波斯湾鲨鱼正等着美军20260330" class="news-image">
                     <div class="news-content">
                         <span class="news-number">3</span>
-                        <h3 class="news-title">国际新闻 - 美国之音</h3>
+                        <h3 class="news-title">特朗普：想夺取伊朗石油伊朗：波斯湾鲨鱼正等着美军20260330</h3>
+                        <p class="news-summary">ly/3MRSiJx 《新闻热点精选》播放列表：https://t.ly/4C_em □□更多精彩 ... '26.04.01【豐富│東南西北龍鳳配】美國打不下去了！經濟危機過了</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_105.png" alt="新浪马斯克热点小时报丨2026年04月01日08时" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">4</span>
+                        <h3 class="news-title">新浪马斯克热点小时报丨2026年04月01日08时</h3>
+                        <p class="news-summary"># 新浪看点. # 新浪马斯克热点小时报丨2026年04月01日08时\_今日实时马斯克热点速递. ## 1、财经早报：特朗普称将在两三周内结束对伊战争，伊朗：将苹果谷歌特斯拉等列为打击目标丨2026年4月1日. ## 1、财经早报：特朗普称将在两三周内结束对伊战争，伊朗：将苹果谷歌特斯拉等列为打击目标丨2026年4月1日. 【重磅】不惧波动！把握A股T+0交易机会，当天买卖，赚了就跑（附精选股票</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_106.png" alt="大头条集锦| 大纪元 - 大紀元" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">5</span>
+                        <h3 class="news-title">大头条集锦| 大纪元 - 大紀元</h3>
+                        <p class="news-summary">法律学者：移民美国造假将面临倒查. 04月01日 人气365. 法律学者：移民美国造假将面临倒查 · 分析：日本参与美菲军演再写历史吓阻中共. 04月01日 人气265.</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_107.png" alt="即時| 世界新聞網" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">6</span>
+                        <h3 class="news-title">即時| 世界新聞網</h3>
+                        <p class="news-summary">## [全球股市上演「荷莫茲希望」行情 分析師警告3變數還在](https://www.worldjournal.com/wj/story/121477/9416038?from=wj_msg "全球股市上演「荷莫茲希望」行情 分析師警告3變數還在"). ## [中東這國可能正式參戰打伊朗 助川普「動武打通荷莫茲」](https://www.worldjournal.com/wj/story/12</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_108.png" alt="国际新闻- 美国之音中文网" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">7</span>
+                        <h3 class="news-title">国际新闻- 美国之音中文网</h3>
                         <p class="news-summary"># 国际新闻 - 美国之音中文网. *   [跳转到内容](https://www.voachinese.com/p/6143.html#content). *   [跳转到导航](https://www.voachinese.com/p/6143.html#navigation). *   [跳转到检索](https://www.voachinese.com/p/6143.html#txtHea</p>
                         <div>
                             <span class="tag">新闻</span>
@@ -411,59 +499,11 @@
                 </div>
 
                 <div class="news-card">
-                    <img src="images/news_105.png" alt="Google 新聞" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">4</span>
-                        <h3 class="news-title">Google 新聞</h3>
-                        <p class="news-summary">[新聞](https://news.google.com/?hl=zh-TW&gl=TW&ceid=TW%3Azh-Hant). [新聞](https://news.google.com/?hl=zh-TW&gl=TW&ceid=TW%3Azh-Hant). [首頁](https://news.google.com/home?hl=zh-TW&gl=TW&ceid=TW%3Azh-Hant). [</p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="images/news_106.png" alt="头条- 中国日报网" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">5</span>
-                        <h3 class="news-title">头条- 中国日报网</h3>
-                        <p class="news-summary">### 跟着习近平读典籍：《四库全书》. 习近平始终牵挂着中华典籍的保护、修复与整理工作，他曾说“盛世修文，我们这个时代，国家繁荣、社会平安稳定，有传承民族文化的意愿和能力，要把这件大事办好。”在习近平的关心推动下，有许多中华优秀传统文化典籍得以很好地修复保护。**2026-03-31 12:42**. ### 春天，跟着总书记植下新绿播种希望. ### 拾光纪·“植”此青绿，跟着总书记共建美丽家</p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="images/news_107.png" alt="美軍突啓動不可能任務！直擊伊朗地下核命脈！特種部隊連夜突襲 ..." class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">6</span>
-                        <h3 class="news-title">美軍突啓動不可能任務！直擊伊朗地下核命脈！特種部隊連夜突襲 ...</h3>
-                        <p class="news-summary">美軍突啓動不可能任務！直擊伊朗地下核命脈！特種部隊連夜突襲德黑蘭！中共軍演出大事！煙榴彈誤射觀禮區！中共領導嚇破膽當場抱頭逃跑！！！【熱點觀察】.</p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="images/news_108.png" alt="新华网_让新闻离你更近" class="news-image">
-                    <div class="news-content">
-                        <span class="news-number">7</span>
-                        <h3 class="news-title">新华网_让新闻离你更近</h3>
-                        <p class="news-summary">新华每日电讯  经济参考  瞭望  半月谈  中证报  上证报  中国记者  中国名牌  中国传媒科技  环球  瞭望东方周刊   参考消息  新华出版社. 北京  天津  河北  山西  辽宁  吉林  上海  江苏  浙江  安徽  福建  江西  山东  河南  湖北  湖南  广东  广西  海南  重庆  四川  贵州  云南  西藏  陕西  甘肃  青海  宁夏  新疆  内蒙古  </p>
-                        <div>
-                            <span class="tag">新闻</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <img src="images/news_109.png" alt="头条：普京称世界正变得更加危险但未提及马杜罗和伊朗 - ABC News" class="news-image">
+                    <img src="images/news_109.png" alt="Google 新闻" class="news-image">
                     <div class="news-content">
                         <span class="news-number">8</span>
-                        <h3 class="news-title">头条：普京称世界正变得更加危险但未提及马杜罗和伊朗 - ABC News</h3>
-                        <p class="news-summary">俄罗斯总统普京周四（1月15日）表示，国际局势正在恶化，世界正变得更加危险，但他对委内瑞拉和伊朗的局势却保持沉默。 迄今为止，普京尚未就美国推翻委内瑞拉</p>
+                        <h3 class="news-title">Google 新闻</h3>
+                        <p class="news-summary">[新闻](https://news.google.com/?hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans). [新闻](https://news.google.com/?hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans). [登录](https://accounts.google.com/ServiceLogin?passive=1209600&continue</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
@@ -471,11 +511,11 @@
                 </div>
 
                 <div class="news-card">
-                    <img src="images/news_110.png" alt="Google 新聞" class="news-image">
+                    <img src="images/news_110.png" alt="法广- 时事与新闻直播- RFI - 法国国际广播电台" class="news-image">
                     <div class="news-content">
                         <span class="news-number">9</span>
-                        <h3 class="news-title">Google 新聞</h3>
-                        <p class="news-summary"># 您的摘要. WINTER WEATHER ADVISORY IN EFFECT FROM 6 PM TUESDAY TO 9 PM MDT WEDNESDAY ABOVE 9000 FEET \* WHAT...Snow expected above 9000 feet. Total snow accumulations between 6 an 12 ... ### 焦點新聞. 【持續更新】</p>
+                        <h3 class="news-title">法广- 时事与新闻直播- RFI - 法国国际广播电台</h3>
+                        <p class="news-summary">## 伊朗总统： 伊朗有结束战争的意愿， 但要得到不再爆发冲突的保证 Audio content. ## “中国未必能成为伊朗战争的经济赢家” Audio content. ## 内塔尼亚胡： 以色列已经崛起为“地区强国”，将继续对德黑兰发动军事行动 Audio content. ## 黎巴嫩强烈谴责以色列“新的占领黎巴嫩领土”的计划 Audio content. Le Premier minis</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
@@ -483,11 +523,11 @@
                 </div>
 
                 <div class="news-card">
-                    <img src="images/news_111.png" alt="一週大事| 新聞專題| 中央社CNA" class="news-image">
+                    <img src="images/news_111.png" alt="头条- 中国日报网" class="news-image">
                     <div class="news-content">
                         <span class="news-number">10</span>
-                        <h3 class="news-title">一週大事| 新聞專題| 中央社CNA</h3>
-                        <p class="news-summary">本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。. Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? 壽險避險比率45.1%新低　</p>
+                        <h3 class="news-title">头条- 中国日报网</h3>
+                        <p class="news-summary">### 跟着习近平读典籍：《四库全书》. 习近平始终牵挂着中华典籍的保护、修复与整理工作，他曾说“盛世修文，我们这个时代，国家繁荣、社会平安稳定，有传承民族文化的意愿和能力，要把这件大事办好。”在习近平的关心推动下，有许多中华优秀传统文化典籍得以很好地修复保护。**2026-03-31 12:42**. ### 春天，跟着总书记植下新绿播种希望. ### 拾光纪·“植”此青绿，跟着总书记共建美丽家</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
