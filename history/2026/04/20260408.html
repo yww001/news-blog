@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环球新闻 - 2026年04月08日 | 技术博客</title>
+    <meta name="description" content="2026年04月08日全球10大热点新闻，涵盖科技、政治、军事、汽车等领域的最新动态">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white;
+            --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8;
+            --tag-color: #1976d2;
+            --footer-bg: #f8f9fa;
+            --footer-color: #6c757d;
+            --nav-bg: white;
+            --nav-text: #333;
+            --border-color: rgba(0,0,0,0.1);
+        }
+
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e;
+            --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c;
+            --tag-color: #64b5f6;
+            --footer-bg: #16213e;
+            --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38;
+            --nav-text: #e0e0e0;
+            --border-color: rgba(255,255,255,0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar {
+            background: var(--nav-bg);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--nav-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--nav-bg);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--nav-text);
+            transition: color 0.3s;
+        }
+
+        .hero .date {
+            font-size: 1.2em;
+            color: var(--nav-text);
+            opacity: 0.7;
+            transition: color 0.3s;
+        }
+
+        .hero .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+            padding: 40px 30px;
+            background: var(--container-bg);
+        }
+
+        .news-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-title {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+
+        .news-summary {
+            color: var(--text-color);
+            opacity: 0.8;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .news-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 12px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .footer {
+            background: var(--footer-bg);
+            color: var(--footer-color);
+            text-align: center;
+            padding: 30px;
+            border-top: 2px solid var(--border-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dark-mode-toggle {
+            cursor: pointer;
+            padding: 10px 15px;
+            background: var(--tag-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--tag-color);
+            font-size: 1em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+                padding: 20px 15px;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">首页</a></li>
+                <li><a href="../../../about.html">关于</a></li>
+                <li><a href="../../../contact.html">联系</a></li>
+                <li><a href="../../../history.html">历史</a></li>
+                <li><a href="../../../rss.xml">RSS</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>🌍 世界十大新闻</h1>
+            <p class="date">2026年04月08日 · 全球热点速递</p>
+            <a href="../../../index.html" class="back-link">← 返回今日新闻</a>
+        </section>
+
+        <section class="news-grid">
+            
+    <article class="news-card" data-news-id="1">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260408/news_102.png" alt="新浪国际热点小时报丨2026年04月05日12时_今日实时国际热点速递" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">新浪国际热点小时报丨2026年04月05日12时_今日实时国际热点速递</h3>
+            <p class="news-summary">来源：环球【环球网报道】据日本《读卖新闻》4月4日报道，一名41岁伊朗籍男子4月3日死亡，司法解剖显示他身受多处外伤。此前有目击者称该男子遭多人用铁管等</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="2">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260408/news_103.png" alt="华尔街日报中文版2026年04月08日的文章列表" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">华尔街日报中文版2026年04月08日的文章列表</h3>
+            <p class="news-summary">热门文章 · 杰米·戴蒙2026年最忧心的五大风险 · 中国如何助伊朗抵御制裁冲击，并为其战争机器“输血” · 2026年可能重创美国经济——或拯救经济的五大风险 · 美以的下一个打击目标：</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="3">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260408/news_104.png" alt="头条-国际| 新闻决定影响力|《每日经济新闻》报社旗下网站" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">头条-国际| 新闻决定影响力|《每日经济新闻》报社旗下网站</h3>
+            <p class="news-summary"># 头条. *  ​中国资产成美以伊冲突“避风港”；伊朗悬赏活捉美军飞行员，已有13名美军死亡；Open  12:31:05. *  专访驾驶张雪机车夺冠的34岁法国“流浪车手”瓦伦丁·德比斯：因为张雪的一句话，我确  15:54:05. *  51万行Claude Code源代码泄露，电子宠物和AI助手遭提前曝光，开发者“抄作业”恐面临法  18:29:55. *  独家对话！带崩全球存储股的谷</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="4">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260408/news_105.png" alt="世界新聞網: 一網帶您看遍世界" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">世界新聞網: 一網帶您看遍世界</h3>
+            <p class="news-summary">2026年世足賽即將開踢。(取材自X平台) 中國人瘋世足賽黃牛票炒破18萬是FIFA官方最高價2倍. 薩倫托橄欖樹在十多年前大規模感染葉緣焦枯 義大利薩倫托「採食文化」獨特野</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="5">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260408/news_106.png" alt="国际新闻- 美国之音中文网" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">国际新闻- 美国之音中文网</h3>
+            <p class="news-summary">在国际社会的高度关注之下，朝鲜领导人金正恩与俄罗斯总统弗拉基米尔·普京普京星期三结束被朝鲜官媒称为“历史性会晤”的首脑峰会，全面加强两国在经济和军事安全等领域的</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="6">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260408/news_107.png" alt="國際| 世界新聞網" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">國際| 世界新聞網</h3>
+            <p class="news-summary">### 我的頻道. ## NCAA／密西根力克康乃狄克奪隊史第2冠 暌違37年再登王座. ## 川普通牒違反國際法？聯國喊震驚 QA解釋他恐涉戰爭罪. ## {{item.title}}. ### {{subItem.title}}. ## 國際最新. ## 中東局勢. ## 俄烏戰爭. ## 大國角力場. ## 國際大社會. 饒舌歌手「肯爺」肯伊威斯特（Kanye West）7月將在英國倫敦的音</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="7">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260408/news_108.png" alt="国际新闻| 大纪元" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">国际新闻| 大纪元</h3>
+            <p class="news-summary">F-15E军官获救凸显美军200年传统 华人热议F-15E军官获救凸显美军200年传统 华人热议. 最后期限将至 伊朗促平民当“肉盾”护电厂最后期限将至 伊朗促平民当“肉盾”护电厂. 【时事金扫描】伊朗高层内乱 总统也被威胁【时事金扫描】伊朗高层内乱 总统也被威胁. 川普放话退北约 专家：美欧不致于决裂川普放话退北约 专家：美欧不致于决裂. 川普：伊朗若不妥协 可能一夜之间覆灭川普：伊朗若不妥协 </p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="8">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260408/news_109.png" alt="Google 新闻" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">Google 新闻</h3>
+            <p class="news-summary"># Google 新闻. [新闻](https://news.google.com/?hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans). [新闻](https://news.google.com/?hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans). [](https://www.google.com/intl/zh-CN/about/products?tab=n</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="9">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260408/news_110.png" alt="國際- BBC News 中文" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">國際- BBC News 中文</h3>
+            <p class="news-summary">*   ![Image 2: 設計圖片：中國國旗（後）與法槌（前）](https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/a4d7/live/628cade0-30fa-11f1-934f-036468834728.jpg.webp)   ## [法籍華裔毒販囚禁20年後被執行死刑 巴黎「震驚」](https://www.bbc.com/zhongwen/a</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="10">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260408/news_111.png" alt="日经中文网--日本经济新闻中文版" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">日经中文网--日本经济新闻中文版</h3>
+            <p class="news-summary"># 日经中文网 NIKKEI——日本经济新闻中文版. :   最大的焦点是中东局势的紧张将如何产生影响。中国是世界上最大的原油进口国，但调查中很多观点认为中国具有一定的“承受力”，称中国是受影响最小的国家之一……. 日本经济新闻调查了2025年4月至2026年1月的美国贸易统计数据。拥有全球最大消费市场的美国的进口额比上年同期减少3.6%。美国和中国大陆之间的货物交易减少近3成。 日本对美出口额减</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 环球新闻 | 技术博客 | GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
