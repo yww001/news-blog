@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环球新闻 - 2026年04月09日 | 技术博客</title>
+    <meta name="description" content="2026年04月09日全球10大热点新闻，涵盖科技、政治、军事、汽车等领域的最新动态">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white;
+            --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8;
+            --tag-color: #1976d2;
+            --footer-bg: #f8f9fa;
+            --footer-color: #6c757d;
+            --nav-bg: white;
+            --nav-text: #333;
+            --border-color: rgba(0,0,0,0.1);
+        }
+
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e;
+            --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c;
+            --tag-color: #64b5f6;
+            --footer-bg: #16213e;
+            --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38;
+            --nav-text: #e0e0e0;
+            --border-color: rgba(255,255,255,0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar {
+            background: var(--nav-bg);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--nav-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--nav-bg);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--nav-text);
+            transition: color 0.3s;
+        }
+
+        .hero .date {
+            font-size: 1.2em;
+            color: var(--nav-text);
+            opacity: 0.7;
+            transition: color 0.3s;
+        }
+
+        .hero .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+            padding: 40px 30px;
+            background: var(--container-bg);
+        }
+
+        .news-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-title {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+
+        .news-summary {
+            color: var(--text-color);
+            opacity: 0.8;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .news-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 12px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .footer {
+            background: var(--footer-bg);
+            color: var(--footer-color);
+            text-align: center;
+            padding: 30px;
+            border-top: 2px solid var(--border-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dark-mode-toggle {
+            cursor: pointer;
+            padding: 10px 15px;
+            background: var(--tag-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--tag-color);
+            font-size: 1em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+                padding: 20px 15px;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">首页</a></li>
+                <li><a href="../../../about.html">关于</a></li>
+                <li><a href="../../../contact.html">联系</a></li>
+                <li><a href="../../../history.html">历史</a></li>
+                <li><a href="../../../rss.xml">RSS</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>🌍 世界十大新闻</h1>
+            <p class="date">2026年04月09日 · 全球热点速递</p>
+            <a href="../../../index.html" class="back-link">← 返回今日新闻</a>
+        </section>
+
+        <section class="news-grid">
+            
+    <article class="news-card" data-news-id="1">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260409/news_102.png" alt="国际新闻 - 美国之音" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">国际新闻 - 美国之音</h3>
+            <p class="news-summary">美国 中国 美中关系 社论 热点视频. 中国时间4:20 2026年4月9日星期四. 国际新闻. 白宫新闻秘书莱维特在白宫举行记者会。</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="2">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260409/news_103.png" alt="头条-国际 | 新闻决定影响力 |《每日经济新闻》报社旗下网站" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">头条-国际 | 新闻决定影响力 |《每日经济新闻》报社旗下网站</h3>
+            <p class="news-summary"># 头条. *  ​中国资产成美以伊冲突“避风港”；伊朗悬赏活捉美军飞行员，已有13名美军死亡；Open  12:31:05. *  专访驾驶张雪机车夺冠的34岁法国“流浪车手”瓦伦丁·德比斯：因为张雪的一句话，我确  15:54:05. *  51万行Claude Code源代码泄露，电子宠物和AI助手遭提前曝光，开发者“抄作业”恐面临法  18:29:55. *  独家对话！带崩全球存储股的谷</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="3">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260409/news_104.png" alt="【時事金掃描】伊朗跪了霍爾木兹海峽開通金正恩「跳船」了| 川普" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">【時事金掃描】伊朗跪了霍爾木兹海峽開通金正恩「跳船」了| 川普</h3>
+            <p class="news-summary"># 【時事金掃描】伊朗跪了 霍爾木兹海峽開通 金正恩「跳船」了. 【新唐人北京時間2026年04月08日訊】大家好，歡迎收看「時事金掃描」。我是金然。今天是川普對伊朗政權給出最後通牒的日子，在「劍拔弩張」之下各方的鬥智鬥勇簡直是目不暇接。對了，「時事金掃描」YouTube頻道今天也剛好漲到40萬訂閲，除了感恩，還是感恩，謝謝大家的一路陪伴和支持。這是「直擊伊朗大戰」系列特別節目的第35集。要想瞭解</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="4">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260409/news_105.png" alt="全球被骗？研究机构揭开霍尔木兹海峡被封真相| 油轮| 国际油价| 伊朗" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">全球被骗？研究机构揭开霍尔木兹海峡被封真相| 油轮| 国际油价| 伊朗</h3>
+            <p class="news-summary"># 全球被骗？研究机构揭开霍尔木兹海峡被封真相. 【新唐人北京时间2026年04月07日讯】一份最新调查颠覆了外界认知，霍尔木兹海峡其实并没有被全面封锁。研究显示，大量的油轮通过主动关闭应答器或伪造GPS等方式“隐身航行”，形成一层电子迷雾，误导市场判断。分析指出，伊朗革命卫队通过这种操作，一边制造紧张氛围推高油价，一边收取通行费牟利。报告发布后，国际油价已明显回落。. 根据美国独立投资研究机构“</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="5">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260409/news_106.png" alt="【新闻大家谈】伊朗局势剧变美炸岛50次以色列提前动手！" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">【新闻大家谈】伊朗局势剧变美炸岛50次以色列提前动手！</h3>
+            <p class="news-summary"># 【新闻大家谈】伊朗局势剧变 美炸岛50次 以色列提前动手！. 主持人：美国总统川普周一（4月6日）发出最后通牒，如果在美东时间周二（4月7日）晚上8点前，伊朗不达成协议，就会在12点前摧毁伊朗的发电厂、桥梁等重要基础设施。而就在一个小时多前，美伊局势出现重大翻转。川普发贴文把行动时间再次延后两周。 下面我们来连线本台记者张亮，张亮您好，原本最后通牒的美东8点，也就是伊朗凌晨的3点30分截止时间</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="6">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260409/news_107.png" alt="世界新聞網: 一網帶您看遍世界" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">世界新聞網: 一網帶您看遍世界</h3>
+            <p class="news-summary">長島連環命案重大轉折霍伊爾曼突認殺8人15年懸案收尾 · 一洲焦點／停火兩周是緩兵之計？ · 埋怨北約背棄美國人民川普:他們沒通過考驗 · 停火兩周是緩兵之計？ · 以襲黎巴嫩伊朗</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="7">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260409/news_108.png" alt="国际新闻| 大纪元" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">国际新闻| 大纪元</h3>
+            <p class="news-summary">美国会议员：中共是全球冲突“推动者”美国会议员：中共是全球冲突“推动者”. 美伊停火两周 油价回落 亚股应声大涨美伊停火两周 油价回落 亚股应声大涨. 川普：美同意休战两周 伊开放霍尔木兹海峡川普：美同意休战两周 伊开放霍尔木兹海峡. 小摩示警金融风险 学者：中国因素值得关注小摩示警金融风险 学者：中国因素值得关注. 【十字路口】美军砸4亿救一人 中共一键灭口【十字路口】美军砸4亿救一人 中共一键</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="8">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260409/news_109.png" alt="全球| 聯合新聞網" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">全球| 聯合新聞網</h3>
+            <p class="news-summary">## [川普稱 「聽說」中方促使伊朗談判](/news/story/124061/9430280?from=udn-catelistnews_ch2 "川普稱 「聽說」中方促使伊朗談判"). [美國總統川普七日宣布與伊朗有條件停火二周，隨後表示他認為是中國促使伊朗同意談判。大陸外交部表示，伊朗戰事爆發以來，大陸外交部長王毅已與相關國家外長先後廿六次通話。](/news/story/124061/9</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="9">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260409/news_110.png" alt="4.7 (廣東話AI＋中文字幕）侵侵發火威脅將伊朗夷為平地 - YouTube" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">4.7 (廣東話AI＋中文字幕）侵侵發火威脅將伊朗夷為平地 - YouTube</h3>
+            <p class="news-summary">突發：伊朗跪低，停火兩周！ · 德黑蘭機場全毀伊高層逃生路被斷最詭異一幕浮現；中共反詐App變監控器翻牆收了個驗證碼… · 時事觀察集結號：戰爭，炸開了伊朗真面目.</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="10">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260409/news_111.png" alt="震驚！伊朗「馬賽克」戰法竟令停火協議瞬間變廢紙❗️以色列及 ..." loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">震驚！伊朗「馬賽克」戰法竟令停火協議瞬間變廢紙❗️以色列及 ...</h3>
+            <p class="news-summary">美國伊朗最新消息：震驚！伊朗「馬賽克」戰法竟令停火協議瞬間變廢紙❗️以色列及中東五國接連被轟炸❗️伊朗竟玩假封鎖騙全球？美國獨立研究機構重磅披露：霍爾木茲</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 环球新闻 | 技术博客 | GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
