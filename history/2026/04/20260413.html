@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环球新闻 - 2026年04月13日 | 技术博客</title>
+    <meta name="description" content="2026年04月13日全球10大热点新闻，涵盖科技、政治、军事、汽车等领域的最新动态">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white;
+            --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8;
+            --tag-color: #1976d2;
+            --footer-bg: #f8f9fa;
+            --footer-color: #6c757d;
+            --nav-bg: white;
+            --nav-text: #333;
+            --border-color: rgba(0,0,0,0.1);
+        }
+
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e;
+            --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c;
+            --tag-color: #64b5f6;
+            --footer-bg: #16213e;
+            --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38;
+            --nav-text: #e0e0e0;
+            --border-color: rgba(255,255,255,0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar {
+            background: var(--nav-bg);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--nav-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--nav-bg);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--nav-text);
+            transition: color 0.3s;
+        }
+
+        .hero .date {
+            font-size: 1.2em;
+            color: var(--nav-text);
+            opacity: 0.7;
+            transition: color 0.3s;
+        }
+
+        .hero .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+            padding: 40px 30px;
+            background: var(--container-bg);
+        }
+
+        .news-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-title {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+
+        .news-summary {
+            color: var(--text-color);
+            opacity: 0.8;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .news-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 12px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .footer {
+            background: var(--footer-bg);
+            color: var(--footer-color);
+            text-align: center;
+            padding: 30px;
+            border-top: 2px solid var(--border-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dark-mode-toggle {
+            cursor: pointer;
+            padding: 10px 15px;
+            background: var(--tag-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--tag-color);
+            font-size: 1em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+                padding: 20px 15px;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">首页</a></li>
+                <li><a href="../../../about.html">关于</a></li>
+                <li><a href="../../../contact.html">联系</a></li>
+                <li><a href="../../../history.html">历史</a></li>
+                <li><a href="../../../rss.xml">RSS</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>🌍 世界十大新闻</h1>
+            <p class="date">2026年04月13日 · 全球热点速递</p>
+            <a href="../../../index.html" class="back-link">← 返回今日新闻</a>
+        </section>
+
+        <section class="news-grid">
+            
+    <article class="news-card" data-news-id="1">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_102.png" alt="今天全世界都在看的新闻2026.4.1 - 今日头条" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">今天全世界都在看的新闻2026.4.1 - 今日头条</h3>
+            <p class="news-summary">据俄罗斯媒体报道，俄罗斯驻伊朗大使杰多夫31日在接受采访时表示，伊朗最高领袖穆杰塔巴·哈梅内伊目前身在伊朗，但“出于显而易见的原因”避免公开露面。杰多夫</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="2">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_103.png" alt="今天全世界都在看的新闻2026.4.2 - 今日头条" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">今天全世界都在看的新闻2026.4.2 - 今日头条</h3>
+            <p class="news-summary">特朗普发表全国讲话. 今天全世界都在看的新闻2026.4.2. 当地时间4月1日，美国总统特朗普发表讲话，自行宣称对伊朗战事取得“快速、决定性、压倒性胜利”。</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="3">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_104.png" alt="全球 - 聯合新聞網" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">全球 - 聯合新聞網</h3>
+            <p class="news-summary">... 2026-04-11 14:29. More. 國際焦點. 英女王生前擔心對話遭到孫子哈利密錄幫 ... 2026-04-11 00:00. More. 世界萬象. 哈日族注意！JR Pass票價10月1日起調漲官方平台</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="4">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_105.png" alt="新浪国际热点小时报丨2026年04月07日06时_今日实时国际热点速递" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">新浪国际热点小时报丨2026年04月07日06时_今日实时国际热点速递</h3>
+            <p class="news-summary">美国总统特朗普6日在白宫举行的新闻发布会上称，对伊朗的战事是否即将升级或接近结束，取决于伊朗对他设定的“最后期限”美国东部时间7日20时的回应。特朗普说</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="5">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_106.png" alt="截至2026年4月初，当前国际形势总体呈现“冲突交织、多极并行、秩序" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">截至2026年4月初，当前国际形势总体呈现“冲突交织、多极并行、秩序</h3>
+            <p class="news-summary">截至2026年4月初，当前国际形势总体呈现“冲突交织、多极并行、秩序重组、高不确定” 的复杂格局。核心特点是：地缘热点持续燃烧、经济复苏脆弱、科技与规则</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="6">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_107.png" alt="泰国头条新闻Thailand Headlines" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">泰国头条新闻Thailand Headlines</h3>
+            <p class="news-summary">财经头条 · 泰国财政部拟推300亿低息贷款支持能源转型 · 4月11, 2026 XU, JIA. 泰国头条新闻社讯4月10日，泰国副总理… 社会头条 · 曼谷ICONSIAM宋干节庆典盛大开幕 · 4月11,</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="7">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_108.png" alt="【新闻大家谈】突发！川普：坚决不要核武谈不成或斩首！" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">【新闻大家谈】突发！川普：坚决不要核武谈不成或斩首！</h3>
+            <p class="news-summary"># 【新闻大家谈】突发！川普：坚决不要核武 谈不成或斩首！. 【新唐人北京时间2026年04月11日讯】今日焦点：🔥全面作战：谈不拢就斩首 美军重置史上最强火力｜川普急逼伊放弃核武｜60亿神秘资金｜3200船只积堵霍尔木兹｜C-17运输机搭载超强护卫队｜上万军警｜. 新闻大家谈，谈真知灼见。大家好，我是扶摇，今天是4月10日，周五。. 本期节目的嘉宾是：台湾国防安全研究院研究员 沈明室博士；台湾大</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="8">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_109.png" alt="【新闻第一线】突发川普围歼北京共军集结上海| 美国| 伊朗| 谈判" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">【新闻第一线】突发川普围歼北京共军集结上海| 美国| 伊朗| 谈判</h3>
+            <p class="news-summary"># 【新闻第一线】突发 川普围歼北京 共军集结上海. 【新唐人北京时间2026年04月11日讯】今日焦点：万斯赴巴谈判，警告莫耍花招！川普预告：全球最强重置！伊最高领袖亲允停火？黑客送见面礼！伊卡死海峡，欲设数字收费站，永封锁敌国！川普亮剑中共，强断北京廉价石油朋友圈！“郑习会”密谈了什么？｜#新闻第一线. ## 万斯登上空军二号亲征巴基斯坦 警备空前. 观众朋友大家好，欢迎收看新闻第一线，我是韩</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="9">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_110.png" alt="美国相关多媒体报道" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">美国相关多媒体报道</h3>
+            <p class="news-summary">*   [![Image 8: “阿尔忒弥斯二号”机组人员开始为历史性探月任务后返回地球做准备 ](https://gdb.voanews.com/246aac55-2a89-444a-cf91-08de3bf6f1ff_tv_b1_w408_r1.jpg)](https://www.voachinese.com/a/artemis-ii-crew-begins-preparing-spacecr</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="10">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_111.png" alt="国际新闻- 美国之音中文网" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">国际新闻- 美国之音中文网</h3>
+            <p class="news-summary"># 国际新闻 - 美国之音中文网. Powered by [![Image 2: Google Translate](https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png)Translate](https://translate.google.com/). *   [跳转到内容](htt</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+        
+    
+    <article class="news-card" data-news-id="11">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_112.png" alt="即時 | 世界新聞網" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">即時 | 世界新聞網</h3>
+            <p class="news-summary">## [「空軍二號」飛抵巴基斯坦 美伊展開關鍵談判](https://www.worldjournal.com/wj/story/124278/9435619?from=wj_msg "「空軍二號」飛抵巴基斯坦 美伊展開關鍵談判"). ## [川習會前安排鄭習會 WSJ社論示警：川普勿上當](https://www.worldjournal.com/wj/story/124277/9435454?</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="12">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_113.png" alt="最强大重整！川普强硬表态：谈不成就炸平伊朗| 美伊谈判| 警告| 军舰" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">最强大重整！川普强硬表态：谈不成就炸平伊朗| 美伊谈判| 警告| 军舰</h3>
+            <p class="news-summary"># 最强大重整！川普强硬表态：谈不成就炸平伊朗. 【新唐人北京时间2026年04月11日讯】美伊谈判明天登场！周五（4月10日），就在副总统万斯启程之际，川普总统强硬警告，美军已重装待发，如果谈判破裂将立即恢复打击。美方的核心谈判内容明确包括伊朗交出浓缩铀，并重启恢复霍尔姆斯海峡畅通无阻。但伊朗则要求先解冻资产，并停止攻击黎巴嫩，且必须在谈判前实现。双方的分歧不小。目前，谈判的前景依然扑朔迷离。.</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="13">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_114.png" alt="Google 新闻" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">Google 新闻</h3>
+            <p class="news-summary">[新闻](https://news.google.com/?hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans). [新闻](https://news.google.com/?hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans). [登录](https://accounts.google.com/ServiceLogin?passive=1209600&continue</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="14">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_115.png" alt="习郑会上演定调了！台海不容干涉共商免战机制 - YouTube" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">习郑会上演定调了！台海不容干涉共商免战机制 - YouTube</h3>
+            <p class="news-summary">习郑会上演定调了！台海不容干涉共商免战机制| 第一夫人陷入爱泼斯坦阴影！紧急发声澄清切割| 20260410《33视界观》 · Comments.</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="15">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_116.png" alt="日经中文网--日本经济新闻中文版" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">日经中文网--日本经济新闻中文版</h3>
+            <p class="news-summary">日本2026版外交蓝皮书针对目前的国际形势表述称：“被称为'后冷战时期'的相对稳定的时代已经终结”。对中国表述是“重要邻国”，此前为“最重要的双边关系之一”。针对伊朗发展</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="16">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_117.png" alt="法广- 时事与新闻直播- RFI - 法国国际广播电台" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">法广- 时事与新闻直播- RFI - 法国国际广播电台</h3>
+            <p class="news-summary">台湾当局为何担心两岸问题“内政化”. 郑习会 ; 中国：卡车司机担忧石油危机将让他们不得不“停工”. 法国世界报 ; 短短数日，美国副总统万斯成了当前局势中的关键人物. 美国/伊朗/</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="17">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260413/news_118.png" alt="白宫接连换将内阁酝酿“大洗牌”？；曝五角大楼军官名单突变谁的晋升 ..." loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">白宫接连换将内阁酝酿“大洗牌”？；曝五角大楼军官名单突变谁的晋升 ...</h3>
+            <p class="news-summary">白宫接连换将内阁酝酿“大洗牌”？；曝五角大楼军官名单突变谁的晋升被按下暂停键？；伊朗境内生死营救美军飞行员如何险境脱身？；给民主党“帮大忙”？</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article></section>
+
+        <footer class="footer">
+            <p>&copy; 2026 环球新闻 | 技术博客 | GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
