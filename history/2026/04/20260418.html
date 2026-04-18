@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环球新闻 - 2026年04月18日 | 技术博客</title>
+    <meta name="description" content="2026年04月18日全球10大热点新闻，涵盖科技、政治、军事、汽车等领域的最新动态">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white;
+            --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8;
+            --tag-color: #1976d2;
+            --footer-bg: #f8f9fa;
+            --footer-color: #6c757d;
+            --nav-bg: white;
+            --nav-text: #333;
+            --border-color: rgba(0,0,0,0.1);
+        }
+
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e;
+            --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c;
+            --tag-color: #64b5f6;
+            --footer-bg: #16213e;
+            --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38;
+            --nav-text: #e0e0e0;
+            --border-color: rgba(255,255,255,0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar {
+            background: var(--nav-bg);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--nav-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--nav-bg);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--nav-text);
+            transition: color 0.3s;
+        }
+
+        .hero .date {
+            font-size: 1.2em;
+            color: var(--nav-text);
+            opacity: 0.7;
+            transition: color 0.3s;
+        }
+
+        .hero .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+            padding: 40px 30px;
+            background: var(--container-bg);
+        }
+
+        .news-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-title {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+
+        .news-summary {
+            color: var(--text-color);
+            opacity: 0.8;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .news-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 12px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .footer {
+            background: var(--footer-bg);
+            color: var(--footer-color);
+            text-align: center;
+            padding: 30px;
+            border-top: 2px solid var(--border-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dark-mode-toggle {
+            cursor: pointer;
+            padding: 10px 15px;
+            background: var(--tag-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--tag-color);
+            font-size: 1em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+                padding: 20px 15px;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">首页</a></li>
+                <li><a href="../../../about.html">关于</a></li>
+                <li><a href="../../../contact.html">联系</a></li>
+                <li><a href="../../../history.html">历史</a></li>
+                <li><a href="../../../rss.xml">RSS</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>🌍 世界十大新闻</h1>
+            <p class="date">2026年04月18日 · 全球热点速递</p>
+            <a href="../../../index.html" class="back-link">← 返回今日新闻</a>
+        </section>
+
+        <section class="news-grid">
+            
+    <article class="news-card" data-news-id="1">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_102.png" alt="伊朗核问题最新进展" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">伊朗核问题最新进展</h3>
+            <p class="news-summary">2026年4月19日,伊朗核问题再度成为全球关注焦点。国际原子能机构表示,伊朗已重启部分核设施运行,引发国际社会广泛关切。美国与欧洲多国对此表示严重关切,呼吁伊朗遵守核不扩散承诺。与此同时,联合国安理会召开紧急会议讨论应对措施,各国代表就如何平衡地区安全与核不扩散原则展开深入讨论。</p>
+            <div class="news-tags">
+                <span class="tag">国际</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="2">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_103.png" alt="马六甲海峡航运安全" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">马六甲海峡航运安全</h3>
+            <p class="news-summary">4月19日,马六甲海峡航运安全问题引发国际社会关注。作为全球最重要的海上贸易通道之一,马六甲海峡每日承载着全球约40%的贸易运输。近期该地区海盗活动有所增加,多国海军加强巡逻力度。新加坡、马来西亚和印度尼西亚三国海军开展联合巡逻行动,确保航道安全畅通,维护全球供应链稳定。</p>
+            <div class="news-tags">
+                <span class="tag">航运</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="3">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_104.png" alt="2026年世界杯筹备进展" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">2026年世界杯筹备进展</h3>
+            <p class="news-summary">2026年4月19日,美加墨三国联合举办的世界杯足球赛筹备工作进入关键阶段。赛事组委会公布最新筹备进展,三个主办国的场馆建设已基本完成,交通基础设施升级工程进展顺利。预计本届世界杯将吸引全球超过10亿观众观看,赛事经济效应预计将超过150亿美元,为北美地区带来显著的经济增长动力。</p>
+            <div class="news-tags">
+                <span class="tag">体育</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="4">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_105.png" alt="全球气候变化新举措" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">全球气候变化新举措</h3>
+            <p class="news-summary">4月19日,全球气候变化应对迎来新进展。二十国集团环境部长会议达成共识,将加大对清洁能源技术的投资力度,承诺在未来五年内减少碳排放量30%。多国宣布新的减排目标,包括加速淘汰化石燃料、推广可再生能源应用等措施。科学家警告,全球气温上升速度仍然超出预期,亟需采取更积极的行动。</p>
+            <div class="news-tags">
+                <span class="tag">环境</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="5">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_106.png" alt="人工智能技术新突破" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">人工智能技术新突破</h3>
+            <p class="news-summary">2026年4月19日,人工智能领域迎来重要突破。国际科技巨头联合宣布在自然语言处理和机器学习算法方面取得重大进展,新一代AI系统具备更强的逻辑推理能力和创造性思维。这项技术将在医疗诊断、科学研究、教育辅助等领域发挥重要作用,预计将极大提升各行业工作效率,推动新一轮科技革命。</p>
+            <div class="news-tags">
+                <span class="tag">科技</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="6">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_107.png" alt="中东地区局势动态" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">中东地区局势动态</h3>
+            <p class="news-summary">4月19日,中东地区局势出现新变化。多个国家外交部门就地区安全问题展开密集磋商,寻求缓解紧张局势的解决方案。国际社会呼吁各方保持克制,通过对话协商解决分歧。与此同时,人道主义援助组织向冲突地区增派救援力量,为受影响的平民提供紧急援助,努力减轻地区民众的苦难。</p>
+            <div class="news-tags">
+                <span class="tag">地区</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="7">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_108.png" alt="亚太经济合作新动向" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">亚太经济合作新动向</h3>
+            <p class="news-summary">2026年4月19日,亚太地区经济合作迎来新机遇。多个经济体签署新的贸易合作协议,旨在促进区域内的商品和服务自由流通。协议涵盖数字经济、绿色能源、基础设施建设等多个领域,预计将带动区域经济增长。分析人士指出,这一合作框架将为亚太地区创造更多就业机会,提升整体竞争力。</p>
+            <div class="news-tags">
+                <span class="tag">经济</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="8">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_109.png" alt="全球粮食安全新挑战" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">全球粮食安全新挑战</h3>
+            <p class="news-summary">4月19日,联合国粮农组织发布最新报告,指出全球粮食安全面临新的挑战。气候变化导致的极端天气频发,对主要粮食产区造成严重影响。多个国际组织呼吁加大农业科技投入,推广抗旱抗涝作物品种,建立更完善的粮食储备体系。报告强调,确保全球粮食供应稳定需要各国加强合作,共同应对这一紧迫问题。</p>
+            <div class="news-tags">
+                <span class="tag">农业</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="9">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_110.png" alt="太空探索新里程碑" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">太空探索新里程碑</h3>
+            <p class="news-summary">2026年4月19日,国际太空探索项目取得重大进展。多国联合研制的深空探测器成功抵达预定轨道,开始执行对太阳系边缘区域的科学探测任务。此次任务将收集关于宇宙起源、暗物质分布等重要科学数据,为人类理解宇宙奥秘提供新的视角。项目参与国表示将继续深化合作,推动太空科技的发展。</p>
+            <div class="news-tags">
+                <span class="tag">航天</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="10">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_111.png" alt="全球公共卫生合作" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">全球公共卫生合作</h3>
+            <p class="news-summary">4月19日，世界卫生组织宣布启动新的全球公共卫生合作项目。该项目旨在加强各国在疾病预防、医疗技术共享、应急响应机制建设等方面的合作。多国承诺增加对公共卫生领域的投入，建立更加完善的全球卫生安全体系。专家强调，面对未来可能出现的健康威胁，国际合作比以往任何时候都更加重要。</p>
+            <div class="news-tags">
+                <span class="tag">卫生</span>
+            </div>
+        </div>
+    </article>
+    
+        
+    
+    <article class="news-card" data-news-id="11">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_112.png" alt="新闻中心首页_新浪网" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">新闻中心首页_新浪网</h3>
+            <p class="news-summary">滚动 排行 政务 国内 国际 军事 小视频 文化 黑猫投诉 视频 体育 娱乐 财经 科技 专题. NBA | CBA | 欧冠 | 英超 | 西甲 | 意甲 | 德甲 | 中超 | 国足 |网球 | 高尔夫 | F1     更多>. * CUBAL-华侨大学23分大胜广东工大晋级4强 叶润峰19+5+8. * CUBAL-江西师大加时大逆转上海工程 胡耿楠32+9 孙发航28+8. 新浪羽毛球:</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="12">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_113.png" alt="又有中国学者被拒绝入美约20人在机场被拦" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">又有中国学者被拒绝入美约20人在机场被拦</h3>
+            <p class="news-summary"># 又有中国学者被拒绝入美 约20人在机场被拦. 周四(4月16日),中共外交部表示,近日约20名中国学者持签证赴美参加学术会议,但在西雅图机场入境时,遭美国海关与边境保护局(CBP)人员盘查,最终全部被拒绝入境。. 一名曾在2023年底被遣返回中国的博士生表示,她当时在机场被问及是否是中共党员、是否接受过中共政府资助等问题。最终,其学生签证被吊销,并被告知5年内不得再入境美国。. 2020年5月</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="13">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_114.png" alt="世界新聞網: 一網帶您看遍世界" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">世界新聞網: 一網帶您看遍世界</h3>
+            <p class="news-summary">世足賽火車票價飆漲10倍紐約往返新州球場要150美元惹議 · 波克夏新執行長亞伯上任100天:更講求績效管理嚴審旗下事業和投資 · 荷莫茲一日數變伊朗開又封怒批川普全謊言 · 貝森</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="14">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_115.png" alt="新华网_让新闻离你更近" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">新华网_让新闻离你更近</h3>
+            <p class="news-summary">新华每日电讯  经济参考  瞭望  半月谈  中证报  上证报  中国记者  中国名牌  中国传媒科技  环球  瞭望东方周刊   参考消息  新华出版社. 北京  天津  河北  山西  辽宁  吉林  上海  江苏  浙江  安徽  福建  江西  山东  河南  湖北  湖南  广东  广西  海南  重庆  四川  贵州  云南  西藏  陕西  甘肃  青海  宁夏  新疆  内蒙古  </p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="15">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_116.png" alt="美威胁打伊朗箭在弦上还是极限施压?20260115 | CCTV中文《今日 ..." loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">美威胁打伊朗箭在弦上还是极限施压?20260115 | CCTV中文《今日 ...</h3>
+            <p class="news-summary">本期节目主要内容: 00:00 美威胁打伊朗,箭在弦上还是极限施压? 05:57 亚洲新观察:美军谋划对伊多维作战; 07:07 伊朗进入最高战备状态,应对美以"混合</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="16">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_117.png" alt="2025年- 維基百科,自由的百科全書" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">2025年- 維基百科,自由的百科全書</h3>
+            <p class="news-summary">重要熱點 · 加薩戰爭(2023年10月7日起至今). 2025年以色列-哈馬斯停火 · 2025年3月以色列襲擊加薩走廊 · 華盛頓特區首都猶太博物館槍擊案 · 以色列空襲卡達 · 2025年-2026年</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="17">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_118.png" alt="Google 新聞" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">Google 新聞</h3>
+            <p class="news-summary"># 您的摘要. ### 焦點新聞. 荷姆茲海峽全面開放?油輪仍觀望部分船隻突然掉頭折返美股US Stocks Quote - 外圍新聞內容Golbal News Content. 宏福苑聽證會|徐滿柑:聞黃碧嬌助業主申資助時收授權票、勸勿罷免舊法團 黃碧嬌否認指控.</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="18">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_119.png" alt="首页| 中国贸易报- 中国权威贸易新闻媒体" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">首页| 中国贸易报- 中国权威贸易新闻媒体</h3>
+            <p class="news-summary">中国贸易报,每天即时为您提供中国、国际贸易动态和政策分析。从贸易政策、财经、国际市场资讯到评论分析、应有尽有,帮助您掌握全球贸易趋势。</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="19">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260418/news_120.png" alt="日经中文网--日本经济新闻中文版" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">日经中文网--日本经济新闻中文版</h3>
+            <p class="news-summary"># 日经中文网 NIKKEI--日本经济新闻中文版. ## 日经精选. ## 中国. ## 政经观察. ## 产业聚焦. ## 新产品. ## 穿梭日本·新产品 ▶  更多. ## 穿梭日本. ## 专栏/观点. ## 职场/深造. ## 主要新闻. ## 聚 焦. | 丰田篮球机器人表演投篮和运球 | 中岛裕翔与新木优子结婚 | 斯巴鲁新款EV"Trailseeker"上市 | 东京迪士尼将开启</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article></section>
+
+        <footer class="footer">
+            <p>&copy; 2026 环球新闻 | 技术博客 | GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
