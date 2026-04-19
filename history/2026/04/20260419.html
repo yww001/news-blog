@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环球新闻 - 2026年04月19日 | 技术博客</title>
+    <meta name="description" content="2026年04月19日全球10大热点新闻，涵盖科技、政治、军事、汽车等领域的最新动态">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white;
+            --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8;
+            --tag-color: #1976d2;
+            --footer-bg: #f8f9fa;
+            --footer-color: #6c757d;
+            --nav-bg: white;
+            --nav-text: #333;
+            --border-color: rgba(0,0,0,0.1);
+        }
+
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e;
+            --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c;
+            --tag-color: #64b5f6;
+            --footer-bg: #16213e;
+            --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38;
+            --nav-text: #e0e0e0;
+            --border-color: rgba(255,255,255,0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar {
+            background: var(--nav-bg);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--nav-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--nav-bg);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--nav-text);
+            transition: color 0.3s;
+        }
+
+        .hero .date {
+            font-size: 1.2em;
+            color: var(--nav-text);
+            opacity: 0.7;
+            transition: color 0.3s;
+        }
+
+        .hero .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+            padding: 40px 30px;
+            background: var(--container-bg);
+        }
+
+        .news-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-title {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+
+        .news-summary {
+            color: var(--text-color);
+            opacity: 0.8;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .news-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 12px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .footer {
+            background: var(--footer-bg);
+            color: var(--footer-color);
+            text-align: center;
+            padding: 30px;
+            border-top: 2px solid var(--border-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dark-mode-toggle {
+            cursor: pointer;
+            padding: 10px 15px;
+            background: var(--tag-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--tag-color);
+            font-size: 1em;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+                padding: 20px 15px;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">首页</a></li>
+                <li><a href="../../../about.html">关于</a></li>
+                <li><a href="../../../contact.html">联系</a></li>
+                <li><a href="../../../history.html">历史</a></li>
+                <li><a href="../../../rss.xml">RSS</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>🌍 世界十大新闻</h1>
+            <p class="date">2026年04月19日 · 全球热点速递</p>
+            <a href="../../../index.html" class="back-link">← 返回今日新闻</a>
+        </section>
+
+        <section class="news-grid">
+            
+    <article class="news-card" data-news-id="1">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_102.png" alt="今天全世界都在看的新闻2026.4.1 - 今日头条" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">今天全世界都在看的新闻2026.4.1 - 今日头条</h3>
+            <p class="news-summary">据俄罗斯媒体报道，俄罗斯驻伊朗大使杰多夫31日在接受采访时表示，伊朗最高领袖穆杰塔巴·哈梅内伊目前身在伊朗，但“出于显而易见的原因”避免公开露面。杰多夫</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="2">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_103.png" alt="原创《世界头条》2026年4月4日" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">原创《世界头条》2026年4月4日</h3>
+            <p class="news-summary">今天是2026年4月4日，美伊冲突急剧升级：伊朗首次成功击落美国F-15战斗机，一名机组人员获救，另一人下落不明，搜救行动正在危险环境中进行。特朗普总统表示</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="3">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_104.png" alt="2026年04月13日全球热点新闻" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">2026年04月13日全球热点新闻</h3>
+            <p class="news-summary">美伊伊斯兰堡会谈因核问题无果而终，特朗普宣布美东时间4月13日10时起，美军对所有进出伊朗港口的海上交通实施封锁，涵盖波斯湾和阿曼湾，引发国际油价开盘</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="4">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_105.png" alt="新闻中心首页_新浪网" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">新闻中心首页_新浪网</h3>
+            <p class="news-summary"># 新浪新闻中心. #### 新浪新闻客户端. # “让互联网更好造福人民、造福世界”. # 伊朗放话将控制霍尔木兹海峡至战争终结. # 伊朗副外长：不会向美国输送浓缩铀. # 韩军称朝鲜发射数枚弹道导弹 朝方暂无回应. # 五一假期首尾高峰时段增开多趟夜间高铁. # 冲线！“闪电”完成2026人形机器人半马. 【No.319】图数室｜2026，人形机器人量产元年？. ### 蜂鸟. ### 前主</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="5">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_106.png" alt="海事新闻头条汇总（2026年4月14日—15日）|东海|船舶|油轮|港口|海事局_网易订阅" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">海事新闻头条汇总（2026年4月14日—15日）|东海|船舶|油轮|港口|海事局_网易订阅</h3>
+            <p class="news-summary">TradeWinds 4月14日报道称，Mercuria据称已在中国船厂签下VLCC和LR2新造船订单，总投资规模约6.5亿美元。. TradeWinds 4月14日报道称，SGMF（Society for Gas as a Marine Fuel，船用气体燃料协会）最新发布的第三版LNG船用燃料生命周期评估（LCA）认为，与船用柴油相比，LNG作为船用燃料的温室气体排放可降低最多29%；DNV和</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="6">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_107.png" alt="头条- 中国日报网" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">头条- 中国日报网</h3>
+            <p class="news-summary">### 焦桐常青，丰碑在民心. 对焦裕禄，习近平总书记一直十分崇敬，视为人生榜样。**2026-04-18 14:38**. ### 习近平谈网络安全和信息化. 历经多年发展，网信事业取得历史性成就，网络强国建设迈出坚实步伐。《中国网信》杂志梳理习近平总书记相关重要论述，与你一起回顾学习。**2026-04-18 14:35**. ### 这段“红色旅程” 中越领导人共同开启. 4月15日，习近平</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="7">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_108.png" alt="即時 | 世界新聞網" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">即時 | 世界新聞網</h3>
+            <p class="news-summary">## [紐約市25處電單車「換電站」選址 徵民意](https://www.worldjournal.com/wj/story/121390/9450627?from=wj_msg "紐約市25處電單車「換電站」選址 徵民意"). ## [京都11歲男童命案 日媒：繼父曾手機搜尋「如何棄屍」](https://www.worldjournal.com/wj/story/121488/9451081</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="8">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_109.png" alt="海事新闻头条汇总（2026年4月14日—15日）_信德海事网-专业海事信息咨询服务平台" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">海事新闻头条汇总（2026年4月14日—15日）_信德海事网-专业海事信息咨询服务平台</h3>
+            <p class="news-summary"># 海事新闻头条汇总（2026年4月14日—15日）. 路透社4月14日报道称，在美国针对伊朗港口相关船舶实施封锁后的首个完整日，至少仍有8艘船通过霍尔木兹海峡；同日，美国军方称已有6艘商船被要求掉头。这说明霍尔木兹并非“完全停航”，但已经进入“具体通行规则、检查、绕航和掉头”并行的执行阶段，风险依旧很高。. 路透社4月14日报道称，英国和法国正组织多边讨论，议题包括航行自由、若海峡继续关闭时的经</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="9">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_110.png" alt="Google 新聞" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">Google 新聞</h3>
+            <p class="news-summary">[新聞](./?hl=zh-TW&gl=TW&ceid=TW%3Azh-Hant). [首頁](./home?hl=zh-TW&gl=TW&ceid=TW%3Azh-Hant). [台灣](./topics/CAAqJQgKIh9DQkFTRVFvSUwyMHZNRFptTXpJU0JYcG9MVlJYS0FBUAE?hl=zh-TW&gl=TW&ceid=TW%3Azh-Hant). [國際](</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="10">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_111.png" alt="世界新聞網: 一網帶您看遍世界" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">世界新聞網: 一網帶您看遍世界</h3>
+            <p class="news-summary">再出招貝森特：將強制銀行蒐集公民身分資料 8643 ; 傳北京願接收或稀釋伊朗濃縮鈾協助結束伊朗戰爭 6947 ; 買菜越來越貴？退休族靠這10招悄悄省下一筆 6311 ; 正準備退休餐飲</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+        
+    
+    <article class="news-card" data-news-id="11">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_112.png" alt="國際- BBC News 中文" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">國際- BBC News 中文</h3>
+            <p class="news-summary">*   ![Image 3: 一名男子走在岸邊岩石上，旁邊是一台挖土機；遠處水面上可見一艘標有「ETYFA」字樣的大型液化天然氣（LNG）運輸船。](https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/7198/live/75659290-3994-11f1-afdb-63f82099d974.jpg.webp)   ## [馬六甲海峽：為何全球貿易的另一個</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="12">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_113.png" alt="新华网_让新闻离你更近" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">新华网_让新闻离你更近</h3>
+            <p class="news-summary">新华每日电讯  经济参考  瞭望  半月谈  中证报  上证报  中国记者  中国名牌  中国传媒科技  环球  瞭望东方周刊   参考消息  新华出版社. 北京  天津  河北  山西  辽宁  吉林  上海  江苏  浙江  安徽  福建  江西  山东  河南  湖北  湖南  广东  广西  海南  重庆  四川  贵州  云南  西藏  陕西  甘肃  青海  宁夏  新疆  内蒙古  </p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="13">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_114.png" alt="24小时全球新闻滚动| 大纪元" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">24小时全球新闻滚动| 大纪元</h3>
+            <p class="news-summary">笔尖绘出家乡情 云林社区绘本发表 启动走读单车旅笔尖绘出家乡情 云林社区绘本发表 启动走读单车旅. 神韵舞蹈家技艺精湛 高级工程师：非常喜欢神韵舞蹈家技艺精湛 高级工程师：非常喜欢. 学区总监赞神韵演员“舞姿优雅 鼓舞人心”学区总监赞神韵演员“舞姿优雅 鼓舞人心”. 澳日签署首批“最上级”护卫舰建造协议澳日签署首批“最上级”护卫舰建造协议. 丁当献唱《爱拼才会赢》 揭出道19年拚搏心声丁当献唱《爱</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="14">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_115.png" alt="财经资讯头条_今日财经要闻报道 - 英为财情" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">财经资讯头条_今日财经要闻报道 - 英为财情</h3>
+            <p class="news-summary">*   [实时行情](https://cn.investing.com/markets/). *   [外汇](https://cn.investing.com/currencies/). *   [期货](https://cn.investing.com/commodities/). *   [黄金](https://cn.investing.com/commodities/gold). *  </p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="15">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_116.png" alt="华尔街见闻" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">华尔街见闻</h3>
+            <p class="news-summary"># 华尔街见闻. 美元指数 98.07 -0.14 (-0.14%)欧元/美元 1.1797 +0.0016 (+0.14%)美元/日元 159.07 -0.11 (-0.07%)现货黄金 4804.97 +14.31 (+0.30%)WTI原油 90.90 -3.79 (-4.00%)离岸人民币 6.8229 +0.0019 (+0.03%). 7家平台涉“幽灵外卖”被罚没近36亿元：拼多多15</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="16">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_117.png" alt="南京航空航天大学" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">南京航空航天大学</h3>
+            <p class="news-summary">06. 04月. 在宁高校南京市新时代青少年校外教育实践（劳动）阵地工作推进会​在我校召开. 06. 04月. 我校受邀参加潍坊发展大会. 04. 04月. 我校正式启动2026年全校教育思想大</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="17">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_118.png" alt="中国科技网" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">中国科技网</h3>
+            <p class="news-summary">### 科技日报报系. ### 教育部发布文件助力青少年阅读素养提升. ### 国家网信办等十部门联合公布《促进和规范电子单证应用规定》. ### 工信部等五部门联合印发《工业产品绿色设计指南（2026年版）》. ### 我国将探索词元交易等新型数据集交易模式. ### 农业农村部集中整治禁限用农药非法生产经营使用行为. ### 刘合：打造中国“数字石油工人”. ### 邬江兴：将“安全基因”植入</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="18">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_119.png" alt="International Maritime Organization" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">International Maritime Organization</h3>
+            <p class="news-summary"># 国际海事组织批准船舶注册新准则. # 危险货物赔偿制度即将生效. 比利时、德国、荷兰王国和瑞典交存 2010 年《有害和有毒物质公约》的批准书。. # "零散的应对措施已不再足够"：国际海事组织秘书长. # 便利委员会批准数字化战略和网络安全措施. #### 国际海事组织概览. ### 开放申请：为客轮脱碳可行性研究提供技术援助. ### 科摩罗在国际海事组织支持下成立国家海上保安委员会. 国</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="19">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_120.png" alt="东方网-上海新闻" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">东方网-上海新闻</h3>
+            <p class="news-summary">## 该区域包含我要投稿. ## 该区域包含浦东新区、黄浦区、静安区、徐汇区、长宁区、普陀区、虹口区、杨浦区、宝山区、闵行区、嘉定区、金山区、松江区、青浦区、奉贤区、崇明区. 浦东新区 黄浦区 静安区 徐汇区 长宁区 普陀区 虹口区 杨浦区 宝山区 闵行区 嘉定区 金山区 松江区 青浦区 奉贤区 崇明区. ## 该区域包含头条新闻. ## 该区域包含直播上海. ## 该区域包含热点搜索. ## 该</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="news-card" data-news-id="20">
+        <div class="news-image">
+            <img src="../../../images/2026/04/20260419/news_121.png" alt="Check My Gift Card Balance - Get Help - News_wsixa_SIZLGHI.pdf" loading="lazy">
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">Check My Gift Card Balance - Get Help - News_wsixa_SIZLGHI.pdf</h3>
+            <p class="news-summary">Thumbnails Document Outline Attachments. Previous. Next. Highlight all. Match case. Whole words. Presentation Mode Open Print Download Current View.</p>
+            <div class="news-tags">
+                <span class="tag">新闻</span>
+            </div>
+        </div>
+    </article></section>
+
+        <footer class="footer">
+            <p>&copy; 2026 环球新闻 | 技术博客 | GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
