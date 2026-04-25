@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>环球新闻 - 2026年04月25日 | 技术博客</title>
-    <meta name="description" content="2026年04月25日全球，涵盖科技、政治、军事、汽车等领域的最新动态">
+    <title>世界二十大新闻 - 2026年04月25日 | 环球新闻</title>
+    <meta name="description" content="2026年04月25日全球">
     <style>
         * {
             margin: 0;
@@ -177,12 +177,54 @@
             50% { transform: translate(-30%, -30%) scale(1.1); }
         }
 
+        .cover-section {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
 
+        .cover-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
+        .cover-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            padding: 40px 30px;
+            color: white;
+        }
 
+        .cover-title {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
 
+        .cover-subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
 
         @media (max-width: 768px) {
+            .cover-section {
+                height: 300px;
+            }
+            .cover-title {
+                font-size: 2em;
+            }
+            .cover-subtitle {
+                font-size: 1em;
+            }
         }
 
         .content {
@@ -335,61 +377,36 @@
             margin-bottom: 20px;
             color: var(--text-color);
         }
-    
-        .hero {
-            text-align: center;
-            padding: 40px 30px;
-            background: var(--nav-bg);
-            border-bottom: 2px solid var(--border-color);
-        }
-
-        .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: var(--nav-text);
-            transition: color 0.3s;
-        }
-
-        .hero .date {
-            font-size: 1.2em;
-            color: var(--nav-text);
-            opacity: 0.7;
-            transition: color 0.3s;
-        }
-
-        .hero .back-link {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 8px 16px;
-            background: var(--tag-bg);
-            color: var(--tag-color);
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background 0.3s, color 0.3s;
-        }
-</style>
+    </style>
 </head>
 <body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li><a href="contact.html">联系</a></li>
+            <li><a href="history.html">历史</a></li>
+            <li><a href="rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+
+    <!-- 搜索框 -->
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+
     <div class="container">
-        <nav class="navbar">
-            <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
-            <ul class="nav-links">
-                <li><a href="../../../index.html">首页</a></li>
-                <li><a href="../../../about.html">关于</a></li>
-                <li><a href="../../../contact.html">联系</a></li>
-                <li><a href="../../../history.html">历史</a></li>
-                <li><a href="../../../rss.xml">RSS</a></li>
-                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
-            </ul>
-        </nav>
-
-        <section class="hero">
-            <h1>🌍 国际经济合作与环境会议新闻</h1>
-            <p class="date">2026年04月25日 · 全球热点速递</p>
-            <a href="../../../index.html" class="back-link">← 返回今日新闻</a>
-        </section>
-
         <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/2026/04/20260425/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">世界二十大新闻 · 每日更新</p>
+                </div>
+            </div>
 
             <div class="warning">
                 ⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。
@@ -645,10 +662,10 @@
                 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a>
             </p>
             <div class="footer-links">
-                <a href="../../../index.html">首页</a> |
-                <a href="../../../about.html">关于</a> |
-                <a href="../../../contact.html">联系</a> |
-                <a href="../../../rss.xml">RSS 订阅</a>
+                <a href="index.html">首页</a> |
+                <a href="about.html">关于</a> |
+                <a href="contact.html">联系</a> |
+                <a href="rss.xml">RSS 订阅</a>
             </div>
             <p style="margin-top: 10px; font-size: 0.9em;">
                 所有新闻内容仅供参考，请以官方发布为准 · 2026年04月25日
