@@ -335,34 +335,59 @@
             margin-bottom: 20px;
             color: var(--text-color);
         }
-    </style>
+    
+        .hero {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--nav-bg);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--nav-text);
+            transition: color 0.3s;
+        }
+
+        .hero .date {
+            font-size: 1.2em;
+            color: var(--nav-text);
+            opacity: 0.7;
+            transition: color 0.3s;
+        }
+
+        .hero .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+</style>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
-        <ul class="nav-links">
-            <li><a href="../../../index.html">首页</a></li>
-            <li><a href="../../../about.html">关于</a></li>
-            <li><a href="../../../contact.html">联系</a></li>
-            <li><a href="../../../history.html">历史</a></li>
-            <li><a href="../../../rss.xml">RSS</a></li>
-            <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
-        </ul>
-    </nav>
-
-    <!-- 搜索框 -->
-    <div class="search-container">
-        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
-    </div>
-
     <div class="container">
-        <div class="content">
-            <section class="hero">
-                <h1>🌍 世界十大新闻</h1>
-                <p class="date">2026年04月22日 · 全球热点速递</p>
-                <a href="../../../index.html" class="back-link">← 返回今日新闻</a>
-            </section>
+        <nav class="navbar">
+            <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">首页</a></li>
+                <li><a href="../../../about.html">关于</a></li>
+                <li><a href="../../../contact.html">联系</a></li>
+                <li><a href="../../../history.html">历史</a></li>
+                <li><a href="../../../rss.xml">RSS</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>🌍 世界十大新闻</h1>
+            <p class="date">2026年04月22日 · 全球热点速递</p>
+            <a href="../../../index.html" class="back-link">← 返回今日新闻</a>
+        </section>
 
             <div class="warning">
                 ⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。
