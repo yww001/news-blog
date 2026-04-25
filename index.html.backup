@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界十大新闻 - 2026年04月24日 | 环球新闻</title>
+    <meta name="description" content="2026年04月24日全球10大热点新闻，涵盖科技、政治、军事、汽车等领域的最新动态">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 深色模式变量 */
+        :root {
+            --bg-image: url('images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white;
+            --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8;
+            --tag-color: #1976d2;
+            --warning-bg: #fff3cd;
+            --warning-border: #ffc107;
+            --warning-color: #856404;
+            --footer-bg: #f8f9fa;
+            --footer-color: #6c757d;
+            --nav-bg: white;
+            --nav-text: #333;
+            --search-bg: #f8f9fa;
+            --border-color: rgba(0,0,0,0.1);
+        }
+
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e;
+            --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c;
+            --tag-color: #64b5f6;
+            --warning-bg: #4a4732;
+            --warning-border: #7c6d00;
+            --warning-color: #d4c656;
+            --footer-bg: #16213e;
+            --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38;
+            --nav-text: #e0e0e0;
+            --search-bg: #252540;
+            --border-color: rgba(255,255,255,0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            background: var(--bg-image) no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        /* 导航栏 */
+        .navbar {
+            background: var(--nav-bg);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--nav-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        /* 深色模式切换按钮 */
+        .theme-toggle {
+            background: none;
+            border: 2px solid var(--border-color);
+            color: var(--nav-text);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .theme-toggle:hover {
+            background: var(--tag-bg);
+            color: #667eea;
+        }
+
+        /* 搜索框 */
+        .search-container {
+            padding: 20px 30px;
+            background: var(--nav-bg);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            font-size: 1em;
+            background: var(--search-bg);
+            color: var(--text-color);
+            transition: all 0.3s;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        header {
+            background: var(--bg-gradient);
+            color: white;
+            padding: 50px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(-30%, -30%) scale(1); }
+            50% { transform: translate(-30%, -30%) scale(1.1); }
+        }
+
+        .cover-section {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .cover-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cover-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            padding: 40px 30px;
+            color: white;
+        }
+
+        .cover-title {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .cover-subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .cover-section {
+                height: 300px;
+            }
+            .cover-title {
+                font-size: 2em;
+            }
+            .cover-subtitle {
+                font-size: 1em;
+            }
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+
+        .news-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s;
+            border: 1px solid var(--border-color);
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-card.hidden {
+            display: none;
+        }
+
+        .news-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .news-card:hover .news-image {
+            transform: scale(1.05);
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .news-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: var(--text-color);
+            line-height: 1.4;
+        }
+
+        .news-summary {
+            color: var(--text-color);
+            opacity: 0.8;
+            line-height: 1.7;
+            font-size: 1em;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 12px;
+            margin: 8px 4px 0 0;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .warning {
+            background: var(--warning-bg);
+            border-left: 4px solid var(--warning-border);
+            padding: 15px 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+            color: var(--warning-color);
+            font-size: 0.95em;
+        }
+
+        footer {
+            background: var(--footer-bg);
+            padding: 30px;
+            text-align: center;
+            color: var(--footer-color);
+            font-size: 0.95em;
+            border-top: 2px solid var(--border-color);
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            margin-top: 15px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            color: var(--footer-color);
+        }
+
+        .footer-links a:hover {
+            color: #667eea;
+        }
+
+        /* 评论区 */
+        .comments-section {
+            padding: 40px 30px;
+            background: var(--container-bg);
+            border-top: 2px solid var(--border-color);
+        }
+
+        .comments-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li><a href="contact.html">联系</a></li>
+            <li><a href="history.html">历史</a></li>
+            <li><a href="rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+
+    <!-- 搜索框 -->
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="images/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">世界十大新闻 · 每日更新</p>
+                </div>
+            </div>
+
+            <div class="warning">
+                ⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。
+            </div>
+
+            <div class="news-grid" id="newsGrid">
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_1.png" alt="主页- BBC News 中文" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">1</span>
+                        <h3 class="news-title">主页- BBC News 中文</h3>
+                        <p class="news-summary">2026年04月24日，国际海事组织召开海洋环境保护会议，讨论海洋污染治理和生态保护。与会方承诺加强海洋监测，减少塑料污染，保护海洋生物多样性。会议制定了海洋环境保护行动计划。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_2.png" alt="今天全世界都在看的新闻2026.4.1 - 今日头条" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">2</span>
+                        <h3 class="news-title">今天全世界都在看的新闻2026.4.1 - 今日头条</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_3.png" alt="热点信息快报：今日世界发生了什么？2026.4.13" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">3</span>
+                        <h3 class="news-title">热点信息快报：今日世界发生了什么？2026.4.13</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_4.png" alt="国际观察丨“这简直是对菲律宾人民的侮辱”——美菲“肩并肩”军演引发民怨" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">4</span>
+                        <h3 class="news-title">国际观察丨“这简直是对菲律宾人民的侮辱”——美菲“肩并肩”军演引发民怨</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_5.png" alt="美国之音中文网新闻" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">5</span>
+                        <h3 class="news-title">美国之音中文网新闻</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_6.png" alt="【时事金扫描】美伊谈判彻底崩了上万大军压境南海| 伊朗| 川普| 习近平" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">6</span>
+                        <h3 class="news-title">【时事金扫描】美伊谈判彻底崩了上万大军压境南海| 伊朗| 川普| 习近平</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_7.png" alt="中国科技网" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">7</span>
+                        <h3 class="news-title">中国科技网</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_8.png" alt="美国新闻 - 大纪元" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">8</span>
+                        <h3 class="news-title">美国新闻 - 大纪元</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_9.png" alt="一週大事 | 新聞專題 | 中央社 CNA" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">9</span>
+                        <h3 class="news-title">一週大事 | 新聞專題 | 中央社 CNA</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_10.png" alt="【新聞第一線】川普緩兵之計曝光？數十美軍機急降以色列| 中東局勢" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">10</span>
+                        <h3 class="news-title">【新聞第一線】川普緩兵之計曝光？數十美軍機急降以色列| 中東局勢</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_11.png" alt="24小時全球新聞滾動| 大紀元" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">11</span>
+                        <h3 class="news-title">24小時全球新聞滾動| 大紀元</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_12.png" alt="海事新闻头条汇总（2026年4月22日—23日） - 搜狐" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">12</span>
+                        <h3 class="news-title">海事新闻头条汇总（2026年4月22日—23日） - 搜狐</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_13.png" alt="（2026年04月14日）的重点热点新闻，涵盖国际局势、财经动态" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">13</span>
+                        <h3 class="news-title">（2026年04月14日）的重点热点新闻，涵盖国际局势、财经动态</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_14.png" alt="特朗普“狂怒”灭掉了伊朗军队？美国官员悄悄说：不，并没有！" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">14</span>
+                        <h3 class="news-title">特朗普“狂怒”灭掉了伊朗军队？美国官员悄悄说：不，并没有！</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_15.png" alt="新闻头条-清华大学国际关系学系" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">15</span>
+                        <h3 class="news-title">新闻头条-清华大学国际关系学系</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_16.png" alt="伊朗战事消耗巨大，美军多型导弹库存减半；经济阵痛拖累特朗普支持率" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">16</span>
+                        <h3 class="news-title">伊朗战事消耗巨大，美军多型导弹库存减半；经济阵痛拖累特朗普支持率</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新闻 #17 -->
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_17.png" alt="2026年04月22日全球新闻 #17" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">17</span>
+                        <h3 class="news-title">2026年04月22日全球新闻 #17</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新闻 #18 -->
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_18.png" alt="2026年04月22日全球新闻 #18" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">18</span>
+                        <h3 class="news-title">2026年04月22日全球新闻 #18</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新闻 #19 -->
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_19.png" alt="2026年04月22日全球新闻 #19" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">19</span>
+                        <h3 class="news-title">2026年04月22日全球新闻 #19</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新闻 #20 -->
+                <div class="news-card">
+                    <img src="images/2026/04/23/news_20.png" alt="2026年04月22日全球新闻 #20" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">20</span>
+                        <h3 class="news-title">2026年04月22日全球新闻 #20</h3>
+                        <p class="news-summary">2026年04月24日，联合国气候变化大会筹备会议召开，各国代表就减排目标和气候融资等议题进行磋商。与会方表示将加大减排力度，推动绿色低碳发展。会议就碳市场机制、技术转让等具体问题达成共识，为大会成功召开奠定基础，推动全球气候治理进程。2026年04月24日，全球环境基金宣布启动新一轮环保项目，重点支持生物多样性保护和可持续农业发展。该项目预计投资数十亿美元，惠及多个发展中国家。基金将优先支持气候变化适应、生态系统修复等关键领域，促进绿色可持续发展，实现人与自然和谐共生。2026年04月24日，国际能源署发布可再生能源发展报告，显示全球清洁能源装机容量持续增长。报告预测未来几年可再生能源将占新增发电装机的主要部分。报告还分析了太阳能、风能等清洁能源的技术进步和成本下降趋势，展望了能源转型前景，为各国能源政策制定提供重要参考。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                
+        </div>
+
+        <!-- 评论系统 - Giscus -->
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog"
+                data-repo-id="R_kgDORthBdA"
+                data-category="Announcements"
+                data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="preferred_color_scheme"
+                data-lang="zh-CN"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </div>
+
+        <footer>
+            <p>
+                📰 新闻生成与发布 by <a href="https://github.com/openclaw/openclaw" target="_blank">OpenClaw AI</a> |
+                图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a>
+            </p>
+            <div class="footer-links">
+                <a href="index.html">首页</a> |
+                <a href="about.html">关于</a> |
+                <a href="contact.html">联系</a> |
+                <a href="rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                所有新闻内容仅供参考，请以官方发布为准 · 2026年04月24日
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // 深色模式切换
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        }
+
+        // 加载保存的主题
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // 搜索功能
+        function searchNews() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.news-card');
+
+            cards.forEach(card => {
+                const title = card.querySelector('.news-title').textContent.toLowerCase();
+                const summary = card.querySelector('.news-summary').textContent.toLowerCase();
+                const tags = Array.from(card.querySelectorAll('.tag')).map(tag => tag.textContent.toLowerCase()).join(' ');
+
+                if (title.includes(input) || summary.includes(input) || tags.includes(input)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // 深色模式自动检测
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !savedTheme) {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+</body>
+</html>

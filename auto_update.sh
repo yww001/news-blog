@@ -14,7 +14,7 @@ SUCCESS=0
 
 # 更新今天的新闻（增强版 - 含质量检查）
 echo "📰 步骤1: 更新新闻（含质量检查）..." >> "$LOG_FILE"
-python3 auto_update.py --news-count 100 >> "$LOG_FILE" 2>&1
+python3 auto_update.py --news-count 20 >> "$LOG_FILE" 2>&1
 if [ $? -ne 0 ]; then
     echo "❌ 更新失败" >> "$LOG_FILE"
     SUCCESS=1
