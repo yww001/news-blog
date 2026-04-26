@@ -692,10 +692,10 @@
             const input = document.getElementById('searchInput').value.toLowerCase();
             const cards = document.querySelectorAll('.news-card');
 
-            cards.forEach(card => {
+            cards.forEach(card = {
                 const title = card.querySelector('.news-title').textContent.toLowerCase();
                 const summary = card.querySelector('.news-summary').textContent.toLowerCase();
-                const tags = Array.from(card.querySelectorAll('.tag')).map(tag => tag.textContent.toLowerCase()).join(' ');
+                const tags = Array.from(card.querySelectorAll('.tag')).map(tag = tag.textContent.toLowerCase()).join(' ');
 
                 if (title.includes(input) || summary.includes(input) || tags.includes(input)) {
                     card.classList.remove('hidden');
