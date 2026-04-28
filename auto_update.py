@@ -43,7 +43,7 @@ def get_beijing_time():
     """获取北京时间（UTC+8）"""
     return datetime.now() + timedelta(hours=8)
 
-def step_1_search_news(count=100):
+def step_1_search_news(count=20):
     """第1步：搜索新闻"""
     logger.log(f"📡 步骤 1/5: 搜索 {count} 条新闻")
 
@@ -83,22 +83,22 @@ def step_1_search_news(count=100):
                             "tags": ["新闻"]  # 默认标签
                         })
                     logger.log(f"✅ 搜索成功: 找到 {len(news_list)} 条新闻")
-                    return news_list[:100]  # 确保只返回100条新闻
+                    return news_list[:20]  # 确保只返回20条新闻
                 else:
                     logger.log("⚠️  搜索结果为空，使用示例数据")
-                    return get_sample_news()
+                    return get_sample_news(count)
             except json.JSONDecodeError as e:
                 logger.log(f"⚠️  JSON解析失败: {str(e)}，使用示例数据")
-                return get_sample_news()
+                return get_sample_news(count)
         else:
             logger.log("⚠️  搜索返回为空，使用示例数据")
-            return get_sample_news()
+            return get_sample_news(count)
     except Exception as e:
         logger.log(f"⚠️  搜索异常: {str(e)}，使用示例数据")
-        return get_sample_news()
+        return get_sample_news(count)
 
-def get_sample_news():
-    """示例新闻数据（100条）"""
+def get_sample_news(count=20):
+    """示例新闻数据（默认20条）"""
     sample_news = [
         {
             "title": "全球科技峰会今日开幕",
@@ -152,8 +152,10 @@ def get_sample_news():
         }
     ]
 
-    # 扩展到100条示例新闻
-    for i in range(11, 101):
+    # 根据 count 生成示例新闻
+    base_count = min(count, 10)
+    sample_news = sample_news[:base_count]
+    for i in range(base_count + 1, count + 1):
         sample_news.append({
             "title": f"示例新闻标题 {i}",
             "summary": f"这是第{i}条示例新闻的摘要内容。在实际运行中，这里会被真实的新闻内容替换。",
