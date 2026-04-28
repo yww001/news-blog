@@ -415,13 +415,19 @@ def step_5_upload_to_github(html_file):
 def main():
     """主函数"""
     import argparse
+    from datetime import datetime
 
     parser = argparse.ArgumentParser(description="自动更新新闻博客（增强版）")
-    parser.add_argument("--news-count", type=int, default=100, help="新闻数量")
+    parser.add_argument("--news-count", type=int, default=20, help="新闻数量")
     parser.add_argument("--no-upload", action="store_true", help="不上传，仅生成")
-    parser.add_argument("--seed", type=int, default=101, help="图片随机种子")
+    parser.add_argument("--seed", type=int, help="图片随机种子（默认基于日期生成，避免覆盖历史图片）")
 
     args = parser.parse_args()
+
+    # 默认用日期生成seed，每天不重复，避免覆盖历史图片
+    if args.seed is None:
+        today = datetime.now().strftime("%Y%m%d")
+        args.seed = int(today)  # e.g. 20260428
 
     try:
         # 第1步：搜索新闻

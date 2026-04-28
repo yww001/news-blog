@@ -18,8 +18,9 @@ git add -A
 # 提交
 git commit -m "$COMMIT_MSG" || { echo "❌ 提交失败"; exit 1; }
 
-# 推送
-git push origin main || { echo "❌ 推送失败"; exit 1; }
+# 使用 yww001 的 SSH key 推送
+GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no -o IdentitiesOnly=yes" \
+    git push origin main || { echo "❌ 推送失败"; exit 1; }
 
 echo "✅ Git 提交推送成功: $COMMIT_MSG"
 exit 0
