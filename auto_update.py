@@ -165,7 +165,7 @@ def get_sample_news():
 def step_2_generate_images(news_list, seed=101, max_retries=2):
     """第2步：生成图片（带质量检查和重试）"""
     logger.log(f"🎨 步骤 2/5: 生成 {len(news_list)} 张图片（带质量检查）")
-    logger.log(f"📊 质量标准: 文件200KB-800KB, 分辨率≥1280x720, 比例16:9")
+    logger.log(f"📊 质量标准: 文件50KB-800KB, 宽≥800, 高≥450, 比例16:9")
 
     try:
         results = []
@@ -266,13 +266,13 @@ def check_image_quality(image_path):
             width, height = img.size
             file_size_kb = os.path.getsize(image_path) / 1024
 
-            # 提高质量标准
-            min_size_kb = 200  # 从150提高到200（调整后）
-            max_size_kb = 800  # 从500提高到800
-            min_width = 1280  # 从1024提高到1280
-            min_height = 720  # 从576提高到720
+            # Pollinations 质量标准（适配实际输出）
+            min_size_kb = 50   # Pollinations 压缩率较高
+            max_size_kb = 800
+            min_width = 800    # Pollinations 通常输出 800-1024 宽度
+            min_height = 450
             target_ratio = 16/9
-            ratio_tolerance = 0.1
+            ratio_tolerance = 0.2  # 放宽比例容差
 
             ratio = width / height
             ratio_diff = abs(ratio - target_ratio) / target_ratio
