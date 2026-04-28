@@ -169,7 +169,9 @@ def step_2_generate_images(news_list, seed=101, max_retries=2):
 
     try:
         results = []
-        genai_script = Path.home() / ".hermes/scripts/nvidia_genai_generate.py"
+        genai_script = Path.home() / ".hermes/scripts/pollinations_generate.py"
+        if not genai_script.exists():
+            genai_script = Path(BLOG_PATH) / "pollinations_generate.py"
 
         for idx, news in enumerate(news_list, 1):
             title = news.get("title", "")
@@ -177,6 +179,9 @@ def step_2_generate_images(news_list, seed=101, max_retries=2):
 
             # 生成提示词（极致优化：超高清、真实、精致）
             prompt = f"超高清真实新闻摄影，{title}，{summary}，8K分辨率，专业新闻摄影，极致清晰，锐利细节，真实光线，自然色彩，电影级构图，纪实风格，新闻现场感，生动逼真，高对比度，丰富层次，专业镜头，景深效果，真实场景，无卡通，无插画，照片级质量，National Geographic风格，Reuters新闻摄影标准"
+
+            # Pollinations 英文提示词（效果更好）
+            prompt_en = f"Professional news photography, {title}. {summary}. 8K ultra high definition, Reuters photojournalism style, National Geographic quality, sharp details, natural lighting, cinematic composition, documentary style, realistic scene, no cartoon, no illustration, photo-realistic, vibrant colors, high contrast, rich layers, professional lens, depth of field, current news event"
 
             # 图片文件名
             image_file = IMAGES_DIR / f"news_{seed + idx}.png"
@@ -189,16 +194,16 @@ def step_2_generate_images(news_list, seed=101, max_retries=2):
                     logger.log(f"🖼️  生成图片 {idx}/{len(news_list)}: {title[:30]}... (尝试 {retry_count + 1})")
 
                     result = subprocess.run(
-                        ["python3", str(genai_script), prompt,
-                         "--model", "stabilityai/stable-diffusion-3-medium",
-                         "--ratio", "16:9",
-                         "--steps", "50",  # 提高到50步，增强细节
-                         "--cfg", "7.5",  # 提高CFG值，增强提示词遵循度
+                        ["python3", str(genai_script),
+                         prompt_en,
+                         "--output", str(image_file),
+                         "--width", "1344",
+                         "--height", "768",
                          "--seed", str(seed + idx + retry_count * 100),
-                         "--output", str(image_file)],
+                         "--nologo"],
                         capture_output=True,
                         text=True,
-                        timeout=240,  # 增加超时时间
+                        timeout=180,
                         env={**os.environ, "NVIDIA_API_KEY": NVIDIA_API_KEY}
                     )
 
