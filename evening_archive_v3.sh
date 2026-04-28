@@ -5,7 +5,7 @@
 
 set -e
 
-REPO_DIR="/home/swg/.openclaw/workspace/news-blog/repo"
+REPO_DIR="/home/swg/.openclaw/workspace/news-blog"
 
 # 获取今天的日期（动态）
 TODAY_STR=$(date '+%Y年%m月%d日')
@@ -60,7 +60,7 @@ echo "📝 步骤3：替换日期..."
 sed -i "s/$SOURCE_DATE_STR/$TODAY_STR/g" "history/$YEAR/$MONTH/$TODAY_FILE.html"
 sed -i "s/images\/$SOURCE_DATE\//images\/$YEAR\/$MONTH\/$TODAY_FILE\//g" "history/$YEAR/$MONTH/$TODAY_FILE.html"
 echo "✅ 已将所有 $SOURCE_DATE_STR 替换为 $TODAY_STR"
-echo "✅ 已将图片路径从 images/$SOURCE_DATE/ 改为 images/$YEAR/$MONTH/$TODAY_FILE/"
+echo "✅ 已将图片路径从 images/$TODAY_FILE/ 改为 images/$YEAR/$MONTH/$TODAY_FILE/"
 echo ""
 
 # 步骤4：从首页提取新闻并替换

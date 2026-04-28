@@ -48,7 +48,7 @@ def step_1_search_news(count=100):
     logger.log(f"📡 步骤 1/5: 搜索 {count} 条新闻")
 
     try:
-        search_script = Path("/home/swg/.openclaw/workspace/skills/tavily-search-rotation/scripts/search.py")
+        search_script = Path.home() / ".hermes/scripts/tavily_search.py"
         date_str = get_beijing_time().strftime("%Y年%m月%d日")
         query = f"今日新闻 {date_str} 头条 热点 世界 国际"
 
@@ -169,7 +169,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=2):
 
     try:
         results = []
-        genai_script = Path("/home/swg/.openclaw/workspace/skills/nvidia-genai/generate.py")
+        genai_script = Path.home() / ".hermes/scripts/nvidia_genai_generate.py"
 
         for idx, news in enumerate(news_list, 1):
             title = news.get("title", "")
@@ -368,15 +368,9 @@ def step_4_create_html(news_list, image_files):
         with open(index_enhanced, 'r', encoding='utf-8') as f:
             html_content = f.read()
 
-        # 更新标题
-        html_content = html_content.replace("🌍 世界十大新闻", "🌍 世界十大新闻")
-        html_content = html_content.replace("2026年3月22日", date_str)
-
-        # 找到 news-grid 并替换内容
-        # 匹配到news-grid的结束标签（1层嵌套）
-        pattern = r'<div class="news-grid" id="newsGrid">.*</div>\s*</div>'
-        replacement = f'<div class="news-grid" id="newsGrid">{news_cards_html}\n            </div>\n        </div>'
-        html_content = re.sub(pattern, replacement, html_content, flags=re.DOTALL)
+        # 替换占位符
+        html_content = html_content.replace("{{NEWS_DATE}}", date_str)
+        html_content = html_content.replace("{{NEWS_CARDS}}", news_cards_html)
 
         # 保存新文件
         html_file = Path(BLOG_PATH) / "index.html"
