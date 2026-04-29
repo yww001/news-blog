@@ -48,16 +48,30 @@ def get_beijing_time():
     return datetime.now() + timedelta(hours=8)
 
 def step_1_search_news(count=20):
-    """第1步：搜索新闻"""
-    logger.log(f"📡 步骤 1/5: 搜索 {count} 条新闻")
+    """第1步：搜索新闻（优化搜索质量，过滤feed聚合网站）"""
+    logger.log(f"📡 步骤 1/5: 搜索 {count} 条真实新闻")
+
+    # 排除的垃圾关键词（feed/聚合/列表类网站）
+    FEED_BLACKLIST = [
+        '新闻滚动', '新闻直播', '时事与新闻直播', '全球新闻滚动',
+        '头条汇总', '世界十大新闻', '新闻头条', '新闻排行榜',
+        '网带您看遍', '全球新闻网', '联合新闻网', '大纪元',
+        '法广', 'BBC中文网', '美国之音', '自由亚洲电台',
+        '今日头条', '百度新闻', '新浪新闻', '搜狐新闻',
+        '凤凰网资讯', '环球时报', '观察者网',
+        '今日热点', '热点汇总', '热点新闻', '每日热点',
+        '新闻汇总', '新闻速递', '新闻简报', '新闻早餐',
+        '网站地图', 'RSS订阅', '网站首页',
+    ]
 
     try:
         search_script = Path.home() / ".hermes/scripts/tavily_search.py"
         date_str = get_beijing_time().strftime("%Y年%m月%d日")
-        query = f"今日新闻 {date_str} 头条 热点 世界 国际"
+        # 优化搜索词：排除聚合类关键词，聚焦具体新闻事件
+        query = f"{date_str} 最新 重大 新闻事件 今日 要闻"
 
         result = subprocess.run(
-            ["python3", str(search_script), query, "--max-results", str(count), "--json-output"],
+            ["python3", str(search_script), query, "--max-results", str(count * 2), "--json-output"],
             capture_output=True,
             text=True,
             timeout=90
@@ -65,9 +79,7 @@ def step_1_search_news(count=20):
 
         if result.returncode == 0 and result.stdout.strip():
             import json
-            # 搜索脚本第一行是日志，从第二行开始解析JSON
             try:
-                # 查找JSON开始的行（第一个{）
                 lines = result.stdout.splitlines()
                 json_start = 0
                 for i, line in enumerate(lines):
@@ -77,71 +89,63 @@ def step_1_search_news(count=20):
                 json_text = '\n'.join(lines[json_start:])
                 response = json.loads(json_text)
 
-                # 从Tavily响应中提取新闻
                 if 'results' in response and len(response['results']) > 0:
                     news_list = []
-                    for item in response['results'][:count]:
-                        title = item.get('title', '无标题')
-                        raw_content = item.get('content', '无内容')
-                        
+                    for item in response['results']:
+                        title = item.get('title', '')
+                        raw_content = item.get('content', '')
+
+                        # 跳过黑名单中的feed/聚合网站
+                        skip = False
+                        for bad in FEED_BLACKLIST:
+                            if bad in title:
+                                skip = True
+                                break
+                        if skip:
+                            continue
+
                         # 清理内容：转繁体为简体，移除英文和特殊符号
                         content = clean_news_content(raw_content)
-                        title = clean_news_content(title)  # 标题也需要清理
-                        
-                        # 过滤掉含"中共"的新闻
+                        title = clean_news_content(title)
+
+                        # 过滤含敏感词
                         if '中共' in title or '中共' in content:
                             logger.log(f"🚫 过滤含敏感词新闻: {title[:30]}...")
                             continue
-                        
+
+                        # 跳过太短的内容
+                        if len(content) < 30:
+                            continue
+
                         # 确保摘要至少150字，不足则扩展
                         content = expand_summary(content, min_length=150, max_length=200)
-                        
+
                         news_list.append({
                             "title": title,
                             "summary": content,
-                            "raw_prompt": raw_content[:100],  # 保存原始内容用于生成图片
+                            "raw_prompt": raw_content[:100],
                             "tags": ["新闻"]
                         })
+
+                        if len(news_list) >= count:
+                            break
+
                     logger.log(f"✅ 搜索成功: 找到 {len(news_list)} 条新闻")
-                    
-                    # 确保正好20条新闻，不足则用示例补齐
-                    if len(news_list) < count:
-                        needed = count - len(news_list)
-                        logger.log(f"📝 需要补充 {needed} 条示例新闻")
-                        sample = get_sample_news(needed)
-                        for s in sample:
-                            s['summary'] = expand_summary(s['summary'], min_length=150, max_length=200)
-                            s['raw_prompt'] = s['summary'][:100]
-                        news_list.extend(sample)
-                    
-                    return news_list[:20]  # 确保只返回20条新闻
+                    return news_list[:count]
                 else:
                     logger.log("⚠️  搜索结果为空，使用示例数据")
-                    sample_news = get_sample_news(count)
-                    # 扩展示例新闻每个摘要到150-200字
-                    for news in sample_news:
-                        news['summary'] = expand_summary(news['summary'], min_length=150, max_length=200)
-                        news['raw_prompt'] = news['summary'][:100]
-                    return sample_news
             except json.JSONDecodeError as e:
                 logger.log(f"⚠️  JSON解析失败: {str(e)}，使用示例数据")
-                sample_news = get_sample_news(count)
-                for news in sample_news:
-                    news['summary'] = expand_summary(news['summary'], min_length=150, max_length=200)
-                    news['raw_prompt'] = news['summary'][:100]
-                return sample_news
-        else:
-            logger.log("⚠️  搜索返回为空，使用示例数据")
-            sample_news = get_sample_news(count)
-            for news in sample_news:
-                news['summary'] = expand_summary(news['summary'], min_length=150, max_length=200)
-            return sample_news
     except Exception as e:
         logger.log(f"⚠️  搜索异常: {str(e)}，使用示例数据")
-        sample_news = get_sample_news(count)
-        for news in sample_news:
-            news['summary'] = expand_summary(news['summary'], min_length=150, max_length=200)
-        return sample_news
+
+    # Fallback: 使用高质量示例新闻
+    logger.log("📝 使用高质量示例新闻")
+    sample_news = get_sample_news(count)
+    for news in sample_news:
+        news['summary'] = expand_summary(news['summary'], min_length=150, max_length=200)
+        news['raw_prompt'] = news['summary'][:100]
+    return sample_news
 
 
 def extract_image_keywords(title, summary):
@@ -248,29 +252,59 @@ def clean_news_content(text):
 
 
 def expand_summary(content, min_length=150, max_length=200):
-    """扩展摘要到指定长度，确保恰好150-200字"""
+    """扩展摘要到指定长度，确保恰好150-200字，纯中文无英文无重复"""
     if not content:
         return "暂无内容"
-    
+
+    # 彻底清理：移除所有英文单词
+    import re
+    content = re.sub(r'[a-zA-Z]{1,}', '', content)
+
     # 如果太短，需要扩展内容
     if len(content) < min_length:
-        # 从已有内容提取关键词并扩展
-        # 获取句子中的关键信息然后补充
-        additions = [
-            "该事件引发广泛关注，行业专家表示这将带来深远影响。",
-            "相关部门已启动应急预案，确保各项工作有序进行。",
-            "业内人士分析认为这标志着行业进入新发展阶段。",
-            "多家机构表示将继续关注后续进展。",
-            " experts表示具体情况仍在进一步调查中。",
-            "各方正积极协调，争取早日达成共识。"
+        # 提取已有内容中的关键词（提取名词性短语）
+        sentences = re.split(r'[。！？]', content)
+        keywords = []
+        for s in sentences:
+            s = s.strip()
+            if len(s) > 4:
+                # 提取5-10字的有意义片段作为关键词
+                words = re.findall(r'[\u4e00-\u9fa5]{5,15}', s)
+                keywords.extend(words[:2])
+
+        # 生成多样化的补充内容（不重复）
+        additions_pool = [
+            "此事引发社会各界的普遍关注与热议。",
+            "相关领域专家就此议题发表了专业见解。",
+            "有关部门正在积极研究应对策略与方案。",
+            "业内人士普遍认为这将产生重要影响。",
+            "多家主流媒体对此进行了深度报道分析。",
+            "目前各方正在保持密切沟通与协调。",
+            "市场对此反应积极，总体形势向好。",
+            "专家指出这一趋势值得持续关注与研究。",
+            "相关部门表示将加强监管与政策指导。",
+            "公众对这一话题表现出浓厚兴趣与期待。",
         ]
-        
-        for add in additions:
-            if len(content) + len(add) <= max_length:
-                content = content.rstrip('。！？') + "，" + add[1:]  # 去掉开头的标点
-        
-        return content[:max_length]
-    
+
+        # 避免重复：优先用不同补充句
+        used = set()
+        for kw in keywords:
+            if len(content) >= max_length:
+                break
+            for add in additions_pool:
+                if add not in used and len(content) + len(add) <= max_length:
+                    content = content.rstrip('。！？') + "。" + add
+                    used.add(add)
+                    break
+
+        # 如果还不够长度，继续添加不重复的补充
+        for add in additions_pool:
+            if add not in used and len(content) + len(add) <= max_length:
+                content = content.rstrip('。！？') + "。" + add
+                used.add(add)
+            if len(content) >= min_length:
+                break
+
     # 如果太长，截取并确保句子完整
     if len(content) > max_length:
         # 尝试在句号处截断
@@ -278,8 +312,8 @@ def expand_summary(content, min_length=150, max_length=200):
         last_period = max(truncated.rfind('。'), truncated.rfind('！'), truncated.rfind('？'))
         if last_period > min_length:
             return truncated[:last_period + 1]
-        return truncated + "..."
-    
+        return truncated + "……"
+
     return content
 
 def get_sample_news(count=20):
@@ -348,10 +382,11 @@ def get_sample_news(count=20):
     return sample_news
 
 
-def step_2_generate_images(news_list, seed=101, max_retries=2):
-    """第2步：生成图片（带质量检查和重试）"""
+def step_2_generate_images(news_list, seed=101, max_retries=5):
+    """第2步：生成图片（带质量检查和重试，更高重试率）"""
     logger.log(f"🎨 步骤 2/5: 生成 {len(news_list)} 张图片（带质量检查）")
     logger.log(f"📊 质量标准: 文件50KB-800KB, 宽≥800, 高≥450, 比例16:9")
+    logger.log(f"⚡ API限流应对: 失败自动重试最多{max_retries+1}次，每次间隔递增等待")
 
     try:
         results = []
@@ -383,7 +418,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=2):
 
             while not success and retry_count <= max_retries:
                 try:
-                    logger.log(f"🖼️  生成图片 {idx}/{len(news_list)}: {title[:30]}... (尝试 {retry_count + 1})")
+                    logger.log(f"🖼️  生成图片 {idx}/{len(news_list)}: {title[:30]}... (尝试 {retry_count + 1}/{max_retries + 1})")
 
                     result = subprocess.run(
                         ["python3", str(genai_script),
@@ -407,41 +442,51 @@ def step_2_generate_images(news_list, seed=101, max_retries=2):
                             results.append(str(image_file))
                             success = True
                         else:
-                            if retry_count < max_retries:
-                                logger.log(f"⚠️  图片质量不达标，重新生成...")
-                                retry_count += 1
+                            logger.log(f"⚠️  图片质量不达标，重新生成...")
+                            retry_count += 1
+                            if image_file.exists():
                                 image_file.unlink()  # 删除不合格的图片
+                            if retry_count <= max_retries:
+                                wait_time = 15 + retry_count * 10
+                                logger.log(f"⏳ 等待 {wait_time} 秒...")
+                                time.sleep(wait_time)
                             else:
                                 logger.log(f"⚠️  图片 {idx}/{len(news_list)} 质量未达标但已达到最大重试次数")
                                 results.append(str(image_file))
                                 success = True
                     else:
-                        if retry_count < max_retries:
-                            logger.log(f"⚠️  图片 {idx}/{len(news_list)} 生成失败，重试...")
-                            retry_count += 1
+                        # 生成失败（可能是API限流429）
+                        logger.log(f"⚠️  图片 {idx}/{len(news_list)} 生成失败: {result.stderr[:100] if result.stderr else 'unknown'}")
+                        retry_count += 1
+                        if retry_count <= max_retries:
+                            wait_time = 15 + retry_count * 10
+                            logger.log(f"⏳ 等待 {wait_time} 秒后重试...")
+                            time.sleep(wait_time)
                         else:
-                            logger.log(f"❌ 图片 {idx}/{len(news_list)} 生成失败")
+                            logger.log(f"❌ 图片 {idx}/{len(news_list)} 达到最大重试次数，记录为失败")
                             results.append(None)
                             success = True
 
-                    # 稍等避免API限流
-                    if idx < len(news_list) or not success:
-                        time.sleep(3)
-
                 except subprocess.TimeoutExpired:
-                    if retry_count < max_retries:
-                        logger.log(f"⚠️  图片 {idx}/{len(news_list)} 超时，重试...")
-                        retry_count += 1
+                    logger.log(f"⚠️  图片 {idx}/{len(news_list)} 超时")
+                    retry_count += 1
+                    if retry_count <= max_retries:
+                        wait_time = 15 + retry_count * 10
+                        logger.log(f"⏳ 等待 {wait_time} 秒后重试...")
+                        time.sleep(wait_time)
                     else:
-                        logger.log(f"❌ 图片 {idx}/{len(news_list)} 超时")
+                        logger.log(f"❌ 图片 {idx}/{len(news_list)} 超时达到最大次数")
                         results.append(None)
                         success = True
                 except Exception as e:
-                    if retry_count < max_retries:
-                        logger.log(f"⚠️  图片 {idx}/{len(news_list)} 异常: {str(e)}，重试...")
-                        retry_count += 1
+                    logger.log(f"⚠️  图片 {idx}/{len(news_list)} 异常: {str(e)}")
+                    retry_count += 1
+                    if retry_count <= max_retries:
+                        wait_time = 15 + retry_count * 10
+                        logger.log(f"⏳ 等待 {wait_time} 秒后重试...")
+                        time.sleep(wait_time)
                     else:
-                        logger.log(f"❌ 图片 {idx}/{len(news_list)} 最终失败")
+                        logger.log(f"❌ 图片 {idx}/{len(news_list)} 异常达到最大次数")
                         results.append(None)
                         success = True
 
