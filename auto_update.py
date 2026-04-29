@@ -88,15 +88,32 @@ def step_1_search_news(count=20):
                         content = clean_news_content(raw_content)
                         title = clean_news_content(title)  # 标题也需要清理
                         
+                        # 过滤掉含"中共"的新闻
+                        if '中共' in title or '中共' in content:
+                            logger.log(f"🚫 过滤含敏感词新闻: {title[:30]}...")
+                            continue
+                        
                         # 确保摘要至少150字，不足则扩展
                         content = expand_summary(content, min_length=150, max_length=200)
                         
                         news_list.append({
                             "title": title,
                             "summary": content,
-                            "tags": ["新闻"]  # 默认标签
+                            "raw_prompt": raw_content[:100],  # 保存原始内容用于生成图片
+                            "tags": ["新闻"]
                         })
                     logger.log(f"✅ 搜索成功: 找到 {len(news_list)} 条新闻")
+                    
+                    # 确保正好20条新闻，不足则用示例补齐
+                    if len(news_list) < count:
+                        needed = count - len(news_list)
+                        logger.log(f"📝 需要补充 {needed} 条示例新闻")
+                        sample = get_sample_news(needed)
+                        for s in sample:
+                            s['summary'] = expand_summary(s['summary'], min_length=150, max_length=200)
+                            s['raw_prompt'] = s['summary'][:100]
+                        news_list.extend(sample)
+                    
                     return news_list[:20]  # 确保只返回20条新闻
                 else:
                     logger.log("⚠️  搜索结果为空，使用示例数据")
@@ -104,12 +121,14 @@ def step_1_search_news(count=20):
                     # 扩展示例新闻每个摘要到150-200字
                     for news in sample_news:
                         news['summary'] = expand_summary(news['summary'], min_length=150, max_length=200)
+                        news['raw_prompt'] = news['summary'][:100]
                     return sample_news
             except json.JSONDecodeError as e:
                 logger.log(f"⚠️  JSON解析失败: {str(e)}，使用示例数据")
                 sample_news = get_sample_news(count)
                 for news in sample_news:
                     news['summary'] = expand_summary(news['summary'], min_length=150, max_length=200)
+                    news['raw_prompt'] = news['summary'][:100]
                 return sample_news
         else:
             logger.log("⚠️  搜索返回为空，使用示例数据")
@@ -123,6 +142,69 @@ def step_1_search_news(count=20):
         for news in sample_news:
             news['summary'] = expand_summary(news['summary'], min_length=150, max_length=200)
         return sample_news
+
+
+def extract_image_keywords(title, summary):
+    """从标题和摘要中提取图片生成的关键词"""
+    import re
+    
+    # 合并标题和摘要
+    text = f"{title} {summary}"
+    
+    # 定义常见关键词类别
+    keyword_map = {
+        # 科技类
+        "科技": "technology, computer, digital",
+        "人工智能": "AI, artificial intelligence, robot",
+        "AI": "AI, artificial intelligence, robot",
+        "手机": "smartphone, mobile phone",
+        "电脑": "computer, laptop",
+        "互联网": "internet, network",
+        "5G": "5G network, communication tower",
+        "芯片": "computer chip, semiconductor",
+        "新能源": "solar panel, wind turbine, clean energy",
+        "汽车": "car, automobile, vehicle",
+        "电动车": "electric car, EV",
+        
+        # 国际/政治类
+        "美国": "United States, American flag",
+        "白宫": "White House, Washington DC",
+        "联合国": "United Nations, UN headquarters",
+        
+        # 经济类
+        "经济": "economy, business, finance",
+        "股市": "stock market, trading",
+        "银行": "bank, finance building",
+        
+        # 社会类
+        "教育": "school, education, students",
+        "医疗": "hospital, doctor, medicine",
+        "气候": "climate, weather, environment",
+        "灾难": "disaster, emergency",
+        
+        # 体育/娱乐
+        "体育": "sports, stadium",
+        "奥运": "Olympics, sports",
+        "电影": "movie, cinema, film",
+        "音乐": "music, concert",
+        
+        # 地点
+        "北京": "Beijing, China cityscape",
+        "上海": "Shanghai, modern city",
+        "国际": "international, global",
+        "全球": "world, global",
+    }
+    
+    keywords_found = []
+    for cn_keyword, en_keyword in keyword_map.items():
+        if cn_keyword in text:
+            keywords_found.append(en_keyword)
+    
+    # 如果没找到关键词，使用通用描述
+    if not keywords_found:
+        return "breaking news, current events"
+    
+    return ", ".join(keywords_found[:3])  # 最多返回3个关键词
 
 
 def clean_news_content(text):
@@ -279,16 +361,22 @@ def step_2_generate_images(news_list, seed=101, max_retries=2):
 
         for idx, news in enumerate(news_list, 1):
             title = news.get("title", "")
-            summary = news.get("summary", "")[:50]
+            # 使用更多内容来生成图片
+            summary = news.get("summary", "")[:150]
+            raw_prompt = news.get("raw_prompt", "")[:100]  # 使用原始未清理内容
+            
+            # 提取关键词生成更具体的描述
+            keywords = extract_image_keywords(title, summary)
+            
+            # 为每条新闻生成独特的高质量提示词
+            prompt_en = f"Realistic news photography: {keywords}. {title}. {summary}. "
+            prompt_en += "8K ultra high definition, photorealistic, detailed, natural lighting, "
+            prompt_en += "professional photojournalism, Reuters/Associated Press style, "
+            prompt_en += "real scene, actual event, no animation, no cartoon, vivid colors, "
+            prompt_en += "cinematic composition, sharp focus, depth of field, current news"
 
-            # 生成提示词（极致优化：超高清、真实、精致）
-            prompt = f"超高清真实新闻摄影，{title}，{summary}，8K分辨率，专业新闻摄影，极致清晰，锐利细节，真实光线，自然色彩，电影级构图，纪实风格，新闻现场感，生动逼真，高对比度，丰富层次，专业镜头，景深效果，真实场景，无卡通，无插画，照片级质量，National Geographic风格，Reuters新闻摄影标准"
-
-            # Pollinations 英文提示词（效果更好）
-            prompt_en = f"Professional news photography, {title}. {summary}. 8K ultra high definition, Reuters photojournalism style, National Geographic quality, sharp details, natural lighting, cinematic composition, documentary style, realistic scene, no cartoon, no illustration, photo-realistic, vibrant colors, high contrast, rich layers, professional lens, depth of field, current news event"
-
-            # 图片文件名
-            image_file = IMAGES_DIR / f"news_{seed + idx}.png"
+            # 图片文件名，使用唯一命名避免覆盖
+            image_file = IMAGES_DIR / f"news_{seed + idx:04d}.png"
 
             success = False
             retry_count = 0
