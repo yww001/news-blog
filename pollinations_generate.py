@@ -19,8 +19,9 @@ def generate_image(prompt, output_path, width=1344, height=768, seed=None, model
     # URL 编码提示词
     encoded_prompt = urllib.parse.quote(prompt)
     
-    # 构建 URL
-    params = [f"prompt={encoded_prompt}", f"width={width}", f"height={height}"]
+    # 构建 URL - 使用 prompt/ 前缀，用 & 分隔参数
+    # 第一个参数用 ? 分隔，其他用 & 分隔
+    params = [f"width={width}", f"height={height}"]
     if seed:
         params.append(f"seed={seed}")
     if model:
@@ -28,7 +29,7 @@ def generate_image(prompt, output_path, width=1344, height=768, seed=None, model
     if nologo:
         params.append("nologo=true")
     
-    url = f"https://image.pollinations.ai/{'?'.join(params)}"
+    url = f"https://image.pollinations.ai/prompt/{encoded_prompt}?{'&'.join(params)}"
     
     print(f"🎨 Generating image...")
     print(f"   Prompt: {prompt[:60]}...")
@@ -76,7 +77,7 @@ def main():
     parser.add_argument("--width", type=int, default=1344, help="宽度 (默认 1344)")
     parser.add_argument("--height", type=int, default=768, help="高度 (默认 768)")
     parser.add_argument("--seed", type=int, help="随机种子")
-    parser.add_argument("--model", help="模型名称 (flux, turbo 等)")
+    parser.add_argument("--model", default="turbo", help="模型名称 (flux, turbo 等，默认 turbo)")
     parser.add_argument("--nologo", action="store_true", help="不添加水印")
     
     args = parser.parse_args()
