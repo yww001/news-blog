@@ -11,6 +11,10 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import subprocess
 import time
+import opencc
+
+# 初始化简繁体转换器
+converter = opencc.OpenCC('t2s')  # Traditional to Simplified
 
 # 配置
 BLOG_PATH = "/home/swg/.openclaw/workspace/news-blog"
@@ -82,6 +86,7 @@ def step_1_search_news(count=20):
                         
                         # 清理内容：转繁体为简体，移除英文和特殊符号
                         content = clean_news_content(raw_content)
+                        title = clean_news_content(title)  # 标题也需要清理
                         
                         # 确保摘要至少150字，不足则扩展
                         content = expand_summary(content, min_length=150, max_length=200)
@@ -126,6 +131,9 @@ def clean_news_content(text):
         return "暂无内容"
     
     import re
+    
+    # 0. 首先转换繁体为简体
+    text = converter.convert(text)
     
     # 1. 移除 markdown 链接和图片标记 ![[ ]] [[ ]] [视频]
     text = re.sub(r'!\[\[.*?\]\]', '', text)
