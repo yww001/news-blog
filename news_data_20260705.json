@@ -1,0 +1,142 @@
+[
+  {
+    "number": "01",
+    "title": "世界杯决赛在即：阿根廷与法国上演巅峰对决",
+    "summary": "2026年美加墨世界杯决赛将在今日打响，阿根廷与法国两支劲旅会师决赛。这将是梅西和姆巴佩两位超级巨星的正面交锋，吸引全球超过20亿观众关注。法国队此前以4比0轻取葡萄牙晋级，而阿根廷则通过点球大战艰难击败德国。",
+    "tag": "体育",
+    "prompt": "World Cup final stadium packed with fans, two football teams on the pitch, dramatic sunset lighting, fireworks in the sky, celebration atmosphere, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "02",
+    "title": "厄尔尼诺现象加强 东南亚多国面临严峻干旱",
+    "summary": "气象学家警告，厄尔尼诺现象正在迅速加强，预计将给东南亚地区带来创纪录的干旱。印度尼西亚和马来西亚的棕榈油产量可能大幅下降，推动全球植物油价格上涨。各国政府已启动应急响应机制，呼吁民众节约用水。",
+    "tag": "国际",
+    "prompt": "Southeast Asian landscape under severe drought, cracked earth, withered crops, dry reservoir, brown vegetation, hot sun, farmers concerned, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "03",
+    "title": "中国智谱AI发布GLM-5.2 性能比肩GPT-5成本更低",
+    "summary": "中国人工智能企业智谱AI发布新一代大语言模型GLM-5.2，在多项基准测试中与GPT-5持平，但使用成本仅为后者的五分之一。该模型支持100多种语言，已向开发者开放API。欧美市场对其数据安全问题表示关注。",
+    "tag": "科技",
+    "prompt": "Chinese AI research lab with holographic displays showing neural network architecture, engineers collaborating on AI development, futuristic technology, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "04",
+    "title": "乌克兰无人机袭击俄罗斯炼油厂 能源市场震荡",
+    "summary": "乌克兰军队使用新型远程无人机对俄罗斯境内多家炼油厂发动袭击，导致日均原油加工能力损失约50万桶。国际油价应声上涨超过5%，突破105美元/桶。俄罗斯方面誓言报复，国际社会呼吁双方保持克制。",
+    "tag": "国际",
+    "prompt": "Ukrainian military drone flying at sunset, industrial refinery with flames and smoke, Eastern European landscape, dramatic sky, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "05",
+    "title": "SpaceX展示AI手机原型 号称实现全球无缝通信",
+    "summary": "SpaceX在投资者日活动中展示了一款类手机AI设备原型，声称可实现真正的全球无缝通信，包括在海洋和极地地区。该设备通过星链卫星网络连接，预计明年正式上市。苹果前高管已加入OpenAI硬件团队，引发业界猜测。",
+    "tag": "科技",
+    "prompt": "SpaceX prototype AI device on table, satellite constellation in background, sleek futuristic design, technology presentation stage, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "06",
+    "title": "德国紧急召见中国大使 回应俄军在华受训报道",
+    "summary": "德国外交部因媒体报道俄罗斯军人在中国境内接受训练的消息，紧急召见中国驻德国大使表达关切。中国外交部回应称相关报道不实，中俄两国军事合作符合国际法。欧盟多国对此表示关注，北约内部展开磋商。",
+    "tag": "国际",
+    "prompt": "German government building with diplomatic flags, formal meeting room, diplomats in discussion, serious atmosphere, Berlin architecture, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "07",
+    "title": "全球AI推理芯片市场突破万亿美元 中国企业崛起",
+    "summary": "市场研究机构数据显示，全球AI芯片市场规模今年首次突破万亿美元。英伟达凭借H200系列占据市场主导，中国企业华为昇腾和壁仞科技在推理芯片领域快速追赶，国产化率持续提升。",
+    "tag": "科技",
+    "prompt": "AI chip wafer under microscope view, glowing circuitry, semiconductor clean room, Chinese engineers examining chips, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "08",
+    "title": "数字人民币跨境支付试点扩展至50国 交易额创新高",
+    "summary": "中国人民银行宣布数字人民币跨境支付试点范围扩大至50个国家，覆盖所有主要经济体。上半年跨境交易额突破3万亿元人民币，同比增长180%。法国、意大利成为首批支持数字人民币支付的欧元区国家。",
+    "tag": "金融",
+    "prompt": "Digital yuan transaction on smartphone, global connectivity map with China highlighted, mobile payment technology, futuristic finance, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "09",
+    "title": "中国夏粮丰收 连续三年实现增产",
+    "summary": "农业农村部公布数据显示，今年夏粮总产量达1.45亿吨，同比增长2.3%，连续第三年实现增产。河南、山东、安徽等主产区普遍增产，优质小麦占比提升至85%。丰收为稳定全年粮食产量奠定基础。",
+    "tag": "经济",
+    "prompt": "Golden wheat fields in China at harvest time, combine harvesters working, farmers with smiling faces, abundant harvest, rural landscape, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "10",
+    "title": "欧盟通过最严AI监管法规 违规罚款最高7%全球营收",
+    "summary": "欧盟理事会正式通过《人工智能法案》配套法规细则，对高风险AI系统进行更明确定义。违规企业面临最高全球营业额7%的罚款，谷歌、微软已宣布调整欧盟区AI产品策略。AI实名认证制度要求聊天机器人必须告知用户其机器身份。",
+    "tag": "科技",
+    "prompt": "European Parliament building in Brussels, EU officials signing documents, AI concept with digital regulations, serious formal atmosphere, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "11",
+    "title": "比特币重返12万美元关口 机构资金持续涌入",
+    "summary": "比特币价格今日突破12万美元整数关口，24小时涨幅达12%，市值重回2.3万亿美元。贝莱德、富达等机构管理的现货比特币ETF净流入连续四周超过50亿美元。分析师指出美联储降息预期和比特币减半效应是主要推动因素。",
+    "tag": "金融",
+    "prompt": "Bitcoin cryptocurrency rising on digital display, glowing coin symbol, financial trading screen with charts going up, futuristic finance, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "12",
+    "title": "神舟二十二号与空间站成功对接 三名航天员入驻",
+    "summary": "神舟二十二号载人飞船成功与天宫空间站对接，三名航天员正式入驻空间站。他们将在轨开展为期六个月的太空实验和技术测试，包括材料制备、生物医学研究和太空授课等活动。这是中国空间站进入常态化运营后的第12次载人飞行。",
+    "tag": "科技",
+    "prompt": "Chinese space station Tiangong with Shenzhou spacecraft docking, Earth in background, astronauts in spacesuits, cosmic stars, space mission, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "13",
+    "title": "全球气温连续15个月创新高 气候变化加剧",
+    "summary": "欧盟气候监测机构数据显示，全球平均气温已连续15个月刷新历史同期纪录。北极海冰范围创历史新低，冰川加速消融。极端天气事件频发，国际社会呼吁加快碳减排行动，主要经济体碳中和路线图面临严峻考验。",
+    "tag": "社会",
+    "prompt": "Melting glacier with polar bear, rising sea levels, dramatic climate change scene, ice falling into ocean, global warming concept, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "14",
+    "title": "中国外贸半年出口首破2万亿美元 继续强劲增长",
+    "summary": "海关总署数据显示，上半年中国出口达2.1万亿美元，首次半年突破2万亿美元大关，同比增长11.2%。新能源汽车、锂电池、光伏组件继续领跑，机电产品出口占比提升至60%。对东盟、金砖国家出口增速超过15%。",
+    "tag": "经济",
+    "prompt": "Container port with massive cargo ships, Chinese export goods being loaded, busy trade scene, shipping containers stacked high, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "15",
+    "title": "OpenAI推出新版ChatGPT 首次实现情感交互",
+    "summary": "OpenAI发布ChatGPT新版本，增加了情感识别和共情回应功能。AI现在可以感知用户情绪并调整回应方式，用户满意度测试提升40%。该版本已向Plus用户推送， 企业版将在下月发布。隐私倡导者对情感数据收集表示担忧。",
+    "tag": "科技",
+    "prompt": "Person interacting with AI chatbot on laptop, emotional interface design, glowing conversation bubbles, modern office setting, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "16",
+    "title": "特斯拉FSD中国版本上线 城市智驾时代开启",
+    "summary": "特斯拉官方宣布FSD全自动驾驶中国版本正式上线，首批在北京、上海、深圳、杭州等10个城市开放。FSD针对中国交通规则深度优化，可实现全程无人干预自动驾驶。选装价格6.4万元人民币，首批1万辆已交付。",
+    "tag": "科技",
+    "prompt": "Tesla car with autonomous driving on Chinese city street, sensors detecting surroundings, futuristic dashboard display, Shanghai or Beijing urban scenery, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "17",
+    "title": "日元汇率跌至158 创34年新低",
+    "summary": "美元兑日元汇率今日跌至158比1，创1992年以来新低。日本央行维持超宽松货币政策，与美联储加息路径形成明显分化。旅游业迎来爆发，中国游客赴日消费创新高。日本政府表示高度关注汇市波动。",
+    "tag": "金融",
+    "prompt": "Japanese yen banknotes with falling exchange rate chart, Tokyo cityscape, financial district, Japanese flag, economic news display, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "18",
+    "title": "世卫组织预警新型传染病 呼吁加强全球监测",
+    "summary": "世界卫生组织发布全球疫情传播风险预警，指出气候变化加速新发传染病出现频率。已有30多个国家报告不明原因呼吸道疾病上升。世卫呼吁各国提升实验室检测能力，建议高风险人群接种加强针。",
+    "tag": "社会",
+    "prompt": "WHO headquarters in Geneva, scientists in lab coats researching viruses, world map with disease surveillance, global health concept, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "19",
+    "title": "中国新能源汽车渗透率首超50% 智能驾驶普及",
+    "summary": "中国汽车工业协会数据显示，上半年新能源汽车渗透率达52%，首次超过传统燃油车。比亚迪、理想、蔚来等品牌销量持续增长，L2级辅助驾驶成为标配。充电基础设施建设提速，全国充电桩突破1000万个。",
+    "tag": "经济",
+    "prompt": "Electric vehicle charging station in China, modern EV car being charged, clean energy concept, Chinese city background, futuristic infrastructure, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "20",
+    "title": "Anime Expo 2026开幕 史上最大规模展会",
+    "summary": "Anime Expo 2026在洛杉矶会议中心开幕，展会规模创历史新高，超过4000家参展商参与。日本多家动画工作室发布新作预告，任天堂、索尼展示最新游戏和主机。周边商品销售额预计突破2亿美元。",
+    "tag": "文化",
+    "prompt": "Anime Expo convention center with crowds of cosplayers, colorful anime decorations, Japanese pop culture celebration, Los Angeles convention hall, photorealistic, ultra detailed, 8K, high resolution"
+  }
+]
