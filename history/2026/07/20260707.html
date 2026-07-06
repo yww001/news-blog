@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年07月07日 环球新闻</title>
+    <meta name="description" content="2026年07月07日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; min-height: 800px; width: 100%; max-width: none; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+.comments-wrapper { max-width: 1200px; margin: 0 auto; }
+.comments-wrapper .giscus { width: 100% !important; max-width: 100% !important; }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+        .giscus { width: 100% !important; max-width: 100% !important; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <video id="coverVideo" src="../../../videos/cover.mp4" autoplay muted loop playsinline class="cover-image"></video>
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年07月07日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+<div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="体育">
+    <img class="news-image" src="../../../images/news_20260707_01.png" alt="世界杯决赛：阿根廷点球大战击败法国 梅西宣布从国家队退役" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">世界杯决赛：阿根廷点球大战击败法国 梅西宣布从国家队退役</h3>
+        <p class="news-summary">2026年美加墨世界杯决赛在迈阿密硬石体育场精彩落幕，阿根廷通过点球大战5-3战胜法国，成功卫冕世界杯冠军。法国前锋姆巴佩在点球大战中罚失关键点球，35岁的梅西赛后正式宣布从国家队退役。全球超过25亿观众通过直播见证了这一历史性时刻，法国总统马克龙现场观战并称赞法国队的拼搏精神。</p>
+        <div><span class="tag">体育</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260707_02.png" alt="中俄"海上联合-2026"演习在青岛启动 规模创历年之最" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">中俄"海上联合-2026"演习在青岛启动 规模创历年之最</h3>
+        <p class="news-summary">中俄"海上联合-2026"联合演习在山东青岛正式启动，这是两国海军首次在青岛举行如此大规模演习。中方派出驱逐舰、护卫舰、潜艇等多型主战舰艇参演，俄方舰艇编队也已抵达青岛军港。演习将重点围绕海上联合补给、联合反潜、防空等科目展开。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260707_03.png" alt="特朗普与普京通话提议调解俄乌战争 北约峰会前引发国际关注" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">特朗普与普京通话提议调解俄乌战争 北约峰会前引发国际关注</h3>
+        <p class="news-summary">美国前总统特朗普与俄罗斯总统普京进行电话会谈后表示，愿意帮助调解结束俄乌战争。克里姆林宫发言人称这次通话具有建设性意义。乌克兰总统泽连斯基随后表示已与特朗普通话，讨论了长达1200公里的前线局势。北约峰会即将召开，各方就如何结束冲突展开密集外交斡旋。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="军事">
+    <img class="news-image" src="../../../images/news_20260707_04.png" alt="中国海军舰艇编队穿越日本四大海峡 7艘舰艇部署西太平洋" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">中国海军舰艇编队穿越日本四大海峡 7艘舰艇部署西太平洋</h3>
+        <p class="news-summary">日本防卫省统合幕僚监部发布消息，中国海军舰艇编队近日穿越吐噶喇海峡、冲绳本岛与宫古岛之间海域、大隅海峡和对马海峡等日本四大要道。目前至少有7艘中国舰艇部署在西太平洋海域，活动频率和规模创近年新高。</p>
+        <div><span class="tag">军事</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260707_05.png" alt="智谱AI发布GLM-5.3多模态大模型 视频理解能力超越GPT-5" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">智谱AI发布GLM-5.3多模态大模型 视频理解能力超越GPT-5</h3>
+        <p class="news-summary">中国人工智能企业智谱AI发布新一代多模态大模型GLM-5.3，在视频理解、图像分析和文本生成等多项国际基准测试中超越GPT-5。该模型首次实现对长视频的完整理解与深度分析，支持一键生成专业级视频解说词。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260707_06.png" alt="比特币重返11万美元关口 机构资金持续涌入加密货币市场" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">比特币重返11万美元关口 机构资金持续涌入加密货币市场</h3>
+        <p class="news-summary">比特币价格重返11万美元关口，为2026年以来首次创下历史新高。机构投资者持续涌入加密货币市场，贝莱德、富达等资管巨头的比特币ETF持仓量持续增加。分析师认为美联储降息预期、比特币减半效应以及机构采用率提升是本轮上涨的主要驱动力。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260707_07.png" alt="达沃斯科技峰会2026在辽宁开幕 全球科技领袖共商AI伦理" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">达沃斯科技峰会2026在辽宁开幕 全球科技领袖共商AI伦理</h3>
+        <p class="news-summary">达沃斯科技峰会2026在辽宁省大连市隆重开幕，主题为在变局中构建科技未来。全球2000多名科技领袖、企业家和学者参会，重点讨论人工智能伦理治理、量子计算突破、太空商业化等议题。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260707_08.png" alt="南欧野火肆虐迫使数万人撤离 环法自行车赛被迫改道" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">南欧野火肆虐迫使数万人撤离 环法自行车赛被迫改道</h3>
+        <p class="news-summary">野火在法国南部、西班牙和意大利多地持续蔓延，迫使数万居民紧急撤离家园。法国政府宣布南部四省进入紧急状态，环法自行车赛因途经火区被迫更改路线。欧盟启动民防机制，协调成员国消防资源支援。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="军事">
+    <img class="news-image" src="../../../images/news_20260707_09.png" alt="乌克兰无人机深入袭击俄罗斯最大炼油厂 距边境2500公里" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">乌克兰无人机深入袭击俄罗斯最大炼油厂 距边境2500公里</h3>
+        <p class="news-summary">乌克兰无人机袭击了俄罗斯西伯利亚地区最大的炼油厂，该设施距离乌克兰边境超过2500公里。此前该炼油厂是俄罗斯十大炼油企业中唯一未被乌军无人机触及的企业。袭击导致炼油厂部分设施起火，俄罗斯防空系统未能有效拦截。</p>
+        <div><span class="tag">军事</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260707_10.png" alt="日本首相高市早苗访问印度 推进经济与安全战略合作" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">日本首相高市早苗访问印度 推进经济与安全战略合作</h3>
+        <p class="news-summary">日本首相高市早苗访问印度新德里，与印度总理莫迪举行会谈，双方探讨深化经济安全与战略合作。两国签署多项合作协议，涉及半导体供应链、清洁能源和国防技术领域。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260707_11.png" alt="阿里巴巴禁止员工使用Anthropic编程工具 被指进行模型蒸馏" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">阿里巴巴禁止员工使用Anthropic编程工具 被指进行模型蒸馏</h3>
+        <p class="news-summary">据多家媒体报道，阿里巴巴将禁止员工使用Anthropic的编程工具Claude Code，该禁令将于7月10日起生效。Anthropic此前已禁止中国公司及在华外资企业使用其模型。报道称阿里巴巴被指控对其Claude模型进行模型蒸馏提取能力。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260707_12.png" alt="德国隐形冠军中小企业面临中国竞争压力 寻求政府支持" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">德国隐形冠军中小企业面临中国竞争压力 寻求政府支持</h3>
+        <p class="news-summary">德国中小企业群体被称为隐形冠军，长期是德国经济支柱和出口主力。然而，中国制造业快速升级对这些细分市场龙头形成激烈竞争。德国工业协会呼吁政府加大对中小企业的研发补贴和税收优惠。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260707_13.png" alt="斯坦福大学发布AI就业报告 75%毕业生使用AI工具完成学业" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">斯坦福大学发布AI就业报告 75%毕业生使用AI工具完成学业</h3>
+        <p class="news-summary">斯坦福大学发布2026年AI与就业报告，显示75%的应届毕业生在学业中广泛使用AI工具。报告指出AI正在重塑人类技能结构，部分重复性工作机会减少但新岗位涌现。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260707_14.png" alt="金饰价格年内跌幅超500元/克 央行购金节奏放缓" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">金饰价格年内跌幅超500元/克 央行购金节奏放缓</h3>
+        <p class="news-summary">国际金价持续回调，国内金饰价格年内跌幅已超过500元/克。目前10年期美债收益率升至4.6%以上，实际利率回落降低了黄金吸引力。分析指出金饰价格阶段性见顶，央行购金与实物需求中长期配置逻辑未变但短期节奏放缓。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260707_15.png" alt="王毅与芬兰外长瓦尔托宁会谈 中芬战略伙伴关系持续深化" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">王毅与芬兰外长瓦尔托宁会谈 中芬战略伙伴关系持续深化</h3>
+        <p class="news-summary">当地时间7月5日，中共中央政治局委员、外交部长王毅在赫尔辛基与芬兰外长瓦尔托宁举行会谈。王毅表示，芬兰是最早同新中国建交的西方国家之一，也是第一个同中国签订政府间贸易协定的西方国家。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260707_16.png" alt="欧盟关注中国贸易失衡问题 冯德莱恩重申对话解决立场" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">欧盟关注中国贸易失衡问题 冯德莱恩重申对话解决立场</h3>
+        <p class="news-summary">欧盟委员会主席冯德莱恩就欧盟与中国贸易关系发表讲话，表示欧盟应继续就贸易失衡问题同中国进行对话，将明确提出中国过剩商品涌入欧洲市场等问题。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260707_17.png" alt="日本股市泡沫破裂 央行政策收紧后一年蒸发50%市值" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">日本股市泡沫破裂 央行政策收紧后一年蒸发50%市值</h3>
+        <p class="news-summary">日本股市经历剧烈调整，主要股指较高点回落超过50%，引发市场对泡沫破裂的担忧。日本央行此前持续收紧货币政策，推动日元升值并压缩出口企业利润。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260707_18.png" alt="DeepSeek发布AI推理新突破 效率提升10倍成本下降90%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">DeepSeek发布AI推理新突破 效率提升10倍成本下降90%</h3>
+        <p class="news-summary">中国AI初创公司DeepSeek发布新型推理技术，在保持模型能力的同时将推理效率提升10倍，计算成本下降90%。该公司此前发表相关技术论文后，谷歌也采用类似技术路径。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260707_19.png" alt="OpenAI完成新一轮融资 估值达4000亿美元超越Stripe" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">OpenAI完成新一轮融资 估值达4000亿美元超越Stripe</h3>
+        <p class="news-summary">人工智能领军企业OpenAI完成新一轮超过100亿美元融资，估值达到4000亿美元，超越Stripe成为全球估值最高的私营科技公司。微软继续跟投，软银愿景基金首次入股。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260707_20.png" alt="耐克大中华区营收连续八季下滑 跌幅超3%加剧市场担忧" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">耐克大中华区营收连续八季下滑 跌幅超3%加剧市场担忧</h3>
+        <p class="news-summary">运动品牌耐克公布2026财年第四季度财报，大中华区营收连续第八个季度下滑，跌幅超过3%。耐克表示中国消费者偏好国产品牌、电商竞争加剧以及库存问题是主要挑战。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+</div>
+            <div class="comments-section">
+        <h2 class="comments-title">💬 评论区</h2>
+        <div class="giscus"></div>
+    </div>
+    <script src="https://giscus.app/client.js"
+        data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+        data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+        data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+        data-emit-metadata="0" data-input-position="top"
+        data-theme="preferred_color_scheme" data-lang="zh-CN"
+        crossorigin="anonymous" async></script>
+    <footer>
+            <p>📰 新闻发布与更新 by <a href="https://github.com/yww001/news-blog" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://pollinations.ai" target="_blank">Pollinations AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
