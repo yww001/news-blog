@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年07月08日 环球新闻</title>
+    <meta name="description" content="2026年07月08日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; min-height: 800px; width: 100%; max-width: none; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-wrapper { max-width: 1200px; margin: 0 auto; }
+        .comments-wrapper .giscus { width: 100% !important; max-width: 100% !important; }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+        .giscus { width: 100% !important; max-width: 100% !important; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <video id="coverVideo" src="../../../videos/cover.mp4" autoplay muted loop playsinline class="cover-image"></video>
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年07月08日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+<div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260708_01.png" alt="特朗普白宫公开批评"中国问题专家"章家敦 批其言论过于消极" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">特朗普白宫公开批评"中国问题专家"章家敦 批其言论过于消极</h3>
+        <p class="news-summary">当地时间7月6日，美国总统特朗普在白宫新闻发布会上公开批评被称为"中国问题专家"的章家敦，直言其涉华言论"总是太消极，就像天快塌下来一样"，纯属危言耸听。特朗普表示，美国经济表现强劲，美中贸易关系正在改善，批评者不应该唱衰两国关系。这一罕见表态引发美国政界和学术界广泛关注。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260708_02.png" alt="中国首次实现运载火箭一子级可控回收 航天技术重大突破" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">中国首次实现运载火箭一子级可控回收 航天技术重大突破</h3>
+        <p class="news-summary">中国航天科技集团宣布，我国首次成功实现运载火箭一子级可控回收验证试验。在甘肃酒泉卫星发射中心，长征系列运载火箭搭载自主研发的可回收飞行器完成发射飞行，一子级在预定区域实现精确着陆回收，标志着中国在可重复使用运载火箭技术领域取得重大突破，为未来大幅降低发射成本奠定基础。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="军事">
+    <img class="news-image" src="../../../images/news_20260708_03.png" alt="超强台风"巴威"维持超强级强度 逐渐趋向台湾以东洋面" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">超强台风"巴威"维持超强级强度 逐渐趋向台湾以东洋面</h3>
+        <p class="news-summary">中央气象台7月8日发布台风橙色预警，今年第9号台风"巴威"已加强为超强台风级，中心附近最大风力达16级。气象部门预计"巴威"将继续向西北方向移动，11日前后在福建福清至浙江温岭一带沿海登陆。浙江、福建等省已启动防台风Ⅲ级应急响应，沿海地区紧急部署防御措施。</p>
+        <div><span class="tag">军事</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260708_04.png" alt="市场监管总局将开展公平竞争审查抽查 涉及全国31省份" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">市场监管总局将开展公平竞争审查抽查 涉及全国31省份</h3>
+        <p class="news-summary">国家市场监督管理总局宣布，将于近期组织开展2026年度公平竞争审查抽查，覆盖全国31个省、自治区、直辖市。抽查重点针对各级政府出台的规范性文件和其他政策措施是否存在排除、限制竞争的内容。总局表示，将指导各地做到"应审尽审""凡审必严"，切实维护全国统一大市场秩序。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260708_05.png" alt="全球AI安全峰会达成《北京共识》 人工智能伦理治理框架出炉" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">全球AI安全峰会达成《北京共识》 人工智能伦理治理框架出炉</h3>
+        <p class="news-summary">为期三天的全球人工智能安全峰会在北京闭幕，来自50多个国家和地区的代表就AI安全治理达成重要共识，通过《北京共识》。文件确立了人工智能安全发展的基本原则，建立跨国AI安全信息共享机制，并呼吁各国在AI军事应用领域保持克制。中国、美国、欧盟等主要经济体均表示将积极推动共识落地实施。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260708_06.png" alt="欧盟与英国重启贸易谈判 双方希望在年底前达成新协议" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">欧盟与英国重启贸易谈判 双方希望在年底前达成新协议</h3>
+        <p class="news-summary">欧盟委员会与英国政府宣布重新启动英欧贸易谈判，这是自英国"脱欧"后双方首次正式重启全面贸易协议谈判。谈判将涉及金融服务、数据流动、农产品贸易等核心议题。欧盟首席谈判代表表示，双方均有强烈意愿在年底前达成协议，以避免无协议脱欧后过渡期的经济不确定性。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260708_07.png" alt="国际油价持续上涨 布伦特原油突破90美元/桶关口" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">国际油价持续上涨 布伦特原油突破90美元/桶关口</h3>
+        <p class="news-summary">国际油价持续走高，布伦特原油期货价格突破90美元/桶，创2025年下半年以来新高。分析认为，欧佩克+维持减产策略、全球能源需求回升以及中东地缘政治紧张是推动油价上涨的主要因素。高盛等华尔街投行上调年内油价预期，预计2026年底前布伦特原油将维持在95美元以上。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260708_08.png" alt="OpenAI发布新一代推理模型 复杂问题处理能力提升40%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">OpenAI发布新一代推理模型 复杂问题处理能力提升40%</h3>
+        <p class="news-summary">OpenAI正式发布下一代推理大语言模型，该模型在数学推理、代码生成、复杂逻辑分析等任务上的表现较上一代提升约40%。新模型引入了革命性的"链式推理"架构，能够将复杂问题分解为多个步骤逐步解决。OpenAI表示，该模型将在未来三个月内逐步向开发者和企业用户开放，并将集成到ChatGPT企业版中。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260708_09.png" alt="南海仲裁十周年 菲律宾呼吁中国尊重国际仲裁裁决" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">南海仲裁十周年 菲律宾呼吁中国尊重国际仲裁裁决</h3>
+        <p class="news-summary">海牙国际仲裁法院就菲律宾与中国南海岛屿主权争议做出裁决满十周年。菲律宾政府发表声明，呼吁中国尊重这一具有法律约束力的仲裁裁决。中国外交部回应称，仲裁庭对此案无管辖权，裁决是无效的，没有法律约束力。中国对南海诸岛及其附近海域拥有无可争辩的主权。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="军事">
+    <img class="news-image" src="../../../images/news_20260708_10.png" alt="朝鲜再次进行战术弹道导弹试射 金正恩现场观摩" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">朝鲜再次进行战术弹道导弹试射 金正恩现场观摩</h3>
+        <p class="news-summary">朝鲜官方媒体报道，朝鲜成功进行新型战术弹道导弹试射，朝鲜最高领导人金正恩亲临现场观摩。报道称，新型导弹命中了位于朝鲜东海岸的靶标，验证了精确打击能力。朝中社称此次试射是"正当的国防需要"，不针对任何特定国家。韩美日三方对此次试射表示严重关切，呼吁朝方停止挑衅行为。</p>
+        <div><span class="tag">军事</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260708_11.png" alt="特斯拉无人驾驶出租车在美国多个城市投入商业运营" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">特斯拉无人驾驶出租车在美国多个城市投入商业运营</h3>
+        <p class="news-summary">特斯拉公司宣布，其无人驾驶出租车服务正式在美国多个城市启动商业运营，包括旧金山、洛杉矶、凤凰城等主要城市。用户可通过特斯拉App呼叫无人驾驶出租车，车辆完全取消方向盘和踏板设计。特斯拉表示，车队已累计完成超过5000万英里的无人驾驶里程，安全记录优于人类驾驶员平均水平。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260708_12.png" alt="印度成功试射"烈火-6"洲际弹道导弹 射程覆盖全亚洲" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">印度成功试射"烈火-6"洲际弹道导弹 射程覆盖全亚洲</h3>
+        <p class="news-summary">印度国防研究与发展组织宣布，成功试射最新型"烈火-6"洲际弹道导弹，这是印度迄今为止射程最远的导弹。印度军方表示，导弹飞行了约6000公里，精确命中了印度洋上的预定靶标。"烈火-6"可携带多枚分导式弹头，印度总理莫迪称此次试射是"印度国防力量的重大里程碑"。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260708_13.png" alt="人民币汇率创年内新高 在岸人民币升破7.20关口" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">人民币汇率创年内新高 在岸人民币升破7.20关口</h3>
+        <p class="news-summary">在岸人民币对美元汇率升破7.20关口，创2026年以来新高。分析认为，中国经济企稳回升、外资持续流入人民币资产以及中美货币政策分化是推动人民币走强的主要因素。外资持有中国国债规模再创历史新高，超过4万亿元人民币。中国央行表示，将继续维持人民币汇率在合理均衡水平上的基本稳定。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260708_14.png" alt="京杭大运河实现百年来首次全线通水 恢复货运功能" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">京杭大运河实现百年来首次全线通水 恢复货运功能</h3>
+        <p class="news-summary">京杭大运河黄河以北河段正式恢复通水运行，这是大运河百年来首次实现全线水流贯通。国家发改委表示，这是大运河文化保护传承利用的重大标志性成果。未来黄河以北河段将恢复航运功能，发展内河旅游和货物运输，对促进区域经济发展具有重要意义。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260708_15.png" alt="英国宣布将派航母战斗群赴亚太地区 进行自由航行" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">英国宣布将派航母战斗群赴亚太地区 进行自由航行</h3>
+        <p class="news-summary">英国国防部宣布，"伊丽莎白女王"号航母战斗群将于下月起航赴亚太地区执行任务，途经地中海、红海抵达南海。英国国防大臣表示，航母群将在南海进行"自由航行"演练，此举正值中英关系因香港和科技摩擦持续紧张之际。中国外交部回应称，中方坚决反对任何国家以"航行自由"为借口损害中国主权安全。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260708_16.png" alt="苹果发布Vision Pro 3 MR头显 重量减轻40%售价下降" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">苹果发布Vision Pro 3 MR头显 重量减轻40%售价下降</h3>
+        <p class="news-summary">苹果公司在WWDC2026上发布第三代混合现实头显Vision Pro 3，得益于全新光波导显示技术和钛合金框架设计，设备重量较上一代减轻40%，续航提升至8小时。起售价格降至2499美元，低于市场预期。苹果表示，Vision Pro 3将进一步面向企业级用户和专业创作者，同时拓展在医疗、教育领域的应用场景。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260708_17.png" alt="世贸组织裁决美国对华加征关税违规 中方表示欢迎" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">世贸组织裁决美国对华加征关税违规 中方表示欢迎</h3>
+        <p class="news-summary">世界贸易组织专家组发布裁决报告，认定美国对华商品加征关税违反国际贸易规则。裁决指出，美方援引的"301条款"不符合WTO规则中关于最惠国待遇的要求。中方对裁决表示欢迎和高度肯定。美国贸易代表办公室回应称，WTO裁决"存在严重错误"，美方将考虑上诉。商务部敦促美方立即停止错误做法，回归自由贸易轨道。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260708_18.png" alt="2026年大学生就业报告出炉 平均月薪同比增长8%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">2026年大学生就业报告出炉 平均月薪同比增长8%</h3>
+        <p class="news-summary">智联招聘发布《2026年大学生就业力报告》，今年应届本科毕业生平均起薪为6870元/月，较去年增长约8%。人工智能、新能源、半导体等战略性新兴产业人才需求旺盛，起薪普遍超过1万元。报告还显示，灵活就业比例持续上升，约15%的毕业生选择自由职业或创业。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="军事">
+    <img class="news-image" src="../../../images/news_20260708_19.png" alt="日本防卫预算创历史新高 重点加强西南岛屿防卫能力" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">日本防卫预算创历史新高 重点加强西南岛屿防卫能力</h3>
+        <p class="news-summary">日本防卫省公布2027财年防卫预算概算申请，总额达7.7万亿日元，创历史新高。预算重点用于加强西南诸岛防卫能力，包括增购"战斧"巡航导弹、部署新型巡逻艇以及建设弹药储备基地。日本首相称此为"国家安保的最优先课题"，引发周边国家高度关注。</p>
+        <div><span class="tag">军事</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260708_20.png" alt="国家统计局发布半年经济数据 GDP同比增长5.3%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">国家统计局发布半年经济数据 GDP同比增长5.3%</h3>
+        <p class="news-summary">国家统计局发布2026年上半年国民经济运行数据，GDP同比增长5.3%，高于全年目标增速。消费、服务业和高技术制造业表现强劲，固定资产投资同比增长4.1%。国家统计局表示，总的来看上半年国民经济运行总体平稳，新质生产力加快培育，高质量发展稳步推进。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+</div>
+        </div>
+            <section class="comments-section">
+            <div class="comments-wrapper">
+                <h2 class="comments-title">💬 评论区</h2>
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_config = function () {
+                        this.page.url = window.location.href;
+                        this.page.identifier = window.location.pathname;
+                    };
+                    (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://tom-xst9ggxnjx.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>请启用 JavaScript 查看评论</noscript>
+            </div>
+            </section>
+    </div>
+    <footer>
+        <p>&copy; 2026 环球新闻 · 每日国际要闻汇总</p>
+        <p>本站内容均来自网络整理，仅供学习参考</p>
+        <div class="footer-links">
+            <a href="../../../index.html">首页</a>
+            <a href="../../../about.html">关于</a>
+            <a href="../../../history.html">历史</a>
+            <a href="../../../contact.html">联系</a>
+        </div>
+    </footer>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        }
+        if (localStorage.getItem('darkMode') === 'true') document.body.classList.add('dark-mode');
+        function searchNews() {
+            var input = document.getElementById('searchInput').value.toLowerCase();
+            var cards = document.getElementsByClassName('news-card');
+            for (var i = 0; i < cards.length; i++) {
+                var title = cards[i].getElementsByClassName('news-title')[0].textContent.toLowerCase();
+                var summary = cards[i].getElementsByClassName('news-summary')[0].textContent.toLowerCase();
+                cards[i].classList.toggle('hidden', !title.includes(input) && !summary.includes(input));
+            }
+        }
+    </script>
+</body>
+</html>
