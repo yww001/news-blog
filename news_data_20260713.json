@@ -1,0 +1,142 @@
+[
+  {
+    "number": "01",
+    "title": "联合国安理会通过人工智能军事应用决议 中国呼吁和平利用AI技术",
+    "summary": "联合国安理会今日通过历史性决议，首次就人工智能在军事领域的应用作出规范。决议要求各国在使用致命性自主武器系统时必须保持人类控制权，并建立国际咨询机制。中国代表团在表决中投赞成票，呼吁和平利用AI技术，防止技术竞争演变为军备竞赛。",
+    "tag": "国际",
+    "prompt": "United Nations Security Council chamber with delegates from different countries discussing AI military applications, photorealistic, ultra detailed, 8K, diplomatic atmosphere, modern conference room"
+  },
+  {
+    "number": "02",
+    "title": "嫦娥-8号月球探测器成功着陆 开展月球资源勘探",
+    "summary": "中国嫦娥-8号月球探测器成功在月球南极艾特肯盆地着陆，开始执行月表资源勘探任务。探测器携带的钻探设备将采集月壤样本，分析氦-3含量和水的分布情况。任务计划持续6个月，为未来月球基地建设提供数据支撑。",
+    "tag": "科技",
+    "prompt": "Chinese lunar rover on the moon surface with Earth in the background, photorealistic, ultra detailed, 8K, space exploration, scientific equipment"
+  },
+  {
+    "number": "03",
+    "title": "比特币重返12万美元关口 加密市场迎来新行情",
+    "summary": "比特币价格再度突破12万美元，创下年内新高。加密市场整体走强，以太坊突破4000美元，多个主流山寨币涨幅超过20%。分析师认为特朗普遇刺未遂事件引发避险情绪，同时比特币ETF持续净流入推动本轮上涨。",
+    "tag": "金融",
+    "prompt": "Bitcoin cryptocurrency price chart with glowing digital coins, photorealistic, ultra detailed, 8K, financial trading screen, futuristic atmosphere"
+  },
+  {
+    "number": "04",
+    "title": "英国大选结果揭晓 工党时隔14年重新执政",
+    "summary": "英国大选投票结果揭晓，工党获得下议院多数席位，时隔14年重新执政。党首基尔·斯塔默出任新首相，表示将重点解决经济复苏和医疗体系改革问题。保守党遭遇历史性失利，首相苏纳克承认败选并宣布辞职。",
+    "tag": "国际",
+    "prompt": "British Parliament building with celebration crowd, photorealistic, ultra detailed, 8K, London cityscape, democratic election atmosphere"
+  },
+  {
+    "number": "05",
+    "title": "OpenAI发布GPT-5正式版 多模态能力大幅提升",
+    "summary": "OpenAI正式发布GPT-5，在推理能力、多模态理解和 Agent工作流方面实现重大突破。GPT-5可以自主完成复杂任务规划，在多个基准测试中超越人类专家水平。企业版价格保持不变，个人用户月费为20美元。",
+    "tag": "科技",
+    "prompt": "Modern AI technology concept with neural network visualization, photorealistic, ultra detailed, 8K, futuristic digital brain, technology abstract"
+  },
+  {
+    "number": "06",
+    "title": "中国上半年GDP同比增长5.5% 经济运行稳中有进",
+    "summary": "国家统计局公布上半年经济数据，GDP同比增长5.5%，符合预期目标。高技术制造业投资增长12%，消费对经济增长贡献率达65%。专家表示出口回暖和消费复苏是主要支撑，下半年有望延续向好态势。",
+    "tag": "经济",
+    "prompt": "Modern Chinese city skyline with economic charts, photorealistic, ultra detailed, 8K, business district, financial growth concept"
+  },
+  {
+    "number": "07",
+    "title": "四川汶川发生5.2级地震 暂无人员伤亡报告",
+    "summary": "四川省阿坝藏族羌族自治州汶川县发生5.2级地震，震源深度15公里。四川消防救援队伍已集结完毕，当地政府启动应急预案。地震预警系统提前15秒发出警报，成都市区有明显震感，暂无人员伤亡报告。",
+    "tag": "社会",
+    "prompt": "Emergency rescue team in action after earthquake, photorealistic, ultra detailed, 8K, disaster relief, professional rescue workers"
+  },
+  {
+    "number": "08",
+    "title": "欧盟就碳边境调节机制达成最终协议 明年起全面实施",
+    "summary": "欧盟成员国就碳边境调节机制（CBAM）达成最终协议，将于明年1月1日起全面实施。进口商需缴纳与欧盟碳价相当的碳排放费用，覆盖钢铁、铝、水泥和化肥等行业。发展中国家对此表示关切，认为可能构成贸易壁垒。",
+    "tag": "国际",
+    "prompt": "European Union building in Brussels with environmental concept, photorealistic, ultra detailed, 8K, EU flag, green energy concept"
+  },
+  {
+    "number": "09",
+    "title": "苹果首款折叠iPhone正式发布 售价15999元起",
+    "summary": "苹果公司正式发布旗下首款折叠屏iPhone，采用横向折叠设计，展开后屏幕尺寸达8英寸。新机搭载A19仿生芯片，支持Apple Pencil手写笔，起售价为15999元人民币。中国市场首发开售，预约人数已超过200万。",
+    "tag": "科技",
+    "prompt": "Latest Apple iPhone foldable phone on display, photorealistic, ultra detailed, 8K, sleek design, technology store atmosphere"
+  },
+  {
+    "number": "10",
+    "title": "美军舰在南海进行所谓自由航行 中方坚决反对",
+    "summary": "美国海军第七舰队驱逐舰未经中国政府批准，擅自进入中国南沙群岛仁爱礁邻近海域。中国人民解放军南部战区组织海空兵力全程跟踪监视，并依法警告驱离。外交部发言人强烈反对美方挑衅行为，要求停止在南海挑事生非。",
+    "tag": "军事",
+    "prompt": "Military naval ship in South China Sea, photorealistic, ultra detailed, 8K, modern warship, geopolitical tension concept"
+  },
+  {
+    "number": "11",
+    "title": "国际金价突破2600美元 创历史新高",
+    "summary": "国际金价延续涨势，突破2600美元/盎司大关，创下历史新高。地缘政治风险加剧和全球央行宽松预期推动避险需求上升。分析师指出金价仍有上涨空间，但短期波动风险不容忽视。",
+    "tag": "金融",
+    "prompt": "Gold bars and gold coins on display, photorealistic, ultra detailed, 8K, precious metals, wealth concept, financial security"
+  },
+  {
+    "number": "12",
+    "title": "华为发布鸿蒙NEXT正式版 生态系统进一步完善",
+    "summary": "华为正式发布鸿蒙NEXT（HarmonyOS NEXT）正式版，移除Linux内核依赖，实现全栈自研。新系统支持原生应用超过1万个，开发者数量突破720万。余承东表示鸿蒙生态设备数量已超过9亿台，成为全球第三大移动操作系统。",
+    "tag": "科技",
+    "prompt": "Huawei headquarters with technology showcase, photorealistic, ultra detailed, 8K, modern tech company, smartphone ecosystem"
+  },
+  {
+    "number": "13",
+    "title": "巴西遭遇罕见洪灾 至少200万人受影响",
+    "summary": "巴西南里奥格兰德州遭遇罕见洪灾，强降雨导致河流决堤，多个城市被淹。目前已造成至少50人死亡，200万人受影响。巴西总统宣布进入紧急状态，国际社会陆续提供人道主义援助。",
+    "tag": "国际",
+    "prompt": "Flood disaster scene in Brazil with rescue operations, photorealistic, ultra detailed, 8K, natural disaster, humanitarian aid"
+  },
+  {
+    "number": "14",
+    "title": "A股三大指数集体收涨 科技股领涨两市",
+    "summary": "A股市场今日高开高走，三大指数集体收涨。沪指涨1.8%，深成指涨2.5%，创业板指涨3.2%。科技股全面爆发，半导体、人工智能和新能源板块涨幅居前。两市成交额突破1.5万亿元，市场情绪明显回暖。",
+    "tag": "金融",
+    "prompt": "Chinese stock market trading floor with rising charts, photorealistic, ultra detailed, 8K, financial district, stock market atmosphere"
+  },
+  {
+    "number": "15",
+    "title": "北京常住人口首次负增长 城市功能疏解成效显现",
+    "summary": "北京市统计局公布数据，常住人口同比减少约10万人，首次出现负增长。城市功能疏解和产业升级是主要原因，教育和医疗资源向郊区转移进展顺利。专家表示人口结构优化将提升城市生活品质。",
+    "tag": "社会",
+    "prompt": "Beijing cityscape with modern architecture, photorealistic, ultra detailed, 8K, urban development, city planning concept"
+  },
+  {
+    "number": "16",
+    "title": "沙特阿美宣布在华投资千亿美元 涉及炼化一体化项目",
+    "summary": "沙特阿美宣布未来五年在华投资规模将超过1000亿美元，主要涉及炼化一体化项目和化工产业链合作。首个合作项目将在辽宁盘锦落地，日加工能力达30万桶。能源合作成为中沙经贸关系新亮点。",
+    "tag": "经济",
+    "prompt": "Oil refinery industrial complex with Saudi Arabian flag, photorealistic, ultra detailed, 8K, energy industry, international cooperation"
+  },
+  {
+    "number": "17",
+    "title": "日本火星探测器成功进入轨道 开启红色星球探索之旅",
+    "summary": "日本宇宙航空研究开发机构宣布，日本火星探测器MMX成功进入火星轨道。探测器将开展火星卫星 Phobos 和 Deimos 的探测任务，计划采集样本并于2028年返回地球。这将是人类首次从小行星带以外的天体返回样本。",
+    "tag": "科技",
+    "prompt": "Japanese spacecraft arriving at Mars planet, photorealistic, ultra detailed, 8K, space exploration, red planet surface"
+  },
+  {
+    "number": "18",
+    "title": "2026年世界杯决赛对阵出炉 巴西对阵英格兰",
+    "summary": "2026年世界杯第二场半决赛结束，英格兰2比1战胜法国，与巴西会师决赛。决赛将于7月19日在里约热内卢马拉卡纳球场举行。两支球队历史上共交手28次，巴西15胜8平5负占据上风。",
+    "tag": "体育",
+    "prompt": "World Cup football final match stadium with excitement, photorealistic, ultra detailed, 8K, FIFA World Cup, sports celebration"
+  },
+  {
+    "number": "19",
+    "title": "全球冰川加速融化 阿尔卑斯山雪线后退300米",
+    "summary": "最新监测数据显示，全球冰川融化速度创历史新高，阿尔卑斯山雪线过去十年后退超过300米。联合国环境规划署警告，到本世纪末全球海平面可能上升超过1米。国际社会呼吁加快气候行动，减少温室气体排放。",
+    "tag": "环境",
+    "prompt": "Melting glacier in Alps mountains, photorealistic, ultra detailed, 8K, climate change, environmental disaster, ice melting"
+  },
+  {
+    "number": "20",
+    "title": "蔚来汽车单月交付量首超5万辆 造车新势力崛起",
+    "summary": "蔚来汽车公布6月交付数据，单月交付量首次突破5万辆大关，同比增长120%。受益于BaaS电池租用服务和换电网络完善，蔚来在高端纯电市场占有率持续提升。公司同时宣布在欧洲市场销量突破10万辆。",
+    "tag": "经济",
+    "prompt": "Modern electric car charging station with Chinese EV brand, photorealistic, ultra detailed, 8K, new energy vehicles, smart transportation"
+  }
+]
