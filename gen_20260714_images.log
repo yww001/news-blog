@@ -1,0 +1,39 @@
+Generating news for 2026年07月14日
+==================================================
+
+Generating images...
+OK: news_20260714_01.png (109859 bytes)
+OK: news_20260714_02.png (172760 bytes)
+OK: news_20260714_03.png (123174 bytes)
+OK: news_20260714_04.png (135617 bytes)
+OK: news_20260714_05.png (127253 bytes)
+OK: news_20260714_06.png (131062 bytes)
+OK: news_20260714_07.png (194322 bytes)
+OK: news_20260714_08.png (185940 bytes)
+OK: news_20260714_09.png (156096 bytes)
+OK: news_20260714_10.png (76800 bytes)
+OK: news_20260714_11.png (127791 bytes)
+OK: news_20260714_12.png (163462 bytes)
+OK: news_20260714_13.png (151152 bytes)
+OK: news_20260714_14.png (143417 bytes)
+FAIL: news_20260714_15.png - HTTP Error 400: Bad Request
+  Retrying...
+FAIL: news_20260714_15.png - HTTP Error 400: Bad Request
+OK: news_20260714_16.png (106566 bytes)
+OK: news_20260714_17.png (160788 bytes)
+OK: news_20260714_18.png (176659 bytes)
+OK: news_20260714_19.png (164990 bytes)
+OK: news_20260714_20.png (118265 bytes)
+
+Retrying 1 failed images...
+FAIL: news_20260714_15.png - HTTP Error 400: Bad Request
+  Retrying...
+FAIL: news_20260714_15.png - HTTP Error 400: Bad Request
+
+19/20 images generated successfully
+  FAILED: 阿根廷宣布重返南美国家联盟 卢拉表示欢迎
+
+Updating index.html...
+Updated index.html with 20 news items
+
+Done!

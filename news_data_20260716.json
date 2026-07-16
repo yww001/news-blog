@@ -1,0 +1,142 @@
+[
+  {
+    "number": "01",
+    "title": "二十国集团峰会将在北京举行 聚焦数字经济与绿色转型",
+    "summary": "G20领导人峰会将于今年晚些时候在北京举行，本次峰会主题为\"构建共同未来\"，重点讨论数字经济、人工智能治理、气候变化和绿色能源转型等全球性议题。中国将主持多场高级别会议，推动各国在数字贸易和碳边境调节机制等方面达成共识。",
+    "tag": "国际",
+    "image_prompt": "World leaders summit meeting in modern conference hall with Chinese architecture elements, diplomatic flags, diplomatic delegates in formal attire, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "02",
+    "title": "中国科学家研发新型脑机接口 助残障人士恢复感知能力",
+    "summary": "清华大学研究团队宣布成功研发新一代脑机接口系统，该系统可帮助截瘫患者恢复触觉感知和运动控制能力。通过微创手术植入大脑皮层，设备能够读取和解码神经信号，实现人机协作。研究团队已开展临床试验，志愿者反馈积极。",
+    "tag": "科技",
+    "image_prompt": "Scientists in laboratory conducting brain-computer interface research, medical equipment, neurological scanning display, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "03",
+    "title": "人民币国际化进程加速 跨境支付占比创新高",
+    "summary": "环球银行金融电信协会数据显示，人民币在国际跨境支付中的占比升至4.8%，创历史新高。越来越多的国家和地区开始使用人民币进行贸易结算，人民币原油期货成交量持续增长。央行表示将进一步推动金融市场双向开放。",
+    "tag": "金融",
+    "image_prompt": "Modern banking hall with Chinese yuan currency symbols, global financial trading screens, international currency exchange display, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "04",
+    "title": "欧盟与中国达成新贸易协议 深化绿色技术合作",
+    "summary": "欧盟委员会主席与中国国务院总理共同宣布达成全面贸易协定，涵盖新能源汽车、可再生能源技术和高端制造等领域。根据协议，双方将相互开放市场并在碳减排标准制定方面加强协调，预计每年贸易额将增加500亿欧元。",
+    "tag": "经济",
+    "image_prompt": "European Union and China trade agreement signing ceremony, EU and Chinese flags, business leaders shaking hands, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "05",
+    "title": "日本福岛核电站完成第三轮核废水排放",
+    "summary": "日本东京电力公司宣布完成福岛第一核电站第三轮核废水排放计划，约7800吨处理水已排入太平洋。日本政府强调排放水符合国际原子能机构安全标准，但中国、韩国等邻国继续对日本水产品实施进口限制措施。",
+    "tag": "国际",
+    "image_prompt": "Fukushima nuclear power plant coastline, ocean waves, environmental monitoring equipment, nuclear water treatment facility, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "06",
+    "title": "华为发布鸿蒙操作系统5.0 打破安卓iOS双垄断格局",
+    "summary": "华为正式发布鸿蒙操作系统5.0版本，新版系统采用分布式架构，支持手机、平板、汽车和智能家居等多设备无缝协同。华为宣布开放第三方应用市场，目前已有超过50万款应用入驻。分析师认为这将打破安卓和iOS的长期双垄断局面。",
+    "tag": "科技",
+    "image_prompt": "Huawei smartphone launching event, modern tech product showcase, HarmonyOS interface display, smartphone with innovative UI, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "07",
+    "title": "全球最大海上风电场在江苏投产 装机容量突破吉瓦",
+    "summary": "位于江苏沿海的全球最大海上风电场正式投产运营，项目总装机容量达2.1吉瓦，可为300万户家庭提供清洁电力。该项目采用16兆瓦超大型海上风机，在多项技术上实现突破，标志着中国海上风电发展进入新阶段。",
+    "tag": "科技",
+    "image_prompt": "Massive offshore wind farm in the ocean, huge wind turbines rotating, clean energy infrastructure, coastal China scenery, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "08",
+    "title": "阿根廷夺得美洲杯冠军 梅西职业生涯圆满落幕",
+    "summary": "阿根廷国家足球队在美洲杯决赛中通过点球大战击败巴西队，成功卫冕美洲杯冠军。35岁的梅西此战后正式宣布退出国家队，他在职业生涯中获得10座联赛冠军、4座欧冠奖杯和8座金球奖。阿根廷全国为球队英雄们举行盛大庆祝活动。",
+    "tag": "体育",
+    "image_prompt": "Argentina football team celebrating victory, Messi holding trophy, confetti, jubilant fans in stadium, Copa America final match, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "09",
+    "title": "联合国安理会改革谈判取得突破 五国达成共识草案",
+    "summary": "联合国安理会五个常任理事国就安理会改革方案达成历史性共识草案，计划新增6个非常任理事国席位并给予部分国家更长任期。中国和美国均表示支持这项1945年以来最大规模的安理会改革，旨在提高机构效率和代表性。",
+    "tag": "国际",
+    "image_prompt": "United Nations Security Council chamber, diplomats from five nations discussing reform, UN flag emblem, diplomatic conference room, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "10",
+    "title": "SpaceX完成星舰第四次轨道测试 首次实现完整回收",
+    "summary": "SpaceX星舰完成第四次轨道级飞行测试任务，成功实现助推器和飞船的同步垂直着陆回收。SpaceX创始人马斯克表示，这项突破使星舰的完全可重复使用成为现实，大幅降低发射成本。马斯克宣布将于明年开始执行载人登月任务。",
+    "tag": "科技",
+    "image_prompt": "SpaceX Starship rocket launching, booster and spacecraft landing simultaneously, SpaceX control center, futuristic space exploration, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "11",
+    "title": "英国首相访华 宣布扩大新能源汽车合作",
+    "summary": "英国首相率团访问中国，与中国领导人举行会谈，双方签署涵盖新能源汽车、电池技术和充电基础设施领域的合作协议。英国将进口更多中国产电动汽车，同时中国车企将在英国建设首个欧洲生产基地。预计协议将为英国创造数万个就业岗位。",
+    "tag": "国际",
+    "image_prompt": "UK Prime Minister visiting China, bilateral meeting with Chinese leaders, diplomatic handshake, electric vehicle cooperation agreement signing, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "12",
+    "title": "国际油价持续上涨 布伦特原油突破90美元",
+    "summary": "受 OPEC+ 维持减产政策和全球需求复苏推动，国际油价持续走高，布伦特原油期货价格突破每桶90美元关口。能源分析师预测三季度油价将维持高位震荡，欧洲能源危机风险有所上升，多国政府考虑延长燃油补贴政策。",
+    "tag": "金融",
+    "image_prompt": "Oil price surge on global market, crude oil trading floor, price chart display showing upward trend, energy commodities trading, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "13",
+    "title": "OpenAI发布GPT-5模型 实现通用人工智能新突破",
+    "summary": "OpenAI发布最新一代GPT-5大语言模型，在推理能力、多模态理解和自主学习方面实现重大突破。GPT-5能够独立完成复杂科学计算、艺术创作和代码编写等任务。OpenAI表示已与微软、谷歌等企业展开合作，将推动AI技术在医疗和教育领域落地应用。",
+    "tag": "科技",
+    "image_prompt": "OpenAI research lab, artificial intelligence interface, neural network visualization, next-generation AI model demonstration, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "14",
+    "title": "中国二季度GDP增长4.7% 服务业贡献率提升",
+    "summary": "国家统计局公布二季度经济数据，GDP同比增长4.7%，经济运行总体平稳。服务业增加值占GDP比重升至55%，成为经济增长主要动力。高技术制造业投资增长12%，消费市场持续恢复，房地产市场出现积极变化。",
+    "tag": "经济",
+    "image_prompt": "Chinese economic data display, GDP growth chart, modern city commercial district, consumer market activity, business analysis, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "15",
+    "title": "敦煌莫高窟新发现唐代皇室墓葬 出土大量壁画",
+    "summary": "敦煌研究院宣布在莫高窟附近发现一座保存完好的唐代皇室墓葬，出土包括宫廷生活壁画、金银器和丝织品在内的500余件珍贵文物。考古学家表示该墓葬为研究唐代丝绸之路文化交流提供重要实物依据，相关修复保护工作已启动。",
+    "tag": "文化",
+    "image_prompt": "Ancient Tang Dynasty tomb discovery, Dunhuang Mogao Caves, colorful Buddhist murals, archaeological excavation site, ancient Chinese artifacts, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "16",
+    "title": "全球极端天气频发 今年七月为有记录最热月份",
+    "summary": "世界气象组织宣布今年七月为有记录以来最热的月份，全球平均气温较工业化前水平高出1.5℃。欧洲南部遭遇严重热浪，希腊、意大利等地发生多处森林大火；南亚多国气温突破50℃，造成大量人员伤亡。各国政府紧急启动极端天气应急响应机制。",
+    "tag": "社会",
+    "image_prompt": "Extreme heat wave in European city, heat shimmer on streets, forest fire in Mediterranean region, people coping with extreme weather, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "17",
+    "title": "特斯拉人形机器人Optimus量产 售价2万美元",
+    "summary": "特斯拉宣布人形机器人Optimus正式进入量产阶段，单台售价2万美元起。Optimus身高1.78米，可搬运20公斤重物，具备精细手部动作能力。特斯拉表示已在上海工厂部署首批100台机器人，主要用于物料搬运和危险作业。",
+    "tag": "科技",
+    "image_prompt": "Tesla humanoid robot Optimus working in factory, robot performing precise tasks, modern manufacturing facility, robotic automation, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "18",
+    "title": "世卫组织宣布终结猴痘全球公共卫生紧急状态",
+    "summary": "世界卫生组织宣布猴痘疫情不再构成全球公共卫生紧急状态，过去三个月全球猴痘病例数下降89%。世卫组织表示疫苗接种和社区防控措施效果显著，但仍需保持警惕，特别是在非洲地区将继续提供疫苗和医疗物资支持。",
+    "tag": "社会",
+    "image_prompt": "WHO headquarters in Geneva, global health officials announcing end of monkeypox emergency, medical professionals celebrating, international healthcare cooperation, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "19",
+    "title": "印度成为全球最大智能手机市场 中国品牌领跑",
+    "summary": "印度智能手机市场规模超越美国成为全球第二，中国品牌小米、OPPO和vivo在印度市场份额合计超过65%。印度政府推动本土化生产政策，要求在印销售手机国产化率达到30%，中印两国企业在印度合建多个生产基地。",
+    "tag": "国际",
+    "image_prompt": "India smartphone market, busy mobile phone store in Indian city, Chinese smartphone brands displayed, retail shopping scene, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  },
+  {
+    "number": "20",
+    "title": "科学家在月球背面发现水冰资源 储量超预期",
+    "summary": "中国嫦娥七号探测器在月球背面南极附近发现大型水冰储层，科学家估计水冰含量比预期高出3倍。这一发现对未来月球基地建设和深空探索具有重要意义，NASA宣布将与中国合作开展月球资源开发计划，共同研究水冰提取技术。",
+    "tag": "科技",
+    "image_prompt": "Astronauts exploring lunar base, water ice on moon surface glowing blue, lunar rover collecting samples, Earth in distance, space research, photorealistic, ultra detailed, 8K, high resolution, no text watermarks"
+  }
+]
