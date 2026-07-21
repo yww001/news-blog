@@ -1,0 +1,142 @@
+[
+  {
+    "number": "01",
+    "title": "华为发布麒麟9020芯片 性能超越高通骁龙8 Gen4",
+    "summary": "华为在开发者大会上正式发布麒麟9020旗舰芯片，采用全新架构设计，CPU单核性能提升40%，GPU性能提升50%，NPU算力达到50TOPS。麒麟9020支持卫星通话和5.5G网络，首发搭载于Mate70 Pro机型。业内分析认为，这是华为在芯片领域的重要突破，将重塑全球高端手机芯片市场格局。",
+    "tag": "科技",
+    "image_prompt": "A close-up of a advanced smartphone processor chip with glowing circuits, held by a scientist in a clean room laboratory, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "02",
+    "title": "A股三大指数集体大涨 创业板指创年内新高",
+    "summary": "A股市场今日延续强势，三大指数集体收涨。沪指上涨1.8%，深成指上涨2.5%，创业板指涨幅达3.2%创年内新高。沪深两市成交额突破1.8万亿元，北向资金净流入超150亿元。AI算力概念股和半导体板块领涨，市场做多情绪高涨。",
+    "tag": "经济",
+    "image_prompt": "Bull market trend with stock charts on multiple screens in a modern trading floor, glowing digital displays showing rising stock prices, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "03",
+    "title": "中国成功发射第9颗天绘卫星 组网建设加速",
+    "summary": "中国在酒泉卫星发射中心使用长征二号丙运载火箭成功发射天绘九号卫星。这是天绘系列卫星的第9颗，将与前8颗组网运行，实现全球高精度地形测绘和三维立体成像。卫星采用新型合成孔径雷达技术，分辨率达0.3米，可全天候全天时对地观测。",
+    "tag": "科技",
+    "image_prompt": "Rocket launching into blue sky from a modern space center, dramatic clouds, smoke trail, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "04",
+    "title": "欧盟与中国就电动汽车关税达成阶段性共识",
+    "summary": "中欧双方经过多轮谈判，就电动汽车关税问题达成阶段性共识。欧盟同意降低对中国进口电动汽车的加征关税税率，中国则承诺增加在欧洲的投资和本地化生产。德国汽车制造商协会表示欢迎这一决定，认为自由贸易符合双方利益。中欧贸易摩擦降温有助于全球经济复苏。",
+    "tag": "国际",
+    "image_prompt": "Electric vehicles charging at a modern charging station in Europe, sleek cars being charged, European city background, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "05",
+    "title": "2026年世界人工智能大会在上海闭幕 达成多项共识",
+    "summary": "为期三天的2026世界人工智能大会在上海闭幕，吸引了来自全球100多个国家和地区的10万名参会者。大会达成人工智能全球治理上海共识，呼吁各国加强AI伦理规范、共享技术成果、防范安全风险。中国发布的AI赋能可持续发展报告获广泛认可。",
+    "tag": "科技",
+    "image_prompt": "Futuristic AI conference venue with holographic displays and robots, international delegates in attendance, Shanghai skyline background, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "06",
+    "title": "字节跳动发布豆包大模型3.0 性能接近GPT-5",
+    "summary": "字节跳动在年度开发者大会上发布豆包大模型3.0版本，在多项基准测试中性能接近GPT-5，部分中文任务表现甚至超越GPT-5。豆包3.0支持1000万token上下文窗口，具备更强的逻辑推理和代码生成能力。字节跳动宣布向开发者免费开放API接口。",
+    "tag": "科技",
+    "image_prompt": "Modern tech company office with holographic AI interface, young developers working on advanced computers, neural network visualization, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "07",
+    "title": "美联储宣布降息25个基点 符合市场预期",
+    "summary": "美联储联邦公开市场委员会宣布将联邦基金利率目标区间下调25个基点至5.0%至5.25%，符合市场预期。美联储主席表示，通胀率已回落至2.3%接近目标，就业市场保持韧性。消息公布后，美股三大指数小幅上涨，纳斯达克指数创历史新高。",
+    "tag": "金融",
+    "image_prompt": "Federal Reserve building in Washington DC, US dollar bills and financial charts, Federal Reserve logo, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "08",
+    "title": "中国游泳队巴黎世锦赛狂揽12金 创造历史最佳",
+    "summary": "在巴黎举行的2026年世界游泳锦标赛上，中国游泳队共获得12金4银2铜，金牌数和奖牌总数均创历史最佳成绩。潘展乐在男子100米自由泳中以46秒02打破世界纪录，汪顺成功卫冕男子200米混合泳冠军。中国队在水上项目上的整体实力令世界瞩目。",
+    "tag": "体育",
+    "image_prompt": "Olympic swimming competition with swimmers in a world-class pool, underwater shot showing swimmers racing, Chinese flag visible, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "09",
+    "title": "中国科学家首次实现千公里量子直接通信",
+    "summary": "中国科学技术大学潘建伟团队首次实现1000公里量子直接通信，刷新了量子通信距离的世界纪录。该技术无需加密密钥即可实现安全信息传输，理论上无法被窃听。实验在济南一号量子卫星和地面站之间完成，通信质量达到可用水平。这一突破为构建全球量子互联网奠定基础。",
+    "tag": "科技",
+    "image_prompt": "Chinese scientists in a modern quantum physics laboratory with complex laser equipment and quantum computing hardware, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "10",
+    "title": "三星堆遗址新发现6座祭祀坑 出土文物超5000件",
+    "summary": "四川省文物考古研究院宣布，三星堆遗址又有新发现。新发掘的6座祭祀坑出土珍贵文物超过5000件，包括完整的青铜神树、金杖和大量象牙器。其中一尊高3米的青铜立人像保存完好，造型独特前所未见。考古学家认为这批文物将为研究古蜀文明提供重要依据。",
+    "tag": "文化",
+    "image_prompt": "Ancient Chinese archaeological site with archaeologists carefully excavating bronze artifacts, mysterious Sanxingdui artifacts illuminated, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "11",
+    "title": "中国与东盟贸易额突破1万亿美元 创历史新高",
+    "summary": "海关总署数据显示，2026年上半年中国与东盟贸易总额达1.02万亿美元，同比增长8.6%，创历史同期新高。东盟继续保持中国第一大贸易伙伴地位。机电产品、新能源汽车和农产品贸易增长迅速。RCEP生效以来，区域内贸易便利化水平显著提升。",
+    "tag": "经济",
+    "image_prompt": "Modern cargo port with container ships and cranes, busy trade operations, containers marked with various country flags, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "12",
+    "title": "AMD发布Instinct MI400 GPU 挑战英伟达AI霸权",
+    "summary": "AMD在旧金山举行的Advancing AI大会上发布Instinct MI400系列GPU，声称其AI训练性能比英伟达H200提升60%。MI400采用CDNA 4架构，支持更高效的矩阵运算和更大的模型训练。谷歌、微软和亚马逊云服务已表示将采用MI400。",
+    "tag": "科技",
+    "image_prompt": "High-performance GPU chip close-up with colorful lights and steam cooling, data center background, futuristic technology, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "13",
+    "title": "全球首款CAR-T疗法治愈率突破90% 白血病有望治愈",
+    "summary": "美国FDA批准全球首款治愈率突破90%的CAR-T细胞疗法。该疗法针对难治性B细胞急性淋巴细胞白血病，临床试验显示90%患者实现完全缓解，其中87%患者两年内无复发。治疗费用从传统CAR-T的数十万美元降至15万美元。",
+    "tag": "社会",
+    "image_prompt": "Medical laboratory with researchers studying cell therapy under microscope, glowing red blood cells, futuristic medical equipment, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "14",
+    "title": "人民币国际化加速 跨境支付覆盖全球180个国家",
+    "summary": "中国人民银行公布数字人民币跨境支付最新数据，覆盖范围已扩大至全球180个国家和地区，跨境支付交易额累计突破8000亿元。数字人民币采用区块链技术，支持实时结算和零手续费，受到跨境电商和留学生群体欢迎。",
+    "tag": "金融",
+    "image_prompt": "Digital yuan symbol with global connectivity, world map with glowing connection lines, futuristic financial technology, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "15",
+    "title": "第78届联合国大会气候变化峰会将在北京举行",
+    "summary": "第78届联合国大会气候变化峰会将于今年9月在北京举行，这是联合国气候峰会首次在中国举办。本届峰会聚焦碳中和目标实现路径、气候融资机制和适应气候变化措施。中国已承诺2030年前碳达峰、2060年前碳中和。",
+    "tag": "国际",
+    "image_prompt": "United Nations headquarters with Chinese architecture elements, global leaders meeting, green environmental theme, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "16",
+    "title": "中国自主研制的大型客机C939完成首飞",
+    "summary": "中国商飞自主研制的大型客机C939在上海浦东机场完成首次飞行测试。C939采用最新一代复合材料和高效发动机，座位数达280座，航程15000公里。首飞历时2小时15分钟，各项性能指标均达到设计要求。",
+    "tag": "科技",
+    "image_prompt": "Large passenger airplane taking off from modern airport runway, sleek design with Chinese flag, dramatic sky, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "17",
+    "title": "中国乒乓球公开赛国乒包揽全部5枚金牌",
+    "summary": "在重庆举行的2026年中国乒乓球公开赛落幕，中国队包揽全部5个项目的金牌。男单决赛中樊振东以4-2战胜马龙，女单孙颖莎击败陈梦夺冠。日本选手张本智和在男单半决赛中被淘汰。国际乒联主席盛赞中国乒乓球代表着世界最高水平。",
+    "tag": "体育",
+    "image_prompt": "Table tennis match in a packed stadium, Chinese player serving, intense competition, Chinese and international flags, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "18",
+    "title": "深圳出台自动驾驶全域开放政策",
+    "summary": "深圳市交通运输局宣布将在全市范围开放自动驾驶测试，成为全国首个实现自动驾驶全域开放的城市。政策允许自动驾驶出租车、智能公交和无人配送车在所有公开道路上运营，无需安全员。百度Apollo和华为等企业率先获得运营许可。",
+    "tag": "社会",
+    "image_prompt": "Autonomous driving car on busy city street in Shenzhen, sensors and cameras visible, modern urban environment, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "19",
+    "title": "中国美术馆建馆60周年特展盛大开幕",
+    "summary": "中国美术馆建馆60周年特展在北京开幕，展出齐白石、张大千、徐悲鸿等大师真迹300余幅。展览分为百年丹青、雕塑百年、影像中国三大板块，全面呈现中国美术百年发展历程。文化旅游部表示将推动美术馆数字化建设。",
+    "tag": "文化",
+    "image_prompt": "Grand art museum interior with famous Chinese paintings and sculptures, elegant traditional Chinese architecture meets modern design, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "20",
+    "title": "中国科学家成功研发新型氢燃料电池 续航突破1000公里",
+    "summary": "中国科学院大连化物所成功研发新型氢燃料电池，能量密度达到600Wh/kg，较传统锂电池提升3倍。该电池采用铂钴合金催化剂和新型质子交换膜，充氢时间仅需5分钟，单次续航可达1000公里。多家车企表示将采用该技术。",
+    "tag": "科技",
+    "image_prompt": "Hydrogen fuel cell car refueling at hydrogen station, clean energy futuristic technology, scientist monitoring the process, photorealistic, ultra detailed, 8K"
+  }
+]
