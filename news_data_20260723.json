@@ -1,0 +1,142 @@
+[
+  {
+    "number": "01",
+    "title": "特斯拉发布Optimus Gen3机器人 具备家庭服务能力",
+    "summary": "特斯拉在AI日活动中发布Optimus Gen3人形机器人，这是首款具备完整家庭服务能力的商用机器人。机器人身高170厘米，体重65公斤，可完成打扫卫生、烹饪、照顾老人等日常家务。特斯拉CEO埃隆·马斯克表示，机器人将于2027年开始交付，售价约2万美元。",
+    "tag": "科技",
+    "image_prompt": "Humanoid robot serving food in a modern kitchen, sleek silver design, family setting, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "02",
+    "title": "上证指数突破4000点 创2015年以来新高",
+    "summary": "A股市场今日放量大涨，上证指数一举突破4000点大关，创2015年8月以来新高。深成指上涨3.2%，创业板指上涨4.1%。两市成交额突破2.5万亿元，创历史纪录。券商、银行板块领涨，北向资金净流入超200亿元。分析师认为，市场做多动能充沛，涨势有望延续。",
+    "tag": "经济",
+    "image_prompt": "Stock market bull statue with glowing digital chart in Shanghai financial district, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "03",
+    "title": "中国成功发射神舟二十号载人飞船",
+    "summary": "中国在酒泉卫星发射中心成功发射神舟二十号载人飞船，3名航天员将前往中国空间站执行6个月任务。任务期间，航天员将进行多次出舱活动并完成空间站维护升级。这是中国载人航天工程的第20次飞行任务。",
+    "tag": "科技",
+    "image_prompt": "Chinese rocket launching at night from desert space center, dramatic sky with stars, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "04",
+    "title": "美国宣布对华半导体出口新限制 商务部回应",
+    "summary": "美国商务部宣布实施新的半导体出口限制措施，禁止向中国出口先进AI芯片和制造设备。中国商务部发言人表示坚决反对，认为这是典型的经济胁迫行为。中方呼吁美方立即纠正错误，停止遏制中国科技发展。",
+    "tag": "国际",
+    "image_prompt": "Semiconductor factory clean room with advanced chip manufacturing equipment, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "05",
+    "title": "OpenAI发布GPT-5正式版 支持实时视频理解",
+    "summary": "OpenAI正式发布GPT-5正式版，新增实时视频理解和多模态推理能力。GPT-5可以观看视频并回答复杂问题，响应速度提升50%。微软宣布将GPT-5全面集成到Office和Azure服务中。OpenAI估值已达3000亿美元。",
+    "tag": "科技",
+    "image_prompt": "Futuristic AI brain visualization with neural networks, blue glowing circuits, digital interface, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "06",
+    "title": "中国数字经济规模突破60万亿元 占GDP比重超50%",
+    "summary": "国家统计局公布数据显示，2026年上半年中国数字经济规模达60.2万亿元，占GDP比重达到52.3%。数字产业化、产业数字化进程加速，电子商务交易额突破20万亿元。云计算、人工智能和大数据成为经济增长新引擎。",
+    "tag": "经济",
+    "image_prompt": "Modern city with holographic digital elements, people using smartphones and tablets, smart city concept, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "07",
+    "title": "欧洲央行宣布维持利率不变 密切关注通胀走势",
+    "summary": "欧洲央行宣布维持主要利率不变，符合市场预期。央行行长拉加德表示，通胀率虽已回落至2.4%，但仍需保持警惕。欧央行预计2026年欧元区经济增长1.2%，并可能在年底考虑降息。",
+    "tag": "金融",
+    "image_prompt": "European Central Bank building in Frankfurt with euro currency symbols, financial charts, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "08",
+    "title": "中国女排世界杯三连胜 晋级决赛在望",
+    "summary": "2026年女排世界杯预选赛继续进行，中国女排以3-0横扫意大利队，取得三连胜。队长朱婷砍下全场最高的28分，龚翔宇贡献15分。中国队以小组第一身份晋级四强，决赛席位在望。",
+    "tag": "体育",
+    "image_prompt": "Volleyball match in packed stadium, Chinese women's volleyball team celebrating victory, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "09",
+    "title": "中国科学家实现室温超导新突破",
+    "summary": "中国科学院物理研究所宣布，在室温超导领域取得重大突破。研究团队在150GPa压力下实现镥-氮-氢化合物在28°C条件下超导，刷新了世界纪录。这一突破将推动超导材料从实验室走向实际应用。",
+    "tag": "科技",
+    "image_prompt": "Scientist in laboratory with glowing superconducting material, levitating magnet, cryogenic equipment, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "10",
+    "title": "北京故宫博物院数字藏品平台上线 首发1万件文物NFT",
+    "summary": "北京故宫博物院正式推出数字藏品平台，首发1万件珍贵文物NFT，包括《清明上河图》《千里江山图》等名作。用户可通过平台购买、收藏和分享文物数字藏品，故宫表示将把部分收益用于文物保护修缮。",
+    "tag": "文化",
+    "image_prompt": "Palace Museum entrance with digital holographic artifacts floating, traditional Chinese architecture meets futuristic technology, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "11",
+    "title": "中日韩领导人会议在首尔举行 达成多项合作协议",
+    "summary": "第12次中日韩领导人会议在首尔举行，三国领导人就经贸、科技、环保等领域合作达成多项共识。三国同意加快建设东亚区域全面经济伙伴关系，推动构建亚太命运共同体。人文交流和教育合作成为新亮点。",
+    "tag": "国际",
+    "image_prompt": "Three world leaders shaking hands at international summit meeting, flags of three countries in background, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "12",
+    "title": "英伟达发布Blackwell Ultra芯片 算力提升200%",
+    "summary": "英伟达在GTC大会上发布Blackwell Ultra GPU，相比前代产品AI算力提升200%。该芯片采用新一代台积电3nm工艺，支持更高的内存带宽。谷歌、Meta和亚马逊已下单采购，芯片将于2026年第四季度开始量产。",
+    "tag": "科技",
+    "image_prompt": "High-performance GPU chip with colorful lighting effects, data center background with cooling systems, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "13",
+    "title": "全球最大氢能游轮首航成功",
+    "summary": "全球最大的氢燃料电池游轮在挪威完成首航，这艘可搭载2000名乘客的游轮完全使用绿色氢能源，航行过程零排放。游轮由挪威船企建造，设计航速22节，续航力达6000海里。氢能航运时代正式开启。",
+    "tag": "社会",
+    "image_prompt": "Huge cruise ship sailing in calm ocean waters, hydrogen fuel cells visible, eco-friendly green energy concept, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "14",
+    "title": "比特币价格突破10万美元 创历史新高",
+    "summary": "比特币价格突破10万美元大关，创历史新高。分析师认为，美国比特币ETF获批和机构投资者入场是主要推动力。加密货币总市值突破4万亿美元，以太坊、Solana等主流币种同步上涨。",
+    "tag": "金融",
+    "image_prompt": "Bitcoin coin with glowing golden symbols, cryptocurrency trading chart rising, digital future concept, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "15",
+    "title": "中国新能源汽车产量突破1000万辆",
+    "summary": "中国汽车工业协会数据显示，2026年上半年新能源汽车产量达到1028万辆，同比增长35%。新能源汽车渗透率已达48%。比亚迪、理想汽车和蔚来位列销量前三，出口量连续多年保持全球第一。",
+    "tag": "经济",
+    "image_prompt": "Modern electric vehicle assembly line with robots, Chinese EV brands, clean factory environment, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "16",
+    "title": "苹果发布iPhone 18 Pro 搭载自研AI芯片",
+    "summary": "苹果发布iPhone 18 Pro系列，首次搭载自研AI神经引擎芯片A19。该芯片专门为端侧AI优化，支持实时语音翻译、高级相册搜索和智能摄影。iPhone 18 Pro起售价1199美元，中国市场同步首发。",
+    "tag": "科技",
+    "image_prompt": "Latest iPhone model on display in Apple Store, sleek design with glowing screen, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "17",
+    "title": "中国网球公开赛开赛 郑钦文首轮横扫晋级",
+    "summary": "2026年中国网球公开赛在北京开幕，女单首轮比赛中，郑钦文以6-0、6-2横扫法国选手加西亚，强势晋级第二轮。男单选手张之臻也在首轮轻松取胜。中国选手整体表现出色，主场作战气势如虹。",
+    "tag": "体育",
+    "image_prompt": "Tennis player serving at China Open, packed stadium with Chinese flags, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "18",
+    "title": "上海成为全球首个万亿级消费城市",
+    "summary": "上海市商务委宣布，2026年上半年上海社会消费品零售总额突破1万亿元，成为全球首个万亿级消费城市。首店经济、首发经济和夜经济发展迅猛，国际消费中心城市建设成效显著。",
+    "tag": "社会",
+    "image_prompt": "Bustling Shanghai shopping district at night with neon lights, luxury stores, crowds of shoppers, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "19",
+    "title": "张艺谋执导的《满江红2》票房突破50亿元",
+    "summary": "导演张艺谋执导的古装大片《满江红2》票房正式突破50亿元，成为中国影史第三部破50亿的影片。影片由沈腾、易烊千玺主演，讲述南宋抗金故事。该片已在全球50多个国家上映。",
+    "tag": "文化",
+    "image_prompt": "Epic Chinese historical film set with elaborate costumes and sets, dramatic scene with actors in ancient costumes, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "20",
+    "title": "中国建成全球最大规模海上风电场",
+    "summary": "位于福建海域的全球最大规模海上风电场全面建成投产，总装机容量达500万千瓦。该风电场采用最新抗台风技术，每年可发绿电200亿千瓦时，相当于减少碳排放1600万吨。海上风电进入大规模商业化阶段。",
+    "tag": "科技",
+    "image_prompt": "Offshore wind farm in ocean with dozens of wind turbines, dramatic sunset, green energy concept, photorealistic, ultra detailed, 8K"
+  }
+]
