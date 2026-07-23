@@ -1,0 +1,88 @@
+
+[1/20] Generating 01: 全球人工智能合作组织在上海正式成立
+  ✓ 01: saved (157733 bytes)
+
+[2/20] Generating 02: 特朗普宣布对数十个国家加征新关税 引发全球贸易震荡
+  No choices: {'contentFilter': [{'level': 2, 'role': 'user'}], 'error': {'code': '1301', 'message': '系统检测到输入或生成内容可能包含不安全或敏感内容，请您避免输入易产生敏感内容的提示语，感谢您的配合。'}}
+  No choices: {'contentFilter': [{'level': 2, 'role': 'user'}], 'error': {'code': '1301', 'message': '系统检测到输入或生成内容可能包含不安全或敏感内容，请您避免输入易产生敏感内容的提示语，感谢您的配合。'}}
+  ✗ FAILED: 02
+
+[3/20] Generating 03: 中国成功发射神舟二十一号载人飞船
+  ✓ 03: saved (77866 bytes)
+
+[4/20] Generating 04: 普华永道中国在上海成立人工智能研究院
+  ✓ 04: saved (119274 bytes)
+
+[5/20] Generating 05: 中日韩领导人会议在首尔举行 达成多项合作协议
+  ✓ 05: saved (114912 bytes)
+
+[6/20] Generating 06: 比特币价格突破12万美元 加密货币市场持续繁荣
+  ✓ 06: saved (141176 bytes)
+
+[7/20] Generating 07: 上海成为全球首个万亿级消费城市
+  ✓ 07: saved (219123 bytes)
+
+[8/20] Generating 08: 中国深度参与IAEA全球核能发展计划
+  ✓ 08: saved (103637 bytes)
+
+[9/20] Generating 09: 中国新能源汽车产量突破1200万辆
+  ✓ 09: saved (154669 bytes)
+
+[10/20] Generating 10: 张艺谋执导《满江红2》票房突破60亿元
+  ✓ 10: saved (171583 bytes)
+
+[11/20] Generating 11: 欧洲央行宣布降息25个基点 宽松周期启动
+  ✓ 11: saved (173865 bytes)
+
+[12/20] Generating 12: 中国科学家实现量子计算重大突破
+  ✓ 12: saved (114366 bytes)
+
+[13/20] Generating 13: 中国电动汽车在欧盟市场份额突破30%
+  ✓ 13: saved (137115 bytes)
+
+[14/20] Generating 14: 特斯拉发布Optimus Gen4机器人 具备完整家务能力
+  ✓ 14: saved (107812 bytes)
+
+[15/20] Generating 15: 苹果发布iPhone 19系列 搭载自研AI神经引擎
+  ✓ 15: saved (130741 bytes)
+
+[16/20] Generating 16: 英伟达Blackwell Ultra GPU开始量产 AI算力提升200%
+  ✓ 16: saved (148501 bytes)
+
+[17/20] Generating 17: 全球最大氢能游轮完成欧洲首航
+  ✓ 17: saved (133162 bytes)
+
+[18/20] Generating 18: 中国女排世界杯四连胜 晋级决赛
+  ✓ 18: saved (129693 bytes)
+
+[19/20] Generating 19: 全球极端高温天气持续 多国发布高温预警
+  ✓ 19: saved (175298 bytes)
+
+[20/20] Generating 20: 全球最大规模海上风电场在福建全面投产
+  ✓ 20: saved (111164 bytes)
+
+
+=== Summary ===
+  01: ✓
+  02: ✗
+  03: ✓
+  04: ✓
+  05: ✓
+  06: ✓
+  07: ✓
+  08: ✓
+  09: ✓
+  10: ✓
+  11: ✓
+  12: ✓
+  13: ✓
+  14: ✓
+  15: ✓
+  16: ✓
+  17: ✓
+  18: ✓
+  19: ✓
+  20: ✓
+
+Total: 19/20 succeeded
+News data saved: /home/swg/.openclaw/workspace/news-blog/news_data_20260724.json
