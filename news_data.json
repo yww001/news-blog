@@ -1,122 +1,106 @@
-[
-  {
-    "id": 1,
-    "title": "中国自主研发新一代量子芯片实现量产突破",
-    "summary": "中国科研团队宣布新一代量子计算芯片实现稳定量产，量子比特数量突破千位大关，在量子纠错和相干时间方面达到国际领先水平。这一重大突破将加速量子计算实用化进程，为密码分析、人工智能药物研发、金融风险模拟、气候预测、材料科学等领域带来革命性变化，标志着中国在量子科技领域已迈入世界前列，成为全球量子竞争格局中的重要力量，对提升国家科技竞争力具有深远意义。",
-    "image_prompt": "futuristic quantum computer chip, microscopic view, glowing blue circuits, quantum bits visualization, scientific laboratory, high-tech hardware, dark background with light effects"
-  },
-  {
-    "id": 2,
-    "title": "中美就人工智能安全治理签署联合声明",
-    "summary": "中美两国元首在日内瓦举行的首届AI安全峰会上，就人工智能伦理规范、技术风险管控、跨境数据流动、算法透明度等核心议题达成重要共识。联合声明强调两国将共同推动建立全球AI治理框架，防止AI技术被滥用于军事和情报领域，为国际社会应对AI挑战提供重要表率，推动构建开放、包容、可持续的全球AI治理秩序。联合声明的签署标志着中美在AI领域合作迈上新台阶。",
-    "image_prompt": "China US cooperation, AI artificial intelligence, bilateral summit meeting, Geneva conference, world leaders shaking hands, technology governance, international diplomacy"
-  },
-  {
-    "id": 3,
-    "title": "中国A股市场强势上涨沪指突破3800点",
-    "summary": "受科技板块业绩大幅增长和政策利好刺激，中国A股市场延续强势上涨态势，沪指突破3800点整数关口，创两年半来新高。沪深两市成交额连续多日突破万亿元规模，北向资金持续净流入创历史同期记录，投资者信心明显增强，市场赚钱效应显著。券商机构普遍看好后市行情，认为在政策支持和流动性充裕背景下，市场有望继续震荡上行，结构性行情将持续演绎。",
-    "image_prompt": "stock market trading, China A-share market, stock price rising, Shanghai stock exchange, financial charts, bullish trend, modern city skyline"
-  },
-  {
-    "id": 4,
-    "title": "中国成功发射火星采样返回任务探测器",
-    "summary": "中国探火工程取得重大进展，天问三号探测器成功发射升空，将执行人类首次火星采样返回任务。探测器预计将于2027年抵达火星轨道，在火星表面完成样本采集、封装和上升器对接，随后返回地球。这是中国深空探测的又一重要里程碑，也是人类和平利用太空的伟大壮举，对全球太空探索事业具有重大标志性意义，将为人类了解火星提供珍贵样本。",
-    "image_prompt": "Mars mission spacecraft launching, Chinese rocket, space exploration, red planet Mars in background, rocket flames, dramatic sky, science fiction"
-  },
-  {
-    "id": 5,
-    "title": "俄乌双方就停火协议框架达成一致",
-    "summary": "经过多轮艰难谈判，俄罗斯与乌克兰在土耳其调解下就停火协议框架基本达成一致，双方同意在联合国监督下实现永久停火。协议涵盖领土边界划分、战后重建资金分担、战俘遣返细节等核心议题。国际社会对这一历史性突破表示热烈欢迎和积极评价，联合国秘书长呼吁各方珍惜来之不易的和平机遇，共同推动地区局势缓和，早日实现地区持久和平与稳定。",
-    "image_prompt": "peace negotiation, Russia Ukraine conflict resolution, diplomatic talks, UN security council, diplomats shaking hands, world peace, international relations"
-  },
-  {
-    "id": 6,
-    "title": "日本首相正式访华推动两国关系回暖",
-    "summary": "日本新任首相对中国进行正式访问，这是五年来日本首相首次访华，标志着中日关系走出低谷。两国签署涵盖经贸、科技、环保、文化等领域的二十余项合作文件，同意建立高级别对话机制，重启各层级交流渠道。此访被视为中日关系迈向新阶段的重要起点，为地区和平稳定注入正能量，推动两国关系持续改善发展，实现互利共赢。",
-    "image_prompt": "Japan China relations, Japanese prime minister visiting China, bilateral meeting, Beijing capital, diplomatic ceremony, flags of two countries, diplomacy"
-  },
-  {
-    "id": 7,
-    "title": "全球半导体产业链重构进入新阶段",
-    "summary": "在美国芯片法案和欧洲芯片计划大力推动下，全球半导体产业链重构加速推进。中国在成熟制程领域产能大幅提升，高端芯片国产化率首次突破30%大关，多项核心技术实现自主可控。欧洲多国和东南亚也成为芯片投资热门目的地，全球产业格局正经历深刻变革和重新洗牌，区域化趋势日益明显，供应链安全成为各国关注焦点。",
-    "image_prompt": "semiconductor chip manufacturing, global supply chain, high-tech factory, silicon wafer production, clean room environment, technology industry"
-  },
-  {
-    "id": 8,
-    "title": "中国新能源汽车全球市场份额突破45%",
-    "summary": "中国汽车工业协会数据显示，中国新能源汽车继续保持高速增长态势，全球市场份额已突破45%大关，出口量连续多年位居世界第一。比亚迪、奇瑞、蔚来、小鹏等品牌在欧洲和东南亚市场表现强劲，海外工厂布局加速推进，售后服务网络覆盖全球主要市场。中国新能源汽车产业竞争力持续提升，技术创新能力和成本优势明显增强。",
-    "image_prompt": "Chinese electric vehicles, EV cars charging, modern charging station, BYD cars, new energy transportation, green technology, electric future"
-  },
-  {
-    "id": 9,
-    "title": "欧洲央行宣布维持当前利率水平不变",
-    "summary": "欧洲央行在法兰克福召开货币政策会议，决定维持当前利率水平不变，以支持欧元区经济复苏。行长在新闻发布会上表示，虽然通胀已有所回落至2.3%的目标附近，但地缘政治不确定性仍存，经济增长面临下行压力，货币政策将保持灵活性和前瞻性，根据经济数据变化相机抉择，必要时采取进一步宽松措施支持经济复苏。",
-    "image_prompt": "European Central Bank, ECB Frankfurt, monetary policy meeting, Euro currency, bank building, financial district, European finance"
-  },
-  {
-    "id": 10,
-    "title": "韩国宣布加入全球AI安全倡议",
-    "summary": "韩国政府召开新闻发布会宣布正式加入全球AI安全倡议，承诺在军事和情报领域限制AI自主武器应用，呼吁全球各国共同应对AI技术带来的安全挑战。韩国表示将积极参与国际AI治理合作，支持建立透明、可解释、可控制的AI系统标准，与盟友共同推动AI技术规范发展，确保AI技术造福全人类而不是成为威胁。",
-    "image_prompt": "South Korea joining AI safety initiative, artificial intelligence security, global cooperation, Seoul cityscape, technology governance, international agreement"
-  },
-  {
-    "id": 11,
-    "title": "中国自主大模型DeepSeek用户规模突破5亿",
-    "summary": "中国自主研发的大语言模型DeepSeek官方宣布，用户规模已突破5亿大关，成为全球增长最快的人工智能应用之一。该模型在中文理解和生成方面表现优异，已在政务服务、医疗诊断、教育培训、金融分析等领域广泛应用，帮助企业降低运营成本、提升服务效率，深度赋能产业数字化转型升级，推动人工智能技术与实体经济深度融合。",
-    "image_prompt": "AI language model, Chinese artificial intelligence, large language model, ChatGPT alternative, futuristic technology interface, digital brain, neural network"
-  },
-  {
-    "id": 12,
-    "title": "中东地区多个国家签署互不侵犯条约",
-    "summary": "伊朗、沙特、阿联酋、卡塔尔等海湾国家在利雅得举行峰会，共同签署互不侵犯条约，承诺通过和平方式解决争端，反对任何形式的武力威胁。条约有效期为50年，是中东地区数十年来最重要的和平协议。联合国秘书长亲自出席签署仪式，国际油价应声下跌，市场信心大增，地区安全格局有望根本改善。",
-    "image_prompt": "Middle East peace treaty, Riyadh summit, Gulf countries cooperation, Iran Saudi Arabia, peace agreement signing ceremony, desert diplomacy"
-  },
-  {
-    "id": 13,
-    "title": "数字人民币跨境支付服务扩展至50个国家",
-    "summary": "数字人民币国际化取得重大进展，中国人民银行宣布跨境支付服务已扩展至全球50个国家和地区，覆盖亚洲、欧洲、非洲、美洲的主要经济体。跨境电商、跨境旅游、海外留学汇款等场景应用快速增长，月均交易额突破千亿元人民币，数字货币国际化进程不断加速，为全球贸易结算提供新选择。",
-    "image_prompt": "digital yuan RMB, digital currency internationalization, cross-border payment, Chinese currency globalization, fintech revolution, mobile payment"
-  },
-  {
-    "id": 14,
-    "title": "SpaceX星舰完成首次商业月球运输任务",
-    "summary": "SpaceX使用新一代星舰成功完成首次商业月球运输任务，将包括月球基地建设物资、科学仪器设备等送至月球轨道。发射成本较传统火箭降低70%以上，发射效率大幅提升，多项技术指标创造新纪录。此次任务的成功标志着商业航天进入新纪元，为未来月球基地建设和太空资源开发奠定重要基础，开启商业航天新时代。",
-    "image_prompt": "SpaceX Starship moon mission, commercial space flight, moon landing, rocket in space, lunar base concept, science fiction technology"
-  },
-  {
-    "id": 15,
-    "title": "德国制造业PMI指数连续六个月回升",
-    "summary": "德国联邦统计局公布最新数据显示，制造业PMI指数已连续六个月保持在扩张区间，工业产出超出市场预期。德国经济展现出强劲韧性，企业投资意愿显著回升，机械设备、汽车制造、化工等支柱产业订单充足，对外贸易保持增长。分析师认为德国经济正从能源危机影响中完全恢复，欧元区经济前景趋于乐观。",
-    "image_prompt": "German manufacturing, industry 4.0, factory automation, industrial production, BMW Mercedes factory, European economy, precision engineering"
-  },
-  {
-    "id": 16,
-    "title": "东南亚数字经济规模首破2万亿美元",
-    "summary": "东南亚数字经济继续保持高速增长，市场规模首次突破2万亿美元。电商平台交易额增长35%，移动支付用户数超5亿，短视频和直播电商蓬勃发展，外卖配送和在线教育也高速增长。中国科技企业阿里巴巴、腾讯、字节跳动加大投资力度，越南、印尼成为数字经济投资最热门目的地，市场潜力巨大。",
-    "image_prompt": "Southeast Asia digital economy, Singapore Jakarta city, e-commerce delivery, mobile payment, young entrepreneurs, tech hub Asia, digital transformation"
-  },
-  {
-    "id": 17,
-    "title": "中国核聚变实验装置实现千秒高约束运行",
-    "summary": "中国自主设计的新一代托卡马克核聚变实验装置成功实现千秒级高约束模运行，创造了该领域新的世界纪录。实验温度超过1亿度，等离子体约束时间大幅提升，各项性能指标均达到或超过设计要求。核聚变能被视为人类终极清洁能源，这一重大突破为商业化聚变堆建设奠定坚实基础，中国走在全球前列。",
-    "image_prompt": "nuclear fusion reactor, tokamak fusion device, plasma physics experiment, China scientific achievement, infinite clean energy, futuristic laboratory"
-  },
-  {
-    "id": 18,
-    "title": "伦敦金融城人才流失加剧竞争力下滑",
-    "summary": "受脱欧后续效应和较高税收政策影响，伦敦金融城金融从业人员持续外流，巴黎、法兰克福金融业快速崛起。多国金融机构将欧洲总部从伦敦迁出，对冲基金和资管公司纷纷转向欧盟城市。伦敦作为全球金融中心的地位面临严峻挑战，竞争力持续下滑，金融服务出口下降，金融城面临转型压力。",
-    "image_prompt": "London City financial district, Canary Wharf, London Bridge, British economy, financial services, city of London, historic architecture"
-  },
-  {
-    "id": 19,
-    "title": "全球可再生能源投资首超化石能源",
-    "summary": "国际能源署发布年度报告显示，2026年全球可再生能源投资总额首次超过化石能源投资，达到1.8万亿美元。太阳能和风能发电成本持续下降，已比化石燃料更具经济性。中国、欧盟和美国引领全球清洁能源转型，碳中和目标实现路径更加清晰，可再生能源成为全球能源投资的主角，清洁能源时代加速到来。",
-    "image_prompt": "renewable energy wind turbines solar panels, green energy investment, clean power plant, sustainable future, environmental protection, clean technology"
-  },
-  {
-    "id": 20,
-    "title": "中国互联网巨头季度财报普遍超预期",
-    "summary": "中国主要互联网平台企业陆续发布季度财报，业绩普遍超出市场预期。AI大模型应用带动用户活跃度和ARPU值增长，腾讯、阿里、美团、京东等市值较年初增长40%以上。投行分析师普遍看好互联网板块估值修复行情，认为在AI赋能下行业景气度持续回升，监管环境趋于稳定，建议投资者逢低增持优质标的。",
-    "image_prompt": "Chinese internet giants Alibaba Tencent, tech company headquarters, stock market performance, Qiangguo internet companies, digital economy growth"
-  }
-]
+{
+  "date": "2026年07月25日",
+  "date_short": "20260725",
+  "news": [
+    {
+      "number": "01",
+      "title": "中国发布十五五数字经济发展规划 明确六大重点领域",
+      "tag": "科技"
+    },
+    {
+      "number": "02",
+      "title": "美国对60个贸易伙伴征收最高12.5%新关税 全球贸易格局生变",
+      "tag": "国际"
+    },
+    {
+      "number": "03",
+      "title": "华为发布麒麟X90处理器 国产芯片性能突破国际先进水平",
+      "tag": "科技"
+    },
+    {
+      "number": "04",
+      "title": "中国宣布豁免79国关税 推动构建开放型世界经济",
+      "tag": "国际"
+    },
+    {
+      "number": "05",
+      "title": "OpenAI发布GPT-6多模态模型 支持实时视频理解和创作",
+      "tag": "科技"
+    },
+    {
+      "number": "06",
+      "title": "央行宣布定向降准0.25个百分点 释放长期资金约5000亿元",
+      "tag": "金融"
+    },
+    {
+      "number": "07",
+      "title": "全球最大养老社区在广州开业 容纳10万老年人",
+      "tag": "社会"
+    },
+    {
+      "number": "08",
+      "title": "三星发布Galaxy Z Fold 8 折叠屏手机进入全面普及时代",
+      "tag": "科技"
+    },
+    {
+      "number": "09",
+      "title": "沪深交易所发布科创板改革新政策 支持未盈利企业上市",
+      "tag": "金融"
+    },
+    {
+      "number": "10",
+      "title": "中国成功研制世界首台10拍瓦激光装置 领先全球",
+      "tag": "科技"
+    },
+    {
+      "number": "11",
+      "title": "全球首条洲际超级高铁线路获批 纽约至洛杉矶仅需3小时",
+      "tag": "科技"
+    },
+    {
+      "number": "12",
+      "title": "中国电商平台GMV突破50万亿元 再创消费新纪录",
+      "tag": "经济"
+    },
+    {
+      "number": "13",
+      "title": "中日韩自贸协定谈判取得重大突破 年内有望签署",
+      "tag": "国际"
+    },
+    {
+      "number": "14",
+      "title": "字节跳动发布豆包大模型3.0 中英双语能力超越GPT-4",
+      "tag": "科技"
+    },
+    {
+      "number": "15",
+      "title": "全国基本养老保险参保人数突破10亿 实现全覆盖",
+      "tag": "社会"
+    },
+    {
+      "number": "16",
+      "title": "国际油价突破100美元每桶 能源市场供应趋紧",
+      "tag": "金融"
+    },
+    {
+      "number": "17",
+      "title": "国产大飞机C939完成首飞 进入批量生产阶段",
+      "tag": "科技"
+    },
+    {
+      "number": "18",
+      "title": "中国游泳队打破4x100米接力世界纪录 斩获世锦赛第四金",
+      "tag": "体育"
+    },
+    {
+      "number": "19",
+      "title": "北京获批建设首个城市空中交通试点 飞行汽车明年上路",
+      "tag": "社会"
+    },
+    {
+      "number": "20",
+      "title": "中国票房破500亿创新高 国产电影占七成市场份额",
+      "tag": "文化"
+    }
+  ]
+}

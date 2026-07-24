@@ -1,0 +1,36 @@
+Total news items: 20
+
+Generating images...
+  Error generating /home/swg/.openclaw/workspace/news-blog/images/news_20260725_01.png: 400 Client Error: Bad Request for url: https://open.bigmodel.cn/api/paas/v4/chat/completions (attempt 1/2)
+  Error generating /home/swg/.openclaw/workspace/news-blog/images/news_20260725_01.png: 400 Client Error: Bad Request for url: https://open.bigmodel.cn/api/paas/v4/chat/completions (attempt 2/2)
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_02.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_03.png
+  Error generating /home/swg/.openclaw/workspace/news-blog/images/news_20260725_04.png: 400 Client Error: Bad Request for url: https://open.bigmodel.cn/api/paas/v4/chat/completions (attempt 1/2)
+  Error generating /home/swg/.openclaw/workspace/news-blog/images/news_20260725_04.png: 400 Client Error: Bad Request for url: https://open.bigmodel.cn/api/paas/v4/chat/completions (attempt 2/2)
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_05.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_06.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_07.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_08.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_09.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_10.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_11.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_12.png
+  Error generating /home/swg/.openclaw/workspace/news-blog/images/news_20260725_13.png: 400 Client Error: Bad Request for url: https://open.bigmodel.cn/api/paas/v4/chat/completions (attempt 1/2)
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_13.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_14.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_15.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_16.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_17.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_18.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_19.png
+  Generated: /home/swg/.openclaw/workspace/news-blog/images/news_20260725_20.png
+
+Generated 18/20 images successfully
+Total lines in index.html: 308
+First article at line: 273
+Last article closes at line: 110
+News-grid opening at line: 101
+index.html updated successfully
+
+Done!
+Images generated: 18/20
