@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年07月30日 环球新闻</title>
+    <meta name="description" content="2026年07月30日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; min-height: 800px; width: 100%; max-width: none; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+.comments-wrapper { max-width: 1200px; margin: 0 auto; }
+.comments-wrapper .giscus { width: 100% !important; max-width: 100% !important; }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+        .giscus { width: 100% !important; max-width: 100% !important; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li><a href="contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <video id="coverVideo" src="videos/cover.mp4" autoplay muted loop playsinline class="cover-image"></video>
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年07月30日</p>
+                </div>
+            </div>
+            <div class="warning">
+                                                <div class="news-grid">
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260730_01.png" alt="中国成功发射遥感三十号卫星组 用于国土普查和科学实验" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">中国成功发射遥感三十号卫星组 用于国土普查和科学实验</h3>
+        <p class="news-summary">7月30日，我国在西昌卫星发射中心用长征二号丁运载火箭，成功将遥感三十号卫星组发射升空。该卫星组将用于国土普查、城市规划、农作物估产等领域，同时开展空间科学实验。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260730_02.png" alt="中国央行宣布下调MLF利率0.1个百分点 释放稳增长信号" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">中国央行宣布下调MLF利率0.1个百分点 释放稳增长信号</h3>
+        <p class="news-summary">中国人民银行决定下调中期借贷便利（MLF）利率0.1个百分点至2.75%，此举旨在降低实体经济融资成本，支持经济持续恢复向好。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260730_03.png" alt="中美元首将于9月在纽约举行面对面会晤 经贸问题成焦点" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">中美元首将于9月在纽约举行面对面会晤 经贸问题成焦点</h3>
+        <p class="news-summary">中方证实中美元首将于9月在纽约举行的联合国大会期间举行会晤。双方将就双边关系、经贸问题、气候变化等议题交换意见。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260730_04.png" alt="中国首个火星探测任务"天问一号"成功着陆火星" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">中国首个火星探测任务"天问一号"成功着陆火星</h3>
+        <p class="news-summary">中国首个火星探测任务"天问一号"成功着陆火星乌托邦平原，标志着我国成为第二个成功在火星表面部署探测器的国家。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260730_05.png" alt="全国碳排放权交易市场运行平稳 首日成交额超2亿元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">全国碳排放权交易市场运行平稳 首日成交额超2亿元</h3>
+        <p class="news-summary">全国碳排放权交易市场启动首日交易数据显示，累计成交量198万吨，成交额约7896万元，市场运行平稳有序。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260730_06.png" alt="中国高铁运营里程突破4.5万公里 居世界第一" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">中国高铁运营里程突破4.5万公里 居世界第一</h3>
+        <p class="news-summary">国铁集团数据显示，截至6月底，全国铁路高铁运营里程已达4.5万公里，居世界第一，高铁网络覆盖全国90%的百万人口以上城市。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260730_07.png" alt="中国新能源汽车6月销量突破60万辆 创历史新高" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">中国新能源汽车6月销量突破60万辆 创历史新高</h3>
+        <p class="news-summary">中国汽车工业协会发布数据显示，6月新能源汽车销量达63.2万辆，同比增长70%，环比增长15%，创单月销量历史新高。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260730_08.png" alt="中俄天然气管道西线项目签署合作协议 预计2030年通气" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">中俄天然气管道西线项目签署合作协议 预计2030年通气</h3>
+        <p class="news-summary">中俄双方签署天然气管道西线项目合作备忘录，该管道预计全长约8000公里，设计年供气量500亿立方米，计划于2030年实现通气。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260730_09.png" alt="中国量子计算原型机"祖冲之号"实现100个量子比特操控" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">中国量子计算原型机"祖冲之号"实现100个量子比特操控</h3>
+        <p class="news-summary">中国科学技术大学潘建伟团队宣布，成功研制"祖冲之号"量子计算原型机，实现100个量子比特的高 fidelity 操控，在特定任务上超越超级计算机。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260730_10.png" alt="中国空间站问天实验舱正式投入使用" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">中国空间站问天实验舱正式投入使用</h3>
+        <p class="news-summary">中国空间站问天实验舱正式转入运行阶段，具备支持3名航天员长期驻留能力，可开展多项空间科学实验和技术试验。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260730_11.png" alt="上海发布《人工智能发展条例》 明确算法治理要求" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">上海发布《人工智能发展条例》 明确算法治理要求</h3>
+        <p class="news-summary">上海市人大常委会通过《上海市人工智能发展条例》，对算法透明、数据安全和伦理审查作出明确规定，是我国首部人工智能地方性法规。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260730_12.png" alt="中国对非洲直接投资增长30% 重点聚焦基础设施和制造业" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">中国对非洲直接投资增长30% 重点聚焦基础设施和制造业</h3>
+        <p class="news-summary">商务部数据显示，今年前6个月，我国对非洲直接投资98亿美元，同比增长30%，主要集中在基础设施、制造业、农业等领域。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260730_13.png" alt="中国粮食产量连续7年稳定在1.3万亿斤以上" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">中国粮食产量连续7年稳定在1.3万亿斤以上</h3>
+        <p class="news-summary">农业农村部发布数据显示，今年夏粮总产量达1458.1亿斤，连续3年保持在1.4万亿斤以上，为全年粮食丰收奠定坚实基础。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260730_14.png" alt="粤港澳大湾区跨境理财通业务试点启动 首批3家银行参与" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">粤港澳大湾区跨境理财通业务试点启动 首批3家银行参与</h3>
+        <p class="news-summary">粤港澳大湾区跨境理财通业务试点正式启动，首批3家银行参与，个人投资者额度每人每年100万元，为大湾区居民提供多元化投资渠道。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260730_15.png" alt="中国与阿联酋深化核能合作 首批核电机组开工" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">中国与阿联酋深化核能合作 首批核电机组开工</h3>
+        <p class="news-summary">中核集团与阿联酋原子能部签署核电合作协议，中国承建的巴拉卡核电站2号机组正式开工，预计2028年投入商业运行。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260730_16.png" alt="中国累计建成5G基站超过300万个 实现所有县城覆盖" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">中国累计建成5G基站超过300万个 实现所有县城覆盖</h3>
+        <p class="news-summary">工业和信息化部数据显示，我国累计建成并开通5G基站超过300万个，5G网络已覆盖所有地级市城区和90%以上的县城。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260730_17.png" alt="中国-东盟数字经济合作年正式启动 重点推进数字基础设施互联互通" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">中国-东盟数字经济合作年正式启动 重点推进数字基础设施互联互通</h3>
+        <p class="news-summary">中国-东盟数字经济合作年启动仪式在新加坡举行，双方将就数字基础设施、电子商务、数字支付等领域深化合作。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260730_18.png" alt="中国发布《新一代人工智能发展规划》2026年行动方案" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">中国发布《新一代人工智能发展规划》2026年行动方案</h3>
+        <p class="news-summary">科技部印发《新一代人工智能发展规划》2026年行动方案，明确年度重点任务，包括智能芯片、深度学习框架等关键领域。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260730_19.png" alt="中国湿地面积达到560万公顷 占全球湿地面积10%以上" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">中国湿地面积达到560万公顷 占全球湿地面积10%以上</h3>
+        <p class="news-summary">国家林草局发布《中国湿地保护进展报告》，显示我国湿地面积已达到560万公顷，占全球湿地面积的10%以上，居亚洲第一位。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260730_20.png" alt="中国与乌兹别克斯坦联合考古发现唐代古城遗址" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">中国与乌兹别克斯坦联合考古发现唐代古城遗址</h3>
+        <p class="news-summary">中国-乌兹别克斯坦联合考古队在锡尔河流域发现一处唐代古城遗址，出土大量唐代钱币、陶瓷器等文物，为研究中古时期丝绸之路贸易提供重要实物资料。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+</div>
+        </div>
+    <script src="https://giscus.app/client.js"
+
+        data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+        data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+        data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+        data-emit-metadata="0" data-input-position="top"
+        data-theme="preferred_color_scheme" data-lang="zh-CN"
+        crossorigin="anonymous" async></script>
+    <footer>
+            <p>📰 新闻发布与更新 by <a href="https://github.com/yww001/news-blog" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://pollinations.ai" target="_blank">Pollinations AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="about.html">关于</a> | <a href="contact.html">联系</a> | <a href="rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
