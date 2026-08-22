@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年08月22日 | 环球新闻</title>
+    <meta name="description" content="2026年08月22日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../../../../images/news-generated/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年08月22日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+            <article class="news-card" data-tag="时政">
+    <img class="news-image" src="../../../images/news_20260820_01.png" alt="习近平同厄瓜多尔总统诺沃亚举行会谈 宣布升级自贸协定" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">习近平同厄瓜多尔总统诺沃亚举行会谈 宣布升级自贸协定</h3>
+        <p class="news-summary">国家主席习近平8月18日下午在人民大会堂同来华进行国事访问的厄瓜多尔总统诺沃亚举行会谈。两国元首一致决定，将中厄全面战略伙伴关系提升为新时代中厄命运共同体，并宣布启动《中国-厄瓜多尔自由贸易协定》升级谈判，重点涵盖香蕉、可可、玫瑰等厄方优势农产品降税，以及中国新能源汽车、动力电池、5G设备等出口便利化安排。诺沃亚总统还将出席2026年中拉企业家高峰会开幕式。会谈后，两国元首共同见证签署关于共建『一带一路』、数字经济合作、农业科技合作等15份双边合作文件。这是今年中国和拉美国家之间最高规格的元首外交活动。</p>
+        <div><span class="tag">时政</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260820_02.png" alt="OpenAI GPT-6正式登陆中国 接入微信小程序月活破千万" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">OpenAI GPT-6正式登陆中国 接入微信小程序月活破千万</h3>
+        <p class="news-summary">OpenAI与中国腾讯公司8月19日联合宣布，GPT-6正式通过微信小程序进入中国市场，中文版本命名为『GPT-6 智聊』。腾讯云为GPT-6提供符合中国监管要求的本地化部署，所有中国用户对话数据存储于深圳前海合规数据中心。GPT-6智聊同步推出『医生』『律师』『教师』三个垂直智能体，首批接入500家三甲医院、300家律师事务所和2000家中小学。上线24小时，月活跃用户数突破1080万，单日对话次数超过4500万次，成为OpenAI在中国市场增速最快的AI产品。OpenAI CEO奥特曼通过视频表示，此次合作是GPT-6全球化战略的关键一步，未来将持续推出更多中文场景能力。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260820_03.png" alt="中国首条载人飞行汽车商业航线 深圳至珠海试运营成功" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">中国首条载人飞行汽车商业航线 深圳至珠海试运营成功</h3>
+        <p class="news-summary">中国首条载人电动飞行汽车（eVTOL）商业化航线8月19日在粤港澳大湾区试运营成功。从深圳前海合作区到珠海九洲港的空中航线，全程78公里，飞行时间仅需18分钟，比地面通勤缩短约2小时。该航线由深圳鹏飞航空运营，使用其自主研发的『鹏飞X3』5座倾转旋翼飞行器，最高时速280公里，单次充电续航300公里。首批乘客为30名粤港澳商会代表和媒体记者，全程配备两名专业飞行员。深圳市交通局同步发布《深圳低空经济高质量发展三年行动计划》，提出到2028年开通30条市内eVTOL航线、5条城际航线。这是全球首个在百万人口以上城市实现eVTOL常态化商业运营的案例。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260820_04.png" alt="霍尔木兹海峡谈判突破 美伊达成油轮通行临时框架" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">霍尔木兹海峡谈判突破 美伊达成油轮通行临时框架</h3>
+        <p class="news-summary">经过为期11天的密集磋商，美国、伊朗、阿曼三方8月19日凌晨在马斯喀特正式签署《霍尔木兹海峡油轮通行临时框架协议》。协议规定，所有悬挂非制裁国国旗的油轮在缴纳每桶0.5美元的『安全通行费』后，可享受阿曼皇家海军和美国第五舰队联合护航；伊朗革命卫队海军承诺不拦截任何商业油轮。三方将设立『热线沟通机制』，由阿曼外交大臣巴希尔担任调停人。协议有效期6个月，到期前30天可申请续签。消息公布后，布伦特原油期货8月19日开盘暴跌8.7%，报每桶90美元；全球航运股集体上涨，资本市场对供应链中断的担忧显著缓解。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20260820_05.png" alt="A股三大指数集体高开 创业板指盘中突破3500点创年内新高" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">A股三大指数集体高开 创业板指盘中突破3500点创年内新高</h3>
+        <p class="news-summary">受霍尔木兹海峡谈判取得突破、美联储9月降息预期升温、国内工业富联等科技龙头业绩超预期等多重利好叠加影响，A股三大指数8月19日集体高开高走。截至收盘，上证指数上涨2.3%报4128点，深证成指上涨2.8%报13820点，创业板指大涨3.7%盘中最高触及3508点，创下2026年年内新高。两市成交额突破1.8万亿元，连续第7个交易日突破1.5万亿。AI算力、半导体、人形机器人、低空经济四大主题板块涨幅居前，工业富联、寒武纪、宇树科技、宁德时代等龙头股集体涨停。机构分析指出，A股此轮上涨的核心驱动是『政策预期+产业景气度+流动性宽松』三重共振。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260820_06.png" alt="微信视频号上线『AI剪辑师』 一键生成10分钟短视频" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">微信视频号上线『AI剪辑师』 一键生成10分钟短视频</h3>
+        <p class="news-summary">腾讯8月19日正式在微信视频号推出『AI剪辑师』功能，基于自研混元大模型实现端到端视频自动剪辑。用户上传30分钟以上的原始素材后，AI剪辑师可在60秒内自动生成3-10分钟不等的成片，支持智能识别精彩片段、自动配乐、智能字幕、多镜头切换、特效滤镜等15种专业剪辑能力。该功能面向所有视频号创作者免费开放，预计将显著降低短视频内容创作门槛。同时，视频号还推出『AI字幕翻译』功能，支持中英日韩等27种语言实时翻译和字幕生成。艾瑞咨询分析师指出，AI剪辑功能有望将视频号日活内容创作者数量从目前的1.2亿推升至2亿以上。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20260820_07.png" alt="比亚迪宣布进入日本乘用车市场 2026年Q4首发3款车型" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">比亚迪宣布进入日本乘用车市场 2026年Q4首发3款车型</h3>
+        <p class="news-summary">比亚迪日本子公司8月19日在东京召开新闻发布会，正式宣布全面进入日本本土乘用车市场。根据规划，比亚迪将于2026年第四季度在日本推出Atto 3、Seal、Dolphin三款主力车型，首批覆盖东京、大阪、名古屋、福冈四大都市圈共计65家直营店和120家授权经销商。比亚迪同步启动日本本地化生产选址评估，候选地包括横滨、川崎、爱知县三处，预计2028年初投产，规划年产能15万辆。比亚迪日本公司社长刘学亮表示，将结合日本消费者偏好推出专属右舵版本和定制化配置。日产、丰田等本土车企同日股价小幅下跌，市场担忧比亚迪将冲击日本本土电动车市场格局。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260820_08.png" alt="全球粮食价格指数连续3月回落 联合国预警体系调降" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">全球粮食价格指数连续3月回落 联合国预警体系调降</h3>
+        <p class="news-summary">联合国粮农组织8月19日发布的最新报告显示，受俄乌达成黑海粮食走廊续约协议、印度解除大米出口临时禁令、阿根廷玉米产量创历史新高三大因素叠加影响，2026年8月全球粮食价格指数环比下跌5.8%，已连续3个月回落。其中，小麦价格下跌8.2%，玉米下跌6.5%，大米下跌4.1%，植物油下跌3.2%。粮农组织同步将全球粮食安全预警等级从『高度警惕』下调一档至『一般警惕』。这是自2024年以来首次预警等级调整。报告同时指出，撒哈拉以南非洲仍有约2.4亿人处于严重粮食不安全状态，呼吁国际社会继续加大援助力度。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260820_09.png" alt="华为鸿蒙PC销量突破500万台 国产操作系统市占率破10%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">华为鸿蒙PC销量突破500万台 国产操作系统市占率破10%</h3>
+        <p class="news-summary">华为消费者业务CEO余承东8月19日在深圳举行的开发者大会上宣布，搭载HarmonyOS NEXT的鸿蒙PC销量已正式突破500万台，国产操作系统在中国桌面市场的市占率首次突破10%。截至目前，鸿蒙原生应用数量已达25万款，覆盖办公、社交、娱乐、教育、金融等全部主流场景，超过3000家企业启动鸿蒙化适配。余承东同时预告，鸿蒙PC将于10月推出搭载自研麒麟X3处理器和全新『鸿蒙AI』桌面助手的旗舰版本，目标年内突破1000万台。Counterpoint分析师指出，鸿蒙PC的快速崛起正在重塑全球桌面操作系统格局，对Windows形成实质性挑战。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260820_10.png" alt="印尼弗洛勒斯岛地震死亡人数升至67人 国际救援全面展开" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">印尼弗洛勒斯岛地震死亡人数升至67人 国际救援全面展开</h3>
+        <p class="news-summary">印度尼西亚国家减灾署（BNPB）8月19日公布的最新数据显示，弗洛勒斯岛7.7级地震已造成至少67人死亡、412人受伤，受灾民众超过18万人，1.6万栋房屋不同程度受损。BNPB将紧急响应状态从90天延长至120天。国际救援力量已全面到位：澳大利亚、新西兰、日本、韩国、马来西亚、新加坡派出共计420名专业救援人员和9只搜救犬；联合国人道事务协调厅启动约8200万美元的紧急募捐。中国第二批救援队48人和价值3000万元的物资于8月19日抵达震区，重点支援医疗救治和临时安置。震中附近海拔1100米的塔纳拉村仍存在山体滑坡风险，救援指挥部已组织疏散。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="时政">
+    <img class="news-image" src="../../../images/news_20260820_11.png" alt="国常会：再推4000亿元专项再贷款支持设备更新和消费以旧换新" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">国常会：再推4000亿元专项再贷款支持设备更新和消费以旧换新</h3>
+        <p class="news-summary">国务院总理李强8月19日主持召开国务院常务会议，研究部署『两新』（大规模设备更新和消费品以旧换新）加力扩围政策。会议决定，在现有3000亿元专项再贷款基础上，再追加4000亿元额度，重点支持工业母机、工程机械、农业机械、医疗设备、检验检测设备等高端装备更新，以及汽车、家电、家居、电子产品等大宗消费品以旧换新。央行同步将专项再贷款利率从1.75%下调至1.5%，期限延长至3年。会议要求各地区9月底前出台具体实施细则，确保政策资金直达经营主体。国家发改委预计，本轮政策将拉动全年设备购置投资增长8%以上、消费品零售总额增长1.5个百分点。</p>
+        <div><span class="tag">时政</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260820_12.png" alt="SpaceX星链V3卫星单星容量突破1Tbps 通信延迟降至15ms" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">SpaceX星链V3卫星单星容量突破1Tbps 通信延迟降至15ms</h3>
+        <p class="news-summary">SpaceX 8月19日通过官方X账号公布星链V3（Starlink V3）卫星技术规格：单星通信容量突破1Tbps（每秒1太比特），是V2 Mini卫星的5倍；星间激光通信链路数量从4条增至8条；用户终端到卫星的通信延迟已降至15毫秒以内。新一代卫星批量发射将随星舰第29次试飞同步进行。星链全球用户数已突破680万，覆盖115个国家和地区。SpaceX同步宣布，星链V3移动版本（Starlink Mini V3）将于9月正式上市，售价299美元，体积仅相当于一台13寸笔记本电脑，可放入背包随行。马斯克表示，星链V3将成为全球最大、最快的卫星互联网星座，对传统电信运营商构成结构性挑战。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="时政">
+    <img class="news-image" src="../../../images/news_20260820_13.png" alt="中央财政下达第二批1200亿元东北灾后重建资金" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">中央财政下达第二批1200亿元东北灾后重建资金</h3>
+        <p class="news-summary">财政部、国家发改委8月19日联合下达2026年中央预算内投资第二批资金1200亿元，用于支持东北三省洪涝灾害灾后重建。加上8月17日已下达的第一批1000亿元，累计已达2200亿元。其中，黑龙江省累计获得1100亿元（占比50%）、吉林省600亿元、辽宁省500亿元。本批资金重点投向四大领域：受损农田复垦和补种补贴、水毁交通设施重建（重点是哈大高铁、沈山高速等关键干线）、城市排水管网升级、农村危房改造和移民搬迁。财政部副部长廖岷在国新办发布会上表示，将建立资金直达项目机制，9月底前完成首批项目资金拨付，2027年6月底前完成全部重建任务。</p>
+        <div><span class="tag">时政</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260820_14.png" alt="宇树科技H2人形机器人全球首发 双足奔跑速度破12公里/小时" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">宇树科技H2人形机器人全球首发 双足奔跑速度破12公里/小时</h3>
+        <p class="news-summary">宇树科技8月19日在上海举行新品发布会，正式发布全球首款实现『真双足高速奔跑』的人形机器人H2。H2身高1.7米、体重48公斤，搭载自研『灵玑』V3具身大模型和自研高精度谐波减速器，可实现平地双足奔跑速度12.6公里/小时（破世界纪录）、上下楼梯、跳跃、搬运15公斤重物、烹饪简单菜品等47种技能。H2采用全新自研高扭矩关节模组，单关节峰值扭矩达520N·m，电池容量2.5kWh、续航4小时。宇树创始人王兴兴现场演示H2完成『双足奔跑+跨越障碍+与人类握手』三连动作，震撼全场。H2首发售价39.8万元，10月开启预订，2026年Q4开始批量交付。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="体育">
+    <img class="news-image" src="../../../images/news_20260820_15.png" alt="巴黎奥运会兴奋剂复核出初步结果 9国23名运动员样本异常" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">巴黎奥运会兴奋剂复核出初步结果 9国23名运动员样本异常</h3>
+        <p class="news-summary">国际奥委会8月19日公布2024年巴黎奥运会兴奋剂复核初步结果：瑞士洛桑大学法医学中心和德国科隆体育大学两个独立实验室对9国27名运动员样本进行平行检测，其中23名运动员样本呈现异常信号，覆盖田径、游泳、自行车、举重等多个项目。国际奥委会已通知相关国家奥委会，要求在30天内提交书面解释，并暂停相关运动员的国际比赛资格。初步报告显示，部分样本检出新型代谢调节剂和基因兴奋剂痕迹。WADA同步启动独立审计。世界反兴奋剂机构主席班卡表示，『这是反兴奋剂史上最重要的复核行动之一，将重新定义国际体育治理规则』。体育仲裁法庭将于2026年11月公布最终裁定。</p>
+        <div><span class="tag">体育</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260820_16.png" alt="中吉乌铁路国内段完成铺轨 喀什国际枢纽地位确立" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">中吉乌铁路国内段完成铺轨 喀什国际枢纽地位确立</h3>
+        <p class="news-summary">中吉乌铁路（中国-吉尔吉斯斯坦-乌兹别克斯坦）国内段建设取得重大进展：8月19日上午，吐尔尕特至马克马尔段160公里铺轨任务全部完成，比原计划提前22天。中吉乌铁路全长约523公里，国内段约210公里已全部铺通。铺轨完成后将进入站房建设、信号系统安装、电气化挂网、动车联调联试等阶段，预计2027年12月建成通车。喀什站被定位为铁路核心枢纽，将配套建设占地8平方公里的国际陆港，预计到2030年实现年货运吞吐能力1500万吨、跨境班列3000列/年。通车后，从喀什到安卡拉的运输距离将从6500公里缩短至3000公里，时间从25天压缩至8天。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260820_17.png" alt="国家医保局新增91种药品 三款CAR-T疗法降价入医保" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">国家医保局新增91种药品 三款CAR-T疗法降价入医保</h3>
+        <p class="news-summary">国家医保局8月19日发布2026年医保药品目录调整结果，新版目录共新增91种药品，其中62种为抗肿瘤药物（包括PD-1、CAR-T、双抗、ADC等），覆盖全部高发癌种。备受关注的三款CAR-T细胞疗法——复星凯特奕凯达、药明巨诺倍诺达、合源生物源瑞达，平均降价幅度73%，年治疗费用从此前的100万元以上降至30万元以内，全部纳入医保乙类报销。多发性硬化、罕见病、儿童专用药保障力度同步加大。国家医保局相关负责人表示，新版目录将于2026年9月1日起在全国正式执行，预计每年为患者节约药费支出超过800亿元，进一步提升抗癌治疗可及性。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="文化">
+    <img class="news-image" src="../../../images/news_20260820_18.png" alt="《黑神话：钟馗》Steam愿望单48小时破350万 国产单机3A纪录刷新" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">《黑神话：钟馗》Steam愿望单48小时破350万 国产单机3A纪录刷新</h3>
+        <p class="news-summary">游戏科学《黑神话：钟馗》Steam愿望单数量截至8月19日18时已突破350万份，再次刷新国产单机游戏历史纪录。此前8月17日公布的200万份数据后，《黑神话：钟馗》在48小时内新增150万份愿望单。演示视频展现的钟馗在阴曹地府的战斗场景、4K/60FPS主机画面质量引发全球玩家热议。Steam全球愿望单总榜中，《黑神话：钟馗》已升至第8位，是榜单中唯一的国产游戏。游戏科学同步预告将于9月10日开启第二轮实机演示直播，重点展示PVP『地府武斗场』模式。第三方分析师预计，《黑神话：钟馗》首月销量有望突破500万套，全周期销量目标剑指5000万套。</p>
+        <div><span class="tag">文化</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260820_19.png" alt="日韩首脑东京会晤重启穿梭外交 半导体合作达成9项共识" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">日韩首脑东京会晤重启穿梭外交 半导体合作达成9项共识</h3>
+        <p class="news-summary">韩国总统李在明8月18日抵达东京，与日本首相高市早苗举行首脑会谈，正式重启自2019年以来中断的韩日穿梭外交机制。双方在联合声明中宣布9项核心共识：续签《韩日军事情报保护协定》、启动半导体供应链『联合研究计划』（重点聚焦HBM高带宽存储器和先进封装）、重启东海海上安全热线、联合应对朝核问题、深化稀土供应链合作、扩大青年互访规模至每年1000人等。李在明在联合记者会上表示，『此次会晤标志着韩日关系翻开新篇章』。分析认为，在中美博弈加剧背景下，韩日关系回暖将重塑东亚地缘格局，对区域半导体产业格局产生深远影响。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260820_20.png" alt="英伟达H300 GPU正式量产 AI推理性能较H200提升3倍" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">英伟达H300 GPU正式量产 AI推理性能较H200提升3倍</h3>
+        <p class="news-summary">英伟达CEO黄仁勋8月19日在洛杉矶GTC主题演讲上宣布，下一代AI GPU H300正式进入量产阶段，并将于10月开始向头部客户交付。H300采用台积电3nm工艺，集成2080亿个晶体管，单卡FP8推理性能达到4500 TFLOPS，是H200的3倍；单卡FP16训练性能达到2200 TFLOPS。H300首次集成英伟达自研『Transformer Engine 3.0』和『隐私计算模块』，可在训练过程中实现端到端数据加密。黄仁勋现场演示H300四卡集群在2分钟内完成对GPT-6级别模型的完整微调，性能令人震撼。H300首发客户包括OpenAI、Anthropic、xAI、Meta、阿里、字节等十余家头部AI公司。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+            </div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年08月22日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
