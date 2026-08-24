@@ -14,20 +14,37 @@ with open(BLOG / f"news_data_{date_compact}.json") as f:
 with open(BLOG / "index.html", "r", encoding="utf-8") as f:
     html = f.read()
 
-# 替换日期
-old_date = re.search(r'<title>\d{4}年\d{2}月\d{2}日 环球新闻</title>', html).group(0)
-new_date = f'<title>{data["date"]} 环球新闻</title>'
-html = html.replace(old_date, new_date)
+# 替换日期 - 支持多种 title 格式
+date_compact_short = data["date"].replace("年", "").replace("月", "").replace("日", "")
+# format 1: "全球20条热点新闻 - 2026年08月16日 | 环球新闻"
+title_pattern = re.compile(r'<title>全球20条热点新闻 - \d{4}年\d{2}月\d{2}日 \| 环球新闻</title>')
+title_match = title_pattern.search(html)
+if title_match:
+    html = html.replace(title_match.group(0), f'<title>全球20条热点新闻 - {data["date"]} | 环球新闻</title>')
+else:
+    # format 2: "2026年08月16日 环球新闻"
+    title_pattern2 = re.compile(r'<title>\d{4}年\d{2}月\d{2}日 环球新闻</title>')
+    title_match2 = title_pattern2.search(html)
+    if title_match2:
+        html = html.replace(title_match2.group(0), f'<title>{data["date"]} 环球新闻</title>')
 
 # 替换 meta description
-old_meta = re.search(r'<meta name="description" content="\d{4}年\d{2}月\d{2}日[^"]*"', html).group(0)
-new_meta = f'<meta name="description" content="{data["date"]}全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">'
-html = html.replace(old_meta, new_meta)
+desc_pattern = re.compile(r'<meta name="description" content="\d{4}年\d{2}月\d{2}日[^"]*"[^>]*>')
+desc_match = desc_pattern.search(html)
+if desc_match:
+    html = html.replace(desc_match.group(0), f'<meta name="description" content="{data["date"]}全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">')
 
 # 替换 cover-subtitle 日期
-old_subtitle = re.search(r'<p class="cover-subtitle">全球20条热点新闻 · \d{4}年\d{2}月\d{2}日</p>', html).group(0)
-new_subtitle = f'<p class="cover-subtitle">全球20条热点新闻 · {data["date"]}</p>'
-html = html.replace(old_subtitle, new_subtitle)
+subtitle_pattern = re.compile(r'<p class="cover-subtitle">全球20条热点新闻 · \d{4}年\d{2}月\d{2}日</p>')
+subtitle_match = subtitle_pattern.search(html)
+if subtitle_match:
+    html = html.replace(subtitle_match.group(0), f'<p class="cover-subtitle">全球20条热点新闻 · {data["date"]}</p>')
+
+# 替换 footer 日期
+footer_pattern = re.compile(r'所有新闻内容仅供参考，请以官方发布为准 · \d{4}年\d{2}月\d{2}日')
+footer_match = footer_pattern.search(html)
+if footer_match:
+    html = html.replace(footer_match.group(0), f'所有新闻内容仅供参考，请以官方发布为准 · {data["date"]}')
 
 # 替换所有 news-card 块：抓 <article ...>...</article>
 card_pattern = re.compile(r'<article class="news-card" data-tag="[^"]*">.*?</article>', re.DOTALL)
