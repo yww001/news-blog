@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年08月26日 | 环球新闻</title>
+    <meta name="description" content="2026年08月26日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/news-generated/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年08月26日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260826_01.png" alt="第二十六届投洽会9月厦门开幕 商务部介绍筹备进展" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">第二十六届投洽会9月厦门开幕 商务部介绍筹备进展</h3>
+        <p class="news-summary">中新网8月25日报道，商务部新闻发言人凌激在国新办发布会上宣布，第二十六届中国国际投资贸易洽谈会将于9月8日至11日在福建厦门举行。本届投洽会以"扩大双向投资 共促全球发展"为主题，预计吸引120多个国家和地区的近8万名客商参展，聚焦数字经济、绿色能源和跨境投资合作等议题，为全球资本搭建重要对接平台。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260826_02.png" alt="阿里再融800亿豪赌AI基建 马云连续增持公司港股" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">阿里再融800亿豪赌AI基建 马云连续增持公司港股</h3>
+        <p class="news-summary">观察者网8月25日报道，阿里巴巴创始人马云连日增持阿里港股，总额超6亿港元，释放强烈看好信号。同期阿里宣布800亿元新一轮AI基础设施融资计划，将用于扩建智算中心和算力网络。今年6月Alphabet也将股权融资规模从800亿美元上调至847.5亿美元，全球科技巨头正为AI基建疯狂"补血"，行业军备竞赛全面升级。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260826_03.png" alt="美对伊朗发动"经济D日" 财长贝森特警告支持德黑兰国家" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">美对伊朗发动"经济D日" 财长贝森特警告支持德黑兰国家</h3>
+        <p class="news-summary">凤凰网8月24日报道，美国财政部长贝森特召开新闻发布会，宣布对伊朗实施新一轮"经济D日"全方位制裁措施，覆盖石油出口、金融结算和关键金属贸易。贝森特表示，特朗普正致电各国领导人，明确要求其停止与伊朗的往来。分析认为，此举标志着美伊对抗升级至经济封锁阶段，全球能源市场和霍尔木兹海峡通航风险同步上升。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260826_04.png" alt="特朗普连发与金正恩合影 分析称或寻求恢复对朝对话" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">特朗普连发与金正恩合影 分析称或寻求恢复对朝对话</h3>
+        <p class="news-summary">法广网8月25日报道，美国总统特朗普在真相社交平台连发三张与朝鲜最高领导人金正恩的合影照片，引发国际媒体广泛关注。分析人士指出，特朗普此举意在向平壤释放缓和信号，寻求恢复因伊朗战争而搁置的对朝外交。朝鲜半岛局势近期趋紧，相关动向或为美朝重启元首会晤铺路，东北亚地缘格局面临新调整。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260826_05.png" alt="外交部回应美对台军售 坚决反对非法单边制裁" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">外交部回应美对台军售 坚决反对非法单边制裁</h3>
+        <p class="news-summary">央视新闻8月25日报道，外交部发言人林剑在例行记者会上表示，中方坚决反对没有国际法依据、未经联合国安理会授权的非法单边制裁，强调经济战和极限施压无助于解决问题，只会激化矛盾冲突、造成风险外溢。针对美国对台军售等议题，林剑敦促美方恪守一个中国原则，立即撤销错误决定。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260826_06.png" alt="IMF评估俄罗斯跻身全球四大经济体 仅次于中美印" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">IMF评估俄罗斯跻身全球四大经济体 仅次于中美印</h3>
+        <p class="news-summary">俄罗斯卫星通讯社8月25日报道，国际货币基金组织最新评估数据显示，俄罗斯按购买力平价计算的GDP已确认其全球第四大经济体地位，并在欧洲位居第一。这一排名基于2026年最新经济预测，反映出俄罗斯在西方持续制裁背景下展现的经济韧性。IMF同时指出，亚太地区经济总量继续领跑全球，新兴市场仍是世界经济增长的主引擎。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260826_07.png" alt="南方沿海迎强降雨 台风和季风槽叠加效应明显" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">南方沿海迎强降雨 台风和季风槽叠加效应明显</h3>
+        <p class="news-summary">中国天气网8月25日消息，未来三天受台风和季风槽共同影响，南方沿海地区将出现持续性强降雨过程，局地伴有短时强降水和雷暴大风。中央气象台启动重大气象灾害四级应急响应。北方多地则以阵雨和雷阵雨天气为主。气象专家提醒各地提前做好城市内涝、山洪和地质灾害防御工作，保障民众出行与生产安全。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260826_08.png" alt="AI热潮被指"好的泡沫" 国际清算银行发文警示风险" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">AI热潮被指"好的泡沫" 国际清算银行发文警示风险</h3>
+        <p class="news-summary">日经中文网8月25日报道，国际清算银行最新研究指出，与AI相关的设备投资扩张速度已超过以往主要经济热潮的水平。报告将当前AI浪潮类比为历史上的"好泡沫"，既能推动生产率跃升，也可能加剧资产价格波动和金融体系脆弱性。各国央行正研究针对性宏观审慎工具以应对潜在风险，金融监管机构呼吁加强对AI估值的压力测试。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260826_09.png" alt="非洲多国盛赞中国新能源 比亚迪南非展厅人气高涨" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">非洲多国盛赞中国新能源 比亚迪南非展厅人气高涨</h3>
+        <p class="news-summary">观察者网8月24日报道，与美西方炒作中国"产能过剩"形成鲜明对比，非洲多国对中国新能源产品需求旺盛。在南非约翰内斯堡举办的汽车节上，比亚迪展厅吸引大量民众参观体验。多国政商界人士认为，中国新能源车性价比高、技术先进，为非洲能源转型和绿色发展提供关键助力。中非经贸合作持续深化，新能源板块成为新增长极。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260826_10.png" alt="智谱联手华为发布全国产开源多模态模型" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">智谱联手华为发布全国产开源多模态模型</h3>
+        <p class="news-summary">观察者网8月23日报道，AI独角兽智谱AI宣布与华为联合发布基于全国产算力的开源多模态大模型，深度适配昇腾系列芯片。该模型在多项基准测试中表现领先，并已通过GitHub开源开放下载。此次合作被视为国产AI生态自主可控的标志性事件，亦为应对外部算力封锁提供新选项，国产AI产业链协同效应进一步显现。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260826_11.png" alt="沃尔玛全面支持Apple Pay和Google Pay移动支付" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">沃尔玛全面支持Apple Pay和Google Pay移动支付</h3>
+        <p class="news-summary">Edge AI Daily 8月22日报道，沃尔玛宣布自8月24日起逐步在其全美门店支持Apple Pay和Google Pay的Tap to Pay功能，并计划于年底前完成全覆盖。这标志着这家美国最大零售商结束了长达12年的自有支付系统抵抗策略。移动支付在北美的普及迎来标志性时刻，业界关注其对支付生态和消费者购物习惯的深远影响。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="体育">
+    <img class="news-image" src="../../../images/news_20260826_12.png" alt="亚洲残疾人运动会倒计时 杭州筹备进入冲刺阶段" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">亚洲残疾人运动会倒计时 杭州筹备进入冲刺阶段</h3>
+        <p class="news-summary">新华社8月24日报道，2026年亚洲残疾人运动会将于10月下旬在中国杭州开幕，各项筹备工作已进入最后冲刺阶段。场馆无障碍改造、赛事服务保障和代表团接待方案均已基本就绪。组委会介绍，赛事预计吸引40余个国家和地区代表团参赛，是杭州继亚运会后举办的又一重要国际综合体育赛事，将向世界展示中国无障碍城市建设成果。</p>
+        <div><span class="tag">体育</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260826_13.png" alt="伊朗警告邻国配合美制裁将封锁霍尔木兹海峡" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">伊朗警告邻国配合美制裁将封锁霍尔木兹海峡</h3>
+        <p class="news-summary">观察者网8月23日报道，伊朗军方高层警告周边国家，若配合美国对伊朗的石油制裁，伊朗将封锁霍尔木兹海峡作为反制。霍尔木兹海峡承载全球约30%的海运石油贸易，一旦封锁将对国际能源市场造成剧烈冲击。地区紧张局势持续升级，国际原油价格近日明显走高，引发全球投资者关注，地缘风险溢价显著抬升。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260826_14.png" alt="REDMI Note 17 Pro Max正式发布 影像系统全面升级" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">REDMI Note 17 Pro Max正式发布 影像系统全面升级</h3>
+        <p class="news-summary">快科技8月24日报道，小米旗下REDMI品牌正式发布新款中端旗舰REDMI Note 17 Pro Max，搭载全新处理器与定制影像系统。新机配备大底主摄、长续航电池和高刷护眼屏，并在散热与快充方面进行多项优化。行业观察认为，新机有望进一步巩固REDMI在中端智能手机市场的竞争力，并加速国产手机厂商在影像赛道的技术竞赛。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260826_15.png" alt="国内三大运营商停售第三方号卡 强化渠道管控" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">国内三大运营商停售第三方号卡 强化渠道管控</h3>
+        <p class="news-summary">广州日报8月13日报道，中国电信、中国移动和中国联通发布公告称，自2026年8月1日起，不再通过第三方互联网平台提供号卡相关业务办理。运营商表示，此举是为加强渠道管理、防范电信网络诈骗和保护用户信息安全。业内分析认为，监管收紧将推动运营商转向自有渠道和线下门店服务，行业竞争格局面临重新洗牌。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="文化">
+    <img class="news-image" src="../../../images/news_20260826_16.png" alt="2026暑期档电影票房破百亿 多元类型驱动市场回暖" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">2026暑期档电影票房破百亿 多元类型驱动市场回暖</h3>
+        <p class="news-summary">据网络平台数据，截至8月20日，2026年暑期档电影票房（含预售）已突破100亿元大关，年度总票房突破252亿元。暑期档连续36天单日票房过亿，《功夫女足》《欢迎来龙餐馆》《奥德赛》等中外佳作共同撑起档期。业内人士分析，优质内容供给与多元类型是票房回暖的核心动力，电影消费市场信心持续修复。</p>
+        <div><span class="tag">文化</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260826_17.png" alt="美FOMC会议纪要释放模糊信号 高盛警告波动加剧" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">美FOMC会议纪要释放模糊信号 高盛警告波动加剧</h3>
+        <p class="news-summary">东方财富网8月22日报道，高盛首席经济学家Hatzius警告，美联储近期的沟通策略出现明显"模糊化"转向，市场预期分歧正在加大。FOMC会议纪要未对未来利率路径给出明确指引，导致美债收益率波动加剧、美元指数反复。机构普遍下调年内降息次数预期，全球资本市场承压，新兴市场资本流动出现新变数。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260826_18.png" alt="中国机器人半马完赛成绩破两小时 具身智能迎里程碑" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">中国机器人半马完赛成绩破两小时 具身智能迎里程碑</h3>
+        <p class="news-summary">央视新闻8月23日报道，2026世界机器人大会期间举行的机器人半程马拉松在北京亦庄鸣枪开跑，超百支参赛队伍在自主导航与遥控两大赛道展开角逐。多家厂商的足式机器人成功完赛，最好成绩突破两小时门槛。赛事被视为检验具身智能算法、能源管理与运动控制的重要试验场，为后续产业化落地积累关键数据。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260826_19.png" alt="世界人形机器人运动会落幕 多项世界纪录被刷新" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">世界人形机器人运动会落幕 多项世界纪录被刷新</h3>
+        <p class="news-summary">8月22日至24日，第二届世界人形机器人运动会在北京国家速滑馆"冰丝带"举行。赛事吸引六大洲16国666支队伍、2056台机器人参赛。中国机器人以9.39秒跑完百米，超越博尔特9.58秒的人类世界纪录。机器人足球、拳击、舞蹈等项目同步上演，集中展示全球具身智能前沿成果，赛事国际化水平显著提升。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260826_20.png" alt="中俄朝三角关系深化 普京公开感谢朝鲜军人" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">中俄朝三角关系深化 普京公开感谢朝鲜军人</h3>
+        <p class="news-summary">塔斯社8月22日报道，俄罗斯总统普京在莫斯科接见参与特别军事行动的朝鲜军人代表时公开表示感谢，并授予其国家奖章。此举被国际舆论视为俄朝军事合作深化的明确信号，进一步巩固中俄朝三角关系。分析人士指出，相关动向可能加剧东北亚地缘紧张局势，联合国制裁框架面临更大压力，三国协作机制引起美西方高度关注。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+            </div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">📌 本归档页基于 2026年08月26日 实时新闻数据生成。所有新闻内容仅供参考，请以官方发布为准 · 2026年08月26日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
