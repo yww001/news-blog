@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年08月27日 | 环球新闻</title>
+    <meta name="description" content="2026年08月27日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/news-generated/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年08月27日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="体育">
+    <img class="news-image" src="../../../images/news_20260827_01.png" alt="中国男篮世预赛客战卡塔尔 郭士强率队冲击连胜" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">中国男篮世预赛客战卡塔尔 郭士强率队冲击连胜</h3>
+        <p class="news-summary">新华社8月27日报道，中国男篮将于当日在世预赛第二阶段客场挑战卡塔尔队，主帅郭士强赛前表示全队已做好充分准备，目标是全力争胜巩固小组第二位置。本场比赛是中国男篮8月两场硬仗的首战，4天后将回到主场对阵黎巴嫩。央视体育频道将全程直播，球迷期待球队延续近期良好状态，为2027年世界杯门票发起冲刺。</p>
+        <div><span class="tag">体育</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260827_02.png" alt="英伟达Q2财报即将揭晓 分析师预期营收再创新高" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">英伟达Q2财报即将揭晓 分析师预期营收再创新高</h3>
+        <p class="news-summary">财联社8月27日报道，AI芯片龙头英伟达将于周三盘后公布2026财年第二季度财报。华尔街分析师普遍预期营收将突破460亿美元，同比增长超150%，数据中心业务仍是核心增长引擎。市场关注Blackwell GPU出货节奏、HBM内存供应以及中国市场出货指引。黄仁勋近期频繁释放AI工厂与物理AI概念，英伟达股价过去一年累计涨幅超180%。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260827_03.png" alt="俄外长称乌克兰若无西方援助只能撑四个月" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">俄外长称乌克兰若无西方援助只能撑四个月</h3>
+        <p class="news-summary">俄罗斯卫星通讯社8月26日报道，俄外交部无任所大使米罗什尼克表示，在缺乏西方持续财政和武器援助的情况下，乌克兰的战争潜力仅能维持约四个月。俄方同时警告，北约成员国对乌援助的可持续性正面临国内政治压力。乌克兰总统办公室回应称将继续获得盟友支持，俄乌冲突的长期走向仍是国际社会关注焦点。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="军事">
+    <img class="news-image" src="../../../images/news_20260827_04.png" alt="日本防卫预算连创新高 2026财年突破9万亿日元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">日本防卫预算连创新高 2026财年突破9万亿日元</h3>
+        <p class="news-summary">共同社8月26日报道，日本政府2026财年防卫预算已正式突破9万亿日元大关，比原计划提前两年实现防卫费占GDP比重提升至2%的目标。预算重点投向远程打击能力、宙斯盾系统升级以及无人作战平台。媒体批评此举严重背离专守防卫原则，加剧东北亚紧张局势，多个周边国家对此表示严重关切并提出外交抗议。</p>
+        <div><span class="tag">军事</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260827_05.png" alt="阿里宣布800亿AI基建融资 马云连续增持释放看好信号" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">阿里宣布800亿AI基建融资 马云连续增持释放看好信号</h3>
+        <p class="news-summary">观察者网8月26日报道，阿里巴巴宣布完成800亿元新一轮AI基础设施融资计划，将用于扩建智算中心和算力网络。同期马云连日增持阿里港股，金额超6亿港元，释放强烈看好信号。今年6月Alphabet也将股权融资规模从800亿美元上调至847.5亿美元，全球科技巨头正为AI基建疯狂补血，行业军备竞赛全面升级。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260827_06.png" alt="美对伊朗发动经济D日制裁 财长警告支持德黑兰国家" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">美对伊朗发动经济D日制裁 财长警告支持德黑兰国家</h3>
+        <p class="news-summary">凤凰网8月26日报道，美国财政部长贝森特宣布对伊朗实施新一轮经济D日全方位制裁措施，覆盖石油出口、金融结算和关键金属贸易。贝森特表示特朗普正致电各国领导人，明确要求停止与伊朗的一切往来。分析认为此举标志着美伊对抗升级至经济封锁阶段，全球能源市场和霍尔木兹海峡通航风险同步上升。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260827_07.png" alt="中瑞自贸协定升级谈判完成 瑞士对华出口迎新机遇" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">中瑞自贸协定升级谈判完成 瑞士对华出口迎新机遇</h3>
+        <p class="news-summary">观察者网8月27日报道，瑞士与中国正式宣布完成自由贸易协定升级谈判，覆盖数字经济、绿色技术、金融服务和投资便利化等新领域。瑞士联邦经济事务秘书处表示，升级后的协定将为钟表、机械、医药等瑞士优势产业打开更大中国市场。南华早报分析认为，在欧盟与中国贸易紧张加剧的背景下，此举具标志性意义。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="医药">
+    <img class="news-image" src="../../../images/news_20260827_08.png" alt="中国创新药出海跑出加速度 多个ADC品种海外授权" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">中国创新药出海跑出加速度 多个ADC品种海外授权</h3>
+        <p class="news-summary">新华网8月27日报道，2026年以来中国创新药海外授权交易总额已突破500亿美元，多家本土药企的ADC、双抗等明星品种与跨国大药企达成重磅合作。科伦博泰、百利天恒、康方生物等公司表现尤为亮眼，单笔交易首付款最高达8亿美元。行业分析指出，中国创新药正从fast-follow转向全球first-in-class，海外认可度显著提升。</p>
+        <div><span class="tag">医药</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="文化">
+    <img class="news-image" src="../../../images/news_20260827_09.png" alt="极深月偏食今晚登场 全球多地可观测鱘鱼满月" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">极深月偏食今晚登场 全球多地可观测鱘鱼满月</h3>
+        <p class="news-summary">天文台8月27日报道，一场极具观测价值的极深月偏食将于今晚至28日凌晨重磅登场，因8月满月恰逢传统天文学上的鱘鱼满月而备受瞩目。当晚月球升起后将缓缓没入地球本影，食分接近0.98，几近全食。中国除西部部分地区外大部可见全过程，公众可借助双筒望远镜清晰观测月球表面的明暗变化。</p>
+        <div><span class="tag">文化</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260827_10.png" alt="尼泊尔中国边境发生山体滑坡 致98死740余人失踪" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">尼泊尔中国边境发生山体滑坡 致98死740余人失踪</h3>
+        <p class="news-summary">NHK 8月27日报道，尼泊尔与中国西藏边境地区因连日强降雨发生大规模山体滑坡，已造成至少98人死亡、740余人失踪。当地村庄及跨境公路被泥石流吞没，中尼两国均已启动紧急救援机制。中国西藏边境县派出救援力量协助尼方搜救被困居民，世界气象组织警告喜马拉雅地区极端天气事件正呈加剧趋势。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260827_11.png" alt="特朗普连发与金正恩合影 寻求恢复对朝外交对话" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">特朗普连发与金正恩合影 寻求恢复对朝外交对话</h3>
+        <p class="news-summary">法广网8月26日报道，美国总统特朗普在真相社交平台连发三张与朝鲜最高领导人金正恩的合影照片，引发国际媒体广泛关注。分析人士指出，特朗普此举意在向平壤释放缓和信号，寻求恢复因伊朗战事而搁置的对朝外交。朝鲜半岛局势近期趋紧，相关动向或为美朝重启元首会晤铺路，东北亚地缘格局面临新调整。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260827_12.png" alt="MSCI最新成分股调整盘后生效 多只A股纳入" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">MSCI最新成分股调整盘后生效 多只A股纳入</h3>
+        <p class="news-summary">经济日报8月27日报道，MSCI最新季度指数调整于今日盘后正式生效，本次调整涉及多只A股及港股标的，部分新兴市场权重获得上调。机构测算本次调整将带动超20亿美元被动资金流入中国市场。多家头部券商研报指出，外资对A股配置兴趣持续回升，行业龙头与高分红标的仍是配置首选。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260827_13.png" alt="第二十六届投洽会9月厦门开幕 商务部介绍筹备进展" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">第二十六届投洽会9月厦门开幕 商务部介绍筹备进展</h3>
+        <p class="news-summary">中新网8月26日报道，商务部新闻发言人凌激在国新办发布会上宣布，第二十六届中国国际投资贸易洽谈会将于9月8日至11日在福建厦门举行。本届投洽会以扩大双向投资共促全球发展为主题，预计吸引120多个国家和地区的近8万名客商参展，聚焦数字经济、绿色能源和跨境投资合作等议题，为全球资本搭建重要对接平台。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260827_14.png" alt="DeepSeek V5模型曝光 国产AI芯片适配效率大幅提升" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">DeepSeek V5模型曝光 国产AI芯片适配效率大幅提升</h3>
+        <p class="news-summary">财联社8月27日报道，国产大模型团队DeepSeek即将发布第五代旗舰模型V5，技术报告显示其在国产昇腾、寒武纪等AI芯片上的推理效率较V4版本提升超3倍。多家头部券商预测V5将在代码、数学、多模态等核心基准上对标GPT-5水平。消息人士透露V5将同步推出Flash与Pro两个版本，月之暗面、智谱等竞品也将于近期发布新版本。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260827_15.png" alt="加拿大反制美国关税升级 贸易战进入新阶段" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">加拿大反制美国关税升级 贸易战进入新阶段</h3>
+        <p class="news-summary">加拿大广播公司8月26日报道，加拿大政府宣布对美国价值300亿加元商品加征报复性关税，作为对美方钢铝232关税的反制措施。加拿大总理表示将坚决捍卫本国产业利益，并启动世贸组织争端解决程序。分析指出此举将进一步加剧北美贸易紧张局势，美国汽车业和农业将受到显著冲击，加元汇率短线承压。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260827_16.png" alt="中国铁路新增教师积分优惠 助力教育事业发展" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">中国铁路新增教师积分优惠 助力教育事业发展</h3>
+        <p class="news-summary">中国新闻网8月27日报道，自8月27日起国铁集团在全国范围实施教师积分优惠出行政策，教师可凭教师资格证及相关认证享受铁路出行积分加倍及专属折扣。该政策覆盖普速、高铁及城际铁路，预计惠及全国1800余万在职教师。配套推出教师节专列及乡村支教公益票务，旨在弘扬尊师重教传统，支持教育人才流动。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260827_17.png" alt="国际油价大幅波动 布伦特原油突破每桶92美元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">国际油价大幅波动 布伦特原油突破每桶92美元</h3>
+        <p class="news-summary">新华财经8月27日报道，受美伊制裁升级及霍尔木兹海峡通航风险上升影响，国际油价周二大幅上涨，布伦特原油突破每桶92美元关口，WTI原油亦涨至89美元附近。能源分析师警告，若伊朗采取反制措施封锁海峡，全球原油供应可能瞬间缩减20%，油价存在进一步冲高至100美元的风险。各国正加快能源储备以应对潜在冲击。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260827_18.png" alt="香港完成首例无人驾驶巴士载人测试 智慧城市建设加速" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">香港完成首例无人驾驶巴士载人测试 智慧城市建设加速</h3>
+        <p class="news-summary">大公报8月26日报道，香港运输署日前完成首例L4级无人驾驶小巴载人测试，测试路段覆盖中环至金廊约12公里，全程零事故。巴士配备激光雷达、毫米波雷达及多目摄像头，可识别行人、信号灯及复杂路况。香港特区政府表示将加快推进智慧交通立法，计划2027年在观塘、九龙等区域开放无人驾驶公交商业化运营。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260827_19.png" alt="北京暴雨蓝色预警生效 多条山区公交线路临时停运" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">北京暴雨蓝色预警生效 多条山区公交线路临时停运</h3>
+        <p class="news-summary">新京报8月27日报道，北京市气象台发布暴雨蓝色预警，预计今日白天至夜间将有大到暴雨，局地伴有短时强降水。受降雨影响，怀柔-密云线、通密线等山区市郊铁路全部临时停运，市区部分低洼路段出现积水。北京市应急管理局启动防汛二级响应，部署排水力量在各易涝点值守，提醒市民减少出行、注意安全。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="体育">
+    <img class="news-image" src="../../../images/news_20260827_20.png" alt="国乒公布亚锦赛参赛名单 樊振东孙颖莎领衔出战" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">国乒公布亚锦赛参赛名单 樊振东孙颖莎领衔出战</h3>
+        <p class="news-summary">新华社8月27日报道，中国乒协正式公布2026年亚洲乒乓球锦标赛参赛名单，男队由樊振东、王楚钦、马龙领衔，女队由孙颖莎、王曼昱、陈梦出战。本届亚锦赛将于9月初在韩国釜山举行，是洛杉矶奥运会周期的重要积分赛。教练组表示将派出最强阵容，检验新老结合的奥运备战体系，全力捍卫国乒亚洲霸主地位。</p>
+        <div><span class="tag">体育</span></div>
+    </div>
+</article>
+</div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">📌 本归档页基于 2026年08月27日 实时新闻数据生成。所有新闻内容仅供参考，请以官方发布为准 · 2026年08月27日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
