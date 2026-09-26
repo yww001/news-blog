@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年09月26日 | 环球新闻</title>
+    <meta name="description" content="2026年09月26日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/news-generated/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年09月26日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260926_01.png" alt="伊朗外长：霍尔木兹海峡航行安全无法依靠军事威胁实现" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">伊朗外长：霍尔木兹海峡航行安全无法依靠军事威胁实现</h3>
+        <p class="news-summary">伊朗外交部长阿巴斯・阿拉格齐周五表示，伊朗仍致力于维护霍尔木兹海峡的航行安全，但海上安全无法依靠军事行动、威胁、封锁或经济胁迫来实现。阿拉格齐在联合国大会间隙向记者宣读声明时称：“海上安全无法通过进一步的军事行动、威胁、封锁或是经济胁迫来重建。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260926_02.png" alt="欧洲四大足球联赛联合声明 呼吁国际足联根本性治理改革" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">欧洲四大足球联赛联合声明 呼吁国际足联根本性治理改革</h3>
+        <p class="news-summary">欧洲四大足球联赛英超、德甲、西甲和意甲联赛25日发表联合声明，称国际足联主席因凡蒂诺近年来“非但未能防范，反而主动推进具有剥削性的方案”，呼吁国际足联进行“根本性”治理改革。四大联赛表示，需要建立更加“透明、客观、均衡和包容”的治理架构。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260926_03.png" alt="巴基斯坦总理联大发言 介绍中东斡旋与伊斯兰堡会谈成果" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">巴基斯坦总理联大发言 介绍中东斡旋与伊斯兰堡会谈成果</h3>
+        <p class="news-summary">据央视，巴基斯坦总理夏巴兹·谢里夫在第81届联合国大会一般性辩论发言中，介绍了今年2月美以伊冲突爆发并扩散到更广泛的中东地区，作为斡旋方，巴基斯坦与各方协同努力，促成了美国和伊朗在伊斯兰堡的对话，从伊斯兰堡会谈到《伊斯兰堡谅解备忘录》，为结束这场严重冲突采取了……</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260926_04.png" alt="白宫禁止CNN记者搭乘空军一号随行出访" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">白宫禁止CNN记者搭乘空军一号随行出访</h3>
+        <p class="news-summary">市场消息：白宫禁止CNN记者搭乘空军一号随行出访。白宫与主流媒体关系持续紧张，随行记者安排再度收紧，引发新闻界关注。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260926_05.png" alt="OpenAI人工智能失控操作美国多个政府部门网站" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">OpenAI人工智能失控操作美国多个政府部门网站</h3>
+        <p class="news-summary">安全研究人员以及一名了解相关事件的知情人士称，今年夏天，OpenAI的人工智能在该实验室不知情的情况下出现失控行为，对美国教育部、商务部以及美国证券交易委员会的网站进行了操作。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20260926_06.png" alt="苹果侵犯Taction振动技术专利 被判赔超57亿美元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">苹果侵犯Taction振动技术专利 被判赔超57亿美元</h3>
+        <p class="news-summary">美国圣地亚哥联邦陪审团裁定，苹果公司因侵犯Taction科技公司的振动技术相关专利，需支付超57亿美元的赔偿，该专利技术被应用于多款iPhone和Apple Watch产品中。陪审团认定苹果侵犯了Taction的两项触觉反馈专利，但裁定该侵权行为不构成蓄意侵权。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260926_07.png" alt="巴西财政部长：不会向博彩公司退还牌照费用" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">巴西财政部长：不会向博彩公司退还牌照费用</h3>
+        <p class="news-summary">巴西财政部长达里奥·杜里甘在圣保罗周五的新闻发布会上表示，巴西不会向博彩公司退还牌照费用。政府已评估博彩禁令对各行业造成的影响。政府将与足球俱乐部及足协就其债务问题展开对话。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260926_08.png" alt="Fal、Fireworks AI营收走高 引发投资者新一轮投资热潮" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">Fal、Fireworks AI营收走高 引发投资者新一轮投资热潮</h3>
+        <p class="news-summary">Fal、Fireworks AI这类提供AI模型与服务器调用服务的初创企业营收持续走高。开发者借助它们快速运行模型，也引发投资者新一轮的投资热潮。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260926_09.png" alt="FAST总工程师：2028年前后有望实现射电望远镜全部国产化" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">FAST总工程师：2028年前后有望实现射电望远镜全部国产化</h3>
+        <p class="news-summary">据央视财经，FAST运行和发展中心主任兼总工程师姜鹏介绍，从终端馈源，到射频电路放大器，一直到芯片，逐层地往前摸索，已经花了几年时间了。相位阵、19波束目前还是进口的，希望在2028年前后，能实现全部国产化。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20260926_10.png" alt="智能戒指厂商Oura赴美IPO获约4倍超额认购" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">智能戒指厂商Oura赴美IPO获约4倍超额认购</h3>
+        <p class="news-summary">据市场消息，智能戒指厂商Oura拟在美国进行的首次公开募股目前获得约4倍超额认购。根据此前披露的发行方案，Oura及现有股东拟以每股40至44美元的价格发售5000万股，按区间上限计算，发行规模最高约22亿美元。公司预计下周以“OURA”为代码在纳斯达克上市。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260926_11.png" alt="SpaceX超级计算机Colossus 2英伟达芯片数量年底将翻倍" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">SpaceX超级计算机Colossus 2英伟达芯片数量年底将翻倍</h3>
+        <p class="news-summary">马斯克周四表示，SpaceX的人工智能超级计算机Colossus 2项目计划大规模扩张，到今年年底其使用的英伟达芯片数量将较目前翻一倍以上。 马斯克在X上表示，Colossus 2数据中心目前已搭载11万颗Nvidia GB200芯片和44万颗GB300芯片。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20260926_12.png" alt="美国新墨西哥州总检察长寻求对Meta处以最高2190亿美元罚款" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">美国新墨西哥州总检察长寻求对Meta处以最高2190亿美元罚款</h3>
+        <p class="news-summary">美国新墨西哥州总检察长劳尔·托雷斯表示，在陪审团裁定Meta Platforms Inc.违反州法律后，他将寻求对该公司处以最高达2190亿美元的罚款。陪审团认定，Meta在言论政策和数据隐私政策方面误导公众，从而违反了新墨西哥州法律。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260926_13.png" alt="美国与伊朗就霍尔木兹海峡重启谈判进行积极讨论" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">美国与伊朗就霍尔木兹海峡重启谈判进行积极讨论</h3>
+        <p class="news-summary">据央视，一位美国官员透露，继伊朗方面提出开放霍尔木兹海峡并在提议获接纳后重启谈判的计划以来，美国正与伊朗进行“积极且富有建设性”的讨论。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260926_14.png" alt="美国司法部与工会达成和解 撤回政府停摆相关裁员措施" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">美国司法部与工会达成和解 撤回政府停摆相关裁员措施</h3>
+        <p class="news-summary">美国总统特朗普领导的司法部将与工会达成和解，撤回与2025年政府停摆相关的裁员措施。根据周五公开的一项协议，政府将暂停相关诉讼，并撤销一份指示联邦机构解雇部分雇员的备忘录；同时，政府也放弃了扩大其解雇联邦雇员权限的尝试。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20260926_15.png" alt="克利夫兰联储行长：长期国债收益率走高源于多重因素共同作用" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">克利夫兰联储行长：长期国债收益率走高源于多重因素共同作用</h3>
+        <p class="news-summary">克利夫兰联储行长贝丝・哈马克表示，美国长期国债收益率走高，源于经济增长预期向好、市场对政府债务的担忧，以及对美联储进一步加息的预期。哈马克周五在克利夫兰联储举办的会议上称：“我认为多重因素在共同起作用。一方面经济数据表现相当稳健，市场预期经济将持续向好。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260926_16.png" alt="人民日报钟声：把中美建设性战略稳定关系从愿景转化为行动" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">人民日报钟声：把中美建设性战略稳定关系从愿景转化为行动</h3>
+        <p class="news-summary">中美两国应当也完全可以在务实合作中互利共赢，在良性竞争中彼此成就，在求同存异中妥处分歧，在累积互信中构筑和平，让中美建设性战略稳定关系更好惠及两国人民和世界各国</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260926_17.png" alt="视频丨“平平”“福双”将赴美，中美开启新一轮大熊猫保护国际合作" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">视频丨“平平”“福双”将赴美，中美开启新一轮大熊猫保护国际合作</h3>
+        <p class="news-summary">记者从国家林草局了解到，来自成都大熊猫繁育研究基地的大熊猫“平平”和“福双”近日将赴美国亚特兰大动物园，开启新一轮大熊猫保护国际合作。 大熊猫“平平”为雄性，2</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260926_18.png" alt="经济日报：告别野蛮生长，AI降速并非坏事" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">经济日报：告别野蛮生长，AI降速并非坏事</h3>
+        <p class="news-summary">放缓不等于停滞，收紧也不等于踩刹车。构建与技术能力相匹配的安全边界与治理框架，并不是产业发展的对立面，其真正目的在于让AI从野蛮生长走向可持续发展。 近期，全球</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260926_19.png" alt="全国首家青少年人工智能学院将满两岁，缘何而设？如何育才？" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">全国首家青少年人工智能学院将满两岁，缘何而设？如何育才？</h3>
+        <p class="news-summary">2026年9月，上海青少年人工智能学院启动第三届学员招生，短短时间报名人数超过了400人，再创新高。后续经过资格审查、笔试、面试等环节后，学院将从中择优录取。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260926_20.png" alt="世赛直击｜照亮前程的手，改变世界的手" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">世赛直击｜照亮前程的手，改变世界的手</h3>
+        <p class="news-summary">近日，世界技能大赛各项目激烈竞争中。各国选手们用他们的手，创造出技能之美。 手是任何技能最核心的实施载体。本届大赛的主题为“技能改变世界，技能照</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+</div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">📌 本归档页基于 2026年09月26日 实时新闻数据生成。所有新闻内容仅供参考，请以官方发布为准 · 2026年09月26日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
