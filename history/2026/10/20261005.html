@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年10月05日 | 环球新闻</title>
+    <meta name="description" content="2026年10月05日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/news-generated/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年10月05日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261005_01.png" alt="巴西总统大选首轮无人胜出 弗拉维奥·博索纳罗与卢拉进第二轮决选" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">巴西总统大选首轮无人胜出 弗拉维奥·博索纳罗与卢拉进第二轮决选</h3>
+        <p class="news-summary">巴西高等选举法院公布首轮计票结果：弗拉维奥·博索纳罗得票约48.05%，卢拉43.96%，已统计逾九成选票，无人胜出，双方将于10月25日进行第二轮角逐，选情较民调预期更为胶着。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261005_02.png" alt="美军将部署英国基地的全部B-1轰炸机撤回美国" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">美军将部署英国基地的全部B-1轰炸机撤回美国</h3>
+        <p class="news-summary">据华尔街日报报道，当地时间10月4日，美国已将部署在英国费尔福德皇家空军基地的全部B-1轰炸机撤回美国，美国国防部发表声明确认轰炸机撤回，驻欧战略轰炸机部署出现调整。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261005_03.png" alt="沙特联军承诺继续支持也门政府 胡塞称24小时内遭106次空袭" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">沙特联军承诺继续支持也门政府 胡塞称24小时内遭106次空袭</h3>
+        <p class="news-summary">沙特主导的多国联军司令部发表声明，将继续向也门政府及其武装部队提供全面作战支持，并指责胡塞武装系统性袭击利雅得等城市平民；胡塞武装则称过去24小时遭沙特106次空袭和导弹袭击。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261005_04.png" alt="德国承诺向乌克兰追加约10亿欧元军援 默茨访问基辅" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">德国承诺向乌克兰追加约10亿欧元军援 默茨访问基辅</h3>
+        <p class="news-summary">德国联邦政府表示，德国总理默茨当天访问乌克兰首都基辅，承诺对乌追加约10亿欧元军事援助，新一批军援重在提升乌克兰防空能力，包括联合生产远程武器和拦截无人机的拦截系统。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261005_05.png" alt="OpenAI阿尔特曼与Anthropic在AI毁灭性风险上立场分歧" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">OpenAI阿尔特曼与Anthropic在AI毁灭性风险上立场分歧</h3>
+        <p class="news-summary">OpenAI首席执行官阿尔特曼就人工智能风险问题与Anthropic立场出现分歧，他表示并不认同存在所谓“极高毁灭性风险”的判断，两大AI头部公司在安全风险评估上的路线之争公开化。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261005_06.png" alt="澳大利亚AI基础设施公司Firmus IPO认购超募资目标" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">澳大利亚AI基础设施公司Firmus IPO认购超募资目标</h3>
+        <p class="news-summary">澳大利亚AI基础设施公司Firmus告知各方基金，本次IPO获得的认购需求已超过募资目标，AI算力基础设施热度持续向资本市场传导，机构对数据中心电力与散热技术公司兴趣浓厚。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261005_07.png" alt="松下菲律宾制造公司11月投产 签约数据中心存储研发项目" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">松下菲律宾制造公司11月投产 签约数据中心存储研发项目</h3>
+        <p class="news-summary">松下菲律宾制造公司宣布将于2026年11月开始商业运营，此前已于9月与菲律宾经济区管理局签署协议，达成面向数据中心的新型存储设备研发新项目合作，加码东南亚制造与研发布局。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261005_08.png" alt="日本立邦涂料13.5亿美元收购阿克苏诺贝尔东南亚业务" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">日本立邦涂料13.5亿美元收购阿克苏诺贝尔东南亚业务</h3>
+        <p class="news-summary">日本立邦涂料宣布将斥资13.5亿美元收购阿克苏诺贝尔东南亚业务，全球涂料行业整合提速，立邦借并购扩大东南亚市场份额，阿克苏诺贝尔则聚焦核心市场资产组合优化。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261005_09.png" alt="雅居乐集团接近敲定重组支持协议 拟六周内发布" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">雅居乐集团接近敲定重组支持协议 拟六周内发布</h3>
+        <p class="news-summary">雅居乐集团港交所公告，公司与协调委员会接近敲定有关商业条款清单及列载重组条款的重组支持协议的谈判及文本，拟于公告日期起计六周内发布重组支持协议，境外债务重组取得进展。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261005_10.png" alt="绿景中国与主要债权人达成重组支持协议 清盘呈请押后" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">绿景中国与主要债权人达成重组支持协议 清盘呈请押后</h3>
+        <p class="news-summary">绿景中国公告与部分主要债权人达成重组支持协议，清盘呈请押后至2027年4月6日，为公司推进整体债务重组争取时间窗口，出险房企化债进程持续推进。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261005_11.png" alt="经济日报：购房贷款贴息重在精准滴灌" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">经济日报：购房贷款贴息重在精准滴灌</h3>
+        <p class="news-summary">经济日报刊文指出，居民购房贷款贴息政策本意并非普惠式“大水漫灌”，而是精准滴灌，大城市高总价住房难以达到享受政策条件，并不意味政策效能打折扣，政策导向重在支持真实刚需。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261005_12.png" alt="琼州海峡明起迎国庆返程高峰 海口两港全预约过海" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">琼州海峡明起迎国庆返程高峰 海口两港全预约过海</h3>
+        <p class="news-summary">从琼州海峡运输企业了解到，琼州海峡明天起将迎来国庆假期返程高峰，南岸海口新海港、秀英港全部实行全预约过海，线下不设小车售票窗口，未购票成功的车辆请勿前往港口。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261005_13.png" alt="国庆假期降水结束 今起至7日我国大部晴好利于返程" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">国庆假期降水结束 今起至7日我国大部晴好利于返程</h3>
+        <p class="news-summary">据央视新闻，昨天是整个国庆假期大范围降水的最后阶段，从今天起到7日我国大部地区降水稀少，晴或多云天气成为主流，总体利于假期外出和返程，全国交通出行条件明显改善。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261005_14.png" alt="人民日报头版：感悟新时代治国理政之道 假期消费市场平稳有序" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">人民日报头版：感悟新时代治国理政之道 假期消费市场平稳有序</h3>
+        <p class="news-summary">人民日报头版刊发“国庆时刻”专题，感悟新时代治国理政之道，并报道假期消费市场平稳有序、创新场景丰富供给等内容，福建等地赓续文脉提升文化影响力成为关注焦点。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261005_15.png" alt="日经225指数升破69,000点 期货早盘涨1.86%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">日经225指数升破69,000点 期货早盘涨1.86%</h3>
+        <p class="news-summary">东京股市日经225指数升破69,000点关口，日经225指数期货早盘上涨1.86%，日本10年期国债收益率同步升至3.110%，亚洲市场风险偏好回升，日元资产全线走强。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261005_16.png" alt="CME美联储观察：10月维持利率不变概率77.9%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">CME美联储观察：10月维持利率不变概率77.9%</h3>
+        <p class="news-summary">据CME“美联储观察”，美联储到10月维持利率不变的概率为77.9%，累计加息25个基点的概率为22.1%；到12月维持利率不变的概率为12.8%，市场对年内利率路径预期出现微妙变化。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261005_17.png" alt="贵金属齐涨：纽约期金突破4170美元 期银61美元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">贵金属齐涨：纽约期金突破4170美元 期银61美元</h3>
+        <p class="news-summary">贵金属延续强势，现货黄金突破4140美元/盎司，纽约期金突破4170美元/盎司，纽约期银日内涨超1%报61.04美元/盎司，避险需求与宽松预期共同推动金银价格走高。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261005_18.png" alt="原油分化：布伦特涨1%报103.3美元 WTI失守90美元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">原油分化：布伦特涨1%报103.3美元 WTI失守90美元</h3>
+        <p class="news-summary">国际油价走势分化，布伦特原油期货涨幅扩大至1%报103.3美元/桶，WTI原油则失守90美元/桶，日内微跌0.13%，两地价差走阔，市场关注供给端扰动对区域基准油价的影响。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261005_19.png" alt="爱尔兰9月综合PMI升至55.6 服务业PMI小幅回落" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">爱尔兰9月综合PMI升至55.6 服务业PMI小幅回落</h3>
+        <p class="news-summary">爱尔兰9月综合PMI升至55.6，高于8月的55.4，服务业PMI则降至54.1，欧元区边缘经济体制造业与服务业表现分化，企业活动总体仍处扩张区间。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261005_20.png" alt="美元兑巴西雷亚尔期货走低 现报5.09" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">美元兑巴西雷亚尔期货走低 现报5.09</h3>
+        <p class="news-summary">芝加哥商品交易所交易数据显示，美元兑巴西雷亚尔近月期货报5.09，前收盘价5.25，雷亚尔明显走强，与巴西大选首轮投票结果落地后的市场反应相互印证。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+</div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">📌 本归档页基于 2026年10月05日 实时新闻数据生成。所有新闻内容仅供参考，请以官方发布为准 · 2026年10月05日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
