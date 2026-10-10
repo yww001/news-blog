@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年10月10日 | 环球新闻</title>
+    <meta name="description" content="2026年10月10日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/news-generated/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年10月10日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261010_01.png" alt="俄美元首通话 普京称俄目前不可能恢复与乌克兰谈判" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">俄美元首通话 普京称俄目前不可能恢复与乌克兰谈判</h3>
+        <p class="news-summary">俄罗斯总统助理乌沙科夫介绍俄美两国领导人通话情况称，普京在通话中详细介绍了俄方为回应乌军袭击所采取的措施，并表示俄罗斯目前不可能恢复与乌克兰的谈判，俄方立场取决于基辅方面的行动。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261010_02.png" alt="证监会规范公募基金投资运作 推动从规模增长迈向质量提升" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">证监会规范公募基金投资运作 推动从规模增长迈向质量提升</h3>
+        <p class="news-summary">证监会10月9日发布修订后的《公开募集证券投资基金运作管理办法（征求意见稿）》及配套规则，进一步规范公募基金投资运作，支持权益类基金发展，提高公募基金行业服务投资者能力，推动行业由规模增长转向质量提升。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261010_03.png" alt="华为披露芯片、鸿蒙与AI最新战略 计划逐步推向全球市场" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">华为披露芯片、鸿蒙与AI最新战略 计划逐步推向全球市场</h3>
+        <p class="news-summary">华为官方发布国际媒体圆桌采访纪要，常务董事、终端BG董事长余承东披露芯片、鸿蒙、AI、折叠屏与海外市场战略最新动态，表示终端业务未来十年将围绕鸿蒙生态展开，并计划逐步将鸿蒙系统推向全球市场。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261010_04.png" alt="国资委主任程福波调研中国移动 加快6G核心技术攻关" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">国资委主任程福波调研中国移动 加快6G核心技术攻关</h3>
+        <p class="news-summary">国务院国资委党委书记、主任程福波10月8日到中国移动调研，了解企业改革创新、加快6G核心技术攻关、推进新一代通信网建设等进展，要求加强战略规划、超前布局影响未来的前沿技术，抢占发展制高点。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261010_05.png" alt="法拉利董事长：AI泡沫不足虑 但供需错配或构成市场风险" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">法拉利董事长：AI泡沫不足虑 但供需错配或构成市场风险</h3>
+        <p class="news-summary">法拉利董事长约翰·埃尔坎对潜在的人工智能泡沫担忧不以为意，但他警告称AI供需错配可能对市场构成风险。这位Meta董事会成员表示，他对未来十年AI发展持乐观态度，但变现节奏仍存疑虑。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261010_06.png" alt="委内瑞拉批准星链正式运营 与SpaceX子公司敲定协议" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">委内瑞拉批准星链正式运营 与SpaceX子公司敲定协议</h3>
+        <p class="news-summary">委内瑞拉政府宣布与SpaceX委内瑞拉子公司敲定协议，正式批准星链（Starlink）卫星互联网服务在该国运营，标志着两国在通信服务领域的合作取得实质性进展，当地偏远地区网络覆盖有望改善。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261010_07.png" alt="三季报大幕开启 沃华医药成今年A股首家披露三季报公司" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">三季报大幕开启 沃华医药成今年A股首家披露三季报公司</h3>
+        <p class="news-summary">山东沃华医药10月9日晚间披露2026年三季报，成为今年A股首家披露三季报的上市公司。随着三季报披露拉开帷幕，机构普遍认为上市公司业绩有望成为市场热点，业绩验证或将成为四季度行情主线。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261010_08.png" alt="人形机器人国庆上岗零售文旅场景 上半年全球出货量增432%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">人形机器人国庆上岗零售文旅场景 上半年全球出货量增432%</h3>
+        <p class="news-summary">今年国庆假期，多地商超、景区迎来人形机器人上岗，导购、导览、互动服务成为新看点。IDC报告显示，2026年上半年全球人形机器人出货量接近2.5万台，同比增长432.1%，中国市场份额领先。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261010_09.png" alt="股基ETF四个交易日资金净流入逾530亿元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">股基ETF四个交易日资金净流入逾530亿元</h3>
+        <p class="news-summary">10月9日市场上演V形反转，多只宽基ETF成交大幅放量。9月28日至10月8日的4个交易日里，股票型ETF资金净流入约532亿元，在市场震荡调整中持续强势吸金，显示场内资金逢低布局意愿明显。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261010_10.png" alt="智利反驳美方拿麦哲伦海峡要挟 或递交抗议照会" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">智利反驳美方拿麦哲伦海峡要挟 或递交抗议照会</h3>
+        <p class="news-summary">美国驻智利大使贾德就中智合作海底光缆项目发表言论，声称智利若想获得美方支持、维护麦哲伦海峡主权，需在美方关切议题上配合。智利政府对此不满，正考虑向美方递交抗议照会，强调合作项目由主权决定。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261010_11.png" alt="美国司法部放宽消音器及部分枪支联邦登记要求" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">美国司法部放宽消音器及部分枪支联邦登记要求</h3>
+        <p class="news-summary">美国司法部宣布将不再在全国范围内执行针对枪支消音器、短管步枪、短管霰弹枪及部分其他枪支的联邦登记要求。此前得州一名联邦法官8月裁定相关登记许可程序违宪，购买上述设备将无需再填写申请并等待审批。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261010_12.png" alt="天然橡胶期货创逾9年新高 供应扰动上下游齐涨价" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">天然橡胶期货创逾9年新高 供应扰动上下游齐涨价</h3>
+        <p class="news-summary">继9月30日创下逾9年新高后，天然橡胶期货延续上涨行情，上期所主力合约收涨报20645元/吨。台风天气与产区供应扰动集中发酵，现货端全乳胶、浓缩乳胶价格同步走高，下游轮胎企业成本压力上升。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261010_13.png" alt="有机硅行业景气修复 多股涨停" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">有机硅行业景气修复 多股涨停</h3>
+        <p class="news-summary">10月9日A股有机硅概念板块继续走强，东岳硅材、晨光新材、新亚强涨停，硅宝科技、合盛硅业等跟涨。业内人士分析，行业供需关系持续改善、产品价格回升及上市公司盈利修复预期，共同推动板块估值修复。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261010_14.png" alt="郑州新郑综合保税区扩区项目通过联合验收" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">郑州新郑综合保税区扩区项目通过联合验收</h3>
+        <p class="news-summary">郑州新郑综合保税区扩区项目顺利通过联合简化验收，此次通过验收的陆港片区规划面积1.66平方公里，紧邻郑州国际陆港。封关运行后，空港加陆港口岸优势将进一步释放，吸引新能源汽车、跨境电商、高端制造等产业集聚。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261010_15.png" alt="北京市长殷勇接听市民热线 深化数智赋能基层治理" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">北京市长殷勇接听市民热线 深化数智赋能基层治理</h3>
+        <p class="news-summary">北京市委副书记、市长殷勇在市市民热线服务中心接听市民来电，并调研数智赋能基层工作。他强调要坚持以人民为中心的发展思想，深化接诉即办改革，用心用情解决企业群众急难愁盼，推动超大城市治理现代化。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261010_16.png" alt="前三季度公募机构净申购旗下基金34.66亿元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">前三季度公募机构净申购旗下基金34.66亿元</h3>
+        <p class="news-summary">今年以来公募基金管理人持续运用固有资金申购旗下产品，前三季度净申购金额合计达34.66亿元，其中第三季度净申购15.75亿元，权益类产品规模占比近八成，显示管理人对自己旗下产品信心增强。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261010_17.png" alt="水泥行业深度调整 亏损面达60% 20余家企业进入破产程序" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">水泥行业深度调整 亏损面达60% 20余家企业进入破产程序</h3>
+        <p class="news-summary">房地产、基建投资持续走弱令水泥行业进入深度调整期，当前行业亏损面已达60%，大量中小水泥企业陷入价格倒挂、库存高企、回款不畅困局。今年已有20余家水泥及粉磨企业进入破产相关程序，行业集中度加速提升。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261010_18.png" alt="前三季度A股股权融资359起 募资合计7508.61亿元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">前三季度A股股权融资359起 募资合计7508.61亿元</h3>
+        <p class="news-summary">前三季度A股市场股权融资事件合计359起，较去年同期增加132起，募集资金合计7508.61亿元，其中IPO市场迎来显著增长。市场整体保持较高活跃度，股权融资节奏稳健，机构预计四季度发行将保持常态化。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261010_19.png" alt="多地推进重大项目建设发力稳投资" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">多地推进重大项目建设发力稳投资</h3>
+        <p class="news-summary">四季度是重大项目建设冲刺季，10月份以来多地积极部署重大项目建设工作，新落户或新开工重大项目所涉领域众多，涵盖先进制造、能源、交通基础设施等方向，投资拉动效应有望在四季度持续显现。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261010_20.png" alt="得州参议员候选人帕克斯顿早期腐败笔录曝光" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">得州参议员候选人帕克斯顿早期腐败笔录曝光</h3>
+        <p class="news-summary">媒体获取的一份案件取证笔录显示，美国得州共和党参议员候选人肯·帕克斯顿曾称捐赠人送他股票是为了取悦上帝。这份笔录是其长达十年争议的早期事件之一，腐败及其他违法行为指控反复出现但未被定罪。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+</div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">📌 本归档页基于 2026年10月10日 实时新闻数据生成。所有新闻内容仅供参考，请以官方发布为准 · 2026年10月10日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
