@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年10月18日 | 环球新闻</title>
+    <meta name="description" content="2026年10月18日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/news-generated/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年10月18日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261018_01.png" alt="法国爆发全国性抗议骚乱 55万人上街超1200人被捕" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">法国爆发全国性抗议骚乱 55万人上街超1200人被捕</h3>
+        <p class="news-summary">法国内政部称全法约55万人参加抗议，总工会统计达80万。巴黎、里昂、马赛等多地爆发骚乱，超1200人被捕、150名警察和宪兵受伤，利摩日市政厅遭纵火部分坍塌，巴黎一奢侈品门店被哄抢，抗议人群一度逼近总统府约200米。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261018_02.png" alt="我国首个全国产十万卡AI超集群深圳亮相 发布十大应用成果" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">我国首个全国产十万卡AI超集群深圳亮相 发布十大应用成果</h3>
+        <p class="news-summary">在2026全国高性能计算学术大会上，今年刚建成的我国首个全国产十万卡AI超集群真机亮相，算力规模达十万卡级别，被形容为'能装一个宇宙'，并现场发布十大重要应用成果，标志我国自主AI算力基础设施迈上新台阶。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261018_03.png" alt="高盛数据：对冲基金加速撤离AI交易 多头交易遭遇猛烈逆转" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">高盛数据：对冲基金加速撤离AI交易 多头交易遭遇猛烈逆转</h3>
+        <p class="news-summary">高盛Prime经纪业务数据显示，10月8日至14日当周，对冲基金正加速撤离AI交易，持续近两年的AI多头交易遭遇一场猛烈逆转。机构资金调仓迹象明显，AI板块短期波动风险显著上升。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261018_04.png" alt="胡塞称击落沙特无人机和直升机 沙特空袭塔伊兹致9死" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">胡塞称击落沙特无人机和直升机 沙特空袭塔伊兹致9死</h3>
+        <p class="news-summary">也门胡塞武装称18日凌晨在哈杰省上空击落一架沙特'卡里亚尔'武装侦察无人机，此前还击落一架'阿帕奇'武装直升机。沙特联军称拦截飞向利雅得的无人机及两枚弹道导弹，并空袭塔伊兹省造成至少9人死亡。利雅得等多城预警警报发布后已解除。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261018_05.png" alt="台风'蔷琵'加强为超强台风 关岛西南洋面持续增强" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">台风'蔷琵'加强为超强台风 关岛西南洋面持续增强</h3>
+        <p class="news-summary">今年第30号台风'蔷琵'已于17日夜间由强台风级加强为超强台风级，今天早晨5点钟其中心位于关岛西偏南方向约90公里的西北太平洋洋面上，未来或将继续加强，后续路径走向需密切关注。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261018_06.png" alt="特朗普称已摧毁伊朗核能力 美海上封锁令伊朗损失250亿美元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">特朗普称已摧毁伊朗核能力 美海上封锁令伊朗损失250亿美元</h3>
+        <p class="news-summary">特朗普宣称美国已在军事上击败伊朗并摧毁其核能力，并再次威胁打击伊朗镐山地下设施。美中央司令部称，海上封锁已使伊朗损失约250亿美元原油收入，已引导138艘商船改道以确保合规，德黑兰开始扣发工作人员薪资和养老金。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261018_07.png" alt="日本拟拦截无溯源黄金并禁止出口 打击逃税新规将出" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">日本拟拦截无溯源黄金并禁止出口 打击逃税新规将出</h3>
+        <p class="news-summary">为打击逃税，日本拟拦截来源无法追溯的黄金，并将禁止无溯源黄金出口。分析认为新规将影响区域黄金贸易流向，合规溯源要求或推高交易成本，暗盘金价一度跌破4150美元/盎司。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261018_08.png" alt="美俄'握手'乌欧'皱眉' 德反对和平协议纳入重购俄天然气" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">美俄'握手'乌欧'皱眉' 德反对和平协议纳入重购俄天然气</h3>
+        <p class="news-summary">美国近期一系列对俄政策调整引发乌欧不满：达成柴油供应协议、暂缓新一轮对俄制裁后，特朗普政府又提议将欧洲恢复采购俄天然气纳入乌克兰和平协议，遭德国明确反对。特朗普称对俄制裁决定对美国有利。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261018_09.png" alt="马斯克承认政治事务'偏离正轨' DOGE未能解决赤字" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">马斯克承认政治事务'偏离正轨' DOGE未能解决赤字</h3>
+        <p class="news-summary">马斯克在接受传记作家艾萨克森访谈时承认，其在政治事务中'有些偏离正轨'，远离旗下公司的时间超出了应有程度。他还表示，曾领导的政府效率部（DOGE）未能从政府内部解决财政赤字问题。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261018_10.png" alt="2026世界传统医药大会北京开幕 李强出席" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">2026世界传统医药大会北京开幕 李强出席</h3>
+        <p class="news-summary">2026世界传统医药大会17日在北京开幕，主题为'科技赋能 融合发展：推动人人享有健康'，李强出席开幕式。大会将发布多项重要成果，中国传统医药经验将为全球健康治理提供借鉴。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261018_11.png" alt="伊朗外长密集斡旋 愿协助结束沙特与也门冲突" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">伊朗外长密集斡旋 愿协助结束沙特与也门冲突</h3>
+        <p class="news-summary">伊朗外长阿拉格齐周六在巴格达伊斯兰合作组织会议期间会见土耳其外长菲丹，此前还会见埃及外长。他表示德黑兰愿协助结束沙特与也门之间的冲突，并愿提供一切必要协助，称霍尔木兹海峡交通能否恢复正常'选择权在美国手中'。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261018_12.png" alt="澳大利亚住房拍卖数量下滑 15年高位利率抑制市场" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">澳大利亚住房拍卖数量下滑 15年高位利率抑制市场</h3>
+        <p class="news-summary">受15年高位利率拖累，澳大利亚住房市场活跃度被抑制，上周房屋拍卖数量下滑，拍卖活动减少。房产研究机构称，高利率环境正持续压制澳洲楼市成交与买家出价意愿。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261018_13.png" alt="俄军大规模打击乌克兰能源设施 多地企业和设施遇袭" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">俄军大规模打击乌克兰能源设施 多地企业和设施遇袭</h3>
+        <p class="news-summary">俄国防部称17日凌晨对乌克兰多地实施大规模打击，目标为为乌军方提供保障的相关企业和能源设施，乌克兰总统泽连斯基随后发声回应。这是俄军近期再度扩大打击范围，能源基础设施受损严重。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261018_14.png" alt="平陆运河通航以来过货量突破100万吨" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">平陆运河通航以来过货量突破100万吨</h3>
+        <p class="news-summary">据北部湾港集团消息，截至10月16日24时，平陆运河通航以来集团完成运河货物过货量突破100万吨。这条连通西江流域与北部湾的江海联运大通道正加速释放通航效益。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261018_15.png" alt="美国堪萨斯车辆冲入体育中心至少2死 曼哈顿地铁站枪击1死" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">美国堪萨斯车辆冲入体育中心至少2死 曼哈顿地铁站枪击1死</h3>
+        <p class="news-summary">美国堪萨斯州威奇托市一处体育中心17日发生车辆冲撞事件，造成至少两人死亡、多人受伤；同日纽约曼哈顿中城一处地铁站发生枪击事件，致1人死亡。警方称两起事件均不存在持续威胁，正进一步调查。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261018_16.png" alt="韩国DeepX布局全球物理AI市场 拓展英特尔AMD合作" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">韩国DeepX布局全球物理AI市场 拓展英特尔AMD合作</h3>
+        <p class="news-summary">韩国边缘AI芯片初创企业DeepX正依托先发战略布局全球物理AI市场，积极拓展与英特尔、AMD、三星电子、现代汽车集团的合作，加速边缘AI芯片在机器人、智能汽车等场景的商业化落地。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261018_17.png" alt="鲁比奥：星盾是军用产品 目前不向乌克兰提供" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">鲁比奥：星盾是军用产品 目前不向乌克兰提供</h3>
+        <p class="news-summary">美国国务卿鲁比奥表示，星链是商业产品，按商业产品进行监管和处理；星盾则是供美国军方使用的国防产品，目前不向乌克兰提供。他还称，白宫无人下令降低乌克兰接入星链的速度。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261018_18.png" alt="美股暗盘芯片存储股齐跌 美光跌超6%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">美股暗盘芯片存储股齐跌 美光跌超6%</h3>
+        <p class="news-summary">美股暗盘芯片与存储股走低：美光跌超6%，闪迪跌3.6%，SK海力士跌超3%，AMD跌破520美元、日内跌2.8%。AI交易拥挤担忧持续，存储与算力产业链短期波动加剧。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261018_19.png" alt="法国市长及欧洲外交官约旦河西岸遭以色列定居者袭击" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">法国市长及欧洲外交官约旦河西岸遭以色列定居者袭击</h3>
+        <p class="news-summary">法国外长巴罗称，法国北部欧努瓦艾姆里市市长贝尔纳·博杜及多名欧洲外交官17日在约旦河西岸地区遭到以色列定居者暴力袭击。法国方面提出强烈谴责，事件引发欧洲多国关注。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261018_20.png" alt="巴基斯坦打击阿富汗边境哨所和军营 局势升级" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">巴基斯坦打击阿富汗边境哨所和军营 局势升级</h3>
+        <p class="news-summary">巴基斯坦安全部门消息人士17日称，巴方当天打击阿富汗境内武装边境哨所和军营；此前阿富汗武装人员在巴西北部开伯尔-普什图省发动袭击。两国边境紧张局势持续升级。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+</div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">📌 本归档页基于 2026年10月18日 实时新闻数据生成。所有新闻内容仅供参考，请以官方发布为准 · 2026年10月18日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
