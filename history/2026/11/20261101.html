@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年11月01日 | 环球新闻</title>
+    <meta name="description" content="2026年11月01日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/news-generated/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年11月01日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261101_01.png" alt="特朗普与内塔尼亚胡通话商讨恢复对伊打击 鲁比奥称尚未决定" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">特朗普与内塔尼亚胡通话商讨恢复对伊打击 鲁比奥称尚未决定</h3>
+        <p class="news-summary">美国总统特朗普周六与内塔尼亚胡通电话，商讨恢复对伊朗军事行动的方案，此前已与高级军事指挥官讨论作战计划。美国国务卿鲁比奥同日表示，特朗普尚未决定是否发动新打击。伊朗谈判代表10月31日在多哈与卡塔尔斡旋方继续会谈，探讨化解战事的出路；伊朗方面还称沙特、土耳其、巴基斯坦官员在德黑兰四方会谈中对以色列采取坚定立场。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261101_02.png" alt="美国中期选举进入最后冲刺 民调显示民主党有望夺回众议院" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">美国中期选举进入最后冲刺 民调显示民主党有望夺回众议院</h3>
+        <p class="news-summary">11月3日美国中期选举临近，众议院435席全部改选。无党派选举分析机构库克政治报告认为，共和党已几乎无望保住众议院控制权，或仅能赢得198至208席，民主党有望翻转。2024年投票支持特朗普的选民中约五分之一对其执政表现不满。预测市场与民调的分歧也引发关注，分析指出二者衡量指标并不相同。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261101_03.png" alt="法国连续第三个周末爆发全国性抗议 约32万人参与" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">法国连续第三个周末爆发全国性抗议 约32万人参与</h3>
+        <p class="news-summary">10月31日，法国连续第三个周末爆发全国性抗议游行，本轮参与人数较前两个周六有所减少。据法国内政部通报，全国抗议人数约32万，其中巴黎约7万；工会方面则称全国动员约50万人上街。抗议者不满生活成本高企、公共服务吃紧，社会矛盾持续发酵。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261101_04.png" alt="达喀尔青奥会开幕 奥林匹克系列赛事首次走进非洲" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">达喀尔青奥会开幕 奥林匹克系列赛事首次走进非洲</h3>
+        <p class="news-summary">当地时间10月31日晚，第四届夏季青年奥林匹克运动会开幕式在塞内加尔贾姆尼亚贾市的阿卜杜拉耶·瓦德体育场举行，塞内加尔总统法耶宣布开幕。贾姆尼亚贾位于首都达喀尔以东约30公里。这是奥林匹克系列赛事首次在非洲大陆举行，具有里程碑意义。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261101_05.png" alt="日本三重县海域发生6.1级地震 巴拿马南部同日6.1级地震" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">日本三重县海域发生6.1级地震 巴拿马南部同日6.1级地震</h3>
+        <p class="news-summary">据日本气象厅消息，11月1日清晨7时15分左右，日本三重县东南海域发生6.1级地震，最大震感为震度3，震源深度350千米。另据巴拿马大学地球科学研究所初步报告，10月31日10时50分，巴拿马南部洛斯桑托斯省托诺西以东约18公里处发生6.1级地震，震源深度10公里。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261101_06.png" alt="肯尼亚坍塌高楼中国承建传言不实 中企参与救援" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">肯尼亚坍塌高楼中国承建传言不实 中企参与救援</h3>
+        <p class="news-summary">针对网传肯尼亚一栋18层在建楼房坍塌由中方承建的说法，经核实并不属实：项目开发商和主承包商均为肯尼亚公司，中企并未承建该项目，而是在事故发生后参与现场救援。此前有不法分子利用中国路桥柬埔寨在建项目散布不实招聘信息并收取高额费用，公司也已发布声明辟谣。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261101_07.png" alt="韩国10月出口同比增长93.7% 远超市场预期" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">韩国10月出口同比增长93.7% 远超市场预期</h3>
+        <p class="news-summary">韩国公布10月出口同比增长93.7%，大幅高于市场预期的89.3%；10月进口额同比增长36%，低于预期的39.9%。出口数据超预期走强，显示半导体等主导产业景气延续，为四季度韩国经济开局提供有力支撑，也印证全球科技产品需求仍处高位。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261101_08.png" alt="四大行三季报：利息净收入集体提速 科技金融成必争之地" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">四大行三季报：利息净收入集体提速 科技金融成必争之地</h3>
+        <p class="news-summary">四大行最新三季报显示，利息净收入增速成为共同亮点，均实现10%左右的同比增长。科技金融成为竞逐重点：农行前三季度科技型企业贷款、科技型中小企业贷款增速分别为28%和34%，同时有序推进AIC股权投资试点，累计设立试点基金33只，基金投资86个科技创新项目。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261101_09.png" alt="国际金价跌至一年来新低 金饰克价年内跌近550元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">国际金价跌至一年来新低 金饰克价年内跌近550元</h3>
+        <p class="news-summary">受美联储进一步加息预期升温等因素影响，国际金价10月30日跌至一年来新低：COMEX黄金期货收跌3.63%报3884.90美元/盎司，伦敦金现跌3.61%报3875.19美元/盎司，双双失守3900美元关口。国内金饰克价年内已回落近550元，投资黄金升温。专家认为，金价失守3900美元更多具有心理和技术意义，短期或维持震荡放大态势。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261101_10.png" alt="中信证券：ETF资金逆势流入 逾200家公司披露回购增持计划" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">中信证券：ETF资金逆势流入 逾200家公司披露回购增持计划</h3>
+        <p class="news-summary">中信证券发文称，主要指数从高点回撤，日均成交额从6月的3.1万亿元收缩至1.6万亿元上下，两融余额回落，短期情绪偏冷。但资金动作未停：7月以来股票型ETF累计流入超7000亿元；10月以来逾200家A股公司披露回购或增持计划，金额上限合计超250亿元。沪深300股息率约3%，较10年期国债收益率高出近140个基点；1至9月高技术制造业利润增长52%，年底中央经济工作会议将带来更多方向性信号。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261101_11.png" alt="土耳其改组资本市场监管机构 处置投资基金挤兑危机" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">土耳其改组资本市场监管机构 处置投资基金挤兑危机</h3>
+        <p class="news-summary">土耳其总统埃尔多安任命税务稽查委员会主席阿特哲担任资本市场监管机构负责人，处置震动金融市场的投资基金危机，同时任命资本市场委员会副主席及委员。本轮危机始于部分投资基金无法兑付赎回申请，引发投资者集中出逃并造成股市下跌，批评人士质疑监管机构防范不力，土司法部长称事件类似庞氏骗局。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261101_12.png" alt="南京出台商品住房销售新政 有序实施现房销售" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">南京出台商品住房销售新政 有序实施现房销售</h3>
+        <p class="news-summary">10月31日，南京市住房保障和房产局等五部门联合印发实施意见，从商品住房预售管理、现房销售到融资支持等九个方面作出制度安排，自发布之日起施行。意见提出有序实施现房销售：2026年8月28日后新发布出让公告的商品住房项目，优先选择现房销售，让购房者所见即所得。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261101_13.png" alt="Meta联手傅利叶智能研发家庭人形机器人 内部代号Max" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">Meta联手傅利叶智能研发家庭人形机器人 内部代号Max</h3>
+        <p class="news-summary">据知情人士透露，Meta正加紧研发面向家庭场景的机器人，已与中国机器人企业傅利叶智能合作开发出一款人形机器人原型，仅用三个月完成，重约106磅，内部代号Max，第二代产品研发已经启动。Meta将人形机器人视作其Muse智能体的实体载体，可执行各类居家任务，最终有望对外推出。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261101_14.png" alt="奥特曼：大量DRAM闲置在PC中是全球资源错配" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">奥特曼：大量DRAM闲置在PC中是全球资源错配</h3>
+        <p class="news-summary">OpenAI首席执行官奥特曼近日在播客节目表示，从全球资源配置角度看，大量DRAM被配置在个人电脑中且仅约5%的时间处于使用状态，未得到充分利用，是一种低效的资源分配方式。在全球AI算力竞争加剧、内存供给紧张的背景下，这一观点再度引发业界对内存资源调度效率的讨论。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261101_15.png" alt="深南电路：FC-BGA封装基板具备26层及以下批量生产能力" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">深南电路：FC-BGA封装基板具备26层及以下批量生产能力</h3>
+        <p class="news-summary">深南电路近日在机构调研时表示，2026年三季度公司广州生产基地产能稳步释放，产品线能力持续提升：BT类封装基板产能爬坡稳步推进；FC-BGA类封装基板已具备26层及以下产品的批量生产能力，30层及以上产品的技术研发及打样工作正按期推进，高端封装基板国产化进程加快。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261101_16.png" alt="第二批25个沿沪宁创新联合体亮相 聚焦新能源新材料" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">第二批25个沿沪宁创新联合体亮相 聚焦新能源新材料</h3>
+        <p class="news-summary">10月31日，2026世界城市日专题会议——沿沪宁城市协同创新日活动在上海普陀区举行，第二批25个沿沪宁创新联合体正式亮相。创新联合体由沿线城市共同推动组建，聚焦新能源、新材料等领域，致力于打造协同创新生态、产业集群高地和产创融合样板。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261101_17.png" alt="中德中瑞元首外交密集开展 中欧互利共赢释放积极信号" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">中德中瑞元首外交密集开展 中欧互利共赢释放积极信号</h3>
+        <p class="news-summary">人民日报刊文评述，10月30日国家主席习近平在北京同来华进行国事访问的德国总统施泰因迈尔举行会谈，并会见来华进行工作访问的瑞士联邦主席帕姆兰。两场重要活动立足双边、放眼欧洲，既回望中德、中瑞关系积淀的互信根基，也释放出坚持对话、扩大合作的积极信号。同期中国与瑞士签署自贸协定升级议定书。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261101_18.png" alt="中央气象台发布大风蓝色预警 华北等地阵风8至9级" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">中央气象台发布大风蓝色预警 华北等地阵风8至9级</h3>
+        <p class="news-summary">中央气象台11月1日06时继续发布大风蓝色预警：预计1日08时至2日08时，内蒙古中西部、山西北部、河北北部、北京西部、辽宁西部、西藏北部、青海南部等地部分地区有5至7级风，阵风8至9级；渤海北部、渤海海峡、黄海大部、东海北部海域将有7至8级、阵风9至10级大风。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261101_19.png" alt="国家电影局、体育总局启动跟着电影去运动行动" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">国家电影局、体育总局启动跟着电影去运动行动</h3>
+        <p class="news-summary">国家电影局、体育总局近日联合印发通知，启动跟着电影去运动行动，推动电影与体育双向赋能。在体验消费、文化消费持续升温的当下，这场跨界牵手被视为丰富大众精神文化供给、激活文体消费新增长点的重要抓手，行业需打通内容、场景与人群，避免简单叠加。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261101_20.png" alt="国内首款基孔肯雅病毒抗原检测试剂盒获批上市" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">国内首款基孔肯雅病毒抗原检测试剂盒获批上市</h3>
+        <p class="news-summary">据广药集团消息，旗下达安基因研发的基孔肯雅病毒抗原检测试剂盒（胶体金法）通过国家药监局三类医疗器械注册审批，注册证编号为国械注准20263402223。这是国内首款获批上市的基孔肯雅病毒抗原检测试剂盒，将显著提升相关疫情的检测效率和防控能力。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+</div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">📌 本归档页基于 2026年11月01日 实时新闻数据生成。所有新闻内容仅供参考，请以官方发布为准 · 2026年11月01日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
