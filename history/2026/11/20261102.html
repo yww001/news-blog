@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年11月02日 | 环球新闻</title>
+    <meta name="description" content="2026年11月02日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/news-generated/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年11月02日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261102_01.png" alt="美股科技股遭重挫：Alphabet单日蒸发约5000亿美元 纳指跌近3%英特尔创52年最差" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">美股科技股遭重挫：Alphabet单日蒸发约5000亿美元 纳指跌近3%英特尔创52年最差</h3>
+        <p class="news-summary">上周五美股科技板块遭遇抛售，谷歌母公司Alphabet市值蒸发约5000亿美元，股价暴跌近13%，创2004年上市以来最差单日表现；纳指重挫近3%，英特尔录得52年来最大日跌幅。分析指科技七巨头盈利增速或自2022年末以来首次落后标普500其余成分股，巴菲特旗下伯克希尔的Alphabet持仓已现浮亏。受隔夜行情拖累，日经225期货、韩国KOSPI周一开盘走低。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261102_02.png" alt="特朗普与加拿大总理卡尼会谈后称美加贸易协议“非常接近”" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">特朗普与加拿大总理卡尼会谈后称美加贸易协议“非常接近”</h3>
+        <p class="news-summary">美国总统特朗普与加拿大总理卡尼会谈后表示，美加贸易协议“非常接近”，卡尼称双方已就协议框架达成共识，将在未来几周努力达成“互利”结果。这是自8月谈判不欢而散以来双方给出的最乐观展望，正值周二美国中期选举前夕。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261102_03.png" alt="日本防卫省新五年计划国防建设费用预计达5078亿美元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">日本防卫省新五年计划国防建设费用预计达5078亿美元</h3>
+        <p class="news-summary">据日本《产经新闻》报道，日本防卫省在新一期五年防卫力量整备计划中，预计国防建设费用将达到5078亿美元，规模再创新高。该计划将列装远程攻击武器、扩充弹药库列为重点方向，或进一步推高日本财政负担。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261102_04.png" alt="也门胡塞武装导弹袭击拉赫季省医疗中心 致20名平民死伤" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">也门胡塞武装导弹袭击拉赫季省医疗中心 致20名平民死伤</h3>
+        <p class="news-summary">也门政府卫生部门11月2日凌晨发布消息称，胡塞武装使用导弹袭击了拉赫季省一处医疗中心，造成20名平民死伤。胡塞武装方面对此暂无回应。联合国机构多次呼吁冲突各方保护医疗设施，红海周边紧张局势仍在持续。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261102_05.png" alt="美国数据中心扩张遭遇社区阻力 中期选举前争议升温" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">美国数据中心扩张遭遇社区阻力 中期选举前争议升温</h3>
+        <p class="news-summary">据澎湃新闻报道，在美国俄亥俄州等地，大型数据中心沿公路密集排开，耗电、噪音与水资源的占用引发当地居民担忧，“拒绝数据中心就会输给中国”的论调也让社区分歧加剧。随着中期选举临近，AI基建与民生之间的矛盾正成为地方选战的重要议题。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261102_06.png" alt="苹果市值再度反超英伟达 重回全球第一" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">苹果市值再度反超英伟达 重回全球第一</h3>
+        <p class="news-summary">在AI板块回调的行情中，苹果股价走稳，市值再度反超英伟达，重回全球市值最高公司宝座。分析认为，资金正从高估值AI芯片股流向现金流稳健的消费电子巨头，科技股“避风港”效应显现。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261102_07.png" alt="OpenAI将融资目标削减100亿美元 黑石下调Anthropic评级预期" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">OpenAI将融资目标削减100亿美元 黑石下调Anthropic评级预期</h3>
+        <p class="news-summary">随着科技焦虑情绪升温，OpenAI将新一轮融资目标削减100亿美元；黑石同期下调了对Anthropic的评级预期。市场对AI初创企业巨额融资可持续性的疑虑正在加深，一级市场估值面临重定价压力。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261102_08.png" alt="DeepSeek发布全新Agent架构" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">DeepSeek发布全新Agent架构</h3>
+        <p class="news-summary">DeepSeek发布全新Agent（智能体）架构，进一步拓展开源大模型在自主任务规划与工具调用方面的能力边界。业界关注其能否以更低成本对标海外头部智能体产品，国内AI应用生态有望加速落地。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261102_09.png" alt="苹果与阿里巴巴达成合作 千问大模型集成到Apple智能" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">苹果与阿里巴巴达成合作 千问大模型集成到Apple智能</h3>
+        <p class="news-summary">苹果与阿里巴巴达成合作，阿里的千问大模型将集成到Apple智能中，为国内iPhone用户提供本地化AI服务。这是苹果在华AI布局的关键一步，国产大模型有望借此触达数千万级终端用户。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261102_10.png" alt="长鑫科技Q3净利544.35亿元扭亏为盈 第六代DRAM工程样片验证完成" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">长鑫科技Q3净利544.35亿元扭亏为盈 第六代DRAM工程样片验证完成</h3>
+        <p class="news-summary">长鑫科技披露第三季度净利润544.35亿元，同比扭亏为盈，环比增长3%；同时宣布基于4F²架构的第六代技术平台DRAM完成工程样片验证。在存储涨价周期中，国产DRAM龙头盈利与工艺双线突破。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261102_11.png" alt="央行证监会今日召开座谈会 研究推动支持资本市场工具使用" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">央行证监会今日召开座谈会 研究推动支持资本市场工具使用</h3>
+        <p class="news-summary">央行、证监会11月2日召开座谈会，研究推动支持资本市场工具使用，央行还将召开股票回购增持再贷款座谈会。据报国有某大行计划向中国国新、中国诚通各新增千亿级股票回购增持专项贷款额度。证监会表示全力稳市场稳预期，外汇局表态维护外汇市场稳定和国家经济金融安全。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261102_12.png" alt="央行今日起每日开展隔夜逆回购招标 操作利率1.25%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">央行今日起每日开展隔夜逆回购招标 操作利率1.25%</h3>
+        <p class="news-summary">央行11月2日起每个工作日开展隔夜逆回购操作招标，操作利率为1.25%。专家指出，政策利率从7天期1.4%切换为隔夜1.25%不等同于降息，符合利率期限结构。本周公开市场有17490亿元逆回购到期，叠加周四5000亿元买断式逆回购到期，资金利率有望趋于平稳。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261102_13.png" alt="中国10月制造业PMI为49.3 重回收缩区间" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">中国10月制造业PMI为49.3 重回收缩区间</h3>
+        <p class="news-summary">中国10月官方制造业PMI为49.3，较上月下降0.8个百分点，重回收缩区间；非制造业PMI为49.7，低于预期值50。制造业景气度回落显示内需修复仍需政策加力，市场关注后续增量政策节奏。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261102_14.png" alt="南下资金10月净卖出279.51亿港元 创2021年以来最大单月流出" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">南下资金10月净卖出279.51亿港元 创2021年以来最大单月流出</h3>
+        <p class="news-summary">南下资金连续13日净卖出港股，10月累计净卖出279.51亿港元，创2021年以来最大单月净流出。与此同时，新一批10只ETF调入港股通标的将于11月9日生效，市场关注资金面拐点。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261102_15.png" alt="三季度散户资金大举涌入医药基金 有产品规模增超40倍" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">三季度散户资金大举涌入医药基金 有产品规模增超40倍</h3>
+        <p class="news-summary">三季度散户资金大举涌入医药基金，广发医疗创新基金规模三个月从2000万元增至8.38亿元，增幅超40倍；公募对医药行业加仓力度最大，仓位环比提升4.1个百分点。基金经理判断行情转入个股阿尔法阶段，年末主线聚焦CRO、CDMO业绩兑现，并提示CXO短期过热风险。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261102_16.png" alt="国仪量子发布核磁超低温探头 灵敏度提升超3倍" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">国仪量子发布核磁超低温探头 灵敏度提升超3倍</h3>
+        <p class="news-summary">国仪量子CryoHe系列核磁超低温探头与CAN-S系列高场固体核磁共振波谱仪在武汉第二届分析科学与仪器大会上正式发布。该探头将核心射频线圈稳定在约零下253摄氏度，探测灵敏度较室温探头提升超3倍，两款产品已具备量产交付能力。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261102_17.png" alt="深圳边检单日查验出入境人员114.5万人次 刷新历史纪录" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">深圳边检单日查验出入境人员114.5万人次 刷新历史纪录</h3>
+        <p class="news-summary">据深圳边检总站消息，10月31日全天共查验出入境人员114.5万人次，其中入境59.9万人次，单日查验量刷新历史纪录。深港融合加速、周末双城生活常态化，口岸通关热度持续攀升。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261102_18.png" alt="人民锐评：医生和AI说的不一样该听谁的" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">人民锐评：医生和AI说的不一样该听谁的</h3>
+        <p class="news-summary">人民日报评论关注AI医疗问诊现象：随着人工智能技术普及，越来越多患者在就诊前后主动“问诊”AI，出现“医生说的和AI不一样”的困惑。评论指出AI可作为辅助参考，但不能替代医生的当面诊断，医患信任与规范应用仍是关键。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261102_19.png" alt="第九届进博会11月5日开幕 无方向盘无人驾驶量产车将首秀" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">第九届进博会11月5日开幕 无方向盘无人驾驶量产车将首秀</h3>
+        <p class="news-summary">第九届中国国际进口博览会将于11月5日至10日在上海举办。进博抢鲜看展示了一款没有方向盘、脚踏板和后视镜的无人驾驶量产车，全球首发新品数量创新高，多国企业携最新技术参展。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261102_20.png" alt="秋招观察：行测性格测试AI面试 求职成了“刷题闯关”" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">秋招观察：行测性格测试AI面试 求职成了“刷题闯关”</h3>
+        <p class="news-summary">工人日报调查显示，正值秋招季，线上测评、AI面试已成多数企业招聘标配筛选环节，存在题目同质化、时效要求严苛等问题，求职者疲于应对，甚至靠背题库“刷题闯关”迎合算法。专家呼吁企业优化筛选方式，给真实能力留出空间。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+</div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">📌 本归档页基于 2026年11月02日 实时新闻数据生成。所有新闻内容仅供参考，请以官方发布为准 · 2026年11月02日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
