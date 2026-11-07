@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年11月07日 | 环球新闻</title>
+    <meta name="description" content="2026年11月07日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/news-generated/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年11月07日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261107_01.png" alt="伊朗格什姆岛凌晨遭两枚导弹袭击 霍尔木兹海峡重开前景未明" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">伊朗格什姆岛凌晨遭两枚导弹袭击 霍尔木兹海峡重开前景未明</h3>
+        <p class="news-summary">据央视报道，7日凌晨两枚导弹击中伊朗格什姆岛，爆炸疑似美军空袭，目标为岛上伊朗防空导弹发射装置。伊朗军方发言人表示，美国须接受伊方提出的七项条件，霍尔木兹海峡才可能重新开放。另有两名美国官员透露，特朗普政府部分顾问已告知总统，重新对伊朗展开大规模军事行动的“时间窗口正在缩小”。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261107_02.png" alt="何立峰与美国财长贝森特、贸易代表格里尔举行视频通话" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">何立峰与美国财长贝森特、贸易代表格里尔举行视频通话</h3>
+        <p class="news-summary">北京时间11月6日晚，中美经贸中方牵头人、国务院副总理何立峰与美方牵头人、美国财政部长贝森特和贸易代表格里尔举行视频通话。双方就中美经贸领域重要问题交换意见。此次通话正值两国经贸团队保持密集沟通之际，市场关注后续磋商安排与关税议程进展。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261107_03.png" alt="美股周五收盘涨跌不一 纳指本周累跌3.37%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">美股周五收盘涨跌不一 纳指本周累跌3.37%</h3>
+        <p class="news-summary">美股三大指数周五收盘涨跌不一，道指跌0.46%，纳指涨1.09%，标普500指数涨0.32%。周线方面，道指本周累跌0.94%，纳指累跌3.37%，标普500指数累跌2.68%。在周四科技股大规模抛售之后，周五市场有所企稳，但全周仍录得可观跌幅。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261107_04.png" alt="马斯克：特斯拉德州超级工厂建设芯片研发晶圆厂" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">马斯克：特斯拉德州超级工厂建设芯片研发晶圆厂</h3>
+        <p class="news-summary">埃隆·马斯克透露，特斯拉正在德州超级工厂建设一座芯片研发晶圆厂，有望将半导体开发周期从一年缩短至仅一个月。他同时向芯片设计工程师发出邀请，称如果你想以全新芯片设计实现快速迭代，欢迎加入Terafab项目。自研芯片被视为特斯拉下一代智驾与机器人业务的底层布局。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261107_05.png" alt="中央气象台发布暴雪黄色预警 京津冀等局地有大到暴雪" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">中央气象台发布暴雪黄色预警 京津冀等局地有大到暴雪</h3>
+        <p class="news-summary">中央气象台11月7日06时发布暴雪黄色预警：预计7日08时至8日08时，内蒙古东南部、辽宁西部、山西北部、河北中北部、北京西部和北部、天津北部等地部分地区有大到暴雪。今冬首场大范围雨雪天气正在影响北方地区，需防范对交通出行和城市运行的不利影响。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261107_06.png" alt="伦敦金现盘中重返4100美元 机构关注黄金逢低配置机会" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">伦敦金现盘中重返4100美元 机构关注黄金逢低配置机会</h3>
+        <p class="news-summary">近期国际金价在快速反弹后再现震荡，伦敦金现自10月底跌破每盎司3900美元后逐步回升，11月5日盘中重返4100美元上方。机构观点认为，央行购金与避险需求仍在，金价短期波动加大反而提供了逢低配置窗口，黄金中长期配置价值受多家机构关注。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261107_07.png" alt="基辅遭俄军弹道导弹袭击 一栋五层居民楼受损" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">基辅遭俄军弹道导弹袭击 一栋五层居民楼受损</h3>
+        <p class="news-summary">基辅市长克利奇科表示，俄罗斯军队对基辅发动弹道导弹袭击，地方当局称一栋五层居民楼在袭击中受损。乌方暂未公布详细伤亡情况。俄乌前线与后方的交火仍在持续，和谈前景依然胶着。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261107_08.png" alt="外资投行密集发声看多A股 高度关注中国AI产业链" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">外资投行密集发声看多A股 高度关注中国AI产业链</h3>
+        <p class="news-summary">近日多家头部外资投行密集发布观点，积极看多A股市场。高盛交易台向客户发布报告称，看好中国国内AI相关股票，理由是估值具备吸引力；另有多家机构表示，中国AI产业链从算力、半导体到应用端的投资机会正在持续扩散，外资对中国资产的配置意愿明显回升。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261107_09.png" alt="iPhone或跳过19直接命名iPhone 20 纪念问世20周年" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">iPhone或跳过19直接命名iPhone 20 纪念问世20周年</h3>
+        <p class="news-summary">多方爆料显示，苹果计划2027年推出的新一代iPhone跳过数字19，直接命名为iPhone 20，以此纪念iPhone问世20周年。除全新外观设计外，新机还被曝可能取消自定义按键。苹果方面暂未对相关传闻作出回应，供应链消息称新机将迎来近年的大改款。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261107_10.png" alt="美财政部制裁加拿大境内8家涉伊朗资金服务企业" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">美财政部制裁加拿大境内8家涉伊朗资金服务企业</h3>
+        <p class="news-summary">美国财政部6日发布公告称，其下属外国资产控制办公室对加拿大境内8家资金服务企业实施制裁，以加大对伊朗的经济施压。美财政部指控这些企业帮助伊朗政府及与其有联系的被制裁实体转移资金。此举显示美国正将“极限施压”网络延伸至第三国金融通道。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261107_11.png" alt="AH股溢价指数创年内新高 两地定价逻辑分化" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">AH股溢价指数创年内新高 两地定价逻辑分化</h3>
+        <p class="news-summary">行情数据显示，AH股溢价指数自今年10月以来一路走高，10月27日一度冲高至134.26点，创下年内新高。分析认为，A股受流动性与主题资金推动估值抬升更快，港股则更多反映基本面与外资定价，两地定价逻辑分化是溢价走阔的主因，后续收敛节奏取决于南向资金动向。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261107_12.png" alt="新疆克拉美丽气田年产天然气突破10亿立方米" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">新疆克拉美丽气田年产天然气突破10亿立方米</h3>
+        <p class="news-summary">位于新疆准噶尔盆地的克拉美丽气田天然气产量7日突破10亿立方米，日产气能力同步提升。该气田是准噶尔盆地重要的天然气生产基地，增储上产为今冬北方地区民生用气和工业用气提供了有力支撑。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261107_13.png" alt="特朗普宣布肯尼迪航天中心将成全球最大航空航天展示场地" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">特朗普宣布肯尼迪航天中心将成全球最大航空航天展示场地</h3>
+        <p class="news-summary">美国总统在肯尼迪航天中心表示，这条曾经开裂而寂静的跑道很快将成为全球首屈一指的航空航天展示场地，“我们要办一场比巴黎航展更盛大的活动”。白宫同日称，美国人将引领下一代太空探索，迈向火星及更远的地方。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261107_14.png" alt="生猪期货两月跌近三成 行业深亏局面难改" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">生猪期货两月跌近三成 行业深亏局面难改</h3>
+        <p class="news-summary">经历持续震荡下行，截至11月6日收盘，国内生猪主力合约价格跌至9195元/吨，此前在11月5日触及9040元/吨的上市以来低点，两个月累计跌幅接近三成。供给充裕叠加需求疲弱，行业深亏局面短期难改，养殖端资金压力持续累积。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261107_15.png" alt="AI应用加速渗透 短剧游戏出版迎价值重估" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">AI应用加速渗透 短剧游戏出版迎价值重估</h3>
+        <p class="news-summary">近期AI应用端不断催化，内容产业商业化进程进一步提速。短剧、游戏、出版与IP等多个领域均出现积极变化，AI技术正加速渗透内容产业链，从降本增效走向原生内容生产。机构认为，内容产业的生产方式与商业模式有望重塑，相关板块迎来价值重估窗口。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261107_16.png" alt="巴拉圭国会通过对总统培尼亚的弹劾议案" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">巴拉圭国会通过对总统培尼亚的弹劾议案</h3>
+        <p class="news-summary">巴拉圭国会表决通过对总统培尼亚的弹劾议案。按照该国宪政程序，弹劾案后续仍需进入相应审议阶段，政局走向有待进一步观察。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261107_17.png" alt="纽约油价收于每桶90.83美元 布伦特原油报98.32美元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">纽约油价收于每桶90.83美元 布伦特原油报98.32美元</h3>
+        <p class="news-summary">截至当天收盘，纽约商品交易所12月交货的轻质原油期货价格上涨31美分，收于每桶90.83美元，涨幅为0.34%；1月交货的伦敦布伦特原油期货价格上涨3美分，收于每桶98.32美元。中东紧张局势持续，地缘风险溢价继续为油价提供支撑。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261107_18.png" alt="谢锋：全美活跃着六位“熊猫特使” 创下全球之最" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">谢锋：全美活跃着六位“熊猫特使” 创下全球之最</h3>
+        <p class="news-summary">中国驻美国大使谢锋11月6日在亚特兰大动物园大熊猫馆开馆仪式上致辞表示，今年9月中美元首会晤期间宣布了新一对大熊猫赴美安排，目前全美活跃着六位“熊猫特使”，创下全球之最。大熊猫保护合作已成为中美人文交流的重要纽带。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261107_19.png" alt="它石智航与安波福进博会签约 深化具身智能战略合作" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">它石智航与安波福进博会签约 深化具身智能战略合作</h3>
+        <p class="news-summary">第九届中国国际进口博览会期间，它石智航与全球工业科技巨头安波福举行合作签约仪式，进一步深化双方在具身智能领域的战略合作。具身智能正成为本届进博会科技展区的热点方向，产业链上下游合作明显提速。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261107_20.png" alt="加拿大计划2027年底前将20万临时居民转为永久居民" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">加拿大计划2027年底前将20万临时居民转为永久居民</h3>
+        <p class="news-summary">加拿大总理卡尼的政府计划在2027年底前，在年度移民目标之外，将最多20万名临时居民转为永久居民。推动临时居民转为永久居民的工作将平均分配至全国。此举被视为加拿大移民政策的重要调整，将缓解大批临时居民的身份过渡压力。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+</div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">📌 本归档页基于 2026年11月07日 实时新闻数据生成。所有新闻内容仅供参考，请以官方发布为准 · 2026年11月07日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
