@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年11月17日 | 环球新闻</title>
+    <meta name="description" content="2026年11月17日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/news-generated/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年11月17日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261117_01.png" alt="纳指重挫2.5%芯片股遭血洗 英伟达跌逾4%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">纳指重挫2.5%芯片股遭血洗 英伟达跌逾4%</h3>
+        <p class="news-summary">美股周一科技板块大幅下挫，纳指收跌2.5%，芯片股遭重挫，英伟达跌逾4%，英特尔盘后再跌3.7%——英伟达披露将其所持英特尔股份削减25%。另据报道，特朗普公开支持黄仁勋重新执掌英伟达，但董事会仍在推进物色新掌门，无意恢复其CEO职务。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261117_02.png" alt="克里米亚大桥连续第二天遭袭 交通已暂停" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">克里米亚大桥连续第二天遭袭 交通已暂停</h3>
+        <p class="news-summary">据俄罗斯媒体11月17日报道，乌克兰再次袭击克里米亚大桥，大桥交通已暂停，这是该桥连续第二天遭袭。当地官员呼吁居民和游客不要前往大桥方向，并在规划路线时考虑相关限制。克里米亚大桥连接克里米亚半岛和俄罗斯克拉斯诺达尔地区，全长19公里。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261117_03.png" alt="中俄美元首11月19日将在深圳举行历史性首次三方会晤" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">中俄美元首11月19日将在深圳举行历史性首次三方会晤</h3>
+        <p class="news-summary">中国外交部11月16日宣布，中俄美三国元首将于11月19日在深圳举行历史性的首次面对面三方会晤。从年初的同日通话，到年内一系列双边元首互动，三国元首即将首次同场会晤，大国关系迎来新契机，引发全球高度关注。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261117_04.png" alt="美国首次提出以顿巴斯撤军换取入约路径 乌克兰陷两难" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">美国首次提出以顿巴斯撤军换取入约路径 乌克兰陷两难</h3>
+        <p class="news-summary">乌克兰总统泽连斯基11月14日表示，美国谈判代表在近期俄乌会谈中首次提出，将乌克兰加入北约与其从东部顿巴斯地区撤军联系起来。分析认为，拿顿巴斯换北约成员资格令基辅面临两难选择：接受意味着领土让步，拒绝则入约无望。美方尚未正式确认该方案。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261117_05.png" alt="美国航空运输恢复正常 三天超1.8万趟航班取消" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">美国航空运输恢复正常 三天超1.8万趟航班取消</h3>
+        <p class="news-summary">因上周五一台路由器故障引发美国25年来持续时间最长的停飞事件，三天内超过18000趟航班被取消。周一美国航空运输基本恢复正常，运输部长达菲估计此次事件造成数十亿美元经济损失，讨论焦点转向如何修复空管网络及筹措资金。美联航同日表示已解决影响其离港航班的系统故障。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261117_06.png" alt="美国AI出口计划开放申请 新加坡研究芯片出口新规" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">美国AI出口计划开放申请 新加坡研究芯片出口新规</h3>
+        <p class="news-summary">美国商务部宣布美国AI出口计划进入新阶段，已选定首批33个企业出口方案，并将于11月30日开放新一轮申请。同日新加坡表示，正研究美国针对先进AI芯片出口许可临时新规的细节，就相关措施范围和实施细节与美方接洽，同时探讨为本国企业获取可信芯片的途径。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261117_07.png" alt="机构三季度持仓大调整 德鲁肯米勒清仓芯片股" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">机构三季度持仓大调整 德鲁肯米勒清仓芯片股</h3>
+        <p class="news-summary">最新13F持仓报告显示，德鲁肯米勒旗下Duquesne家族办公室三季度清仓AMD和闪迪股票，同时买入SpaceX和Palantir。索罗斯等至少12家家族办公室上季减持英伟达，在管理层变动前锁定获利。伯克希尔同期减持美国银行和Capital One，增持达美航空。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261117_08.png" alt="巴菲特再捐55亿美元伯克希尔股票 四家家族基金会获赠" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">巴菲特再捐55亿美元伯克希尔股票 四家家族基金会获赠</h3>
+        <p class="news-summary">伯克希尔·哈撒韦11月16日晚间公告，名誉董事长沃伦·巴菲特将6150股伯克希尔股票捐赠给四家家族基金会，按最新股价计算价值约55亿美元。这是股神最新的慈善捐赠计划，延续其多年来逐步捐出所持股份、回馈社会的长期承诺。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261117_09.png" alt="SemiAnalysis大幅下修AI算力预测 明年资本开支预期降近三成" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">SemiAnalysis大幅下修AI算力预测 明年资本开支预期降近三成</h3>
+        <p class="news-summary">知名研究机构SemiAnalysis大幅下调AI算力需求预测：2028年AI资本开支预测下调近三成，未来五年硅片出货面积预期下调17%。这一修正加剧了市场对AI基础设施投资可持续性的担忧，成为近期全球芯片板块持续调整的重要诱因。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261117_10.png" alt="美银：NAND闪存现货价格大跌20% 明年一季度或再跌一成" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">美银：NAND闪存现货价格大跌20% 明年一季度或再跌一成</h3>
+        <p class="news-summary">美国银行报告显示，10月中下旬以来NAND闪存现货价格大跌20%，预计通用IT领域NAND价格明年一季度还将继续下跌5%至10%。存储芯片市场供需格局生变，此前因AI需求带动的涨价周期正面临回调压力，产业链企业需警惕库存风险。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261117_11.png" alt="债市调整波及银行理财 赎回压力有所显现" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">债市调整波及银行理财 赎回压力有所显现</h3>
+        <p class="news-summary">10月末以来，债市调整逐步传导至银行理财产品净值，部分中低风险产品连续数日回吐收益，市场赎回压力随之显现。据记者采访了解，赎回压力在基金端体现得更为明显，已有理财公司连续多日赎回所持债券基金，以控制净值回撤并应对客户赎回需求。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261117_12.png" alt="第三批互换便利操作加速推进 多家券商完成首批买入" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">第三批互换便利操作加速推进 多家券商完成首批买入</h3>
+        <p class="news-summary">自11月3日央行启动第三批证券、基金、保险公司互换便利（SFISF）操作以来，截至11月16日，中信证券、国泰海通、中金公司、东方证券等多家头部券商已完成首批买入。资金活水加速入市，释放出稳定资本市场预期的明确政策信号。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261117_13.png" alt="金价冲高回落 美元走强与加息预期压制 机构看法现分歧" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">金价冲高回落 美元走强与加息预期压制 机构看法现分歧</h3>
+        <p class="news-summary">美国最新通胀数据公布后，国际金价再起波澜。美元走强、美债收益率上行以及市场对美联储进一步加息的预期共同压制金价表现，伦敦金现货11月16日盘中一度跌至3832美元/盎司，创阶段新低。机构对后市看法产生分歧，短期金价波动或加剧。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261117_14.png" alt="特斯拉拟投30亿欧元扩建德国工厂 瞄准年产百万辆Cybercab" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">特斯拉拟投30亿欧元扩建德国工厂 瞄准年产百万辆Cybercab</h3>
+        <p class="news-summary">特斯拉计划投资30亿欧元扩建其位于德国的超级工厂，目标瞄准年产百万辆Cybercab无人驾驶出租车。此举显示特斯拉在Robotaxi量产赛道持续加码，欧洲本土化产能布局进一步深化，全球自动驾驶出租车商业化竞赛再度提速。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261117_15.png" alt="AI眼镜出货量同比暴涨263% Meta占比超九成" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">AI眼镜出货量同比暴涨263% Meta占比超九成</h3>
+        <p class="news-summary">机构最新数据显示，全球AI眼镜出货量同比暴涨263%，其中Meta出货量占比超过90%，头部垄断格局明显。AI眼镜作为端侧AI落地的重要终端形态正迎来爆发式增长，端侧AI催化密集，国内厂商也在加速跟进布局这一新兴赛道。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261117_16.png" alt="openEuler累计装机量年底将破2200万套 推出AgenticInfra操作系统" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">openEuler累计装机量年底将破2200万套 推出AgenticInfra操作系统</h3>
+        <p class="news-summary">开源欧拉（openEuler）社区在开源欧拉大会2026上表示，openEuler系操作系统国内累计装机量预计今年年底突破2200万套，并推出面向AgenticInfra（支撑AI智能体规模化运行的基础设施体系）的操作系统，抢占智能基础设施新赛道。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261117_17.png" alt="美最大电网提交新计划 缩短数据中心并网等待时间" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">美最大电网提交新计划 缩短数据中心并网等待时间</h3>
+        <p class="news-summary">美国最大电力电网运营商PJM Interconnection表示，正向联邦能源监管机构提交一项计划，旨在加快发电厂与高能耗数据中心的并网进程。不过该提案可能要求数据中心企业承担更大的电网成本，AI算力扩张面临的电力瓶颈问题持续引发市场关注。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261117_18.png" alt="工信部将约谈故意拉长账期的汽车企业 督促整改" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">工信部将约谈故意拉长账期的汽车企业 督促整改</h3>
+        <p class="news-summary">工信部表示，对应付账款规模大、故意拉长账期或投诉较多的汽车企业，将联合相关部门开展约谈并督促整改。此举旨在整治汽车行业供应链账期乱象，保障中小零部件供应商的合法权益，回应近期车企账期问题引发的广泛关注。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261117_19.png" alt="全国医保钱包2.0版全部升级上线 跨省共济范围扩大" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">全国医保钱包2.0版全部升级上线 跨省共济范围扩大</h3>
+        <p class="news-summary">国家医保局介绍，截至10月16日，各省（区、市）及新疆生产建设兵团医保钱包2.0版已全部升级上线运行。相比1.0版，医保钱包2.0版共济范围进一步扩大，职工医保个人账户跨省共济更加便捷，惠及数亿参保群众。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261117_20.png" alt="梦想号大洋钻探船完成钻井系统海试 刷新水深纪录" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">梦想号大洋钻探船完成钻井系统海试 刷新水深纪录</h3>
+        <p class="news-summary">自然资源部中国地质调查局介绍，在我国首艘大洋钻探船梦想号入列两周年之际，历时33天圆满完成我国自主研发的首套2000米级深海无隔水管泥浆回收循环钻井系统海试任务，刷新相关领域水深纪录，填补国内技术空白。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+</div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">📌 本归档页基于 2026年11月17日 实时新闻数据生成。所有新闻内容仅供参考，请以官方发布为准 · 2026年11月17日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
