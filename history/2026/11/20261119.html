@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年11月19日 | 环球新闻</title>
+    <meta name="description" content="2026年11月19日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/news-generated/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年11月19日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261119_01.png" alt="习近平和彭丽媛为APEC来宾举行欢迎宴会" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">习近平和彭丽媛为APEC来宾举行欢迎宴会</h3>
+        <p class="news-summary">11月18日晚，国家主席习近平和夫人彭丽媛在深圳国际交流中心举行宴会，欢迎出席亚太经合组织第三十三次领导人非正式会议的各经济体来宾。香蜜湖畔灯火璀璨，宴会前习近平主席夫妇同各经济体领导人及代表亲切交流。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261119_02.png" alt="普京走进深圳北理莫斯科大学 发表演讲并观看AI机器人" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">普京走进深圳北理莫斯科大学 发表演讲并观看AI机器人</h3>
+        <p class="news-summary">据央视新闻报道，俄罗斯总统普京11月18日乘专机抵达深圳出席APEC会议，随后走进深圳北理莫斯科大学，向师生发表演讲并观看AI机器人展示，为其参会行程增添人文交流色彩。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261119_03.png" alt="伊朗军方称击落一架美军MQ-9“死神”无人机" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">伊朗军方称击落一架美军MQ-9“死神”无人机</h3>
+        <p class="news-summary">据伊朗方面18日消息，伊朗军队发表声明称，在霍尔木兹海峡以东发现一架美国MQ-9“死神”无人机并将其击落。自2月28日美以对伊朗发起军事打击以来，伊朗武装部队已多次宣布击落美军和以军无人机。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261119_04.png" alt="共和党中期选举惨败 马斯克称“自己挺傻”" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">共和党中期选举惨败 马斯克称“自己挺傻”</h3>
+        <p class="news-summary">美国共和党候选人在中期选举惨败数周后，豪掷逾4.45亿美元政治献金的马斯克在《纽约时报》DealBook峰会上坦言，花了这么多钱却没看到多少成果，感觉自己挺傻的，若能重来会少花一点。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20261119_05.png" alt="委内瑞拉同美国签署协议恢复军事技术合作" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">委内瑞拉同美国签署协议恢复军事技术合作</h3>
+        <p class="news-summary">委内瑞拉代总统罗德里格斯18日表示，委内瑞拉和美国恢复军事技术合作，包括军事训练和作战装备更新。委国家电视台直播画面显示，罗德里格斯在总统府会见到访的美国国防部长赫格塞思并签署相关协议。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261119_06.png" alt="Anthropic IPO定价83美元 募资813亿美元超越SpaceX纪录" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">Anthropic IPO定价83美元 募资813亿美元超越SpaceX纪录</h3>
+        <p class="news-summary">Anthropic及其七位联合创始人通过扩大规模IPO筹集813亿美元，发行价83美元高于70至78美元定价区间，完全稀释估值约1.5万亿美元，超越SpaceX 750亿美元基础发行规模，成为有史以来最大IPO。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261119_07.png" alt="黄仁勋离职后英伟达临时CEO重申信心：“我们能应对”" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">黄仁勋离职后英伟达临时CEO重申信心：“我们能应对”</h3>
+        <p class="news-summary">在长期执掌英伟达的黄仁勋离职后，临时首席执行官Colette Kress周三在员工大会上重申对公司的信心，表示“我们能应对”。面对外界要求黄仁勋复职的呼声，公司明确表示这位联合创始人不会回归。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261119_08.png" alt="马斯克：Optimus机器人演示将在未来两个月内进行" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">马斯克：Optimus机器人演示将在未来两个月内进行</h3>
+        <p class="news-summary">马斯克表示，特斯拉将在未来两个月内进行Optimus人形机器人演示，SpaceX正在研发人工智能模型Grok 4.8，并称部分星链和星舰项目员工现已负责人工智能团队，太空与AI业务加速融合。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261119_09.png" alt="腾讯总裁刘炽平回应AI“烧钱”：就像建工厂" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">腾讯总裁刘炽平回应AI“烧钱”：就像建工厂</h3>
+        <p class="news-summary">腾讯总裁刘炽平11月18日在财报电话会中回应外界对AI高额投入的担忧，将本轮投入比喻为“建工厂”：不指望几周内就看到回报，预计2028年相关投入将迎来好转。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261119_10.png" alt="韩国投资者9月净买入115亿美元美债 创1977年以来纪录" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">韩国投资者9月净买入115亿美元美债 创1977年以来纪录</h3>
+        <p class="news-summary">数据显示，在年初大规模抛售之后，韩国投资者于9月净买入115亿美元美国国债，创下1977年有数据记录以来的最高水平。今年前九个月中，韩国投资者有七个月为美国国债净卖方。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261119_11.png" alt="月内652家私募机构调研A股 覆盖303只个股" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">月内652家私募机构调研A股 覆盖303只个股</h3>
+        <p class="news-summary">私募排排网数据显示，截至11月17日，本月以来共有652家私募机构参与A股公司调研，合计调研1951次、覆盖303只个股，电子、机械设备、医药生物等五大行业占比72.53%，机构正为四季度配置储备标的。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261119_12.png" alt="威顿晶磷启动上市辅导 拟登陆A股" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">威顿晶磷启动上市辅导 拟登陆A股</h3>
+        <p class="news-summary">证监会网站11月19日披露，贵州威顿晶磷电子材料拟境内首发A股上市，委托中金公司担任辅导机构。公司位于贵阳白云区新材料产业园，是专业电子材料集成供应商，控股股东北京威顿国际贸易持股29.84%。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261119_13.png" alt="铜铝价格回落 家电业盈利修复添动能" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">铜铝价格回落 家电业盈利修复添动能</h3>
+        <p class="news-summary">11月以来铜、铝等大宗商品价格高位回调，家电行业成本端迎来松动，9至10月家电出口明显提速，四季度出口有望延续增长。业内人士认为成本回调叠加出口增长有望改善盈利，但持续性仍取决于内需修复节奏。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261119_14.png" alt="算力需求驱动电子树脂高阶化升级 扩产潮涌现" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">算力需求驱动电子树脂高阶化升级 扩产潮涌现</h3>
+        <p class="news-summary">电子树脂是AI服务器PCB实现高速信号传输的重要原料。受益于算力基础设施蓬勃发展，行业迎来结构性机遇，相关上市公司掀起扩产潮。随着覆铜板向M8、M9及更高等级迭代，稳定交付与配方迭代能力成为竞争关键。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261119_15.png" alt="国家数据局启动第二批可信数据空间创新发展试点" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">国家数据局启动第二批可信数据空间创新发展试点</h3>
+        <p class="news-summary">国家数据局综合司发布通知，组织开展第二批可信数据空间创新发展试点，重点面向应用需求迫切、发展基础扎实、经济社会价值高的领域，深入推进企业、行业、城市三类可信数据空间建设。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261119_16.png" alt="知网万方维普同文实测 AIGC检测结果悬殊" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">知网万方维普同文实测 AIGC检测结果悬殊</h3>
+        <p class="news-summary">澎湃新闻实测知网、万方、维普三大AIGC检测平台发现，同篇文章检测结果悬殊：纯手写文章被大段标红，纯AI生成文章却被判定低检出率。用户吐槽“像开盲盒”，呼吁规范检测标准，避免误伤原创内容。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20261119_17.png" alt="《GTA6》正式发售 首发登陆PS5与Xbox" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">《GTA6》正式发售 首发登陆PS5与Xbox</h3>
+        <p class="news-summary">北京时间11月19日凌晨，Rockstar Games年度新作《侠盗猎车手6》（GTA6）正式发售，首发登陆PlayStation 5和Xbox Series X|S平台，PC版本暂未推出，全球翘首以待多年的玩家终于迎来上线。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国内">
+    <img class="news-image" src="../../../images/news_20261119_18.png" alt="中央气象台解除寒潮蓝色预警" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">中央气象台解除寒潮蓝色预警</h3>
+        <p class="news-summary">中央气象台11月19日06时解除寒潮蓝色预警，本轮大范围寒潮天气过程趋于结束。气象部门提醒公众关注最新天气预报，注意防寒保暖，防范低温天气对生产生活及农业、能源等方面的不利影响。</p>
+        <div><span class="tag">国内</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261119_19.png" alt="欢聚集团Q3总营收6.246亿美元超预期" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">欢聚集团Q3总营收6.246亿美元超预期</h3>
+        <p class="news-summary">欢聚集团发布2026年第三季度财报，总收入6.246亿美元，同比增长15.6%，超市场预期。社交娱乐业务收入4.41亿美元，广告技术业务BIGO Ads同比增39.6%，非直播收入占比提升至32.8%。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="财经">
+    <img class="news-image" src="../../../images/news_20261119_20.png" alt="港交所新设营运风险及韧性主管" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">港交所新设营运风险及韧性主管</h3>
+        <p class="news-summary">香港交易所11月18日宣布委任伍颖思为市场监察主管（候任），康逸飞出任新设的营运风险及韧性主管，二人将分别于11月23日和11月30日履新。康逸飞此前在野村集团工作17年，担任全球营运风险主管。</p>
+        <div><span class="tag">财经</span></div>
+    </div>
+</article>
+</div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">📌 本归档页基于 2026年11月19日 实时新闻数据生成。所有新闻内容仅供参考，请以官方发布为准 · 2026年11月19日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
